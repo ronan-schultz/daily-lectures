@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>PM 002. Kahneman and Tversky: what they found, and what survived</title>
+      <description>The partnership, heuristics and biases (representativeness, availability, anchoring, regression to the mean), prospect theory and framing, and which findings survived the replication crisis.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. In the Linda problem, why is 'bank teller and feminist' a logical error, and which heuristic explains it?
+2. The flight instructor concluded punishment beats praise. What was actually going on, and why does the mistake reinforce itself?
+3. In the Asian disease problem the options are identical but preferences flip. Explain why using prospect theory.
+4. Why did anchoring and framing survive the replication crisis while social priming mostly didn't? What statistical features separate them?
+5. According to Kahneman and Klein, when can expert intuition be trusted, and does a stock picker's environment qualify?</description>
+      <itunes:summary>The partnership, heuristics and biases (representativeness, availability, anchoring, regression to the mean), prospect theory and framing, and which findings survived the replication crisis.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. In the Linda problem, why is 'bank teller and feminist' a logical error, and which heuristic explains it?
+2. The flight instructor concluded punishment beats praise. What was actually going on, and why does the mistake reinforce itself?
+3. In the Asian disease problem the options are identical but preferences flip. Explain why using prospect theory.
+4. Why did anchoring and framing survive the replication crisis while social priming mostly didn't? What statistical features separate them?
+5. According to Kahneman and Klein, when can expert intuition be trusted, and does a stock picker's environment qualify?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/002-kahneman-tversky.mp3" length="7765293" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-002-kahneman-tversky</guid>
+      <pubDate>Mon, 16 Nov 2026 14:00:00 +0000</pubDate>
+      <itunes:duration>00:21:34</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+    </item>
+    <item>
       <title>AM 001. How GPS depends on Einstein</title>
       <description>Position from time signals, why the receiver solves for its own clock bias, the special and general relativistic clock shifts (-7 and +45 microseconds per day), the factory frequency offset, the eccentricity and Sagnac corrections, and ionospheric delay.
 
