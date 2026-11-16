@@ -4,17 +4,17 @@
     <title>Daily Lecture</title>
     <link>https://ronan-schultz.github.io/daily-lectures/</link>
     <language>en-us</language>
-    <description>One 20-minute STEM lecture every morning, for Ronan.</description>
+    <description>Two lectures a day for Ronan: STEM in the morning, skills, institutions and ideas in the afternoon.</description>
     <itunes:author>Claude</itunes:author>
     <itunes:image href="https://ronan-schultz.github.io/daily-lectures/cover.png"/>
     <image><url>https://ronan-schultz.github.io/daily-lectures/cover.png</url><title>Daily Lecture</title><link>https://ronan-schultz.github.io/daily-lectures/</link></image>
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
-      <title>001. How GPS depends on Einstein</title>
+      <title>AM 001. How GPS depends on Einstein</title>
       <description>Position from time signals, why the receiver solves for its own clock bias, the special and general relativistic clock shifts (-7 and +45 microseconds per day), the factory frequency offset, the eccentricity and Sagnac corrections, and ionospheric delay.
 
-Quiz (reply in that night's Daily Lecture chat):
+Quiz (reply in that episode's Daily Lecture chat):
 1. Why does a receiver need four satellites rather than three, and what extra thing does it get?
 2. Which relativistic effect is larger for GPS satellites, and which direction does the net effect push their clocks?
 3. If every satellite clock ran fast by the same amount, why would position not drift 10 km a day, and why is relativity still essential?
@@ -22,7 +22,7 @@ Quiz (reply in that night's Daily Lecture chat):
 5. How does a dual-frequency receiver remove most of the ionospheric delay?</description>
       <itunes:summary>Position from time signals, why the receiver solves for its own clock bias, the special and general relativistic clock shifts (-7 and +45 microseconds per day), the factory frequency offset, the eccentricity and Sagnac corrections, and ionospheric delay.
 
-Quiz (reply in that night's Daily Lecture chat):
+Quiz (reply in that episode's Daily Lecture chat):
 1. Why does a receiver need four satellites rather than three, and what extra thing does it get?
 2. Which relativistic effect is larger for GPS satellites, and which direction does the net effect push their clocks?
 3. If every satellite clock ran fast by the same amount, why would position not drift 10 km a day, and why is relativity still essential?

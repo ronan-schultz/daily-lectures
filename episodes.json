@@ -11,6 +11,7 @@
       "If every satellite clock ran fast by the same amount, why would position not drift 10 km a day, and why is relativity still essential?",
       "Why can't the factory frequency offset handle the eccentricity correction, and where is it applied instead?",
       "How does a dual-frequency receiver remove most of the ionospheric delay?"
-    ]
+    ],
+    "series": "morning"
   }
 ]

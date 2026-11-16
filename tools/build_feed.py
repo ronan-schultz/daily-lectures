@@ -1,7 +1,7 @@
 """Build feed.xml (podcast RSS) from episodes.json.
 
 episodes.json is a list of objects:
-  {"number": 1, "slug": "001-gps-relativity", "title": "...", "date": "2026-11-16",
+  {"number": 1, "slug": "001-gps-relativity", "title": "...", "date": "2026-11-16", "series": "morning",
    "summary": "one or two sentences", "questions": ["...", "..."]}
 The MP3 must exist at episodes/<slug>.mp3. Episodes whose MP3 is missing are skipped.
 """
@@ -25,12 +25,14 @@ for e in sorted(eps, key=lambda e: e["number"], reverse=True):
     mp3 = os.path.join(root, "episodes", e["slug"] + ".mp3")
     if not os.path.exists(mp3):
         continue
-    # Publish at 02:00 Mountain (09:00 UTC) on the episode date.
-    pub = datetime.strptime(e["date"], "%Y-%m-%d").replace(hour=9, tzinfo=timezone.utc)
-    notes = e["summary"] + "\n\nQuiz (reply in that night's Daily Lecture chat):\n" + \
+    # Morning series publishes at 02:00 Mountain (09:00 UTC), afternoon at 07:00 Mountain (14:00 UTC).
+    series = e.get("series", "morning")
+    pub = datetime.strptime(e["date"], "%Y-%m-%d").replace(hour=14 if series == "afternoon" else 9, tzinfo=timezone.utc)
+    label = "PM" if series == "afternoon" else "AM"
+    notes = e["summary"] + "\n\nQuiz (reply in that episode's Daily Lecture chat):\n" + \
         "\n".join(f"{i + 1}. {q}" for i, q in enumerate(e["questions"]))
     items.append(f"""    <item>
-      <title>{escape(f"{e['number']:03d}. {e['title']}")}</title>
+      <title>{escape(f"{label} {e['number']:03d}. {e['title']}")}</title>
       <description>{escape(notes)}</description>
       <itunes:summary>{escape(notes)}</itunes:summary>
       <enclosure url="{BASE}/episodes/{e['slug']}.mp3" length="{os.path.getsize(mp3)}" type="audio/mpeg"/>
@@ -46,7 +48,7 @@ feed = f"""<?xml version="1.0" encoding="UTF-8"?>
     <title>Daily Lecture</title>
     <link>{BASE}/</link>
     <language>en-us</language>
-    <description>One 20-minute STEM lecture every morning, for Ronan.</description>
+    <description>Two lectures a day for Ronan: STEM in the morning, skills, institutions and ideas in the afternoon.</description>
     <itunes:author>Claude</itunes:author>
     <itunes:image href="{BASE}/cover.png"/>
     <image><url>{BASE}/cover.png</url><title>Daily Lecture</title><link>{BASE}/</link></image>

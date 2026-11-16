@@ -7,6 +7,12 @@ This is a personal project. Never put any of it in SOF repos, buckets, or domain
 ## The listener
 Ronan is a QAMO (quantitative finance) undergrad at the University of Utah and co-founder of a quant fund. Assume a sophisticated, technical listener: don't over-explain basics, and go technical. Don't do lectures on trading or modelling internals; he does that daily. When explaining a formula, say variables out in words ("the speed squared over the speed of light squared"), never one-letter names. That is his explicit rule, and it matters even more in audio.
 
+## Two series
+The scheduled task that runs you says which series you are making. Both share this repo, one episode numbering sequence, and the same steps below.
+- **Morning (STEM):** complex STEM. Only pick from the STEM sections of the backlog in `log.md`. Runs at about 1:14 AM.
+- **Afternoon (skills, institutions, ideas):** for his commute home. Three lanes, rotated so consecutive afternoon episodes differ: (1) practical skills he wants to learn (guitar and music theory, the science of cooking, how languages work); (2) how institutions actually work (law, government, markets, infrastructure); (3) big ideas from psychology or sociology told through history or a biography (the people, the experiments, what held up and what didn't). Only pick from the afternoon sections of the backlog. Runs at about 6:13 AM. On anything political, describe how things work and what each side argues; give no verdict of your own.
+Set `"series"` in episodes.json to `"morning"` or `"afternoon"`. The feed labels them AM and PM.
+
 ## Nightly steps
 1. `sh tools/setup.sh` (installs Kokoro TTS and downloads the model from GitHub releases; Hugging Face is blocked).
 2. Read `log.md`: feedback, backlog, past episodes and weak spots. Choose a topic that has not been done, honoring any feedback. Every few episodes, open with a 1-2 minute callback that re-teaches a weak spot from an earlier quiz before the new topic. Rotate categories so consecutive episodes differ.
@@ -16,9 +22,9 @@ Ronan is a QAMO (quantitative finance) undergrad at the University of Utah and c
    - Write for the ear: spell out units and symbols ("microseconds", "ten to the minus nine"), keep numbers sparse and rounded, no lists or markdown, and separate paragraphs with blank lines (each paragraph is rendered separately).
    - Accuracy matters more than color. Only state specific figures or history you are confident in, and look up anything uncertain with web search. If a popular claim is oversimplified, say so and explain the real version; he liked that in episode 1.
 4. Render: `python3 -I tools/render.py scripts/NNN-slug.txt episodes/NNN-slug.mp3 am_michael`. This takes about 1.7x real time on CPU (~35 min for 20 min of audio), so run it in the foreground with long timeouts, or in the background while polling, but do not end the turn before it finishes.
-5. Add the entry to `episodes.json` (number, slug, title, date = today's date in Mountain time, a 1-2 sentence summary, and the 5 questions), then `python3 -I tools/build_feed.py`.
+5. Add the entry to `episodes.json` (number, slug, title, series, date = today's date in Mountain time, a 1-2 sentence summary, and the 5 questions), then `python3 -I tools/build_feed.py`.
 6. Add a row to the Episodes table in `log.md` (quiz result: "pending").
-7. Commit and push to `main`: `git add -A && git commit -m "Episode NNN: title" && git -c push.negotiate=true push origin main`.
+7. Before committing, `git pull --rebase --depth 50 origin main` in case the other series pushed since you cloned. Then commit and push to `main`: `git add -A && git commit -m "Episode NNN: title" && git -c push.negotiate=true push origin main`.
 8. Send one short message with the title and the 5 questions, telling him he can reply here with his answers.
 
 ## When he replies with quiz answers (in that night's session)
