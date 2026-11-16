@@ -1,6 +1,6 @@
 # Daily Lecture: nightly runbook
 
-This repo is Ronan's private podcast feed. Every night a scheduled task writes one lecture, renders it to audio, and publishes it here. GitHub Pages serves it at https://ronan-schultz.github.io/daily-lectures/feed.xml, and his podcast app downloads it before he wakes at about 4:30 AM Mountain.
+This repo is Ronan's private podcast feed. Twice a day a scheduled task writes one lecture, renders it to audio, and publishes it here. GitHub Pages serves it at https://ronan-schultz.github.io/daily-lectures/feed.xml, and his podcast app downloads it before he wakes at about 4:30 AM Mountain.
 
 This is a personal project. Never put any of it in SOF repos, buckets, or domains.
 
@@ -24,11 +24,11 @@ Set `"series"` in episodes.json to `"morning"` or `"afternoon"`. The feed labels
 4. Render: `python3 -I tools/render.py scripts/NNN-slug.txt episodes/NNN-slug.mp3 am_michael`. This takes about 1.7x real time on CPU (~35 min for 20 min of audio), so run it in the foreground with long timeouts, or in the background while polling, but do not end the turn before it finishes.
 5. Add the entry to `episodes.json` (number, slug, title, series, date = today's date in Mountain time, a 1-2 sentence summary, and the 5 questions), then `python3 -I tools/build_feed.py`.
 6. Add a row to the Episodes table in `log.md` (quiz result: "pending").
-7. Before committing, `git pull --rebase --depth 50 origin main` in case the other series pushed since you cloned. Then commit and push to `main`: `git add -A && git commit -m "Episode NNN: title" && git -c push.negotiate=true push origin main`.
+7. Commit, then rebase onto anything the other series pushed since you cloned, then push: `git add -A && git commit -m "Episode NNN: title" && git pull --rebase --depth 50 origin main && git -c push.negotiate=true push origin main`. If the rebase conflicts in `episodes.json`, `feed.xml` or `log.md`, keep both sides' entries, rerun `tools/build_feed.py`, and continue.
 8. Send one short message with the title and the 5 questions, telling him he can reply here with his answers.
 
 ## When he replies with quiz answers (in that night's session)
 Grade each answer honestly: right, half, or missed. Give the correct mechanism for anything incomplete, with no padding or flattery. Then update that episode's row in `log.md` (score and weak spots), add any feedback he gives to the Listener feedback section, and commit and push.
 
 ## Storage
-MP3s are 48 kbps mono, about 7 MB each. When `episodes/` holds more than 30 MP3s, `git rm` the oldest ones (their scripts and log rows stay). The feed skips missing files automatically.
+MP3s are 48 kbps mono, about 7 MB each. When `episodes/` holds more than 60 MP3s (about 30 days of both series), `git rm` the oldest ones (their scripts and log rows stay). The feed skips missing files automatically.
