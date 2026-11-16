@@ -1,0 +1,89 @@
+Daily Lecture, episode one. How GPS depends on Einstein.
+
+Every time your phone puts a blue dot on a map, it is running one of the most precise physics experiments humans have ever built. Thirty-some satellites, each carrying atomic clocks, broadcasting time stamps from about twenty thousand kilometers up. And buried inside that system are corrections from both of Einstein's theories of relativity. Without them, the system would still turn on, but it would not stay usable for long.
+
+Today we are going to build GPS up from first principles. First, how you can find your position from time signals at all. Second, why the clocks have to be so absurdly good. Third, the two relativistic effects, special and general, which push in opposite directions. Fourth, how the engineers actually handle them, which is more interesting than the usual story. And finally, a few smaller effects that a real receiver has to deal with. At the end, I will give you a few questions to check what stuck.
+
+Part one. Position from time.
+
+Start with a simpler problem. Suppose a satellite tells you, I sent this signal at exactly noon, and you receive it at noon plus seventy milliseconds. Radio waves travel at the speed of light, roughly three hundred thousand kilometers per second. So the signal traveled for seventy milliseconds, which means you are about twenty-one thousand kilometers from that satellite.
+
+That one measurement does not tell you where you are. It tells you that you are somewhere on a sphere, centered on the satellite, with a radius of twenty-one thousand kilometers. Add a second satellite, and you are on the intersection of two spheres, which is a circle. Add a third, and that circle gets cut down to two points, and usually one of them is out in space or deep inside the Earth, so you can throw it away.
+
+So in principle, three satellites give you a position. But there is a catch, and it is the single most important idea in the whole system. That calculation assumed you knew the exact time you received the signal. Your phone does not have an atomic clock. Its clock is a cheap quartz oscillator, and it can easily be off by a millisecond or more. And a millisecond of timing error, multiplied by the speed of light, is three hundred kilometers of distance error.
+
+The solution is elegant. Treat your own clock error as a fourth unknown. You now have four unknowns: your east-west position, your north-south position, your altitude, and your clock offset. Four unknowns need four equations, so you use four satellites. Each satellite gives you what is called a pseudorange, which is the apparent distance computed from your bad clock. Every pseudorange is wrong by the same amount, because they are all measured with the same clock. That shared error is exactly what lets you solve for it.
+
+This has a remarkable consequence. A phone that solves for its position also solves for the time, to within a small fraction of a microsecond. GPS is quietly the main time source for cell networks, power grids, and financial exchanges. Positioning and timekeeping are the same problem.
+
+In practice, receivers usually see eight to twelve satellites at once, and they solve an over-determined system with least squares, weighting each satellite by its signal quality. The geometry matters a lot. If all your visible satellites are bunched in one patch of sky, the spheres intersect at shallow angles and small timing errors become large position errors. Satellites spread across the whole sky give you a well-conditioned problem. That geometric amplification factor is called dilution of precision, and you will see it in any serious GPS software.
+
+Part two. Why the clocks must be so good.
+
+Here is the number that sets everything else. Light travels about thirty centimeters in one nanosecond. A nanosecond is a billionth of a second. So if you want positions good to a few meters, the satellite clocks need to agree with each other, and with the system's master time, to within roughly ten nanoseconds.
+
+Now think about what that demands over a day. A day is about eighty-six thousand four hundred seconds. Keeping error under ten nanoseconds across that span means the clock's rate has to be right to about one part in ten trillion. That is why the satellites carry rubidium and cesium atomic clocks, which tick by counting the oscillations of an atomic transition. And it is exactly at this level of precision, parts in ten to the eleventh and ten to the tenth, that relativity stops being a philosophical curiosity and becomes an engineering requirement.
+
+Part three. Two relativistic effects, pulling in opposite directions.
+
+Let's lay out the orbit first. GPS satellites orbit at an altitude of about twenty thousand two hundred kilometers, which puts them about twenty-six thousand six hundred kilometers from the center of the Earth. They go around twice per sidereal day, so the orbital period is just under twelve hours. Their speed is about three point nine kilometers per second.
+
+Effect one is from special relativity. A clock moving relative to you runs slow, from your point of view. This is time dilation. The fractional slowdown, for speeds much less than light, is approximately one half times the square of the speed, divided by the square of the speed of light. Plug in three point nine kilometers per second, and you get a fractional rate change of a little under one part in ten billion. Multiply by the number of seconds in a day, and the satellite clock loses about seven microseconds per day relative to a clock on the ground.
+
+Effect two is from general relativity. Clocks deeper in a gravitational well run slower. Equivalently, a clock higher up, where gravity's potential is less negative, runs faster. The fractional rate difference between two clocks is the difference in gravitational potential divided by the square of the speed of light. The gravitational potential at a distance from Earth's center is the gravitational parameter of Earth divided by that distance, with a minus sign. So you compare the potential at the Earth's surface, about six thousand four hundred kilometers from the center, with the potential at the satellite, about twenty-six thousand six hundred kilometers from the center. Work it through and you get a fractional rate difference of about five parts in ten billion. Over a day, the satellite clock gains about forty-five microseconds.
+
+Put them together. Gain forty-five from gravity, lose seven from motion. The net effect is that a satellite clock runs fast by about thirty-eight microseconds per day compared to an identical clock on the ground.
+
+Notice that the gravitational effect wins by a factor of about six. That is not universal. For satellites in low Earth orbit, like the space station, the speed is much higher and the altitude much lower, so the special relativity term dominates, and their clocks run slow overall. There is a crossover altitude, around three thousand kilometers above the surface, where the two effects cancel exactly. GPS sits well above it.
+
+Thirty-eight microseconds, multiplied by the speed of light, is about eleven kilometers. That is where the famous claim comes from, that GPS would drift by ten kilometers a day without relativity. And it is worth being precise about what that claim actually means, because the popular version is a bit too simple.
+
+Part four. What the engineers actually do, and what the ten kilometer story gets wrong.
+
+Remember the trick from part one. The receiver solves for its own clock offset. If every satellite clock ran fast by the same amount, all the pseudoranges would shift together, and the receiver would just absorb that shift into its clock bias. Your position would not drift ten kilometers. Your computed time would be wrong instead.
+
+So why does relativity matter so much? Three reasons.
+
+First, the whole system is defined against a ground time scale. GPS time is tied to clocks on Earth and steered toward Coordinated Universal Time. The satellites broadcast their positions in their navigation messages, and those positions are predicted from orbit models that are tied to that ground time. If a satellite's clock ran thirty-eight microseconds a day fast against the time used to predict its position, the broadcast orbit and the broadcast clock would quickly become inconsistent, and the errors would not be common to all satellites.
+
+Second, the effect is not the same for every satellite at every moment. That point leads to the eccentricity correction, which I will get to in a minute.
+
+Third, every user who needs actual time, not just position, needs the satellite clocks to agree with ground time. That includes every cell tower and every exchange that timestamps trades.
+
+The fix for the big, steady part of the effect is beautifully blunt. Before launch, the engineers deliberately set the satellite clock to tick slow. The nominal clock frequency for GPS is ten point two three megahertz. The satellite oscillators are set on the ground to ten point two two nine nine nine nine nine nine nine five four three megahertz. That is low by about four and a half parts in ten billion, which is exactly the net relativistic speed-up. Once in orbit, the clock speeds up, as seen from the ground, to the correct ten point two three megahertz. The correction is built into the hardware before the clock ever leaves the ground.
+
+There is a nice piece of history here. When the first test satellite carrying a cesium clock flew in nineteen seventy-seven, there was still some skepticism about whether the relativistic correction was real. So the satellite was built with a frequency synthesizer that could apply the offset or not. The clock was run uncorrected at first, and its rate was measured against ground clocks. The measured drift matched the predicted relativistic shift closely, and then the correction was switched on. Since then, the GPS constellation has been one of the most continuous confirmations of general relativity anyone has ever run.
+
+Now the second piece, the eccentricity correction. GPS orbits are nearly circular, but not perfectly. Typical eccentricities are around one or two percent. That means each satellite climbs and descends a little during each orbit. When it is closer to Earth, it moves faster and sits deeper in the gravity well, so its clock runs slower. When it is farther out, it moves slower and sits higher, so its clock runs faster. Both effects line up in the same direction, and the result is a periodic timing error that rises and falls once per orbit. For an eccentricity of two percent, the amplitude is around forty-five nanoseconds, which is more than ten meters of range error.
+
+A constant frequency offset cannot fix a periodic error. So this correction is done in the receiver. The satellite broadcasts its orbital parameters, including eccentricity, and the receiver computes the correction for that satellite at that instant and applies it. If you ever write your own GPS solver, this term is in the official interface specification, and leaving it out is a classic bug.
+
+Part five. The smaller effects a real receiver handles.
+
+Relativity has one more hand in this, the Sagnac effect. The calculation in part one assumes the signal travels in a straight line through a fixed frame. But the Earth rotates during the roughly seventy milliseconds the signal is in flight. The receiver, sitting on the rotating Earth, moves during that time. In an Earth-fixed frame, that rotation shows up as a correction to the travel time that depends on the direction to the satellite. It can reach on the order of a hundred nanoseconds, so tens of meters. Receivers handle it by doing the light-travel calculation in a non-rotating frame and then rotating the result back.
+
+Then there are effects that have nothing to do with relativity but matter just as much. The signal passes through the ionosphere, a layer of charged particles high in the atmosphere, and gets delayed by an amount that depends on solar activity and time of day. This can be the largest single error source for a cheap receiver, worth several meters or more. The clever part is that the ionospheric delay depends on frequency. So if a receiver listens on two frequencies, it can measure the difference in delay and solve for the ionospheric error directly. This is why modern phones with dual-frequency chips got noticeably more accurate. Lower in the atmosphere, water vapor and dry air add a smaller delay, the tropospheric delay, which is modeled rather than measured.
+
+Finally, multipath. In a city, signals bounce off buildings, so the receiver may pick up a reflected signal that traveled a longer path. That is why your blue dot jumps around downtown, and it is mostly an engineering and signal-processing problem, not a physics one.
+
+The precision frontier today goes well beyond your phone. Surveying receivers that track the phase of the carrier wave itself, not just the timing code on top of it, can reach centimeter-level positions. At that level, effects like solid-Earth tides, where the ground itself rises and falls by tens of centimeters twice a day, have to be modeled too.
+
+Let's pull it together.
+
+GPS works by measuring time, not distance. Your receiver treats its own clock error as a fourth unknown, which is why it needs four satellites and why it also gives you precise time. Range accuracy of a few meters demands clock agreement of around ten nanoseconds, which puts the system right in the regime where relativity matters. The satellite clocks gain about forty-five microseconds a day from weaker gravity and lose about seven from orbital speed, for a net gain of about thirty-eight. The big steady part is fixed in hardware, by setting the clocks slow before launch. The orbit-dependent part, from eccentricity, is fixed in the receiver. And the Sagnac effect, the ionosphere, the troposphere, and multipath sit on top of that.
+
+The broader lesson is that relativity is not a theory about exotic regimes. At the precision a modern economy runs on, it is a line item in an engineering spec.
+
+Now, a few questions to check your understanding. Pause after each one and answer out loud or in your head, then reply in chat with your answers.
+
+Question one. Why does a GPS receiver need four satellites rather than three, and what extra thing does it get as a result?
+
+Question two. Which relativistic effect is larger for GPS satellites, the speed effect or the gravity effect, and in which direction does the net effect push the satellite clocks?
+
+Question three. If every satellite clock ran fast by exactly the same amount, why would a receiver's position not drift by ten kilometers a day? And why is relativity still essential anyway?
+
+Question four. Why can the eccentricity correction not be handled by the factory frequency offset, and where is it applied instead?
+
+Question five. How does a dual-frequency receiver remove most of the ionospheric delay?
+
+That's it for today. See you tomorrow.

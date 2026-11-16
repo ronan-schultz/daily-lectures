@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Daily Lecture</title>
+    <link>https://ronan-schultz.github.io/daily-lectures/</link>
+    <language>en-us</language>
+    <description>One 20-minute STEM lecture every morning, for Ronan.</description>
+    <itunes:author>Claude</itunes:author>
+    <itunes:image href="https://ronan-schultz.github.io/daily-lectures/cover.png"/>
+    <image><url>https://ronan-schultz.github.io/daily-lectures/cover.png</url><title>Daily Lecture</title><link>https://ronan-schultz.github.io/daily-lectures/</link></image>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:block>Yes</itunes:block>
+    <item>
+      <title>001. How GPS depends on Einstein</title>
+      <description>Position from time signals, why the receiver solves for its own clock bias, the special and general relativistic clock shifts (-7 and +45 microseconds per day), the factory frequency offset, the eccentricity and Sagnac corrections, and ionospheric delay.
+
+Quiz (reply in that night's Daily Lecture chat):
+1. Why does a receiver need four satellites rather than three, and what extra thing does it get?
+2. Which relativistic effect is larger for GPS satellites, and which direction does the net effect push their clocks?
+3. If every satellite clock ran fast by the same amount, why would position not drift 10 km a day, and why is relativity still essential?
+4. Why can't the factory frequency offset handle the eccentricity correction, and where is it applied instead?
+5. How does a dual-frequency receiver remove most of the ionospheric delay?</description>
+      <itunes:summary>Position from time signals, why the receiver solves for its own clock bias, the special and general relativistic clock shifts (-7 and +45 microseconds per day), the factory frequency offset, the eccentricity and Sagnac corrections, and ionospheric delay.
+
+Quiz (reply in that night's Daily Lecture chat):
+1. Why does a receiver need four satellites rather than three, and what extra thing does it get?
+2. Which relativistic effect is larger for GPS satellites, and which direction does the net effect push their clocks?
+3. If every satellite clock ran fast by the same amount, why would position not drift 10 km a day, and why is relativity still essential?
+4. Why can't the factory frequency offset handle the eccentricity correction, and where is it applied instead?
+5. How does a dual-frequency receiver remove most of the ionospheric delay?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/001-gps-relativity.mp3" length="6076074" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-001-gps-relativity</guid>
+      <pubDate>Mon, 16 Nov 2026 09:00:00 +0000</pubDate>
+      <itunes:duration>00:16:52</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+    </item>
+  </channel>
+</rss>

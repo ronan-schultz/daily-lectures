@@ -1,0 +1,16 @@
+[
+  {
+    "number": 1,
+    "slug": "001-gps-relativity",
+    "title": "How GPS depends on Einstein",
+    "date": "2026-11-16",
+    "summary": "Position from time signals, why the receiver solves for its own clock bias, the special and general relativistic clock shifts (-7 and +45 microseconds per day), the factory frequency offset, the eccentricity and Sagnac corrections, and ionospheric delay.",
+    "questions": [
+      "Why does a receiver need four satellites rather than three, and what extra thing does it get?",
+      "Which relativistic effect is larger for GPS satellites, and which direction does the net effect push their clocks?",
+      "If every satellite clock ran fast by the same amount, why would position not drift 10 km a day, and why is relativity still essential?",
+      "Why can't the factory frequency offset handle the eccentricity correction, and where is it applied instead?",
+      "How does a dual-frequency receiver remove most of the ionospheric delay?"
+    ]
+  }
+]
