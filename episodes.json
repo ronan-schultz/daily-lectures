@@ -28,5 +28,20 @@
       "Why did anchoring and framing survive the replication crisis while social priming mostly didn't? What statistical features separate them?",
       "According to Kahneman and Klein, when can expert intuition be trusted, and does a stock picker's environment qualify?"
     ]
+  },
+  {
+    "number": 3,
+    "slug": "003-godel-incompleteness",
+    "title": "Gödel's incompleteness theorems: what they actually say",
+    "series": "morning",
+    "date": "2026-11-17",
+    "summary": "Opens with a callback on GPS clock bias. Hilbert's program, Gödel numbering and the diagonal lemma, both incompleteness theorems, the halting-problem route via Turing, and what the theorems don't say (nonstandard models, Presburger arithmetic, Gentzen, Lucas-Penrose).",
+    "questions": [
+      "If the system is consistent, why must the Gödel sentence be true in the ordinary natural numbers, and why isn't it a contradiction that we can see it is true while the system can't prove it?",
+      "Gödel also proved first-order logic is complete. How can logic be complete while arithmetic is incomplete? What role do nonstandard models play?",
+      "If you add the Gödel sentence or the consistency sentence as a new axiom, why doesn't that rescue completeness?",
+      "How does the unsolvability of the halting problem imply incompleteness, and where does the argument use the fact that the axioms are mechanically checkable?",
+      "Gentzen proved Peano arithmetic consistent. Why doesn't that contradict the second incompleteness theorem, and why doesn't it fully deliver what Hilbert wanted?"
+    ]
   }
 ]

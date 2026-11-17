@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>AM 003. Gödel's incompleteness theorems: what they actually say</title>
+      <description>Opens with a callback on GPS clock bias. Hilbert's program, Gödel numbering and the diagonal lemma, both incompleteness theorems, the halting-problem route via Turing, and what the theorems don't say (nonstandard models, Presburger arithmetic, Gentzen, Lucas-Penrose).
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. If the system is consistent, why must the Gödel sentence be true in the ordinary natural numbers, and why isn't it a contradiction that we can see it is true while the system can't prove it?
+2. Gödel also proved first-order logic is complete. How can logic be complete while arithmetic is incomplete? What role do nonstandard models play?
+3. If you add the Gödel sentence or the consistency sentence as a new axiom, why doesn't that rescue completeness?
+4. How does the unsolvability of the halting problem imply incompleteness, and where does the argument use the fact that the axioms are mechanically checkable?
+5. Gentzen proved Peano arithmetic consistent. Why doesn't that contradict the second incompleteness theorem, and why doesn't it fully deliver what Hilbert wanted?</description>
+      <itunes:summary>Opens with a callback on GPS clock bias. Hilbert's program, Gödel numbering and the diagonal lemma, both incompleteness theorems, the halting-problem route via Turing, and what the theorems don't say (nonstandard models, Presburger arithmetic, Gentzen, Lucas-Penrose).
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. If the system is consistent, why must the Gödel sentence be true in the ordinary natural numbers, and why isn't it a contradiction that we can see it is true while the system can't prove it?
+2. Gödel also proved first-order logic is complete. How can logic be complete while arithmetic is incomplete? What role do nonstandard models play?
+3. If you add the Gödel sentence or the consistency sentence as a new axiom, why doesn't that rescue completeness?
+4. How does the unsolvability of the halting problem imply incompleteness, and where does the argument use the fact that the axioms are mechanically checkable?
+5. Gentzen proved Peano arithmetic consistent. Why doesn't that contradict the second incompleteness theorem, and why doesn't it fully deliver what Hilbert wanted?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/003-godel-incompleteness.mp3" length="7695309" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-003-godel-incompleteness</guid>
+      <pubDate>Tue, 17 Nov 2026 09:00:00 +0000</pubDate>
+      <itunes:duration>00:21:22</itunes:duration>
+      <itunes:episode>3</itunes:episode>
+    </item>
+    <item>
       <title>PM 002. Kahneman and Tversky: what they found, and what survived</title>
       <description>The partnership, heuristics and biases (representativeness, availability, anchoring, regression to the mean), prospect theory and framing, and which findings survived the replication crisis.
 

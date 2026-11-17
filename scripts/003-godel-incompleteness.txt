@@ -1,0 +1,109 @@
+Daily Lecture, episode three. Gödel's incompleteness theorems: what they actually say.
+
+Before the new topic, a short callback to episode one, because one idea from the GPS quiz is worth hearing again.
+
+The question was this: if every satellite clock ran fast by the same amount, why wouldn't your position drift? The answer is a move you will see everywhere in quantitative work. Your phone's clock is cheap and wrong, so the receiver does not trust it. It treats its own clock error as a fourth unknown, alongside the three coordinates of position, and solves for it. That is why you need four satellites, not three. Now, if every satellite clock is off by the same amount, that common offset looks exactly like an error in your own clock. It gets absorbed into the clock-bias unknown, and position comes out clean. What a common offset cannot hide is the difference between satellites, and the fact that the system's time would drift away from true time. So relativity is still essential, but not for the reason the popular story gives.
+
+The general lesson: when a nuisance term affects every measurement the same way, do not fight it. Make it an unknown and solve for it. Hold onto that. Today's topic is about a different kind of limit, one you cannot solve your way around.
+
+So. Gödel.
+
+In nineteen thirty-one, a young Austrian logician in his mid-twenties named Kurt Gödel published a paper that ended one of the most ambitious projects in the history of mathematics. His results are among the most quoted in all of science, and among the most misquoted. You will hear that Gödel proved there are truths that can never be proven. That mathematics is broken. That the human mind can never be a computer. That physics can never have a theory of everything. Some of these are wrong, and the rest are at best loose readings of something much more precise.
+
+Here is the plan. Part one, the problem Gödel was answering, which was David Hilbert's program to put all of mathematics on a secure, mechanical footing. Part two, the machinery: how a system of arithmetic can talk about its own proofs. Part three, the first incompleteness theorem and its proof idea. Part four, the second theorem, about consistency. Part five, a cleaner modern route through Turing and the halting problem. And part six, what the theorems do not say, which is where most of the pop version goes wrong. Then a recap and five questions.
+
+Part one. Hilbert's dream.
+
+Around the turn of the twentieth century, mathematics went through a crisis of confidence. Set theory, which was supposed to be the foundation for everything, turned out to contain paradoxes. The most famous is Russell's: consider the set of all sets that do not contain themselves. Does it contain itself? If it does, it doesn't, and if it doesn't, it does. A foundation that can prove a contradiction can prove anything, so this was not a cute puzzle. It was a crack in the floor.
+
+David Hilbert, the most influential mathematician of his era, proposed a way out. Write down mathematics as a formal system: a fixed list of axioms, and fixed, mechanical rules of inference, so precise that checking a proof is just symbol pushing. No intuition required. Then, using only very safe, finite reasoning about those symbol strings, prove two things about the system. First, that it is complete: every mathematical statement in its language can be either proved or disproved. Second, that it is consistent: it can never prove a contradiction.
+
+If that worked, mathematics would be closed. Any question would, in principle, be settled by the system, and we would know the system could never betray us. Hilbert summed up the attitude in a line he gave in a famous address in Königsberg in nineteen thirty, later carved on his tombstone: we must know, we will know.
+
+The irony is that at a small meeting in that same city, around the same days, Gödel quietly announced the result that showed both halves of the program could not be carried out as intended. Almost nobody in the room reacted. One exception was John von Neumann, who understood it immediately, and within weeks had worked out on his own a consequence about consistency, only to learn that Gödel had already proved it.
+
+Part two. Making arithmetic talk about itself.
+
+Gödel's key idea was to make a formal system of arithmetic reason about its own proofs. The trick is called Gödel numbering, and if you have ever thought about how a computer stores text, you already understand it.
+
+Every symbol in the formal language, like zero, plus, equals, a left parenthesis, the quantifier "for all", gets assigned a number. A formula is a string of symbols, so it can be encoded as a single number. Gödel used products of prime powers, so that the encoding could be uniquely decoded, but the specific scheme does not matter. Think of it as a file stored as one huge integer. A proof is just a finite sequence of formulas, so a proof also becomes a single number.
+
+Now here is the crucial step. The statement "this number encodes a valid proof of the formula encoded by that number" is a purely arithmetic property. Checking a proof is mechanical: is each line an axiom, or does it follow from earlier lines by a rule? Every one of those checks is a computation on the code numbers, built from addition, multiplication, and bounded searches. Gödel showed that any such mechanical relation can be expressed by a formula inside the system of arithmetic itself, and that the system can verify each specific instance.
+
+So the system can contain a formula that means, under this encoding, "there exists a number which codes a proof of formula number such-and-such". Call that the provability formula. The system is now talking about what it can and cannot prove, while officially only talking about numbers.
+
+Notice what the requirements are. The system has to be able to do enough arithmetic, essentially addition and multiplication with induction, or even a fairly weak fragment of that, to represent these computations. And the set of axioms has to be mechanically checkable, what logicians call effectively axiomatized. You need to be able to write a program that says yes or no to "is this an axiom?" Both conditions matter, and we will come back to both.
+
+Part three. The first theorem.
+
+The next ingredient is self-reference, done carefully. Gödel proved what is now called the diagonal lemma: for any property you can express in the system, you can construct a sentence that says, in effect, "I have this property". It is not done by magic or by some illegal pointer to itself. It is done by a substitution trick, quite similar to how you write a program that prints its own source code, a so-called quine.
+
+Apply the diagonal lemma to the property "is not provable". You get a sentence, the Gödel sentence, which the system itself can show is equivalent to "the Gödel sentence is not provable in this system".
+
+Now reason about it. Suppose the system could prove the Gödel sentence. Then a proof exists, it has a code number, and the system, which can verify any specific proof, would also prove "the Gödel sentence is provable". But it has also proved the Gödel sentence, which is equivalent to "the Gödel sentence is not provable". That is a contradiction. So if the system is consistent, it does not prove the Gödel sentence.
+
+What about proving its negation? The negation says, "there is a proof of the Gödel sentence". We just showed there is no such proof. So the system would be asserting the existence of a number with a property, while for each specific number, it can check and confirm that number is not a proof. Gödel's original argument ruled this out with a slightly stronger assumption he called omega-consistency, which forbids exactly this kind of situation. In nineteen thirty-six, J. Barkley Rosser found a cleverer sentence, roughly "for any proof of me, there is a shorter proof of my negation", that needs only plain consistency.
+
+So the first incompleteness theorem says: any consistent, effectively axiomatized system that can do basic arithmetic has a sentence in its own language that it can neither prove nor disprove. Hilbert's completeness is impossible.
+
+And here is the part that makes people say "true but unprovable". If the system is consistent, the Gödel sentence really isn't provable. But that is exactly what the sentence says. So, read as a statement about the ordinary natural numbers, it is true. We, standing outside, can see that it is true, given that we believe the system is consistent.
+
+Hold onto that conditional, because it is where the pop version starts to slip. We will come back to it.
+
+Part four. The second theorem.
+
+The second incompleteness theorem is the one that hit Hilbert's program directly. Take the reasoning we just did: "if the system is consistent, then the system doesn't prove the Gödel sentence". That argument was itself fairly elementary. It turns out it can be carried out inside the system. Consistency can be expressed as an arithmetic sentence: "there is no number coding a proof of zero equals one". Call it the consistency sentence. And with some careful work, the system can prove: the consistency sentence implies the Gödel sentence.
+
+Now suppose the system could prove its own consistency sentence. Then, by that implication, it would prove the Gödel sentence. But we just showed a consistent system can't. So: a consistent, effectively axiomatized system strong enough for arithmetic cannot prove its own consistency.
+
+The force of this for Hilbert is clear. His plan was to prove the consistency of all of mathematics using only a small, safe, finitary part of it. But if the full system can't even prove its own consistency, then a weaker part of it certainly can't. The safe core cannot vouch for the whole building.
+
+There is a subtlety people miss. The second theorem does not say consistency proofs are impossible. In nineteen thirty-six, Gerhard Gentzen proved that standard Peano arithmetic is consistent. He did it using a principle called transfinite induction up to an ordinal called epsilon-naught. That principle is not available inside Peano arithmetic, and that is exactly why the proof doesn't violate Gödel. You can always prove a system consistent from a stronger, or at least different, vantage point. What you cannot do is get that certainty for free from the inside, or from something weaker. Whether Gentzen's extra principle is more trustworthy than arithmetic itself is a philosophical question, and logicians still debate how much it buys you.
+
+There is also a funny edge case. An inconsistent system proves everything, including its own consistency. So if you ever meet a system of arithmetic that proves it is consistent, that is evidence that it isn't.
+
+Part five. The modern route: Turing.
+
+For someone with a computing background, there is a cleaner way to see why incompleteness has to happen. It goes through Alan Turing's nineteen thirty-six result on the halting problem.
+
+Turing showed there is no general program that takes any program and input and correctly decides whether it eventually halts. The proof is the same diagonal trick: if such a decider existed, build a program that asks the decider about itself and then does the opposite.
+
+Now suppose you had a formal system of arithmetic that was consistent, effectively axiomatized, and complete. Statements of the form "program such-and-such halts on this input" can be written as arithmetic sentences, because running a program is a computation on numbers. And a decent arithmetic proves every true halting statement, since you can just write out the finite run step by step. Here is the decision procedure: start listing every possible proof, in order of length. Because the axioms are mechanically checkable, you can check each candidate. Because the system is complete, eventually you will find either a proof that the program halts or a proof that it doesn't. Because the system is consistent, and proves only true halting facts, the answer is right. You have just built a halting decider, which Turing showed cannot exist. So the system can't be complete.
+
+That argument is strictly speaking a little weaker than Gödel's in its assumptions, it needs the system to be sound about halting, not just consistent, but it shows you the real reason incompleteness happens. Any system whose theorems you can list by a program is, in effect, a computer. And the truths of arithmetic include facts about every program, so they are too rich to be listed by any single program. Incompleteness is undecidability, viewed through the lens of proof.
+
+It also shows why the "effectively axiomatized" condition matters. If you allow any axioms at all, just take every true sentence of arithmetic as an axiom. That system is complete and consistent. It is also useless, because there is no program that can tell you whether a given sentence is one of your axioms. Gödel's theorem is a statement about the limits of systems you could actually run.
+
+Part six. What the theorems do not say.
+
+Now the corrections.
+
+First myth: "there are mathematical truths that can never be proven". Not quite. The Gödel sentence of a given system is unprovable in that system. But add the consistency sentence as a new axiom, and the new, stronger system proves the old Gödel sentence easily. The real statement is that no single effective system catches all the truths of arithmetic. Every fix you make produces a new system with a new Gödel sentence. It is a moving target, not a fixed list of forever-unknowable facts.
+
+Second myth: "the Gödel sentence is true but unprovable, so truth goes beyond logic". Here the precise version is better than the myth. Gödel had proved, a year or so earlier, his completeness theorem for first-order logic. It says: a sentence follows logically from a set of axioms if and only if it is true in every structure that satisfies those axioms. Logic itself misses nothing. So how can arithmetic be incomplete? Because the axioms of arithmetic do not pin down the natural numbers uniquely. Besides the ordinary numbers, zero, one, two, and so on, there are so-called nonstandard models: structures that satisfy every axiom but also contain extra, infinitely large elements beyond all the ordinary ones. In some of those models, the Gödel sentence is false. There is a "proof" of it there, but its code number is one of the infinite nonstandard elements, so it isn't a real, finite proof. Incompleteness, then, means the axioms have genuinely different models that disagree on the Gödel sentence. When we call the sentence true, we mean true in the standard numbers, the ones we had in mind.
+
+Third myth: "Gödel shows all of mathematics is incomplete". It applies only to systems that are effectively axiomatized and strong enough to encode computation. There are complete, consistent, decidable theories of important things. Presburger arithmetic, the natural numbers with addition but no multiplication, is complete and decidable. Alfred Tarski showed that the theory of the real numbers as an ordered field, and with it elementary Euclidean geometry, is complete and decidable too. What breaks completeness is having addition and multiplication over the whole numbers together, because that combination is enough to simulate any computation.
+
+Fourth myth: "the unprovable statements are artificial self-referential tricks". For a long time this was a fair complaint. Then came natural examples. In nineteen seventy-seven, Jeff Paris and Leo Harrington found a statement in finite combinatorics, a strengthened version of the finite Ramsey theorem, that is true but not provable in Peano arithmetic. Goodstein's theorem, about certain sequences of numbers that grow enormously before eventually returning to zero, is another: true, and shown by Laurie Kirby and Paris to be unprovable in Peano arithmetic. At the level of set theory, the continuum hypothesis is independent of the standard axioms, by work of Gödel himself and later Paul Cohen, though that independence comes from a different technique, not from a Gödel sentence.
+
+Fifth myth: "Gödel proves the mind is not a machine". The argument, made by the philosopher John Lucas and later by Roger Penrose, goes: for any machine, there is a Gödel sentence it can't prove, but I can see it is true, so I am not that machine. The standard reply is that you can only "see" the Gödel sentence is true if you know the system is consistent. For a system as complicated as one that would model a human mathematician, there is no reason to think you know that. Most logicians consider the argument unsuccessful, though it still has defenders.
+
+Sixth, briefly: "physics can never have a theory of everything because of Gödel". A theory of physics might well be incomplete in some formal sense if it encodes arithmetic, but that would not stop it from predicting every measurement we care about. The theorem is about formal derivability of sentences, not about whether a set of laws describes nature.
+
+Recap.
+
+Hilbert wanted a single formal system for mathematics, mechanically checkable, that was provably complete and provably consistent using safe methods. Gödel numbering lets arithmetic encode statements about its own proofs. The diagonal lemma builds a sentence that says "I am not provable". If the system is consistent, it can't prove that sentence, and with Rosser's refinement, it can't disprove it either. That is the first theorem. Formalizing that argument inside the system gives the second: the system cannot prove its own consistency, though stronger systems, like Gentzen's, can. Turing gives a computational reason: a complete, effective theory of arithmetic would decide the halting problem. And the precise versions beat the myths: unprovability is always relative to a system, the incompleteness lives in the axioms having nonstandard models rather than in logic itself, and weak but useful theories like Presburger arithmetic and Euclidean geometry escape it entirely.
+
+Now, five questions. Pause after each one and answer out loud or in your head.
+
+Question one. If the system is consistent, why must the Gödel sentence be true in the ordinary natural numbers, and why isn't it a contradiction that we can see it is true while the system can't prove it?
+
+Question two. Gödel also proved that first-order logic is complete. How can logic be complete while arithmetic is incomplete? What role do nonstandard models play?
+
+Question three. Suppose you add the Gödel sentence, or the consistency sentence, as a new axiom. Why doesn't that rescue completeness?
+
+Question four. Explain how the unsolvability of the halting problem implies incompleteness. Where in that argument do you use the fact that the axioms are mechanically checkable?
+
+Question five. Gentzen proved Peano arithmetic is consistent. Why doesn't that contradict the second incompleteness theorem, and why doesn't it fully deliver what Hilbert wanted?
+
+That's the episode. Reply with your answers whenever you like.
