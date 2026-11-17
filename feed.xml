@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>PM 004. Why Bretton Woods collapsed</title>
+      <description>The 1944 design and the Keynes versus White fight over symmetric adjustment, the short convertible era, Triffin's dilemma as a bank run, the 1960s patches (gold pool, capital controls, two-tier market, SDRs), the Nixon shock and Smithsonian, and the competing explanations for the collapse.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Explain Triffin's dilemma as a bank run. What plays the role of deposits, what plays the role of the vault, and why does the system becoming more successful make it more fragile?
+2. Keynes's plan put pressure on surplus countries as well as deficit countries. Why did the Americans reject that in 1944, and how did the lack of it come back to hurt the system in the late sixties?
+3. Using the trilemma, explain why the growth of the eurodollar market made the fixed pegs harder to hold, and why a doubted peg becomes a one-way bet for speculators.
+4. Why did the collapse of the London Gold Pool in 1968, and the two-tier market that replaced it, amount to a major retreat even though the official price stayed at $35?
+5. Under a fixed exchange rate system anchored on the dollar, how did rising American inflation in the late sixties get transmitted to countries like Germany, and why did that give them a reason to stop holding dollars?</description>
+      <itunes:summary>The 1944 design and the Keynes versus White fight over symmetric adjustment, the short convertible era, Triffin's dilemma as a bank run, the 1960s patches (gold pool, capital controls, two-tier market, SDRs), the Nixon shock and Smithsonian, and the competing explanations for the collapse.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Explain Triffin's dilemma as a bank run. What plays the role of deposits, what plays the role of the vault, and why does the system becoming more successful make it more fragile?
+2. Keynes's plan put pressure on surplus countries as well as deficit countries. Why did the Americans reject that in 1944, and how did the lack of it come back to hurt the system in the late sixties?
+3. Using the trilemma, explain why the growth of the eurodollar market made the fixed pegs harder to hold, and why a doubted peg becomes a one-way bet for speculators.
+4. Why did the collapse of the London Gold Pool in 1968, and the two-tier market that replaced it, amount to a major retreat even though the official price stayed at $35?
+5. Under a fixed exchange rate system anchored on the dollar, how did rising American inflation in the late sixties get transmitted to countries like Germany, and why did that give them a reason to stop holding dollars?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/004-bretton-woods.mp3" length="8474781" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-004-bretton-woods</guid>
+      <pubDate>Tue, 17 Nov 2026 14:00:00 +0000</pubDate>
+      <itunes:duration>00:23:32</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+    </item>
+    <item>
       <title>AM 003. Gödel's incompleteness theorems: what they actually say</title>
       <description>Opens with a callback on GPS clock bias. Hilbert's program, Gödel numbering and the diagonal lemma, both incompleteness theorems, the halting-problem route via Turing, and what the theorems don't say (nonstandard models, Presburger arithmetic, Gentzen, Lucas-Penrose).
 

@@ -27,3 +27,4 @@ Add new topics here as they come up, in the same categories or new ones.
 | 1 | 2026-11-16 | AM | How GPS depends on Einstein | ~2.5/5 | Q3: a common clock offset is absorbed into the receiver's clock-bias unknown (missed). Q4: the eccentricity term is periodic, so a constant offset can't cancel it, and the receiver computes it (half). Q5: ionospheric delay scales with one over frequency squared, so two frequencies give two equations (mechanism missing). Theme to reinforce: "make the nuisance an unknown and solve for it." |
 | 2 | 2026-11-16 | PM | Kahneman and Tversky: what they found, and what survived | pending | |
 | 3 | 2026-11-17 | AM | Gödel's incompleteness theorems (with callback on GPS clock bias) | pending | |
+| 4 | 2026-11-17 | PM | Why Bretton Woods collapsed (institutions lane) | pending | |

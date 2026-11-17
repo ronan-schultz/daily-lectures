@@ -43,5 +43,20 @@
       "How does the unsolvability of the halting problem imply incompleteness, and where does the argument use the fact that the axioms are mechanically checkable?",
       "Gentzen proved Peano arithmetic consistent. Why doesn't that contradict the second incompleteness theorem, and why doesn't it fully deliver what Hilbert wanted?"
     ]
+  },
+  {
+    "number": 4,
+    "slug": "004-bretton-woods",
+    "title": "Why Bretton Woods collapsed",
+    "series": "afternoon",
+    "date": "2026-11-17",
+    "summary": "The 1944 design and the Keynes versus White fight over symmetric adjustment, the short convertible era, Triffin's dilemma as a bank run, the 1960s patches (gold pool, capital controls, two-tier market, SDRs), the Nixon shock and Smithsonian, and the competing explanations for the collapse.",
+    "questions": [
+      "Explain Triffin's dilemma as a bank run. What plays the role of deposits, what plays the role of the vault, and why does the system becoming more successful make it more fragile?",
+      "Keynes's plan put pressure on surplus countries as well as deficit countries. Why did the Americans reject that in 1944, and how did the lack of it come back to hurt the system in the late sixties?",
+      "Using the trilemma, explain why the growth of the eurodollar market made the fixed pegs harder to hold, and why a doubted peg becomes a one-way bet for speculators.",
+      "Why did the collapse of the London Gold Pool in 1968, and the two-tier market that replaced it, amount to a major retreat even though the official price stayed at $35?",
+      "Under a fixed exchange rate system anchored on the dollar, how did rising American inflation in the late sixties get transmitted to countries like Germany, and why did that give them a reason to stop holding dollars?"
+    ]
   }
 ]

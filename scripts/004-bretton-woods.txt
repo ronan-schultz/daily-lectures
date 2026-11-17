@@ -1,0 +1,133 @@
+Daily Lecture, afternoon edition. Why Bretton Woods collapsed.
+
+On a Sunday evening in August of nineteen seventy-one, Richard Nixon interrupted one of the most popular shows on American television, Bonanza, to give a speech. He announced a ninety-day freeze on wages and prices, and a ten percent surcharge on imports. Then, almost in passing, he said he had directed the Treasury to suspend the convertibility of the dollar into gold.
+
+That one sentence ended the monetary order that had governed the Western world since the end of the Second World War. Foreign central banks had been promised that they could hand the United States thirty-five dollars and receive one ounce of gold. On that Sunday night, the promise was withdrawn. Within about eighteen months, every major currency was floating, and the world has lived on fiat money with floating exchange rates ever since.
+
+Today I want to treat Bretton Woods as an institution and ask why it failed. The usual short answer is that America printed money to pay for Vietnam. That's part of it, but there's a deeper argument that the system was going to break no matter what Washington did.
+
+Here's the roadmap. First, the design, and the fight between Keynes and the American negotiator Harry Dexter White. Second, how briefly the system actually ran. Third, the structural flaw identified by Robert Triffin. Fourth, the slow-motion crisis of the sixties. Fifth, the endgame. And finally, the competing explanations, because economists still argue about which cause mattered most.
+
+Part one. The design.
+
+In July of nineteen forty-four, delegates from forty-four Allied nations gathered at the Mount Washington Hotel in Bretton Woods, New Hampshire. They were haunted by the nineteen thirties.
+
+The lesson they drew from the interwar years went like this. The old gold standard had transmitted deflation from country to country. When a country lost gold, it had to tighten money and accept falling prices and unemployment until its trade balance recovered. Then, when countries abandoned gold, they fell into competitive devaluations and tariff wars, each exporting its unemployment to its neighbors. The planners wanted something in between: exchange rates stable enough to support trade, but flexible enough that no country would be forced into a depression to defend its currency.
+
+The two architects were John Maynard Keynes for Britain and Harry Dexter White for the United States Treasury, and their plans differed in a way that turns out to be key.
+
+Keynes proposed an International Clearing Union with its own unit of account, which he called the bancor. Countries would settle trade balances through the union. The crucial feature was symmetry. Under the Keynes plan, a country running a persistent surplus would face pressure to adjust too, through charges on its excess balances, not just the country running a deficit. Keynes understood that under the gold standard the burden of adjustment had fallen almost entirely on debtors. A surplus country can sit on its gold forever. A deficit country eventually runs out.
+
+White's plan was smaller and more conservative, and it reflected the obvious fact of nineteen forty-four: the United States was going to be the world's great surplus country and its great creditor, and it held most of the world's monetary gold, by most estimates around two thirds of it. The Americans had no interest in a scheme that would penalize surpluses or let the rest of the world draw large overdrafts on American resources.
+
+White's version mostly won. The conference created two institutions: the International Monetary Fund, to oversee exchange rates and lend to countries with temporary balance of payments problems, and what became the World Bank, to finance reconstruction and development. The fund was much smaller than Keynes's clearing union, and pressure on surplus countries was limited to a provision that was essentially never used.
+
+The rules were these. Each country declared a par value for its currency and promised to keep its market rate within one percent of it, intervening to do so. The par value could be changed only to correct a fundamental disequilibrium, a phrase the agreement never defined. And the United States stood ready to convert dollars held by foreign central banks into gold at thirty-five dollars an ounce, the price Roosevelt had set in nineteen thirty-four.
+
+So every other currency is pegged to the dollar, and the dollar alone is pegged to gold. The whole structure rests on one promise: that the dollar is as good as gold.
+
+One more design choice matters. Bretton Woods explicitly allowed capital controls. The founders believed that hot money, short-term speculative capital, had destabilized the interwar system, and they wanted governments to be free to block it. Economists today describe this with the idea of the impossible trinity, or the trilemma. A country can have at most two of three things: a fixed exchange rate, free movement of capital across its borders, and an independent monetary policy aimed at its own economy. Bretton Woods chose fixed rates and independent monetary policy, and gave up free capital movement.
+
+Part two. How it actually ran.
+
+Here's a fact that surprises most people. The Bretton Woods system, in its full form, worked for only about a dozen years.
+
+In the late nineteen forties Europe was devastated, and it had the opposite of a dollar glut. It had a dollar shortage. European countries needed American food, fuel, and machinery and had nothing to sell America in return. Their currencies weren't freely convertible. Britain tried to make the pound convertible in nineteen forty-seven, and reserves drained away within weeks. In nineteen forty-nine sterling was devalued sharply, and most of Western Europe devalued with it.
+
+The shortage was solved largely by the Marshall Plan and American military and aid spending abroad, which moved dollars into the reserves of Europe and Japan.
+
+It was only at the end of nineteen fifty-eight that the major Western European currencies became convertible for current account transactions, meaning for trade. So the system as designed, with convertible currencies pegged to a gold-backed dollar, really runs from about nineteen fifty-nine to nineteen seventy-one.
+
+Those years were very good ones: fast growth in Europe and Japan, expanding trade, no devaluation wars. How much credit the monetary system deserves, versus a postwar catch-up boom that might have happened anyway, is hard to separate.
+
+But by the time the system was fully running, the dollar shortage had already turned into its opposite.
+
+Part three. Triffin's dilemma.
+
+In nineteen sixty, a Belgian-born economist at Yale named Robert Triffin published a book called Gold and the Dollar Crisis. His argument is the intellectual core of this story.
+
+The world economy and its trade were growing, so central banks needed more reserves to back their pegs. There were really only two sources: new gold, and dollars. New gold was limited by mining, and at a fixed thirty-five dollars an ounce, while every other price rose, mining was getting less profitable. Gold couldn't keep up. That left dollars, and the world could only accumulate more dollars if the United States sent more abroad than came back.
+
+Now the dilemma. If the United States stopped running deficits, the world would be starved of reserves. Growth in reserves would stall, and you'd risk a deflationary squeeze, which was exactly what the planners of nineteen forty-four had feared. But if the United States kept running deficits, then the stock of dollars held abroad would keep growing while the American gold stock stayed flat or shrank. Eventually, foreign dollar holdings would exceed the gold available to redeem them. At that point the promise of convertibility becomes a promise that cannot be kept if everyone asks at once.
+
+Think of it as a bank run, because that's what it structurally is. The United States was acting like a bank. Its gold was the cash in the vault. The dollars held by foreign central banks were deposits, payable on demand. A bank can operate with fewer reserves than deposits as long as depositors are confident. But the more deposits grow relative to reserves, the more fragile that confidence becomes, and confidence was the only thing holding up the ratio.
+
+And the numbers moved the wrong way. The American gold stock peaked around the end of the nineteen forties and then declined steadily as foreign central banks converted some of their dollars. By around nineteen sixty, total foreign claims on dollars already exceeded the American gold stock. By nineteen seventy-one, the gold stock had fallen by more than half from its peak, while foreign dollar holdings had grown several times over.
+
+The important point about Triffin's argument is that it doesn't depend on American policy being irresponsible. Even a perfectly disciplined United States faced a choice between starving the world of liquidity and undermining its own promise. That's why it's called a dilemma, and it's why some economists argue that Bretton Woods was doomed by design.
+
+One nuance. The popular version says the United States had to run trade deficits to supply dollars. Not quite. A reserve country can also supply dollars by lending and investing abroad, like a bank that borrows short and lends long, and for most of the sixties the United States actually ran current account surpluses while exporting capital. The real problem was the ratio of liquid dollar claims to gold. The bank-run logic holds either way.
+
+Part four. The slow-motion crisis of the nineteen sixties.
+
+The first open sign of trouble came in October of nineteen sixty, when the London gold price briefly jumped to around forty dollars an ounce, well above the official thirty-five.
+
+The response was improvisation: rather than redesign the system, its managers kept adding patches. In nineteen sixty-one, the United States and seven European central banks formed the London Gold Pool, agreeing to sell gold from their reserves on the London market whenever the price rose, to keep it near thirty-five dollars. The United States supplied about half of the pool's gold.
+
+In nineteen sixty-three Washington added the Interest Equalization Tax on Americans buying foreign securities, and later limits on lending and investment abroad. That's the trilemma at work: to keep the peg and your own monetary policy, you restrict capital.
+
+But capital found a way around the controls. This is when the eurodollar market grew: dollar deposits in banks outside the United States, mostly in London, beyond American regulation. The wall around capital got more porous every year. And when capital can move, a doubted peg becomes a one-way bet. If you sell a currency and the peg holds, you lose very little. If it's devalued, you make a large gain.
+
+Then there was France. In the mid nineteen sixties, the French government began converting large amounts of its dollar reserves into gold, and even sent ships to bring gold back from New York. In nineteen sixty-five Charles de Gaulle publicly called for a return to a real gold standard.
+
+A correction to a popular story: the phrase "exorbitant privilege," for America's ability to pay in its own currency, is usually attributed to de Gaulle, but it was coined by his finance minister, Valéry Giscard d'Estaing. The French complaint was that dollars spent on American investment and troops in Europe piled up in foreign central banks as cheap loans to the United States. The American reply was that the dollar system provided liquidity and stability that everyone benefited from, and that Europe was free-riding on American defense.
+
+The pressure built through nineteen sixty-seven and sixty-eight. In November of nineteen sixty-seven, Britain, the second reserve currency of the system, devalued the pound from two dollars and eighty cents to two dollars and forty. Speculators immediately reasoned that if sterling could fall, the dollar's link to gold might be next, and they rushed into gold. The London Gold Pool lost enormous amounts of gold in a matter of months. In March of nineteen sixty-eight, the pool was shut down.
+
+What replaced it was a two-tier gold market. Central banks would continue to trade gold among themselves at thirty-five dollars an ounce. The private market could find its own price. That was a quiet but major retreat. The official price was now a fiction maintained by agreement among central banks, which were informally pressed not to actually ask the United States for gold. Convertibility, the anchor of the whole system, had become something you weren't supposed to use.
+
+There was one real reform. The IMF created the Special Drawing Right, a reserve asset made by international agreement, a small, late cousin of Keynes's bancor aimed squarely at Triffin's problem. The first allocations came in nineteen seventy, too small and too late.
+
+Meanwhile American policy pushed the wrong way. Spending on Vietnam and domestic programs rose in the late sixties without matching tax increases until late in the decade, and inflation climbed to around five or six percent by nineteen seventy. Under fixed rates that inflation got exported: foreign central banks buying dollars to hold their pegs were expanding their own money supplies. Germany especially resented it.
+
+Part five. The endgame.
+
+By nineteen seventy-one the system was cracking openly. In May, after huge inflows of dollars, West Germany stopped defending its peg and let the mark float. The American trade balance was heading toward its first annual deficit since the eighteen nineties. Foreign official dollar holdings dwarfed American gold. And over the summer, requests for gold or for guarantees against devaluation kept arriving from foreign central banks. Accounts differ on exactly which request was the last straw; a British request in early August is often cited, but the details are disputed.
+
+In mid-August, Nixon took his senior economic advisers to Camp David for a weekend. Among them were Treasury Secretary John Connally, Fed chairman Arthur Burns, and the Treasury's monetary under secretary, Paul Volcker, who would later, as Fed chair, break American inflation.
+
+Burns worried about how markets and allies would react and preferred to keep the window open. Connally favored bold, unilateral action. Closing the window was packaged with wage and price controls and the import surcharge, which doubled as a bargaining chip: it would come off once other countries revalued against the dollar.
+
+At home the reaction was strongly positive. Abroad it was shock and anger, since allies hadn't been consulted. Connally summed up the American attitude a few months later to European officials: the dollar is our currency, but it's your problem.
+
+Officially, Nixon described the suspension as temporary, and there was a serious attempt to rebuild the system. In December of nineteen seventy-one, at the Smithsonian Institution in Washington, the major countries agreed on a new set of pegs. The dollar was devalued against gold to thirty-eight dollars an ounce, other currencies were revalued against the dollar, and the bands around the pegs were widened from one percent to two and a quarter percent. Nixon called it the most significant monetary agreement in the history of the world.
+
+It lasted about fifteen months. The dollar was still not convertible into gold, so the new official price was meaningless in practice. American inflation continued. Speculative flows resumed. In February of nineteen seventy-three the dollar was devalued again, and in March the major currencies stopped trying to hold pegs against the dollar at all. Floating, which almost nobody at Bretton Woods had wanted, became the system by default. It was only formally legalized a few years later, through amendments to the IMF's rules agreed in Jamaica in nineteen seventy-six.
+
+Part six. So why did it really fail?
+
+There are three main explanations, and they aren't mutually exclusive. The interesting question is how much weight each one gets.
+
+The first is the structural one: Triffin. On this view, a system in which world reserves grow only through the liabilities of one country, convertible into a fixed and slowly growing stock of gold, contains the seeds of its own collapse. The better the system works, the more dollars accumulate abroad, and the less credible convertibility becomes. Policy could delay the reckoning, but not avoid it. Supporters of this view point out that the gold stock was already outstripped by foreign claims around nineteen sixty, before Vietnam, before the big inflation.
+
+The second is the policy explanation: the system could have lasted much longer if the United States had kept inflation low. The anchor of a fixed-rate system has to be disciplined, because everyone imports its policy. Monetarist economists and many central bankers emphasize this. Defenders of American policy respond that the war and domestic programs were choices made for reasons far larger than the exchange rate, and that a system requiring the anchor to subordinate its domestic economy to the peg asks for something no democracy reliably delivers.
+
+The third is the asymmetry explanation, where Keynes comes back. Germany and Japan, the big surplus countries, resisted revaluing, since it would hurt powerful exporters and impose losses on their dollar reserves. And the United States couldn't easily devalue on its own, because other currencies were pegged to the dollar; the only lever it controlled was the gold link. Keynes had tried to design pressure on surplus countries into the system. The Americans rejected it in nineteen forty-four because they expected to be the surplus country. Twenty-five years later the positions had reversed.
+
+Add the erosion of capital controls, and you get a coherent picture. A slow structural squeeze, made acute by policy in the anchor country, with no safety valve on the surplus side, and capital mobility turning doubt into a one-way bet. The trilemma says you can't have fixed rates, free capital, and independent monetary policy. By the late sixties, capital was becoming free whether governments liked it or not, every major country wanted its own monetary policy, and so the fixed rates were the thing that gave.
+
+Finally, what the end of Bretton Woods was not: the end of dollar dominance. Many expected the dollar to lose its reserve role in nineteen seventy-one, and it didn't. The exorbitant privilege outlived the gold link, and an updated Triffin dilemma still appears in arguments about whether world demand for safe dollar assets pushes the United States into persistent deficits.
+
+Let's recap.
+
+Bretton Woods pegged currencies to the dollar and the dollar to gold at thirty-five dollars an ounce, with capital controls allowed. Keynes wanted surplus countries to share the burden of adjustment; the American plan won and left it on deficit countries.
+
+The system only ran with convertible currencies from about nineteen fifty-nine. Triffin showed that world reserves could only grow through more dollars abroad, steadily eroding the credibility of convertibility, like a bank whose deposits keep outgrowing its vault.
+
+The sixties were patches: the gold pool, capital controls, the two-tier market, Special Drawing Rights. Meanwhile the eurodollar market eroded the controls and American inflation rose. In August of seventy-one Nixon closed the gold window, the Smithsonian pegs failed by March of seventy-three, and floating took over.
+
+And the causes: a structural dilemma, an anchor country with looser policy than the system required, surplus countries that wouldn't adjust, and capital that wouldn't stay controlled.
+
+Now, the quiz. Five questions.
+
+Question one. Explain Triffin's dilemma as a bank run. What plays the role of deposits, what plays the role of the vault, and why does the system becoming more successful make it more fragile?
+
+Question two. Keynes's plan put pressure on surplus countries as well as deficit countries. Why did the Americans reject that in nineteen forty-four, and how did the lack of it come back to hurt the system in the late sixties?
+
+Question three. Using the trilemma, explain why the growth of the eurodollar market made the fixed pegs harder to hold, and why a doubted peg becomes a one-way bet for speculators.
+
+Question four. Why did the collapse of the London Gold Pool in nineteen sixty-eight, and the two-tier market that replaced it, amount to a major retreat even though the official price stayed at thirty-five dollars?
+
+Question five. Under a fixed exchange rate system anchored on the dollar, how did rising American inflation in the late sixties get transmitted to countries like Germany, and why did that give them a reason to stop holding dollars?
+
+That's the episode. Reply in the chat with your answers, and I'll grade them.
