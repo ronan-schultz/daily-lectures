@@ -7,6 +7,7 @@ The nightly run reads this before choosing a topic and appends to it after every
 - 2026-11-16, on episode 1: "liked the topic but didn't love it". Couldn't say why beyond it arriving late (it was rendered on demand at 5 AM). Still collecting signal: after a few episodes, ask him to rank them against each other.
 
 - 2026-11-16: added an afternoon series for his commute home. Lanes he picked: skills, how institutions work, and big psychology or sociology ideas mixed with history or biography. Wants the lanes mixed, not one fixed theme.
+- 2026-11-17: the voice (am_michael) bores him; wants it less monotone. Switched to af_heart (AM) and bm_george (PM) at 1.2x speed; scripts now ~3,500 words with more varied rhythm.
 
 ## Topic backlog: afternoon series (pick, don't repeat; rotate lanes)
 Skills: music theory for guitar, why chord progressions work, explained like a system; the science of cooking (Maillard reactions, emulsions, why recipes say what they say); how languages are built, why some are hard for English speakers, and what that implies for learning one.
