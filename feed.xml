@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>PM 006. Why chord progressions work: the guitar as a system</title>
+      <description>Harmonics and roughness (and the Tsimane study on how much consonance preference is learned), the Pythagorean comma and equal temperament, the fretboard as a lattice, Roman-numeral chords, the tritone engine of the five-seven resolution, and why rock's grammar breaks the classical rules.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Why do intervals with simple frequency ratios, like the octave and the fifth, tend to sound smoother than intervals with complicated ratios? Explain the mechanism in terms of harmonics, then explain why the Tsimane study means this mechanism alone doesn't explain why people enjoy resolution.
+2. Why can't any tuning system make every fifth and every octave perfectly pure at the same time? What does equal temperament give up, and what does it gain, by dividing the octave into twelve identical ratios?
+3. On a guitar, why can you slide a chord shape up the neck and get the same type of chord in a new key? And why does a shape need adjusting when it crosses from the G string to the B string?
+4. Why does the five seven chord pull so strongly to the one chord? Which two notes do the work, what interval do they form, and where does each one move?
+5. Rock progressions often use the flat seven chord in a major key. What does lowering that seventh scale degree remove from the harmony, and why might that make a resolution sound blunter or more settled rather than urgent?</description>
+      <itunes:summary>Harmonics and roughness (and the Tsimane study on how much consonance preference is learned), the Pythagorean comma and equal temperament, the fretboard as a lattice, Roman-numeral chords, the tritone engine of the five-seven resolution, and why rock's grammar breaks the classical rules.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Why do intervals with simple frequency ratios, like the octave and the fifth, tend to sound smoother than intervals with complicated ratios? Explain the mechanism in terms of harmonics, then explain why the Tsimane study means this mechanism alone doesn't explain why people enjoy resolution.
+2. Why can't any tuning system make every fifth and every octave perfectly pure at the same time? What does equal temperament give up, and what does it gain, by dividing the octave into twelve identical ratios?
+3. On a guitar, why can you slide a chord shape up the neck and get the same type of chord in a new key? And why does a shape need adjusting when it crosses from the G string to the B string?
+4. Why does the five seven chord pull so strongly to the one chord? Which two notes do the work, what interval do they form, and where does each one move?
+5. Rock progressions often use the flat seven chord in a major key. What does lowering that seventh scale degree remove from the harmony, and why might that make a resolution sound blunter or more settled rather than urgent?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/006-chord-progressions.mp3" length="7306077" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-006-chord-progressions</guid>
+      <pubDate>Wed, 18 Nov 2026 14:00:00 +0000</pubDate>
+      <itunes:duration>00:20:17</itunes:duration>
+      <itunes:episode>6</itunes:episode>
+    </item>
+    <item>
       <title>AM 005. How the grid holds 60 hertz, and how Texas nearly lost it</title>
       <description>Frequency as the grid's real-time supply-demand ledger, inertia and the swing equation, governor droop and automatic generation control, under-frequency load shedding, what actually failed in Texas in February 2021, and how inverter-based grids replace inertia on purpose.
 

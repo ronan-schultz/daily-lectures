@@ -1,0 +1,145 @@
+Why chord progressions work: the guitar as a system.
+
+Around 2009 a comedy band from Australia played a medley of dozens of hit songs, back to back, using the same four chords the whole way through. Journey, U2, the Beatles, and on and on. The joke landed because the audience could hear it was true. Four chords, in the same order, underneath decades of pop music.
+
+So here is the question for the next twenty minutes. Why those four? Why does a particular sequence of chords feel like it is going somewhere, and another feel like it is wandering? Is that physics, is it psychology, or is it just habit?
+
+The honest answer is all three, in layers. And the reason I want to give you this as a system, rather than as a list of rules to memorize, is that music theory is usually taught backwards. You get the rules first, the names second, and the reasons never. Once you see the reasons, the guitar neck stops looking like a wall of dots and starts looking like a coordinate grid.
+
+Here is the roadmap. First, the physics: why some combinations of notes sound smooth and others rough, and where that story is weaker than it is usually told. Second, how twelve notes got chosen, and the small numerical fudge sitting underneath every guitar ever made. Third, the guitar fretboard as a lattice, and why it is tuned the way it is. Fourth, how chords are built and why we label them with numbers instead of letters. Fifth, the engine of tension and release that drives a progression forward. And last, why rock and pop break the classical rules, and what that tells you about what the rules actually were.
+
+Let's start with sound.
+
+A plucked string vibrates at a fundamental frequency, but it does not vibrate only at that frequency. It also vibrates at twice that frequency, three times, four times, and so on, each one quieter. These are the harmonics, and their mix is a large part of why a guitar sounds different from a flute playing the same note.
+
+Now play two notes at once. If the second note is exactly twice the frequency of the first, every harmonic of the higher note lines up with a harmonic of the lower one. That interval is the octave, and it sounds so fused that most cultures treat the two notes as the same note, just higher.
+
+Next simplest ratio: three to two. That is the perfect fifth. Here a lot of the harmonics coincide, and the ones that don't are well separated. Then four to three, the perfect fourth. Then five to four, the major third. As the ratio gets more complicated, fewer harmonics line up, and more of them land close to each other without matching.
+
+That is the key. Two tones that are close but not identical in frequency interfere. You hear a fast wobble in loudness, called beating, and when the beating gets fast enough it stops sounding like a wobble and starts sounding like roughness. The nineteenth century physicist Hermann von Helmholtz built a whole theory of consonance on this. Smooth intervals are the ones whose harmonics either line up or stay out of each other's way. Rough intervals are the ones where harmonics crowd together.
+
+So far, so physical. Here is the catch.
+
+The popular version of this story says that consonance is simply built into the ear, that a C major chord sounds pleasant to every human the way sugar tastes sweet. That is an oversimplification. In 2016, Josh McDermott and colleagues published a study in Nature on the Tsimane, a group in the Bolivian Amazon with very little exposure to Western music. They could hear the difference between consonant and dissonant chords just fine. What they did not have was a preference. They rated the rough chords about as pleasant as the smooth ones. Listeners in the United States, especially those with musical training, showed a strong preference.
+
+So the honest model is this. Roughness is physical; you can measure it. Whether roughness feels bad, and whether resolving it feels good, is substantially learned. That distinction matters for the rest of this lecture, because the grammar of chord progressions sits much closer to the learned end than to the physical one.
+
+Part two. Where do twelve notes come from?
+
+Take the three to two ratio, the fifth, and keep stacking it. Start on C. A fifth up is G. A fifth above that is D, then A, then E, then B, and so on. Fold each result back down into a single octave by halving the frequency as many times as you need. After twelve fifths, you are back very nearly where you started, having touched twelve distinct pitches along the way. That is the chromatic scale, the twelve notes between one C and the next.
+
+Very nearly. Not exactly. Twelve pure fifths is three halves raised to the twelfth power, which comes out around one hundred and twenty nine point seven. Seven octaves is two to the seventh, which is one hundred and twenty eight. They miss by a bit more than one percent. In musical terms that gap is about a quarter of a semitone, and it has a name: the Pythagorean comma.
+
+You cannot make it go away. A power of three never equals a power of two. So any tuning system has to decide where to hide the error.
+
+For several centuries, the answer changed. Some tunings made a few keys beautifully in tune and left others unusable. The answer that eventually won, for fretted instruments and pianos, is equal temperament. You spread the error evenly. Every semitone becomes the same ratio: the twelfth root of two, about one point oh six. Twelve of them multiply to exactly two, so the octave is perfect. Everything else is slightly off.
+
+How slightly? Musicians measure in cents, a hundredth of a semitone. The equal tempered fifth is about two cents narrow of pure. Nobody hears that. The equal tempered major third is about fourteen cents wide of the pure five to four. That one is audible, if you know what to listen for. It is part of why a sustained major chord on a distorted electric guitar can sound oddly sour, and why heavy players lean on the power chord, which is just root and fifth, no third at all. Distortion generates a thick soup of extra frequencies, and the fifth is the interval that survives it cleanly.
+
+And here is the payoff of the trade. Because every semitone is identical, every key is identical. A progression in C and the same progression in F sharp are the same shape, just shifted. Equal temperament turns music into something translation invariant. Hold that thought, because the guitar exploits it ruthlessly.
+
+You can see the twelfth root of two in the hardware, too. Fret positions are spaced so that each fret shortens the vibrating string by that same ratio. That is why the frets get closer together as you go up the neck. The twelfth fret sits exactly at the halfway point of the string, because halving the length doubles the frequency. One octave, twelve frets, halfway.
+
+Part three. The fretboard as a grid.
+
+Picture the neck as a two dimensional lattice. Moving one fret along a string raises the pitch by one semitone. Moving across to the next higher string, at the same fret, raises it by five semitones, a perfect fourth. That is true for every pair of adjacent strings except one.
+
+Standard tuning, low to high, is E, A, D, G, B, E. E to A is a fourth. A to D, a fourth. D to G, a fourth. G to B is a major third, four semitones, not five. Then B to E is a fourth again.
+
+Why the kink? Why not tune all fourths and keep the grid perfectly regular?
+
+Two reasons, and they are trade-offs, not accidents. If you tuned in pure fourths all the way up, the top string would land on F instead of E, and the two outer strings would no longer be the same note two octaves apart. More importantly, the common open chords would need wider stretches. That one shortened step pulls the shapes back under a normal hand. Some players do tune in all fourths, precisely for the clean grid, and they pay for it in chord shapes.
+
+For you, the practical consequence is that a shape is a vector. A pattern of finger positions encodes a set of intervals, not a set of note names. Slide the whole shape up two frets and you have the same chord or scale, two semitones higher. The only adjustment you ever make is when a shape crosses that G to B boundary, where anything above it shifts up by one fret. Learn that one correction and the neck becomes almost entirely regular.
+
+This is also why guitarists can play in awkward keys that would scare a pianist. On a piano, each key has a different pattern of black and white notes under your fingers. On a guitar, there is no such thing as a hard key. There is only a different starting fret. A capo is the purest expression of this. Clamp it at the second fret and every open shape you know is transposed up a whole step, for free.
+
+Part four. Building chords, and why we number them.
+
+Start with the major scale. In C, it's the white keys of a piano: C, D, E, F, G, A, B. The thing that defines it is the pattern of gaps. Whole step, whole step, half step, whole, whole, whole, half. Any major scale, on any starting note, has that same pattern. That's the only definition you need.
+
+Now build chords out of it in the simplest possible way. Take any note of the scale, skip one, take the next, skip one, take the next. You get three notes, each a third apart. That is a triad.
+
+Do this starting on each of the seven scale degrees, using only notes from the scale, and something useful falls out. The chords built on the first, fourth and fifth degrees come out major. The chords on the second, third and sixth degrees come out minor. The chord on the seventh comes out diminished, which is two minor thirds stacked, tense and unstable.
+
+So in any major key, you get a fixed palette: major, minor, minor, major, major, minor, diminished. That sequence is identical in every key, because the scale's gap pattern is identical in every key.
+
+This is why musicians label chords with Roman numerals instead of letters. Capital numerals for major, lowercase for minor. The one chord, the four, the five, the six minor. In C, the one is C, the four is F, the five is G, the six minor is A minor. In G, the same numerals point to G, C, D and E minor.
+
+If you think in data terms, the Roman numerals are a normalization. Letter names are absolute coordinates. Numerals are coordinates relative to the key center. And once you strip out the absolute position, you can see that a huge number of songs share the same underlying sequence. Nashville session players formalized this into the Nashville number system, where a chart might just read one, five, six, four. The singer calls the key in the studio, and everybody plays it in that key immediately, without rewriting a thing.
+
+So, the four chords in that comedy medley? One, five, six minor, four. In C: C, G, A minor, F. In any key, the same relationships. That's what the audience was hearing as the same.
+
+Part five. The engine: tension and release.
+
+Now we can ask the real question. Why does a progression feel like it moves?
+
+The central mechanism lives in one chord: the five. And specifically, the five with a fourth note added on top, called the dominant seventh. In the key of C, that is G, B, D and F.
+
+Look at two notes in it. B and F. They are six semitones apart, exactly half an octave. That interval is the tritone. In equal temperament, its ratio is the square root of two, about as far from a small whole number ratio as an interval inside the octave can get. It is the least stable sound in the scale.
+
+Now look at where those two notes want to go. B is one semitone below C, the home note. F is one semitone above E, the third of the home chord. Each of them is a half step away from a note of the one chord. So when you go from G seven to C, the B steps up to C, and the F steps down to E. The tritone collapses inward into a stable major third. Two voices, each moving the smallest possible distance, landing squarely on home.
+
+That is the resolution you have heard ten thousand times at the end of songs, hymns and symphonies. And notice the mechanism is not that the five chord is mysterious. It is that the five chord contains the two notes of the scale that are closest, by a single semitone, to the two most important notes of the one chord. The B in particular is called the leading tone, and the name is literal. It leads.
+
+This idea, smallest possible movement between notes, is called voice leading, and it's the real reason progressions work. Think of each chord as a point, and each individual note within it as a separate voice that has to travel to the next chord. Good progressions are ones where the voices move short distances and the tension in the first chord gets released by the second.
+
+From there you can build a taxonomy. Classical theory sorts the diatonic chords into three functional families. Tonic chords feel like home: mainly the one, but also the six minor, which shares two of its three notes with the one. Predominant chords set up the move: the four and the two minor, which share two notes with each other. Dominant chords create the pull back home: the five, and the diminished chord on the seventh degree, which is basically a dominant seventh with the root removed, tritone included.
+
+The grammar of the classical era is roughly a cycle. Start at tonic, move out to predominant, go to dominant, and resolve home. Chords in the same family can stand in for each other because they share notes, so they sound like variations of the same function.
+
+That gives you a way to understand a few famous moves.
+
+The two, five, one, the backbone of jazz. In C, D minor, G seven, C. Each root falls by a fifth to the next. Falling fifths are the strongest root motion in this system, because each chord stands to the next one the way the five stands to the one. The ear hears each step as a small resolution leading into a bigger one. Jazz players chain these, sometimes for a whole song, moving through keys by falling fifths. That sequence of keys is the circle of fifths, and it's the same stacking of three to two ratios from part two, just walked downward.
+
+The deceptive cadence. You set up the five chord, everyone expects the one, and instead you land on the six minor. Why does it work instead of sounding wrong? Because the six minor shares two notes with the one, including the home note itself. The leading tone still resolves up to C. The resolution happens, but the floor is slightly different from the one you expected. Composers use it to extend a phrase, and songwriters use it for the gut punch moment in a ballad.
+
+And here's a way to frame the whole thing that may suit you. You can model chord progressions as a Markov chain over chord states. Corpus studies, where researchers count chord transitions across large sets of pieces, find that the transition matrix is very far from uniform. Some moves, like five to one, are extremely common. Others are rare. What a listener experiences as expectation is, in effect, a learned estimate of that matrix, and what they experience as surprise is a low probability transition. A good songwriter is trading off predictability, which gives you the satisfaction of resolution, against surprise, which keeps it from being boring.
+
+That model also explains the Tsimane result from earlier. If the pleasure of resolution comes from a learned model of what usually comes next, then someone who never learned the model won't feel the pull.
+
+Part six. Why rock breaks the rules.
+
+If the classical grammar were physics, rock and pop would obey it. They mostly don't.
+
+Go back to those four chords. One, five, six minor, four. Notice that the five goes to the six minor, a deceptive move, and the progression ends on the four going back to one. That last step, four to one, is called a plagal motion. In the classical system it's the weak cadence, the amen at the end of a hymn. In rock, it's everywhere, and arguably more central than five to one.
+
+Then there's a chord that is not even in the major scale: the flat seven. In C, that's B flat major. Progressions like flat seven, four, one are a rock staple. If you know the end of Hey Jude, with its long chanted coda, you've heard flat seven, four, one go round and round. The B flat is borrowed from a different mode of the scale, called mixolydian, which is just the major scale with its seventh note lowered. Lower the seventh and you lose the leading tone. You lose that half step pull up to the home note. And that is exactly the point. Rock often does not want the polite, urgent classical resolution. It wants something that sounds settled and a bit blunt.
+
+Another classic borrowing: the minor four. In a major key, swap the major four for a minor one. In C, F minor instead of F. One note changes. The A drops to A flat, which now sits a half step above G, the fifth of the home chord, and it falls into it. The result is that bittersweet, nostalgic sound you hear in a lot of Beatles songs and power ballads. Again, the mechanism is voice leading: a new half step relationship that wasn't in the scale before.
+
+The music theorist David Temperley has argued that in a lot of rock, melody and harmony are much more loosely coupled than in classical music. The vocal line can sit on notes that clash with the chord underneath for long stretches, and it doesn't feel like an error. In classical harmony, that would need resolving. In rock, it's part of the sound.
+
+So what were the classical rules, really? They were the grammar of one tradition, roughly from the late sixteen hundreds to the late eighteen hundreds in Europe, which happened to build an especially strong learned expectation around the dominant seventh and the leading tone. The physics underneath, the harmonic series and roughness, constrains what is easy to hear as stable. It does not dictate a grammar. Different traditions built different grammars on the same acoustics. Blues is a good example: it puts dominant seventh chords on the one, the four and the five, so every chord carries a tritone, and nothing ever fully resolves in the classical sense. That's not a mistake. That's the idiom.
+
+Let's make this practical before we wrap.
+
+If you are learning guitar and want this to be useful rather than abstract, here is the sequence I would suggest. Learn the major scale as a shape, not a list of notes, in one position on the neck. Learn the one, four, five and six minor chords in a single key, then use the fact that shapes are vectors and move the whole set to two other keys. Every time you learn a song, write its chords in Roman numerals, not letters. After ten or twenty songs, you will start to recognize the same few progressions underneath very different music, and you'll be able to guess the next chord before it arrives. And then spend real time with the five seven to one resolution on the top three or four strings, watching with your own fingers how the leading tone moves up one fret and the seventh moves down one. That one move is the heart of the system. Everything else is variations on it.
+
+Time to recap.
+
+Sound first. Harmonics explain why simple ratios like two to one and three to two sound smooth and crowded ratios sound rough. But the preference for smoothness, and the pleasure of resolving roughness, is substantially learned, as the Tsimane study showed.
+
+Then the twelve notes. Stacking fifths almost closes the circle but misses by the Pythagorean comma. Equal temperament spreads that error evenly using the twelfth root of two, slightly mistuning everything except the octave, especially the major third, but in exchange it makes every key identical.
+
+The guitar exploits that symmetry. The neck is a lattice of semitones along the string and fourths across, with one major third kink between G and B. Shapes encode intervals, so they are movable.
+
+Chords are stacked thirds from the scale, giving a fixed pattern of major, minor and diminished chords in every key. Roman numerals normalize away the key, which reveals that many songs share the same skeleton.
+
+Progressions move because of tension and voice leading. The dominant seventh contains a tritone whose two notes each sit a half step from a note of the home chord, so they collapse into it. Chords cluster into tonic, predominant and dominant families by shared notes. And a listener's expectations act like a learned transition matrix.
+
+Finally, rock and pop use a different grammar on the same acoustics: plagal motion, the flat seven, borrowed minor fours, and loose coupling between melody and harmony.
+
+Now, your five questions. Take a moment with each.
+
+Question one. Why do intervals with simple frequency ratios, like the octave and the fifth, tend to sound smoother than intervals with complicated ratios? Explain the mechanism in terms of harmonics, and then explain why the Tsimane study means this mechanism alone doesn't explain why people enjoy resolution.
+
+Question two. Why can't any tuning system make every fifth and every octave perfectly pure at the same time? And what does equal temperament give up, and what does it gain, by dividing the octave into twelve identical ratios?
+
+Question three. On a guitar, why can you slide a chord shape up the neck and get the same type of chord in a new key? And why does a shape need to be adjusted when it crosses from the G string to the B string?
+
+Question four. Explain why the five seven chord pulls so strongly to the one chord. Which two notes do the work, what interval do they form, and where does each one move?
+
+Question five. Rock progressions often use the flat seven chord in a major key. What does lowering that seventh scale degree remove from the harmony, and why might that make a resolution sound blunter or more settled rather than urgent?
+
+That's it for today. Reply with your answers when you get the chance, and enjoy the rest of the drive.
