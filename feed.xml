@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>AM 005. How the grid holds 60 hertz, and how Texas nearly lost it</title>
+      <description>Frequency as the grid's real-time supply-demand ledger, inertia and the swing equation, governor droop and automatic generation control, under-frequency load shedding, what actually failed in Texas in February 2021, and how inverter-based grids replace inertia on purpose.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Why does grid frequency drop when load exceeds generation? Where does the missing energy come from in the first few seconds, and why does that make frequency a system-wide signal of the supply and demand balance?
+2. Using the swing equation, why does replacing half of a grid's synchronous generation with solar and batteries make the same plant trip more dangerous, even with unchanged total capacity? Which part of the frequency response does it affect, and why?
+3. Why do governors use droop rather than every generator trying to hold exactly 60 hertz? What problem does droop solve, and what does it leave unsolved that automatic generation control fixes?
+4. Why is deliberately cutting power to customers the protective response when frequency falls too far? Describe the feedback loop load shedding interrupts, including how low frequency attacks a thermal plant's ability to keep running.
+5. In Texas in 2021, how did the natural gas system and the electric system make each other's failures worse, and why does that interdependence make a cold snap more dangerous than a count of frozen equipment suggests?</description>
+      <itunes:summary>Frequency as the grid's real-time supply-demand ledger, inertia and the swing equation, governor droop and automatic generation control, under-frequency load shedding, what actually failed in Texas in February 2021, and how inverter-based grids replace inertia on purpose.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Why does grid frequency drop when load exceeds generation? Where does the missing energy come from in the first few seconds, and why does that make frequency a system-wide signal of the supply and demand balance?
+2. Using the swing equation, why does replacing half of a grid's synchronous generation with solar and batteries make the same plant trip more dangerous, even with unchanged total capacity? Which part of the frequency response does it affect, and why?
+3. Why do governors use droop rather than every generator trying to hold exactly 60 hertz? What problem does droop solve, and what does it leave unsolved that automatic generation control fixes?
+4. Why is deliberately cutting power to customers the protective response when frequency falls too far? Describe the feedback loop load shedding interrupts, including how low frequency attacks a thermal plant's ability to keep running.
+5. In Texas in 2021, how did the natural gas system and the electric system make each other's failures worse, and why does that interdependence make a cold snap more dangerous than a count of frozen equipment suggests?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/005-grid-frequency.mp3" length="7860045" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-005-grid-frequency</guid>
+      <pubDate>Wed, 18 Nov 2026 09:00:00 +0000</pubDate>
+      <itunes:duration>00:21:49</itunes:duration>
+      <itunes:episode>5</itunes:episode>
+    </item>
+    <item>
       <title>PM 004. Why Bretton Woods collapsed</title>
       <description>The 1944 design and the Keynes versus White fight over symmetric adjustment, the short convertible era, Triffin's dilemma as a bank run, the 1960s patches (gold pool, capital controls, two-tier market, SDRs), the Nixon shock and Smithsonian, and the competing explanations for the collapse.
 

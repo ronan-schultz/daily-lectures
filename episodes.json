@@ -58,5 +58,20 @@
       "Why did the collapse of the London Gold Pool in 1968, and the two-tier market that replaced it, amount to a major retreat even though the official price stayed at $35?",
       "Under a fixed exchange rate system anchored on the dollar, how did rising American inflation in the late sixties get transmitted to countries like Germany, and why did that give them a reason to stop holding dollars?"
     ]
+  },
+  {
+    "number": 5,
+    "slug": "005-grid-frequency",
+    "title": "How the grid holds 60 hertz, and how Texas nearly lost it",
+    "series": "morning",
+    "date": "2026-11-18",
+    "summary": "Frequency as the grid's real-time supply-demand ledger, inertia and the swing equation, governor droop and automatic generation control, under-frequency load shedding, what actually failed in Texas in February 2021, and how inverter-based grids replace inertia on purpose.",
+    "questions": [
+      "Why does grid frequency drop when load exceeds generation? Where does the missing energy come from in the first few seconds, and why does that make frequency a system-wide signal of the supply and demand balance?",
+      "Using the swing equation, why does replacing half of a grid's synchronous generation with solar and batteries make the same plant trip more dangerous, even with unchanged total capacity? Which part of the frequency response does it affect, and why?",
+      "Why do governors use droop rather than every generator trying to hold exactly 60 hertz? What problem does droop solve, and what does it leave unsolved that automatic generation control fixes?",
+      "Why is deliberately cutting power to customers the protective response when frequency falls too far? Describe the feedback loop load shedding interrupts, including how low frequency attacks a thermal plant's ability to keep running.",
+      "In Texas in 2021, how did the natural gas system and the electric system make each other's failures worse, and why does that interdependence make a cold snap more dangerous than a count of frozen equipment suggests?"
+    ]
   }
 ]

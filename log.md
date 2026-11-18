@@ -29,3 +29,4 @@ Add new topics here as they come up, in the same categories or new ones.
 | 2 | 2026-11-16 | PM | Kahneman and Tversky: what they found, and what survived | pending | |
 | 3 | 2026-11-17 | AM | Gödel's incompleteness theorems (with callback on GPS clock bias) | pending | |
 | 4 | 2026-11-17 | PM | Why Bretton Woods collapsed (institutions lane) | pending | |
+| 5 | 2026-11-18 | AM | How the grid holds 60 Hz, and Texas 2021 (systems) | pending | |
