@@ -103,5 +103,20 @@
       "High-fidelity Cas9 variants are made by weakening the protein's non-specific contacts with the DNA backbone, not by changing the guide RNA. Explain why weakening a non-specific grip improves sequence specificity, and what you give up in exchange.",
       "The sickle cell therapy does not correct the sickle cell mutation. It breaks a regulatory element so that fetal hemoglobin is produced instead. Explain why that indirect approach was easier, in terms of the two DNA repair pathways and which cells they work in."
     ]
+  },
+  {
+    "number": 8,
+    "slug": "008-milgram-stanford-prison",
+    "title": "Milgram and the Stanford Prison Experiment: what they showed, and what they didn't",
+    "series": "afternoon",
+    "date": "2026-11-19",
+    "summary": "Milgram's obedience studies and their two dozen variations, what the Yale archives revealed (improvised prods, partial disbelief, a direct order that failed), why the Stanford Prison Experiment's famous conclusion collapsed, the BBC Prison Study and truncated replications, and engaged followership as the rival theory.",
+    "questions": [
+      "Across Milgram's variations, obedience ranged from nearly everyone to nearly no one. Pick three of the variations and explain what each one changed, and what that pattern tells you that a single headline number cannot.",
+      "Perry and colleagues found that participants who believed the learner was really in pain were more likely to defy the experimenter. Explain why that finding pushes the headline obedience rate in a particular direction, and why a post-experiment questionnaire is still weak evidence on its own.",
+      "The fourth prod, 'you have no other choice, you must go on', was the only direct order in Milgram's script, and it was the least effective. Why is that a problem for the agentic state theory, and how does engaged followership explain it?",
+      "Explain why the Stanford Prison Experiment, as run, could not support its famous conclusion that roles spontaneously turn ordinary people cruel. Name both a design flaw and something specific the archives revealed.",
+      "In the BBC Prison Study, tyranny eventually became a live possibility, but not the way Stanford suggested. What was the mechanism there, and how does it differ from the claim that a role by itself corrupts the person who plays it?"
+    ]
   }
 ]

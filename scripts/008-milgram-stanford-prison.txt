@@ -1,0 +1,143 @@
+Milgram and the Stanford Prison Experiment: what they showed, and what they didn't.
+
+In the summer of 1961, a man answered a newspaper ad in New Haven, Connecticut. Four dollars and fifty cents for an hour of your time, a study of memory and learning at Yale. He showed up, shook hands with another volunteer, a pleasant, slightly heavy middle-aged accountant, and drew a slip of paper to decide who would be the teacher and who would be the learner. He drew teacher. The draw was rigged. Both slips said teacher.
+
+Over the next hour, sitting in front of a gray box with thirty switches running from fifteen volts up to four hundred and fifty, the last two marked simply X X X, he would be asked to punish the learner's mistakes with steadily stronger shocks. And in the first published version of the study, about two out of every three people like him went all the way to the end.
+
+That number, roughly sixty five percent, became one of the most famous findings in all of social science. Ten years later, in a basement at Stanford, Philip Zimbardo ran a mock prison that had to be shut down after six days because the guards had turned cruel. Put those two together and you get a story most people absorb by the time they finish high school. Ordinary people, placed in the wrong situation, will do terrible things. Evil is mostly circumstance.
+
+Here is the catch. One of those two studies holds up far better than the other. And the one that holds up does not quite say what the textbook says it says.
+
+Here is the roadmap for the next twenty minutes. First, the world these experiments came out of, and the question they were trying to answer. Second, Milgram's design, and the part of his results most people never hear: the variations. Third, what the archives revealed when researchers went back through the tapes and files decades later. Fourth, the Stanford Prison Experiment, and why its reputation has collapsed. Fifth, the modern replications and the competing theories of what was actually going on. And to finish, what you can still take from all this, and what you should stop repeating.
+
+Part one. The question.
+
+Stanley Milgram was a young assistant professor at Yale, the son of Jewish immigrants from Eastern Europe, and he started his obedience work in the summer of 1961. That timing is not incidental. That spring, Adolf Eichmann, one of the chief administrators of the Holocaust, had gone on trial in Jerusalem. The world watched a man who had organized the deportation of millions present himself as a functionary. He moved paperwork. He followed orders.
+
+Two years later the political philosopher Hannah Arendt published her account of the trial, and gave the culture a phrase: the banality of evil. The idea that monstrous outcomes do not require monsters. They require ordinary people doing their jobs inside a system.
+
+Milgram wanted to test something close to that. Not whether Germans were uniquely obedient, which was a popular theory at the time, but whether ordinary Americans would hurt a stranger simply because someone with institutional authority told them to. His plan was actually to run the baseline in New Haven and then take the study to Germany for comparison. He never made the trip. The American numbers were startling enough.
+
+And it matters that the setting was a laboratory. In the early nineteen sixties, social psychology was hungry for clean, dramatic, controlled demonstrations. The prestige of the field was rising. A finding you could stage in a room, with a number at the end, carried enormous weight. Keep that in mind, because it shapes both of the stories we are about to tell.
+
+Part two. The design, and the variations.
+
+The setup worked like this. The participant, the teacher, read word pairs to the learner over an intercom. The learner, strapped into a chair in the next room with an electrode on his wrist, had to recall the matching word. Every wrong answer earned a shock, one step higher each time.
+
+The learner was a confederate, an actor. No shocks were delivered. The experimenter, played by a stern, gray-coated biology teacher, sat in the room with the participant. And as the voltage climbed, the learner protested, from recorded scripts so that every participant heard the same thing. Grunts first. Then, around one hundred and fifty volts, a demand to be let out. Then screams. And in the version that became the standard, past three hundred and thirty volts, silence. Silence that the experimenter instructed the teacher to treat as a wrong answer, and to shock again.
+
+When the teacher hesitated, the experimenter had a script too. A sequence of four prods, escalating. Please continue. The experiment requires that you continue. It is absolutely essential that you continue. And finally: You have no other choice, you must go on. If the participant refused after the fourth prod, the session ended.
+
+Before running the study, Milgram asked psychiatrists to predict the outcome. They guessed that only a tiny fraction, a pathological fringe, would go to the end. Instead, in the condition he published in nineteen sixty three, twenty six of forty men went all the way to four hundred and fifty volts.
+
+Now here is the part the textbook usually leaves out. Milgram did not run one experiment. He ran something like two dozen variations, with close to eight hundred participants in total, and he did it deliberately, turning dials one at a time to see what moved the number.
+
+And the number moved a lot.
+
+When the teacher had to physically press the learner's hand onto a shock plate, full obedience dropped to about thirty percent. When the experimenter left the room and gave orders by telephone, it fell to roughly one in five, and several participants cheated, quietly giving lower shocks than they were told to. When the study moved out of Yale, to a shabby office in nearby Bridgeport with no university name attached, obedience dropped to a little under half. When two other "teachers," also confederates, refused to go on, only about one participant in ten continued.
+
+And two variations are especially revealing. In one, the learner demanded to keep going while the experimenter called for a stop. Nobody continued. Not one person. In another, two experimenters disagreed with each other in front of the participant. Again, essentially everyone stopped.
+
+So pause and think about what that pattern means. If the lesson were simply "people obey," you would expect a high number everywhere. Instead you get a dial that ranges from nearly everyone to nearly no one, depending on the details. The finding is not a single number. It is a curve. And what drives the curve is something about the relationship between the participant, the authority, and the person on the other end. Proximity to the victim. Presence of the authority. Legitimacy of the institution. Whether anyone else breaks ranks.
+
+Milgram's own explanation was what he called the agentic state. When you enter a hierarchy, he argued, you stop seeing yourself as the author of your actions and start seeing yourself as an instrument of someone else's will. Responsibility flows upward. You worry about doing the task well, not about whether the task is right.
+
+Hold that theory loosely. We are going to come back and put pressure on it.
+
+Part three. The archives.
+
+Milgram died in nineteen eighty four. His papers, including audio recordings of sessions and thousands of pages of files, went to the archives at Yale. And starting in the two thousands, researchers began going through them. The most prominent was an Australian psychologist and writer named Gina Perry, whose book Behind the Shock Machine came out in twenty twelve. Others, including the British psychologists Alex Haslam and Stephen Reicher, and Stephen Gibson, who analyzed the recordings line by line, followed.
+
+Several things came out of that work.
+
+First, the experimenter improvised. The published account describes four standard prods, delivered in order. The recordings show the experimenter in some conditions going well off script, repeating prods many times, arguing, pressing harder on some people than others. That matters because it means the "standard" situation was less standardized than readers assumed, and some of the obedience may reflect a more insistent experimenter than the paper describes.
+
+Second, belief. Did participants really think they were hurting someone? Milgram sent out a follow-up questionnaire. By his own figures, a little over half said they fully believed the learner was receiving painful shocks. Most of the rest had some doubts. A minority were fairly sure it was fake. And here is the important part. When Perry and colleagues analyzed those questionnaires against behavior, in work published in twenty nineteen, the people who believed the learner was really in pain were substantially more likely to defy the experimenter. Roughly two and a half times as likely, by their estimate.
+
+Think about the direction of that effect. If obedience is concentrated among people who suspected the whole thing was staged, then the headline number overstates how many people would knowingly torture a stranger. Some of what looks like obedience is a person correctly guessing that Yale was not going to let anyone get electrocuted in an afternoon study.
+
+Now, be careful here too, because this cuts both ways. A post hoc questionnaire is not clean evidence either. People who went to four hundred and fifty volts have every reason to say, afterward, that they never really believed it. Doubt is a comforting thing to remember having had. So the archives do not refute Milgram. They complicate the number.
+
+Third, the prods. This finding is the most interesting, and it comes from two directions at once. In the recordings, the fourth prod, the only one that is a direct order, you have no other choice, you must go on, essentially never worked. When participants heard it, they tended to push back. I do have a choice. And they stopped.
+
+Jerry Burger, a psychologist at Santa Clara University, ran a partial replication in two thousand nine and saw the same thing. Of his participants who got the fourth prod, every single one refused to continue.
+
+Pause on how strange that is for the textbook story. A study famous for showing that people follow orders found that the one actual order in the script was the thing least likely to be followed. What kept people going were the softer prods, the ones that appealed to the experiment. The experiment requires that you continue. In other words, people were not complying with raw command. They were being persuaded that continuing served something worthwhile, and they were weighing that against the man in the next room.
+
+Fourth, ethics. Participants left the lab shaken. Some were not promptly told the shocks were fake, because Milgram worried that word would spread around New Haven and contaminate later sessions. The developmental psychologist Diana Baumrind published a sharp critique in nineteen sixty four arguing the study violated participants' trust and dignity. Milgram defended himself, and pointed to his follow-up survey, in which the large majority said they were glad to have taken part. That debate, along with far worse abuses in medical research, helped push American universities toward the ethics review boards that now approve every study involving human subjects. Which is a big part of why nobody can run the full Milgram protocol today.
+
+Part four. The Stanford Prison Experiment.
+
+Now jump ahead a decade, to August of nineteen seventy one. Philip Zimbardo, a psychology professor at Stanford, converted a stretch of basement hallway in the psychology building into a mock jail. Volunteers, all young men, mostly college students, were screened and randomly assigned to be guards or prisoners. They were paid fifteen dollars a day. The study was supposed to run for two weeks.
+
+The prisoners were picked up at their homes by real Palo Alto police officers, booked, and brought in blindfolded. They were given smocks and numbers instead of names. The guards got khaki uniforms, batons, and mirrored sunglasses. Zimbardo cast himself as prison superintendent.
+
+What followed is the part everyone knows. Within days, some guards became abusive. Prisoners were stripped, forced to do push ups, denied bathroom access, made to clean toilets with their hands. One prisoner had what looked like an emotional breakdown in the first couple of days and was released. A rebellion was put down. A guard nicknamed John Wayne, for his swaggering Southern drawl, became the face of casual cruelty. And on the sixth day, after a graduate student named Christina Maslach, who was dating Zimbardo and later married him, came in and was horrified by what she saw, he shut it down.
+
+The lesson drawn, for roughly forty years, was stark. Give ordinary people power inside a system that licenses abuse, and the situation will turn them into abusers. No orders needed. The role does it.
+
+Here is the problem. That lesson rests on the claim that the guards' behavior emerged spontaneously from the situation. And the evidence for that claim has fallen apart.
+
+Start with the basic scientific status. This was never a controlled experiment in the ordinary sense. There was no comparison condition. A single run, with roughly two dozen people, and with the lead researcher also playing a role inside the prison, directing events. Its first academic write-up appeared in nineteen seventy three, in a criminology journal, not one of psychology's flagship outlets. A lot of its fame came through Zimbardo's own lectures, slide shows, a documentary, and later testimony, including before Congress.
+
+Then the archives. In twenty eighteen, the French researcher Thibault Le Texier published a book built on Stanford's own records, and in twenty nineteen a version appeared in American Psychologist, the main journal of the American Psychological Association, titled, bluntly, Debunking the Stanford Prison Experiment.
+
+His central finding is about instructions. The guards were not left to discover cruelty on their own. Before the study began, there was an orientation, run by Zimbardo and by the undergraduate who played the warden, and the recording shows Zimbardo telling the guards, in effect, what kind of atmosphere to create. We can create boredom. We can create a sense of frustration. They were told the prisoners should feel powerless. The warden pushed guards who were too soft to be tougher. Many of the rules were copied from an earlier student class project. In other words, the experimenters supplied the script, and then reported the behavior as if the situation had produced it.
+
+Next, the guards themselves. The man known as John Wayne later said, more than once, that he had been consciously performing. He had seen the film Cool Hand Luke, he modeled his character on the cruel captain, and he believed he was helping the researchers get the result they wanted. Whether that account is fully reliable is hard to say. But it fits a pattern. A minority of guards were abusive. Others were fair. Some quietly did favors for the prisoners. The famous "guards turned cruel" summary describes some guards, not the guards.
+
+And the breakdown. The prisoner whose collapse became one of the most dramatic moments in the documentary footage told a journalist, decades later, that much of it had been an act. He wanted out, he said, partly so he could get back to studying for a graduate school exam, and when he was not released on request he decided to make himself impossible to keep. Zimbardo maintained the distress was real. Le Texier reads the records as making a performance likely. You can hold that one as contested.
+
+So what does the Stanford Prison Experiment actually show? At most, something like this: when a charismatic authority figure tells a group of young men what kind of prison he wants, sets up the costumes and rules, and signals approval for toughness, some of them will deliver it. That is not nothing. It might even be important. But it is a demonstration of leadership and demand, not of roles spontaneously corrupting people. It is almost the opposite of the headline.
+
+There is a real-world coda. After the abuse at Abu Ghraib prison in Iraq came to light in two thousand four, Zimbardo testified for the defense of one of the soldiers, and wrote a book arguing the situation, a bad barrel rather than bad apples, explained what happened. That argument about Abu Ghraib has defenders and critics on its own terms. But it is worth knowing how much weight it put on a study whose central mechanism we now have good reason to doubt.
+
+Part five. Replications, and a better theory.
+
+What happens when people try to do these studies again?
+
+For the prison, the most serious attempt was the BBC Prison Study, run by Alex Haslam and Stephen Reicher in two thousand two, filmed for television but designed with ethics oversight and real measurement. Crucially, nobody told the guards how to behave. The result was nothing like Stanford. The guards were uncomfortable with their power and failed to form a cohesive group. The prisoners did form one, with a shared identity, and they challenged the guards until the system collapsed into a short-lived egalitarian commune. When that commune struggled, some participants began calling for a much harder, authoritarian regime, and the study was ended. Tyranny did eventually come into view, but not because a role automatically switched people into cruelty. It came out of group failure and a hunger for order.
+
+For obedience, replication is harder, because you cannot ethically run the full shock protocol. Burger's solution in two thousand nine was to stop at one hundred and fifty volts. That is the moment the learner first demands to be released, and in Milgram's data, most people who went past it went all the way. Burger found that about seventy percent of his participants were willing to continue past that point, compared with about eighty three percent in Milgram's comparable condition. Lower, but not dramatically, and the difference was not statistically significant. A team in Poland ran a similar truncated version in the twenty tens and found high willingness to continue as well.
+
+So the core Milgram effect, that many ordinary people will go surprisingly far under institutional pressure, survives. What is less settled is the explanation.
+
+This is where Haslam and Reicher offer a rival theory, which they call engaged followership. Their argument is that Milgram's agentic state gets the psychology backwards. People were not switching off their moral agency and becoming instruments. They were actively identifying, to differing degrees, either with the experimenter and the scientific enterprise he represented, or with the learner suffering in the next room. Obedience, in this view, is a choice about whose side you are on, made by someone who believes, at least partly, that the project is worthwhile.
+
+Look at how much of the evidence that one idea organizes. Why does the direct order fail? Because "you have no choice" breaks the frame of a collaborative scientific project, and turns the experimenter into a bully. Why do the softer prods work? Because they invoke the shared goal. Why does obedience drop when the study moves from Yale to Bridgeport? Less identification with a prestigious scientific mission. Why does it drop when peers rebel, or experimenters disagree? Because now there is a competing group to identify with. Why does it drop when the victim is close? Because identification with him gets stronger.
+
+And it fits the Stanford story as revised. The guards who were cruel were not mindlessly playing roles. Several were, by their own accounts, trying to be good contributors to what they understood the researchers to want.
+
+Is engaged followership proven? No. It is a reinterpretation of old data plus some newer studies, and agentic-state defenders argue the two accounts overlap more than their proponents admit. But it makes sharper predictions, and so far the predictions have done reasonably well.
+
+There is also a historical cross-check. The historian Christopher Browning studied a German reserve police battalion that took part in mass shootings in Poland in nineteen forty two. Before the first massacre, the commander offered the men a chance to step out. Only about a dozen of roughly five hundred did. Browning's account points to conformity, careerism, and not wanting to leave the dirty work to comrades, more than fear of punishment. Other historians, reading the same records, have stressed ideology and antisemitism instead. And the broader scholarship on the Holocaust has moved away from the picture of perpetrators as passive order-followers. Many were inventive, zealous, and committed. Which, notice, is closer to engaged followership than to the agentic state. Eichmann, too, looks far less like a dull clerk once you read what he said and did outside the courtroom.
+
+Part six. What to keep, and what to drop.
+
+Let me pull this together.
+
+From Milgram, keep this. Ordinary people, under the right institutional pressures, will go much further in harming someone than they or anyone else predicts. That finding has survived archival scrutiny, ethical criticism, and partial replication. It is real.
+
+But drop the idea that it is a fixed number about human nature. Sixty five percent was one condition. Across conditions, obedience ranged from almost everyone to almost no one. The useful lesson is about which levers move it: distance from the victim, legitimacy of the institution, and above all whether anyone visibly dissents. One person breaking ranks has an outsized effect. That is a practical lesson, and you can use it.
+
+And drop the idea that people were simply following orders. The one blunt order in the script failed. People were persuaded, not commanded.
+
+From the Stanford Prison Experiment, keep much less. Keep it as a case study in how a dramatic demonstration can outrun its evidence. One run, no control group, an experimenter directing the behavior he then reported as spontaneous. The study's lasting value may be as a lesson about how science gets popularized, not about prisons.
+
+And underneath both, keep this question, because it is the one that survives everything. When you find yourself doing something you would not do alone, who are you identifying with, and who is doing the persuading?
+
+Let's recap. Milgram's obedience studies grew out of the Eichmann trial and the question of whether ordinary people would harm a stranger on institutional command. In his best-known condition about two thirds did, but across two dozen variations the rate swung from nearly all to nearly none, depending on proximity, legitimacy and dissent. The archives showed improvised prods, partial disbelief that was linked to more obedience, and a direct order that almost never worked. The Stanford Prison Experiment had no control condition, coached its guards, and featured a breakdown that may have been partly performed. The BBC Prison Study found guards reluctant rather than cruel. Truncated replications of Milgram still find substantial willingness to continue. And engaged followership reframes obedience as active identification with a cause, rather than surrendered agency.
+
+Now, five questions. Take your time with each.
+
+Question one. Across Milgram's variations, obedience ranged from nearly everyone to nearly no one. Pick three of the variations and explain what each one changed, and what that pattern tells you that a single headline number cannot.
+
+Question two. Perry and colleagues found that participants who believed the learner was really in pain were more likely to defy the experimenter. Explain why that finding pushes the headline obedience rate in a particular direction, and why a post-experiment questionnaire is still weak evidence on its own.
+
+Question three. The fourth prod, you have no other choice, you must go on, was the only direct order in Milgram's script, and it was the least effective. Why is that a problem for the agentic state theory, and how does engaged followership explain it?
+
+Question four. Explain why the Stanford Prison Experiment, as run, could not support its famous conclusion that roles spontaneously turn ordinary people cruel. Name both a design flaw and something specific the archives revealed.
+
+Question five. In the BBC Prison Study, tyranny eventually became a live possibility, but not the way Stanford suggested. What was the mechanism there, and how does it differ from the claim that a role by itself corrupts the person who plays it?
+
+That's the episode. Send your answers whenever you're ready.
