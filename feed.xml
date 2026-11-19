@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>AM 007. How CRISPR finds one sequence among three billion</title>
+      <description>CRISPR as a bacterial immune system, and the search problem at its core: how Cas9 finds one twenty-letter address in a three-billion-letter genome. The PAM handshake as a cheap reject, the directional R-loop zipper and why seed mismatches matter more, kinetic proofreading via the conformational gate, and why repair pathways (not the cut) decide what you can actually edit. Opens with a callback on GPS clock bias and the dual-frequency ionosphere trick.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Checking for the three-letter handshake only narrows the candidate sites by a factor of about eight, leaving hundreds of millions of positions in the human genome. Explain why this still makes the search tractable. What is the expensive operation that the handshake check protects, and why can the handshake be read without performing it?
+2. Cas9 is much less tolerant of mismatches near the handshake than of mismatches at the far end of the twenty-letter target, even though all twenty positions are logically equivalent as information. Explain the mechanism that creates this asymmetry.
+3. Why is it important that the conformational change licensing the cut happens only after the full-length match forms, rather than the protein cutting as soon as it is stably bound? Frame your answer in terms of what would go wrong with near-matches under the second design.
+4. High-fidelity Cas9 variants are made by weakening the protein's non-specific contacts with the DNA backbone, not by changing the guide RNA. Explain why weakening a non-specific grip improves sequence specificity, and what you give up in exchange.
+5. The sickle cell therapy does not correct the sickle cell mutation. It breaks a regulatory element so that fetal hemoglobin is produced instead. Explain why that indirect approach was easier, in terms of the two DNA repair pathways and which cells they work in.</description>
+      <itunes:summary>CRISPR as a bacterial immune system, and the search problem at its core: how Cas9 finds one twenty-letter address in a three-billion-letter genome. The PAM handshake as a cheap reject, the directional R-loop zipper and why seed mismatches matter more, kinetic proofreading via the conformational gate, and why repair pathways (not the cut) decide what you can actually edit. Opens with a callback on GPS clock bias and the dual-frequency ionosphere trick.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Checking for the three-letter handshake only narrows the candidate sites by a factor of about eight, leaving hundreds of millions of positions in the human genome. Explain why this still makes the search tractable. What is the expensive operation that the handshake check protects, and why can the handshake be read without performing it?
+2. Cas9 is much less tolerant of mismatches near the handshake than of mismatches at the far end of the twenty-letter target, even though all twenty positions are logically equivalent as information. Explain the mechanism that creates this asymmetry.
+3. Why is it important that the conformational change licensing the cut happens only after the full-length match forms, rather than the protein cutting as soon as it is stably bound? Frame your answer in terms of what would go wrong with near-matches under the second design.
+4. High-fidelity Cas9 variants are made by weakening the protein's non-specific contacts with the DNA backbone, not by changing the guide RNA. Explain why weakening a non-specific grip improves sequence specificity, and what you give up in exchange.
+5. The sickle cell therapy does not correct the sickle cell mutation. It breaks a regulatory element so that fetal hemoglobin is produced instead. Explain why that indirect approach was easier, in terms of the two DNA repair pathways and which cells they work in.</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/007-crispr-search.mp3" length="7087917" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-007-crispr-search</guid>
+      <pubDate>Thu, 19 Nov 2026 09:00:00 +0000</pubDate>
+      <itunes:duration>00:19:41</itunes:duration>
+      <itunes:episode>7</itunes:episode>
+    </item>
+    <item>
       <title>PM 006. Why chord progressions work: the guitar as a system</title>
       <description>Harmonics and roughness (and the Tsimane study on how much consonance preference is learned), the Pythagorean comma and equal temperament, the fretboard as a lattice, Roman-numeral chords, the tritone engine of the five-seven resolution, and why rock's grammar breaks the classical rules.
 

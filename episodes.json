@@ -32,14 +32,14 @@
   {
     "number": 3,
     "slug": "003-godel-incompleteness",
-    "title": "Gödel's incompleteness theorems: what they actually say",
+    "title": "G\u00f6del's incompleteness theorems: what they actually say",
     "series": "morning",
     "date": "2026-11-17",
-    "summary": "Opens with a callback on GPS clock bias. Hilbert's program, Gödel numbering and the diagonal lemma, both incompleteness theorems, the halting-problem route via Turing, and what the theorems don't say (nonstandard models, Presburger arithmetic, Gentzen, Lucas-Penrose).",
+    "summary": "Opens with a callback on GPS clock bias. Hilbert's program, G\u00f6del numbering and the diagonal lemma, both incompleteness theorems, the halting-problem route via Turing, and what the theorems don't say (nonstandard models, Presburger arithmetic, Gentzen, Lucas-Penrose).",
     "questions": [
-      "If the system is consistent, why must the Gödel sentence be true in the ordinary natural numbers, and why isn't it a contradiction that we can see it is true while the system can't prove it?",
-      "Gödel also proved first-order logic is complete. How can logic be complete while arithmetic is incomplete? What role do nonstandard models play?",
-      "If you add the Gödel sentence or the consistency sentence as a new axiom, why doesn't that rescue completeness?",
+      "If the system is consistent, why must the G\u00f6del sentence be true in the ordinary natural numbers, and why isn't it a contradiction that we can see it is true while the system can't prove it?",
+      "G\u00f6del also proved first-order logic is complete. How can logic be complete while arithmetic is incomplete? What role do nonstandard models play?",
+      "If you add the G\u00f6del sentence or the consistency sentence as a new axiom, why doesn't that rescue completeness?",
       "How does the unsolvability of the halting problem imply incompleteness, and where does the argument use the fact that the axioms are mechanically checkable?",
       "Gentzen proved Peano arithmetic consistent. Why doesn't that contradict the second incompleteness theorem, and why doesn't it fully deliver what Hilbert wanted?"
     ]
@@ -87,6 +87,21 @@
       "On a guitar, why can you slide a chord shape up the neck and get the same type of chord in a new key? And why does a shape need adjusting when it crosses from the G string to the B string?",
       "Why does the five seven chord pull so strongly to the one chord? Which two notes do the work, what interval do they form, and where does each one move?",
       "Rock progressions often use the flat seven chord in a major key. What does lowering that seventh scale degree remove from the harmony, and why might that make a resolution sound blunter or more settled rather than urgent?"
+    ]
+  },
+  {
+    "number": 7,
+    "slug": "007-crispr-search",
+    "title": "How CRISPR finds one sequence among three billion",
+    "series": "morning",
+    "date": "2026-11-19",
+    "summary": "CRISPR as a bacterial immune system, and the search problem at its core: how Cas9 finds one twenty-letter address in a three-billion-letter genome. The PAM handshake as a cheap reject, the directional R-loop zipper and why seed mismatches matter more, kinetic proofreading via the conformational gate, and why repair pathways (not the cut) decide what you can actually edit. Opens with a callback on GPS clock bias and the dual-frequency ionosphere trick.",
+    "questions": [
+      "Checking for the three-letter handshake only narrows the candidate sites by a factor of about eight, leaving hundreds of millions of positions in the human genome. Explain why this still makes the search tractable. What is the expensive operation that the handshake check protects, and why can the handshake be read without performing it?",
+      "Cas9 is much less tolerant of mismatches near the handshake than of mismatches at the far end of the twenty-letter target, even though all twenty positions are logically equivalent as information. Explain the mechanism that creates this asymmetry.",
+      "Why is it important that the conformational change licensing the cut happens only after the full-length match forms, rather than the protein cutting as soon as it is stably bound? Frame your answer in terms of what would go wrong with near-matches under the second design.",
+      "High-fidelity Cas9 variants are made by weakening the protein's non-specific contacts with the DNA backbone, not by changing the guide RNA. Explain why weakening a non-specific grip improves sequence specificity, and what you give up in exchange.",
+      "The sickle cell therapy does not correct the sickle cell mutation. It breaks a regulatory element so that fetal hemoglobin is produced instead. Explain why that indirect approach was easier, in terms of the two DNA repair pathways and which cells they work in."
     ]
   }
 ]
