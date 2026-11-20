@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>AM 009. The end of Dennard scaling: why clock speeds stopped rising</title>
+      <description>Why Moore's law (transistor counts) outlived Dennard scaling (constant power density): the constant-field arithmetic, the sixty-millivolt-per-decade Boltzmann limit and gate tunneling that froze voltage, the fixes from high-k metal gates to FinFETs and gate-all-around, and how multicore, dark silicon and specialized accelerators followed.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Under Dennard's constant-field scaling, walk through why power density stays constant. Which term in the dynamic power equation does the heavy lifting, and what happens to power density if voltage is held fixed while everything else scales?
+2. Why does the sixty millivolts per factor of ten limit not improve as transistors get smaller, and why does that limit put a floor under the supply voltage?
+3. High-k dielectrics let the gate insulator get physically thicker. Explain why a thicker layer helps with one problem while preserving performance, and name the leakage problem it does not solve.
+4. What problem does wrapping the gate around more of the channel solve, first with fins and then with nanosheets? Explain the mechanism in terms of who controls the barrier in the channel.
+5. Why can two cores at lower voltage and frequency deliver more throughput than one fast core for the same power, and why did dark silicon push design toward specialized accelerators rather than simply more general-purpose cores?</description>
+      <itunes:summary>Why Moore's law (transistor counts) outlived Dennard scaling (constant power density): the constant-field arithmetic, the sixty-millivolt-per-decade Boltzmann limit and gate tunneling that froze voltage, the fixes from high-k metal gates to FinFETs and gate-all-around, and how multicore, dark silicon and specialized accelerators followed.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Under Dennard's constant-field scaling, walk through why power density stays constant. Which term in the dynamic power equation does the heavy lifting, and what happens to power density if voltage is held fixed while everything else scales?
+2. Why does the sixty millivolts per factor of ten limit not improve as transistors get smaller, and why does that limit put a floor under the supply voltage?
+3. High-k dielectrics let the gate insulator get physically thicker. Explain why a thicker layer helps with one problem while preserving performance, and name the leakage problem it does not solve.
+4. What problem does wrapping the gate around more of the channel solve, first with fins and then with nanosheets? Explain the mechanism in terms of who controls the barrier in the channel.
+5. Why can two cores at lower voltage and frequency deliver more throughput than one fast core for the same power, and why did dark silicon push design toward specialized accelerators rather than simply more general-purpose cores?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/009-dennard-scaling.mp3" length="8213997" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-009-dennard-scaling</guid>
+      <pubDate>Fri, 20 Nov 2026 09:00:00 +0000</pubDate>
+      <itunes:duration>00:22:48</itunes:duration>
+      <itunes:episode>9</itunes:episode>
+    </item>
+    <item>
       <title>PM 008. Milgram and the Stanford Prison Experiment: what they showed, and what they didn't</title>
       <description>Milgram's obedience studies and their two dozen variations, what the Yale archives revealed (improvised prods, partial disbelief, a direct order that failed), why the Stanford Prison Experiment's famous conclusion collapsed, the BBC Prison Study and truncated replications, and engaged followership as the rival theory.
 

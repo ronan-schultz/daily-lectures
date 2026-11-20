@@ -118,5 +118,20 @@
       "Explain why the Stanford Prison Experiment, as run, could not support its famous conclusion that roles spontaneously turn ordinary people cruel. Name both a design flaw and something specific the archives revealed.",
       "In the BBC Prison Study, tyranny eventually became a live possibility, but not the way Stanford suggested. What was the mechanism there, and how does it differ from the claim that a role by itself corrupts the person who plays it?"
     ]
+  },
+  {
+    "number": 9,
+    "slug": "009-dennard-scaling",
+    "title": "The end of Dennard scaling: why clock speeds stopped rising",
+    "series": "morning",
+    "date": "2026-11-20",
+    "summary": "Why Moore's law (transistor counts) outlived Dennard scaling (constant power density): the constant-field arithmetic, the sixty-millivolt-per-decade Boltzmann limit and gate tunneling that froze voltage, the fixes from high-k metal gates to FinFETs and gate-all-around, and how multicore, dark silicon and specialized accelerators followed.",
+    "questions": [
+      "Under Dennard's constant-field scaling, walk through why power density stays constant. Which term in the dynamic power equation does the heavy lifting, and what happens to power density if voltage is held fixed while everything else scales?",
+      "Why does the sixty millivolts per factor of ten limit not improve as transistors get smaller, and why does that limit put a floor under the supply voltage?",
+      "High-k dielectrics let the gate insulator get physically thicker. Explain why a thicker layer helps with one problem while preserving performance, and name the leakage problem it does not solve.",
+      "What problem does wrapping the gate around more of the channel solve, first with fins and then with nanosheets? Explain the mechanism in terms of who controls the barrier in the channel.",
+      "Why can two cores at lower voltage and frequency deliver more throughput than one fast core for the same power, and why did dark silicon push design toward specialized accelerators rather than simply more general-purpose cores?"
+    ]
   }
 ]

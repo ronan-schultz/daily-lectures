@@ -33,3 +33,4 @@ Add new topics here as they come up, in the same categories or new ones.
 | 6 | 2026-11-18 | PM | Why chord progressions work: the guitar as a system (skills lane) | pending | |
 | 7 | 2026-11-19 | AM | How CRISPR finds one sequence among three billion (bio; callback on GPS clock bias + dual-frequency ionosphere) | pending | |
 | 8 | 2026-11-19 | PM | Milgram and the Stanford Prison Experiment: what held up (psychology lane) | pending | |
+| 9 | 2026-11-20 | AM | The end of Dennard scaling: why clock speeds stopped rising (physics/engineering) | pending | |

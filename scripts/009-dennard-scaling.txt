@@ -1,0 +1,123 @@
+In May of 2004, Intel cancelled a chip. It was called Tejas, and it was meant to succeed the Pentium 4. The plan was simple, and for thirty years the plan had always worked: take the next manufacturing process, shrink everything, and crank the clock higher. Tejas was supposed to push toward clock speeds that would have made the Pentium 4 look slow.
+
+It never shipped. The prototypes ran too hot. Not a little too hot. Hot in a way that no affordable cooler in a desktop case could handle.
+
+That cancellation is the moment most engineers point to when they say the free lunch ended. And the usual way people tell this story is "Moore's law died." Here is the catch. Moore's law did not die in 2004. Transistor counts kept doubling, more slowly, for another two decades. What died was something else, a quieter rule with a less famous name. It is called Dennard scaling, and understanding why it broke tells you more about modern computing than almost anything else. Why your laptop has many cores instead of one fast one. Why your phone has a dozen specialized blocks of silicon. Why chip companies now talk about performance per watt instead of gigahertz.
+
+Here is the roadmap. First, the two laws, and why people confuse them. Second, Dennard's argument itself, which is a beautiful piece of dimensional reasoning, and I will walk through the arithmetic in words. Third, the physics that broke it, which comes down to one stubborn number set by thermodynamics. Fourth, the engineering fight to keep shrinking anyway: new gate materials, fins, and transistors wrapped on all sides. And fifth, what the industry did once it accepted that frequency was capped: multicore, dark silicon, and specialization. Then a recap and five questions.
+
+Let's start with the two laws.
+
+In 1965, Gordon Moore, then at Fairchild Semiconductor, wrote a short article in Electronics magazine. He observed that the number of components on the most cost-effective integrated circuit was doubling roughly every year, and he guessed it would continue for about a decade. In 1975 he revised the pace to doubling about every two years. That is Moore's law. Notice what it is actually about. It is an economic observation about how many transistors you can afford to put on one chip. It says nothing about speed. Nothing about power.
+
+Nine years after Moore's article, in 1974, Robert Dennard and his colleagues at IBM published a paper with a very dry title about designing small ion-implanted transistors. Dennard is the same engineer who invented the one-transistor memory cell that every DRAM chip still uses. The 1974 paper answered a different question. Suppose you shrink a transistor. What happens to its speed, its power, and the heat it produces per square millimeter? And the answer was astonishing. If you shrink it the right way, everything gets better at once, and the heat per unit area stays exactly the same.
+
+That second rule is what made the golden age of computing. Moore's law gave you more transistors. Dennard scaling made each of those transistors faster and cheaper to run, without melting the chip. For roughly three decades, you got both. People blurred them together because they always arrived together. When one stopped and the other didn't, the blur became a misunderstanding.
+
+So what exactly did Dennard show?
+
+Start with the basic switch. A modern transistor in a logic chip is a field-effect transistor. There is a channel of silicon between two terminals, the source and the drain. Above the channel sits a gate, separated by a very thin insulating layer. Put a voltage on the gate, above some threshold, and it pulls charge carriers into the channel, and current flows. Drop the gate voltage below threshold, and the channel shuts off. On, off. A one and a zero.
+
+Now, what does it cost to flip that switch? The gate, the wires, and everything the transistor drives together behave like a small capacitor. Every time you switch, you charge or discharge that capacitance. The energy for one full charge and discharge cycle scales as the capacitance times the supply voltage squared. Multiply by how many times per second you switch, which is the clock frequency, and by the fraction of transistors actually switching on a given cycle, and you get dynamic power. So, in words: dynamic power is proportional to the activity factor, times the capacitance, times the voltage squared, times the frequency.
+
+Hold on to that voltage squared. It is going to be the hero of the first half of this story and the villain of the second.
+
+Dennard's idea was called constant-field scaling. Pick a shrink factor. The industry traditionally used about one point four per generation, because shrinking each linear dimension by one point four halves the area. Call that number the scaling factor. Dennard said: divide every length by the scaling factor. The gate length, the width, the thickness of the gate insulator, all of it. And then, the crucial move, divide the voltages by the scaling factor too. If lengths and voltages shrink together, the electric field inside the device, which is voltage over distance, stays constant. The physics inside the transistor looks the same. It is a smaller copy of the same device.
+
+Now run the bookkeeping, one quantity at a time.
+
+Capacitance scales with area divided by insulator thickness. Area shrinks by the scaling factor squared, thickness by the scaling factor, so capacitance shrinks by one scaling factor.
+
+Speed. The time to switch is roughly the charge you have to move divided by the current you can push. Charge is capacitance times voltage, so it shrinks by the scaling factor squared. Under constant field, the current also shrinks, but only by one scaling factor. So the switching delay shrinks by one scaling factor, and the frequency can rise by one scaling factor. Faster.
+
+Power per transistor. Capacitance down by one factor, voltage squared down by two factors, frequency up by one factor. Net: power per transistor falls by the scaling factor squared.
+
+And density. You can now fit the scaling factor squared more transistors in the same area.
+
+Put the last two together. Each transistor uses the scaling factor squared less power, and there are the scaling factor squared more of them per square millimeter. They cancel. Power density, watts per square millimeter, is constant.
+
+Sit with how good that is. Every generation, roughly every two years, you got twice the transistors, each one about forty percent faster, and the chip ran at the same temperature on the same cooling. You did not have to redesign anything clever to get the speedup. You just waited for the next process. That is the free lunch.
+
+In practice, the industry actually took more than the free lunch. Clock frequencies rose faster than Dennard alone would give, because architects also deepened pipelines, cutting each instruction into more, smaller stages so each stage could run on a faster clock. Through the 1990s, voltages stayed higher than ideal scaling would recommend, because higher voltage meant more speed. So power density was in fact creeping upward through that era, and chips went from needing no heat sink at all to needing a big one with a fan. The Pentium 4 pushed this hardest, with a very long pipeline designed to reach high clock rates. So when the floor gave way, the industry was already standing near the edge.
+
+Which brings us to the floor. Why did it give way?
+
+Look back at the recipe. Every length shrinks. Every voltage shrinks. That includes the threshold voltage, the gate voltage at which the transistor turns on. And to keep switching fast, the supply voltage has to stay comfortably above threshold, so if the supply falls, the threshold must fall too.
+
+Here is the problem. A transistor below threshold is not perfectly off. Some carriers in the source have enough thermal energy to hop over the energy barrier into the channel anyway. This is the same physics as evaporation: a liquid below its boiling point still loses some molecules, because a few of them sit out in the high-energy tail of the thermal distribution. For carriers in silicon, that tail is exponential, governed by the Boltzmann distribution. The number of carriers with enough energy to cross the barrier falls off exponentially with the height of the barrier divided by the thermal energy.
+
+So the off-state leakage current depends exponentially on the threshold voltage. And there is a hard limit on how steeply a conventional transistor can turn off. It is called the subthreshold swing: how many millivolts you must lower the gate voltage to cut the current by a factor of ten. For a conventional transistor at room temperature, the best you can possibly do is about sixty millivolts per factor of ten. That number comes straight from thermodynamics. It is the Boltzmann constant times temperature, divided by the electron charge, times the natural log of ten. In words: the thermal voltage, about twenty-six millivolts at room temperature, multiplied by about two point three.
+
+Notice what is missing from that formula. Nothing in it depends on the size of the transistor. Shrinking does not help. Temperature sets it, and your chip runs warm, not cold.
+
+Now see the trap. Say you want the off-current to be a million times smaller than the on-current. That is six factors of ten, so you need at least six times sixty, about three hundred and sixty millivolts, of swing between off and on. In reality, transistors are worse than the ideal, and you need margin for variation, so you need more. That puts a floor under the threshold voltage, and therefore a floor under the supply voltage. Every time engineers tried to lower the threshold by another hundred millivolts or so, leakage went up by something like a factor of ten.
+
+So around the 90 and 65 nanometer generations, in the mid-2000s, supply voltage stopped falling. It settled roughly around one volt and has drifted down only slowly since.
+
+Run Dennard's bookkeeping again with the voltage frozen. Capacitance still falls by one scaling factor. Density still rises by the scaling factor squared. But the voltage squared term, which used to give you two factors of savings, now gives you nothing. If you also raise frequency by one scaling factor, power density rises by the scaling factor squared every generation. Roughly doubling, every generation, on the same area. And that is before counting leakage, which by then was a large and growing share of total chip power, burning energy even when nothing was switching.
+
+You cannot double heat density every two years. Air cooling of a desktop chip tops out somewhere around a hundred watts or so per square centimeter before it gets impractical. The Pentium 4 was already near the edge. Tejas went over it. That is why it was cancelled.
+
+There was a second wall at the same time, and it is worth hearing because it is so physical. Dennard says shrink the gate insulator too. The insulator was silicon dioxide, and by the 90 and 65 nanometer generations it was only about one point two nanometers thick. That is roughly five atomic layers. At that thickness, electrons stop respecting the insulator. They quantum-mechanically tunnel straight through it. Tunneling probability depends exponentially on barrier thickness, so each further thinning multiplied gate leakage. The insulator could not get any thinner and still insulate.
+
+So two exponentials, both set by physics that does not care about your roadmap. Thermal leakage under the gate, and tunneling through it. The clean scaling recipe had run out.
+
+Now, a common misreading. People hear this and think transistors stopped shrinking in 2005. They didn't. What stopped was getting faster, lower-voltage transistors for free. The industry kept shrinking, but every step now needed a new invention. Let's go through the main ones, because each is a clever answer to one of those two walls.
+
+First, the gate insulator. If you cannot make the layer thinner, change its material. What the transistor cares about is capacitance: how strongly the gate couples to the channel. Capacitance is proportional to the dielectric constant of the insulator divided by its thickness. Silicon dioxide has a dielectric constant of about four. Hafnium-based oxides have a dielectric constant of roughly twenty to twenty-five. So you can make the hafnium layer several times physically thicker, which kills tunneling, while getting the same or better coupling. This is called high-k dielectric, k being the engineering letter for dielectric constant. It came with a companion change: the old polysilicon gate electrode didn't play well with hafnium oxide, so it was replaced with metal. Intel shipped high-k metal gate at its 45 nanometer generation in 2007. Gordon Moore himself called it the biggest change in transistor technology since the late 1960s.
+
+That fixed tunneling. It did not fix the thermal leakage under the gate, the sixty millivolt problem. And as the gate got shorter, a new version of that problem got worse.
+
+Here is the mechanism. In a planar transistor, the gate sits only on top of the channel. When the channel is long, the gate dominates the electrostatics. But when the channel gets very short, the drain, which sits at high voltage, is close enough to the source that its electric field reaches across and lowers the barrier on its own. Engineers call these short-channel effects. The gate loses control. The transistor turns off less sharply, its subthreshold swing gets worse than the ideal sixty, and leakage climbs. It is like trying to pinch off a garden hose by pressing on only one side of it, while the water pressure pushes back from the other.
+
+The fix is geometric: wrap the gate around more of the channel. Stand the channel up as a thin vertical fin and drape the gate over three sides of it. That is the FinFET. Intel introduced it at 22 nanometers, shipping in 2012, and called it tri-gate. The fin is thin enough that the gate controls it from both sides and the top, so no part of the channel is far from the gate. Control comes back, the swing gets closer to the ideal, and leakage at a given threshold falls.
+
+Fins carried the industry for about a decade. Then the next step was to wrap the gate all the way around. Take the channel and turn it into a few flat horizontal ribbons, stacked like the floors of a building, with gate material filling in above, below, and on both sides of each one. That is called gate-all-around, or nanosheet. Samsung was first into production with it at its 3 nanometer process in 2022. Intel and TSMC both reached volume production of gate-all-around processes in late 2025, Intel with its 18A process and TSMC with its N2. Intel also moved power delivery to the back of the wafer, so that the thick wires carrying current no longer compete for space with the delicate signal wires on top.
+
+And one honest footnote about those names. Three nanometer, two nanometer, 18A, which is meant to read as eighteen angstroms. None of those numbers is the length of anything on the chip anymore. Somewhere in the 2000s, node names became marketing labels that continued the old naming sequence, each new one roughly representing the density improvement a true shrink would once have delivered. The actual gate pitch on a so-called 3 nanometer process is closer to fifty nanometers. If you ever see an argument that hinges on silicon atoms being about a fifth of a nanometer apart, so a 2 nanometer transistor is only ten atoms wide, that argument is reading a brand name as a ruler.
+
+So shrinking continued, with heroic engineering, and density kept improving, though the gaps between generations stretched out and the cost per transistor stopped falling as reliably as it once did. But notice what none of these inventions changed. The sixty millivolt limit is still there. Fins and nanosheets let you approach it more closely; they don't beat it. So supply voltage is still stuck near a volt, and the voltage squared savings never came back. Clock speeds for mainstream processors have hovered in the range of three to five gigahertz for about twenty years.
+
+So the industry faced a new reality. Transistors keep coming. Each one is only modestly more efficient than the last. And the total power budget is fixed by cooling, or, in a phone, by the battery and by what's comfortable to hold. What do you do with all those transistors?
+
+The first answer, immediately after Tejas, was multicore. If you cannot make one core faster, put two on the die, then four, then many more. Here is the trick that makes it pay off, and it is the voltage squared term again, working backward. Suppose you run two cores, each at a somewhat lower frequency. A lower frequency lets you run at a somewhat lower voltage, because the transistors don't have to switch as fast. Since power goes with voltage squared times frequency, a modest cut in voltage and frequency cuts each core's power by much more than it cuts its speed. Two slower cores can deliver more total throughput than one fast core, for the same power. This is also why every modern chip constantly adjusts its own voltage and frequency, depending on load and temperature.
+
+The catch, of course, is that two cores only help if your work splits in two. A single sequential thread runs no faster. This is the point where the burden of performance moved from the chip makers to the programmers. Parallel software, threading, and the whole modern concurrency toolkit became mandatory rather than optional. And Amdahl's law sets the limit: if some fraction of the work must run serially, then no number of cores can speed you up beyond one divided by that serial fraction.
+
+But multicore runs into the same wall from a different direction. Each generation still gives you about twice the transistors, while the power per transistor improves by much less than half. So if you fill the chip with cores and switch them all on at full speed, you blow the power budget. A growing fraction of the chip must be idle, or running slowly, at any given moment. In 2011, a group of researchers at the University of Washington and elsewhere put a name on this in an influential paper: dark silicon. Their projections were that within a handful of generations, a large share of each chip, potentially a majority, would have to stay powered off at any instant.
+
+Here is where the story turns from loss to opportunity. If a large part of your chip has to be dark most of the time anyway, then it makes sense to fill that area with circuits that are each very good at one thing, and only light them up when that one thing is needed. A general-purpose core is wildly wasteful for any particular task: most of its energy goes into fetching instructions, decoding them, predicting branches, and shuffling data through registers, rather than the actual arithmetic. A dedicated circuit for, say, video decoding, or a matrix multiply, skips nearly all of that overhead and can be orders of magnitude more energy-efficient for its one job.
+
+That is why a modern phone chip is not a processor so much as a collection of processors. There are big cores and small cores, a graphics processor, an image signal processor for the camera, a neural engine, blocks for video encoding and decoding, cryptography, and more. Most of them are off most of the time. That is not a design compromise. That is the design. It is the dark silicon answer to the end of Dennard scaling.
+
+And the same logic, scaled up, explains the most important hardware story of this decade. Training and running large neural networks is overwhelmingly dense matrix arithmetic. GPUs, and dedicated chips like Google's tensor processing units, devote their area to vast arrays of multiply-accumulate units, cut down the control overhead, and lean on lower-precision number formats. Lower precision helps for the same reason everything else in this lecture does: a smaller multiplier has less capacitance, switches fewer bits, and spends less energy per operation. When raw transistor efficiency stopped improving quickly, the gains had to come from doing less work per useful result. Specialization and lower precision are exactly that.
+
+There is one more response worth naming: going vertical, and going modular. If you can't make transistors much better, you can at least stop wasting energy moving data. Moving a number across a chip, and especially off the chip to memory, often costs far more energy than doing arithmetic on it. So the industry now stacks memory directly next to or on top of processors, and builds big systems out of smaller dies called chiplets, joined in a single package. All of it aims to cut the distance data travels.
+
+What about beating the sixty millivolt limit itself? That is an active research area. There are tunnel transistors, which turn on by quantum tunneling rather than by carriers hopping over a thermal barrier, and so in principle aren't bound by the Boltzmann tail. There are negative-capacitance transistors, which use ferroelectric materials to amplify the gate's effect. Both have shown steep switching in the lab. Neither has produced a commercial logic process that beats conventional transistors on the combination of speed, current, and reliability. So I would treat those as real physics with an uncertain engineering future, not as something about to rescue the free lunch.
+
+Let's recap.
+
+Moore's law is about how many transistors you can afford on a chip. Dennard scaling is about what happens to each transistor when you shrink it. For about thirty years they arrived together, and people merged them in their heads.
+
+Dennard's constant-field recipe shrinks every length and every voltage by the same factor. Capacitance falls, delay falls, power per transistor falls by the factor squared, density rises by the factor squared, and so power density stays constant. The key ingredient was the voltage squared term in dynamic power.
+
+The recipe broke because voltage couldn't keep falling. Thermal carriers leak over the barrier with an exponential Boltzmann tail, so a conventional transistor can turn off no more steeply than about sixty millivolts per factor of ten at room temperature, and that limit has nothing to do with size. Lower the threshold, and leakage explodes. Meanwhile, the gate oxide got so thin that electrons tunneled through it. With voltage stuck near a volt, power density would have risen every generation, and the high-frequency roadmap, Tejas included, hit a thermal wall around 2004.
+
+Shrinking continued anyway, through new inventions. High-k metal gates fixed tunneling by using a physically thicker insulator with stronger coupling. FinFETs and then gate-all-around nanosheets restored the gate's control over very short channels. Node names became labels rather than measurements.
+
+And the architecture changed: multicore traded frequency for parallelism using the voltage squared term in reverse; dark silicon meant much of the chip had to be off; and that turned into specialization, from phone chips full of accelerators to the matrix engines that train large models.
+
+Now, five questions. Pause after each one and answer out loud before moving on.
+
+Question one. Under Dennard's constant-field scaling, walk through why power density stays constant. Which term in the dynamic power equation does the heavy lifting, and what happens to power density if voltage is held fixed while everything else scales?
+
+Question two. Why does the sixty millivolts per factor of ten limit not improve as transistors get smaller, and why does that limit, in turn, put a floor under the supply voltage?
+
+Question three. High-k dielectrics let the gate insulator get physically thicker. Explain why a thicker layer helps with one problem while still preserving the transistor's performance, and name the leakage problem it does not solve.
+
+Question four. What problem does wrapping the gate around more of the channel solve, first with fins and then with nanosheets? Explain the mechanism in terms of who controls the barrier in the channel.
+
+Question five. Explain why two cores, each at a lower voltage and frequency, can deliver more throughput than one fast core for the same power, and then explain why dark silicon pushed chip design toward specialized accelerators rather than simply more general-purpose cores.
+
+That's the lecture. Reply with your answers whenever you're ready.
