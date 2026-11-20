@@ -133,5 +133,20 @@
       "What problem does wrapping the gate around more of the channel solve, first with fins and then with nanosheets? Explain the mechanism in terms of who controls the barrier in the channel.",
       "Why can two cores at lower voltage and frequency deliver more throughput than one fast core for the same power, and why did dark silicon push design toward specialized accelerators rather than simply more general-purpose cores?"
     ]
+  },
+  {
+    "number": 10,
+    "slug": "010-shipping-container",
+    "title": "The shipping container: how a steel box rewired the world economy",
+    "series": "afternoon",
+    "date": "2026-11-20",
+    "summary": "Why the container only paid off once institutions changed around it: ICC regulation that kept transport modes apart, the committee fight over box sizes and corner fittings, the longshore deals that traded work rules for a share of the gains, port authorities and the Vietnam War, and what the evidence says about its effect on trade and supply-chain fragility.",
+    "questions": [
+      "In the break bulk era, why was the cost of trade concentrated in port rather than at sea, and what exactly did the container eliminate?",
+      "Why did the Interstate Commerce Commission's way of regulating transport make the container hard to exploit, and why did McLean have to give up control of his trucking company?",
+      "Why did the pioneers, Sea-Land with 35-foot boxes and Matson with 24-foot boxes, end up outside the standard sizes, and why would McLean's company release its corner-fitting patents for free?",
+      "What did West Coast longshoremen give up and get in the 1960 Mechanization and Modernization Agreement, and what is the main criticism of that kind of deal?",
+      "Why did containerization concentrate shipping in a few giant hub ports rather than spreading it out, and how does that connect to the supply-chain fragility seen during the pandemic?"
+    ]
   }
 ]

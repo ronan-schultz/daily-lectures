@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>PM 010. The shipping container: how a steel box rewired the world economy</title>
+      <description>Why the container only paid off once institutions changed around it: ICC regulation that kept transport modes apart, the committee fight over box sizes and corner fittings, the longshore deals that traded work rules for a share of the gains, port authorities and the Vietnam War, and what the evidence says about its effect on trade and supply-chain fragility.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. In the break bulk era, why was the cost of trade concentrated in port rather than at sea, and what exactly did the container eliminate?
+2. Why did the Interstate Commerce Commission's way of regulating transport make the container hard to exploit, and why did McLean have to give up control of his trucking company?
+3. Why did the pioneers, Sea-Land with 35-foot boxes and Matson with 24-foot boxes, end up outside the standard sizes, and why would McLean's company release its corner-fitting patents for free?
+4. What did West Coast longshoremen give up and get in the 1960 Mechanization and Modernization Agreement, and what is the main criticism of that kind of deal?
+5. Why did containerization concentrate shipping in a few giant hub ports rather than spreading it out, and how does that connect to the supply-chain fragility seen during the pandemic?</description>
+      <itunes:summary>Why the container only paid off once institutions changed around it: ICC regulation that kept transport modes apart, the committee fight over box sizes and corner fittings, the longshore deals that traded work rules for a share of the gains, port authorities and the Vietnam War, and what the evidence says about its effect on trade and supply-chain fragility.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. In the break bulk era, why was the cost of trade concentrated in port rather than at sea, and what exactly did the container eliminate?
+2. Why did the Interstate Commerce Commission's way of regulating transport make the container hard to exploit, and why did McLean have to give up control of his trucking company?
+3. Why did the pioneers, Sea-Land with 35-foot boxes and Matson with 24-foot boxes, end up outside the standard sizes, and why would McLean's company release its corner-fitting patents for free?
+4. What did West Coast longshoremen give up and get in the 1960 Mechanization and Modernization Agreement, and what is the main criticism of that kind of deal?
+5. Why did containerization concentrate shipping in a few giant hub ports rather than spreading it out, and how does that connect to the supply-chain fragility seen during the pandemic?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/010-shipping-container.mp3" length="7856013" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-010-shipping-container</guid>
+      <pubDate>Fri, 20 Nov 2026 14:00:00 +0000</pubDate>
+      <itunes:duration>00:21:49</itunes:duration>
+      <itunes:episode>10</itunes:episode>
+    </item>
+    <item>
       <title>AM 009. The end of Dennard scaling: why clock speeds stopped rising</title>
       <description>Why Moore's law (transistor counts) outlived Dennard scaling (constant power density): the constant-field arithmetic, the sixty-millivolt-per-decade Boltzmann limit and gate tunneling that froze voltage, the fixes from high-k metal gates to FinFETs and gate-all-around, and how multicore, dark silicon and specialized accelerators followed.
 
