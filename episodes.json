@@ -163,5 +163,20 @@
       "Why does soft decision decoding beat hard decision decoding, and in an LDPC decoder, why does the parity-check graph need to be sparse for belief propagation to work well?",
       "Quantum mechanics forbids copying an unknown state and disturbs a qubit when you measure it. How does quantum error correction get around both problems, and what is the significance of operating below the error threshold?"
     ]
+  },
+  {
+    "number": 12,
+    "slug": "012-science-of-cooking",
+    "title": "The science of cooking: why recipes say what they say",
+    "series": "afternoon",
+    "date": "2026-11-21",
+    "summary": "Heat as diffusion (time scales with thickness squared), the Maillard reaction and the searing myth, protein denaturation in eggs and meat, how salt and brining really work, emulsions and why mayonnaise is stiff, gluten, leavening and why bread stales in the fridge, and what Salt Lake's altitude does to all of it.",
+    "questions": [
+      "A recipe says a two inch roast needs about twice as long as a one inch roast. Using how heat diffuses into food, explain why that estimate is wrong, and why a very hot oven makes the overcooked outer band worse.",
+      "Why does a wet or crowded surface prevent browning even in a very hot pan, and if searing doesn't seal in juices, what is the actual reason to sear?",
+      "Steak and brisket are both beef. In terms of muscle fiber proteins and collagen, why should one be cooked fast and stopped early while the other needs hours, and why is a brisket pulled at a normal 'done' temperature tough?",
+      "Why does mayonnaise end up thick and spoonable when it's made of oil and a watery liquid, and why must the first oil go in drop by drop?",
+      "Bread goes stale after a day in the fridge but weighs almost the same. What happened inside it, why did the fridge speed that up, and why does warming it in the oven temporarily help?"
+    ]
   }
 ]

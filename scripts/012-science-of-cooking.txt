@@ -1,0 +1,131 @@
+The science of cooking: why recipes say what they say.
+
+Every recipe is a set of instructions written by someone who will not explain themselves. Pat the steak dry. Let the butter come to room temperature. Add the oil slowly, a few drops at a time. Rest the meat for ten minutes. Do not open the oven door.
+
+Most people follow these rules the way they follow airport security. You do it because you were told to, and you have a vague sense that something bad happens if you don't. But nearly every one of those instructions is a compressed piece of physics or chemistry. Somebody, at some point, burned something, split something, or collapsed something, and the rule is the scar tissue.
+
+So tonight we are going to decompress the scar tissue. The goal is not to make you a chef. The goal is to give you a small number of mechanisms that explain most of what a kitchen does, so that when a recipe tells you something strange, you can work out why. And when a recipe tells you something wrong, which happens more than you'd think, you can catch it.
+
+Here is the roadmap. First, heat: how it actually moves into food, and why thickness matters far more than you'd guess. Second, browning: the Maillard reaction, why it needs a dry surface, and the old myth about searing. Third, proteins: why an egg sets, why meat toughens and then tenderizes, and what salt really does. Fourth, emulsions: how mayonnaise holds oil and water together, and why it breaks. Fifth, starch and gluten: bread, cakes, and why your bread goes stale in the fridge. And because you live a mile up in Utah, we'll finish with what altitude does to all of this.
+
+Part one. Heat.
+
+Start with a question that sounds stupid. Why does a thick steak take so much longer than a thin one? The obvious answer is that there is more of it. But that answer gets the scaling wrong.
+
+Heat moves into the middle of a piece of food mostly by conduction, which is a diffusion process. And diffusion has a signature: the time it takes for heat to reach the center grows with the thickness squared, divided by a property of the material called the thermal diffusivity. Thermal diffusivity is just how fast temperature spreads through a substance, the conductivity divided by how much heat the material soaks up per unit volume. For meat, which is mostly water, it is small. Heat crawls.
+
+So double the thickness of a steak, and the time for the center to come up roughly quadruples. Not doubles. Quadruples. A one inch steak and a two inch steak are not the same problem at different sizes. They are different problems. That is why a thick roast in a hot oven ends up with a gray, overcooked band near the outside and a raw middle. By the time heat has crawled to the center, the outer layers have been sitting at high temperature for a very long time.
+
+Here is the catch that follows from this. The temperature of the oven and the temperature of the food are not the same thing, and the food does not care much about the oven. A three hundred and fifty degree oven does not mean your chicken is at three hundred and fifty degrees. The inside of the chicken is limited by the water in it, and it will sit well below the boiling point of water for most of the cook. The oven temperature mainly sets the gradient, how steep the difference is between surface and center. A hot oven is a steep gradient: brown outside, uneven inside. A low oven is a gentle gradient: even inside, pale outside.
+
+So a lot of modern technique is gradient management. Sous vide holds food in a water bath at exactly the target temperature, so it ends up evenly cooked edge to edge and cannot overshoot, and then you sear the outside briefly. The reverse sear does the same with an oven: cook low until the middle is nearly done, then blast the surface. Both decouple two jobs a single hot pan forces together, cooking the inside and browning the outside.
+
+And there's a related effect with a name you already know: carryover cooking. When you pull a roast out of the oven, the outside is much hotter than the center. That heat doesn't vanish. It keeps diffusing inward, so the center keeps climbing, sometimes by several degrees, for minutes after it leaves the heat. A big roast pulled at exactly your target temperature will overshoot it. The rule "pull it a few degrees early" is the diffusion equation, written for people who don't want to see the diffusion equation.
+
+Part two. Browning.
+
+If heat is the engine, the Maillard reaction is the reason anyone bothers to cook at high temperature at all.
+
+It is named after Louis Camille Maillard, a French chemist who described it around 1912 while studying how amino acids and sugars react. The reaction is between a reducing sugar, which is a sugar with a reactive group free to attack something, and an amino group, which comes from proteins or free amino acids. The first step joins them. After that, it is not one reaction but a sprawling, branching network: rearrangements, fragmentations, recombinations. It produces hundreds of different flavor compounds, and brown pigments called melanoidins. That network is why seared steak, toast, roasted coffee, the crust on bread, and fried onions all taste deep and savory in ways the raw ingredients don't.
+
+People often confuse it with caramelization, so let's separate them. Caramelization is what sugar does by itself when you heat it enough to break it down. No protein needed. Maillard needs both sugar and amino groups. A seared steak is mostly Maillard. A pot of caramel sauce is mostly caramelization. Onions, which have both sugars and amino acids, do some of each.
+
+Now here is the key fact about Maillard chemistry. It is strongly temperature dependent. It technically happens at lower temperatures too, very slowly, which is part of why some long braises and aged foods darken over time. But at practical cooking speeds, it really gets going once the surface is somewhere around one hundred forty Celsius, roughly two eighty five Fahrenheit, and it accelerates sharply above that.
+
+And remember what we just said about water. A wet surface cannot get above about a hundred degrees, because all the extra energy goes into evaporating the water instead of raising the temperature. So as long as there is liquid water sitting on the surface of your food, browning is effectively on hold. The pan is spending its energy boiling.
+
+Which is exactly why the recipe says to pat the steak dry. That's not fussiness. Every drop of surface water is a little heat sink that has to be boiled off before the surface can climb into browning territory. The same logic explains "don't crowd the pan." If you pack a pan with mushrooms or chunks of beef, they release water faster than it can evaporate, the pan floods, and you end up steaming them gray in their own juices. Spread them out, and the water flashes off, and the surfaces brown.
+
+It also explains a trick that sounds like witchcraft. A pinch of baking soda on onions makes them brown faster. Why? Because the Maillard reaction speeds up as you raise the p H, that is, as you make things more alkaline. Baking soda pushes the p H up. Pretzels get their deep mahogany crust the same way: they're dipped in an alkaline bath, traditionally a lye solution, before baking.
+
+Now the myth. For well over a century, cooks were taught that you sear meat to seal in the juices. The idea is often traced to the nineteenth century German chemist Justus von Liebig, who argued that a hot initial sear would close the surface and lock moisture inside. It is a lovely, intuitive story. It is also wrong, and has been tested repeatedly. Seared meat does not lose less moisture than unseared meat cooked to the same internal temperature. If anything, the high surface heat drives more moisture out. A seared crust is not waterproof. You can watch it sizzle, and the sizzle is water leaving.
+
+So should you stop searing? No. You sear because of Maillard flavor, not because of moisture. The practice was right. The explanation was wrong. That's a pattern you'll see a lot in cooking: traditions often encode real wisdom, wrapped in a made up mechanism.
+
+Part three. Proteins.
+
+Proteins are long chains of amino acids folded into specific shapes, held in place by relatively weak bonds. Heat shakes those weak bonds apart, and the protein unfolds. That's called denaturation. Once unfolded, the strands can tangle and bond to each other, forming a network that traps water. That's coagulation. It's the basic event in cooking an egg, a fish, or a piece of meat.
+
+An egg is the cleanest example, because different proteins in it let go at different temperatures. Egg white is a mix of proteins. One of them, ovotransferrin, starts setting at only around sixty two Celsius. The most abundant, ovalbumin, holds out until roughly eighty. Yolk proteins thicken somewhere in between, around the mid to high sixties. That staggered behavior is why a gently cooked egg can have a soft, barely set white and a runny yolk, and why holding an egg at around sixty three or sixty four degrees for an hour gives you that strange custard-like yolk people love. You are surgically choosing which proteins you let set.
+
+What about overcooking? As the protein network tightens with more heat, it squeezes. It literally wrings water out of itself. Overcooked scrambled eggs weep liquid onto the plate. An overcooked chicken breast is dry for the same reason. The proteins contracted and pushed the water out.
+
+Meat is more complicated, and this is where it gets interesting. Muscle has two very different protein systems that matter here.
+
+The first is the muscle fibers themselves, made largely of proteins called myosin and actin. Myosin starts to denature around fifty Celsius. That is the change from raw to rare, the meat firming up and turning opaque. Actin holds on until somewhere in the mid sixties to low seventies. And when actin goes, the fibers contract hard and squeeze out a lot of juice. That transition, from medium toward well done, is where meat starts to get noticeably drier and tougher.
+
+The second system is the connective tissue, mostly collagen. Collagen is a tough, rope-like triple helix that wraps the fibers and bundles them together. In a tenderloin there is very little of it. In a pork shoulder or a beef brisket, a working muscle, there is a lot. Heat collagen briefly, and it shrinks and toughens. But hold it hot and wet for a long time, and the helix unwinds and dissolves into gelatin. That conversion starts in roughly the same temperature range where actin contracts, and it takes hours.
+
+So here is the central tension of meat cookery, and it explains half of all meat recipes. The muscle fibers want to be cooked briefly and gently, because past a certain point they dry out. The collagen wants to be cooked for a long time, because otherwise it stays leathery. A tender cut with little collagen should be cooked fast and stopped early. A tough cut full of collagen should be cooked low and slow, for hours, long past the point where the fibers have technically dried out, because the gelatin that forms coats the fibers and makes the meat feel moist and falling apart even though the fibers themselves have given up their water.
+
+That's why you can grill a steak in eight minutes but a brisket takes twelve hours. And that's why a brisket pulled off the smoker at a perfectly normal "done" temperature is tough as a boot. The fibers are done. The collagen isn't.
+
+Now, salt. Recipes tell you to brine a turkey or salt a steak hours in advance. Why?
+
+The popular explanation is osmosis: salt water flows in, the meat gets wetter. That's an oversimplification, and partly backwards. Osmosis on its own would tend to pull water out of the meat toward the saltier solution. The real story is about the proteins. Salt, at the right concentration, partly dissolves and loosens some of the myosin-based structures in the muscle. The fibers swell, and the loosened protein holds on to more water. When you then cook it, the proteins can't squeeze as hard and as much of that water stays put. Brined meat can lose noticeably less weight during cooking.
+
+Dry brining, just salting the surface hours ahead, works on the same mechanism. At first, salt draws moisture out. You'll see a puddle. Then that salty liquid dissolves surface proteins and slowly gets pulled back in, carrying the salt deeper. Here's a practical consequence. If you salt a steak and cook it ten minutes later, you've caught it at the worst moment, with brine sitting on the surface, which is bad for browning. Either salt right before cooking, or give it a long time, ideally overnight.
+
+Part four. Emulsions.
+
+Oil and water don't mix. You know this. Shake them in a jar and they separate within seconds. Yet mayonnaise is about three quarters oil, held stably in a small amount of watery liquid from egg yolk and lemon juice or vinegar, and it can sit in your fridge for weeks. How?
+
+An emulsion is one liquid broken into tiny droplets and dispersed in another. Mayonnaise is an oil in water emulsion: droplets of oil suspended in a continuous water phase. Left alone, droplets bump into each other and merge, because a merged droplet has less total surface, and surface costs energy. Merging is downhill. That's why vinaigrette separates.
+
+What stops it is an emulsifier, a molecule with one end that likes water and another end that likes oil. It parks itself at the boundary, oil end in the droplet and water end sticking out. Now each droplet is wrapped in a coat. That coat lowers the energy cost of the surface and, just as importantly, stops droplets from fusing when they collide. Egg yolk is a superb emulsifier. You've probably heard that's because of lecithin, a phospholipid. Lecithin matters, but a lot of the work in a yolk is actually done by lipoprotein particles, little bundles of protein and fat that coat the droplets. Once again, the popular explanation is a piece of the truth.
+
+Now here is a beautiful bit of geometry. If you pack identical spheres randomly into a box, they fill at most roughly sixty four percent of the space. Mayonnaise is around seventy five to eighty percent oil. That's more oil than spheres can hold. So the droplets can't stay round. They get squashed against each other into little polyhedra, like foam bubbles, separated by thin films of water and emulsifier. And that crowding is why mayonnaise is thick and stands up on a knife, even though it's made of two thin liquids. The stiffness comes from packing. Add a little water and it loosens, because the droplets get room to round out.
+
+This is also why the recipe says add the oil slowly at first. At the start, there is very little water phase. If you pour in a lot of oil at once, there isn't enough continuous water to surround it, and you haven't yet broken it into small droplets. The oil just pools, and the emulsion never forms, or it inverts. Once you've built up a stable base of small droplets, you can add oil much faster, because each new bit of oil gets sheared into droplets and coated by an emulsifier that's already in place.
+
+Part five. Starch, gluten, and staling.
+
+Flour is mostly starch, plus some protein. Each does a different job.
+
+Start with the protein. Wheat flour contains two families of proteins, glutenins and gliadins. Dry, they do nothing. Add water and work the dough, and they link up into a stretchy network called gluten. Glutenin gives elasticity, the snap back. Gliadin gives extensibility, the ability to stretch without tearing. Kneading aligns and develops that network. In bread, you want a lot of it: a strong, elastic web that can trap the carbon dioxide made by yeast and inflate like a balloon.
+
+In a cake or a pie crust, you want the opposite. Too much gluten and the cake is chewy and the crust is tough. So these recipes do everything they can to stop gluten forming. They use lower protein flour. They tell you to mix "until just combined." And they use fat. Fat coats the proteins and keeps them from linking up, literally cutting the gluten strands short. That's where the word "shortening" comes from. A short pastry is one with short gluten strands.
+
+Now the leavening. Baking soda is sodium bicarbonate. On its own, it needs an acid to release carbon dioxide: buttermilk, yogurt, brown sugar, cocoa, lemon juice. If a recipe uses baking soda with no acid, or too much soda for the acid present, the leftover soda turns soapy and metallic, and, remember part two, it pushes the p H up, so the cake browns darker than you expected. Baking powder is baking soda with a dry acid already mixed in. Most supermarket baking powder is "double acting": one acid reacts as soon as it gets wet, another only once it gets hot in the oven. That two stage design gives you some forgiveness if the batter sits for a few minutes.
+
+And the room temperature butter? When you cream soft butter with sugar, the sharp sugar crystals cut tiny air pockets into the fat. Those pockets become the seeds that baking soda and steam later inflate. Cold butter is too hard to trap air. Melted butter can't hold the bubbles at all. The rule is about the physical state of fat at about twenty degrees Celsius, where it's plastic enough to fold around air. It's foam engineering.
+
+Now the starch. Starch comes in granules, tightly packed and partly crystalline. Heat them with water, and somewhere around sixty to seventy Celsius, depending on the starch, they swell, absorb water, and their ordered structure breaks down. That's gelatinization. It's why flour thickens gravy, why rice softens, and why bread sets from a wet dough into a solid crumb.
+
+And here is my favorite misconception in the kitchen. Why does bread go stale? Most people think it dries out. Mostly, it doesn't. Stale bread can have nearly the same water content as fresh bread. What happens is that the gelatinized starch slowly recrystallizes as it cools and sits, squeezing out of its disordered, water-rich state into tighter, more ordered regions. That's called retrogradation, and it makes the crumb firm and crumbly.
+
+Here's the twist. Retrogradation runs fastest at refrigerator temperatures, not at room temperature. So putting bread in the fridge to keep it fresh actually stales it faster. The freezer is cold enough to nearly stop the process, which is why frozen bread keeps well. And because retrogradation is partly reversible with heat, a stale loaf warmed in the oven gets soft again for a little while. You've just re-gelatinized the starch.
+
+Part six. Altitude, because you live a mile up.
+
+Salt Lake City sits at a bit over four thousand feet. Up there, air pressure is lower, and water boils at a lower temperature. A rough rule is that the boiling point drops about one degree Fahrenheit for every five hundred feet you climb. So in the valley, water boils at roughly two hundred and three Fahrenheit, about ninety five Celsius, instead of two hundred and twelve. Go up to a ski town at eight or nine thousand feet, and it's closer to ninety degrees Celsius.
+
+Everything we covered tonight runs through that number. Pasta and beans take longer, because the boiling water is cooler. A "hard boiled" egg needs more time, because the water is several degrees colder, and you're closer to the slow, lower end of the egg protein range. And here's a fun inversion: since a wet surface can't exceed the boiling point, steaming and boiling are a bit gentler up there.
+
+Baking gets the strangest. With lower air pressure, gas bubbles in a batter expand more for the same amount of carbon dioxide, and water evaporates faster. So cakes rise fast, then collapse, because the bubbles grow before the starch and protein structure has set enough to hold them. The usual high altitude fixes all follow: a bit less leavening so the bubbles don't overinflate, a bit less sugar because sugar weakens structure and concentrates as water evaporates, a bit more liquid, and a slightly hotter oven so the structure sets sooner. None of those rules is arbitrary. Each one is a correction to a specific physical effect.
+
+Let's recap.
+
+Heat moves into food by diffusion, so cooking time scales with thickness squared, not thickness. The oven temperature sets a gradient, and modern technique like sous vide and the reverse sear is about controlling that gradient. Carryover cooking is just heat that hasn't finished diffusing.
+
+Browning is mostly the Maillard reaction between sugars and amino groups, and it needs a surface well above the boiling point of water, which is why dry surfaces and uncrowded pans matter, and why raising the p H speeds it up. Searing makes flavor, not a seal.
+
+Proteins unfold and tangle when heated, and different proteins let go at different temperatures, which is how you control an egg. In meat, muscle fibers want short, gentle cooking, while collagen wants long, wet cooking to turn into gelatin. Salt works mainly by loosening muscle proteins so they hold more water, not just by osmosis.
+
+Emulsions hold oil in water using molecules that sit at the boundary. Mayonnaise is stiff because its oil droplets are packed beyond what spheres can fill, and adding oil slowly at the start builds the continuous phase the emulsion needs.
+
+Gluten is a stretchy network you want strong in bread and short in pastry. Baking soda needs acid; baking powder brings its own. Bread stales mostly by starch recrystallization, fastest in the fridge. And altitude lowers the boiling point, which ripples through boiling, braising and baking.
+
+Now, five questions. Take a moment with each one.
+
+Question one. A recipe tells you a two inch thick roast needs about twice as long as a one inch roast. Using the way heat diffuses into food, explain why that estimate is wrong, and why a very hot oven makes the problem of an overcooked outer band worse.
+
+Question two. Why does a wet or crowded surface prevent browning, even in a very hot pan? And if searing doesn't seal in juices, what is the actual reason to sear?
+
+Question three. A steak and a brisket are both beef. Explain, in terms of muscle fiber proteins and collagen, why one should be cooked fast and stopped early while the other needs hours, and why a brisket pulled at a normal "done" temperature is tough.
+
+Question four. Why does mayonnaise end up thick and spoonable when it's made of oil and a watery liquid, and why does the recipe insist the first oil goes in drop by drop?
+
+Question five. Your bread feels stale after a day in the fridge, but it weighs almost the same as when you bought it. What happened inside it, why did the fridge speed that up, and why does warming it in the oven temporarily help?
+
+Reply with your answers whenever you're ready. Enjoy the drive home.

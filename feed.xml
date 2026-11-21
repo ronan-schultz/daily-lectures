@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>PM 012. The science of cooking: why recipes say what they say</title>
+      <description>Heat as diffusion (time scales with thickness squared), the Maillard reaction and the searing myth, protein denaturation in eggs and meat, how salt and brining really work, emulsions and why mayonnaise is stiff, gluten, leavening and why bread stales in the fridge, and what Salt Lake's altitude does to all of it.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. A recipe says a two inch roast needs about twice as long as a one inch roast. Using how heat diffuses into food, explain why that estimate is wrong, and why a very hot oven makes the overcooked outer band worse.
+2. Why does a wet or crowded surface prevent browning even in a very hot pan, and if searing doesn't seal in juices, what is the actual reason to sear?
+3. Steak and brisket are both beef. In terms of muscle fiber proteins and collagen, why should one be cooked fast and stopped early while the other needs hours, and why is a brisket pulled at a normal 'done' temperature tough?
+4. Why does mayonnaise end up thick and spoonable when it's made of oil and a watery liquid, and why must the first oil go in drop by drop?
+5. Bread goes stale after a day in the fridge but weighs almost the same. What happened inside it, why did the fridge speed that up, and why does warming it in the oven temporarily help?</description>
+      <itunes:summary>Heat as diffusion (time scales with thickness squared), the Maillard reaction and the searing myth, protein denaturation in eggs and meat, how salt and brining really work, emulsions and why mayonnaise is stiff, gluten, leavening and why bread stales in the fridge, and what Salt Lake's altitude does to all of it.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. A recipe says a two inch roast needs about twice as long as a one inch roast. Using how heat diffuses into food, explain why that estimate is wrong, and why a very hot oven makes the overcooked outer band worse.
+2. Why does a wet or crowded surface prevent browning even in a very hot pan, and if searing doesn't seal in juices, what is the actual reason to sear?
+3. Steak and brisket are both beef. In terms of muscle fiber proteins and collagen, why should one be cooked fast and stopped early while the other needs hours, and why is a brisket pulled at a normal 'done' temperature tough?
+4. Why does mayonnaise end up thick and spoonable when it's made of oil and a watery liquid, and why must the first oil go in drop by drop?
+5. Bread goes stale after a day in the fridge but weighs almost the same. What happened inside it, why did the fridge speed that up, and why does warming it in the oven temporarily help?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/012-science-of-cooking.mp3" length="7693005" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-012-science-of-cooking</guid>
+      <pubDate>Sat, 21 Nov 2026 14:00:00 +0000</pubDate>
+      <itunes:duration>00:21:22</itunes:duration>
+      <itunes:episode>12</itunes:episode>
+    </item>
+    <item>
       <title>AM 011. Error-correcting codes: from Shannon's limit to your phone</title>
       <description>Shannon's noisy channel theorem and why capacity is a cliff, Hamming's self-locating parity checks, Reed-Solomon polynomials and why erasures cost half what errors do, then turbo codes, Gallager's rediscovered LDPC codes and polar codes in 5G, ending with quantum error correction. Opens with a callback on GPS's eccentricity correction.
 
