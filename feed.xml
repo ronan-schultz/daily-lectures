@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>AM 011. Error-correcting codes: from Shannon's limit to your phone</title>
+      <description>Shannon's noisy channel theorem and why capacity is a cliff, Hamming's self-locating parity checks, Reed-Solomon polynomials and why erasures cost half what errors do, then turbo codes, Gallager's rediscovered LDPC codes and polar codes in 5G, ending with quantum error correction. Opens with a callback on GPS's eccentricity correction.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Repetition codes can drive the error rate down, so what exactly did Shannon's theorem claim that repetition cannot do, and why does his random coding argument not hand engineers a usable code?
+2. In the seven-four Hamming code, why do three parity checks suffice to locate a single error among seven bits, and what property of the way the checks are assigned makes the syndrome equal to the error's position?
+3. A Reed-Solomon code with a given number of redundant symbols can fix twice as many erasures as errors. Explain why, in terms of unknowns and equations, and explain how interleaving plus erasure flagging lets a CD survive a long scratch.
+4. Why does soft decision decoding beat hard decision decoding, and in an LDPC decoder, why does the parity-check graph need to be sparse for belief propagation to work well?
+5. Quantum mechanics forbids copying an unknown state and disturbs a qubit when you measure it. How does quantum error correction get around both problems, and what is the significance of operating below the error threshold?</description>
+      <itunes:summary>Shannon's noisy channel theorem and why capacity is a cliff, Hamming's self-locating parity checks, Reed-Solomon polynomials and why erasures cost half what errors do, then turbo codes, Gallager's rediscovered LDPC codes and polar codes in 5G, ending with quantum error correction. Opens with a callback on GPS's eccentricity correction.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Repetition codes can drive the error rate down, so what exactly did Shannon's theorem claim that repetition cannot do, and why does his random coding argument not hand engineers a usable code?
+2. In the seven-four Hamming code, why do three parity checks suffice to locate a single error among seven bits, and what property of the way the checks are assigned makes the syndrome equal to the error's position?
+3. A Reed-Solomon code with a given number of redundant symbols can fix twice as many erasures as errors. Explain why, in terms of unknowns and equations, and explain how interleaving plus erasure flagging lets a CD survive a long scratch.
+4. Why does soft decision decoding beat hard decision decoding, and in an LDPC decoder, why does the parity-check graph need to be sparse for belief propagation to work well?
+5. Quantum mechanics forbids copying an unknown state and disturbs a qubit when you measure it. How does quantum error correction get around both problems, and what is the significance of operating below the error threshold?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/011-error-correcting-codes.mp3" length="7714173" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-011-error-correcting-codes</guid>
+      <pubDate>Sat, 21 Nov 2026 09:00:00 +0000</pubDate>
+      <itunes:duration>00:21:25</itunes:duration>
+      <itunes:episode>11</itunes:episode>
+    </item>
+    <item>
       <title>PM 010. The shipping container: how a steel box rewired the world economy</title>
       <description>Why the container only paid off once institutions changed around it: ICC regulation that kept transport modes apart, the committee fight over box sizes and corner fittings, the longshore deals that traded work rules for a share of the gains, port authorities and the Vietnam War, and what the evidence says about its effect on trade and supply-chain fragility.
 

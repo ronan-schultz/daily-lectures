@@ -1,0 +1,157 @@
+Take a compact disc and drag a key across the shiny side. Not gently. Leave a real scratch, a few millimeters long. Put it in a player, and in most cases the music plays as if nothing happened.
+
+That should bother you. The scratch destroyed thousands of bits. Not corrupted them in some subtle way. Destroyed them. The laser reads garbage. And yet what comes out of the speaker is bit for bit what was recorded.
+
+Now go further out. A spacecraft beyond the planets talks to Earth with a transmitter of a few tens of watts, from billions of kilometers away. By the time the signal reaches a dish on the ground, it is buried far beneath the hiss of the receiver itself. And we decode it. Reliably.
+
+Both of these are the same trick. Tonight is about that trick: error-correcting codes. How you add redundancy to a message so cleverly that the receiver can not only notice damage, but locate it and undo it. And why there is a hard ceiling, proved in 1948, on how fast you can do this, and how it took engineers about fifty years to actually reach it.
+
+First, a quick callback to episode one, on GPS. One question asked why the relativistic correction for a satellite's slightly elliptical orbit cannot be handled like the big constant clock offset. The constant part is the same every moment, so it is baked into the satellite clock before launch. The eccentricity part is not constant. Near the low point of the orbit, the satellite moves faster and sits deeper in the gravity well, so its clock runs slow; near the high point, it runs fast. That term oscillates once per orbit, and a fixed offset cannot cancel something that changes sign. So the receiver computes it on the fly from the broadcast orbit parameters. The general lesson: if a nuisance is constant, absorb it. If it varies predictably, model it. If it is unknown, make it an unknown and solve for it.
+
+Hold on to that last phrase. It is going to come back in a very literal way.
+
+Here is the roadmap. Part one, Claude Shannon's theorem, which sounds impossible and is true. Part two, Richard Hamming, and a code where the error spells out its own address. Part three, Reed-Solomon codes, the polynomial idea behind CDs and QR codes. Part four, the long road back to Shannon's limit, and a forgotten thesis that now runs your phone. Part five, what the popular version gets wrong, and what changes when the bits are quantum.
+
+Part one. Shannon's shock.
+
+Start with the naive picture of noise. You send a stream of bits over a channel. Each bit has some small probability of being flipped, say one in a hundred. You want fewer errors. What do you do?
+
+The obvious answer is repetition. Send every bit three times and take a majority vote. Now a bit only comes out wrong if two of its three copies flip, which happens roughly three times one in a hundred squared, around three in ten thousand. Better. Want it better still? Send each bit five times. Seven. A hundred.
+
+And here is the catch. Every time you push the error rate down, your useful throughput falls. Send each bit a hundred times and you are moving data at one percent of the raw speed. To drive the error rate all the way to zero, repetition drives your rate all the way to zero too. Before 1948, engineers broadly assumed this trade-off was fundamental. Reliability costs bandwidth, and perfect reliability costs everything.
+
+Then Shannon, at Bell Labs, published "A Mathematical Theory of Communication." Among other things, it contains the noisy channel coding theorem, and it says the intuition is wrong.
+
+Every channel has a number called its capacity. For any rate below that capacity, there exist codes whose probability of error can be made as small as you like. Not small. As small as you like. And for any rate above capacity, you cannot, no matter how clever you are.
+
+So the trade-off is not a smooth slope down to zero. It is a cliff. Below the capacity, reliability is essentially free, if you are willing to work for it. Above it, it is impossible.
+
+For the simple channel where each bit flips independently, the capacity is one minus the binary entropy of the flip probability, where binary entropy is the uncertainty, in bits, of a coin that lands heads with that probability. If bits flip one time in a hundred, that entropy is about eight hundredths of a bit, so capacity is about ninety-two hundredths. Read that carefully. With a one percent flip rate, giving up only about eight percent of your bandwidth is enough, in principle, to push errors to one in a billion, or one in a trillion. Repetition threw away two-thirds of the channel to get to three in ten thousand.
+
+How did Shannon prove this? This is the beautiful and frustrating part. He did not build a code. He imagined picking one at random. Take a long block of message bits, and assign to each possible message a completely random codeword, much longer. Then show that, averaged over all those random choices, the error probability goes to zero as the block length grows, as long as the rate is below capacity. If the average is good, at least one specific code must be good.
+
+The intuition is geometric. Each codeword is a point in a space with one dimension per transmitted bit. In very high dimensions, noise almost always knocks the received word about the same distance away, into a thin shell around the original. Keep the codewords far enough apart that the shells do not overlap, and the receiver just picks the nearest codeword. Capacity answers the question: how many non-overlapping shells fit in the space?
+
+But notice what the proof does not give you. A random code with blocks thousands of bits long has a codebook larger than the number of atoms in the universe, and finding the nearest codeword means checking all of them. Shannon proved the treasure exists and gave no map. The next half century was a search for codes with enough structure to decode efficiently, while still behaving enough like random codes to get near the limit.
+
+Part two. Hamming, and the error that spells its own address.
+
+Richard Hamming was at Bell Labs at the same time, with a less lofty motivation. He used one of the lab's relay computers, which ran unattended on weekends. It could detect errors, and when it did, it simply abandoned the job. Hamming would come in on Monday to find his work dumped. His question, as he later told it: if the machine can tell that something is wrong, why can it not tell where, and fix it?
+
+Start with the simplest tool, a parity bit. Take some data bits and append one extra bit chosen so that the total number of ones is even. If any single bit flips, the count becomes odd, and you know something went wrong. But you do not know which bit. One parity check gives you one bit of information about the error, and one bit can only say yes or no.
+
+So how many checks do you need to locate a single error? Suppose you have seven bits in total. A single error could be in any of seven places, or there could be no error at all. That is eight possibilities. Three yes-or-no answers distinguish exactly eight cases. So three parity checks might be enough, if you design them so the pattern of answers is different for every possible error position.
+
+Here is how Hamming did it. Number the seven positions one through seven, and write each position number in binary. Position one is zero zero one. Position five is one zero one. Position seven is one one one. Now define three checks. The first check covers every position whose lowest binary digit is a one. The second covers every position whose middle digit is a one. The third covers every position whose highest digit is a one. Positions one, two and four each appear in exactly one check, so you use those as the parity bits, and the remaining four positions carry data.
+
+Now suppose a single bit flips. Which checks fail? Exactly the checks corresponding to the ones in that position's binary number. If position five flips, the first and third checks fail and the second passes. Write down failed as one and passed as zero, from highest to lowest, and you read one zero one. Which is five. The pattern of failed checks, called the syndrome, is literally the address of the error. Flip that bit back, and you are done.
+
+Think about what this means in the language of the callback. The error is an unknown. Hamming arranged the redundancy so that the checks form a little system of equations whose solution is the error's location.
+
+The deeper way to see this is distance. The Hamming distance between two strings is the number of positions where they differ. This code maps sixteen messages to sixteen codewords among the hundred twenty-eight seven-bit strings, and any two codewords differ in at least three places. Draw a ball of radius one around each codeword: the codeword plus every string one flip away. Balls around points three apart cannot overlap, so a word with one error sits in exactly one ball.
+
+And a lovely accounting fact. Each ball holds eight strings. Sixteen balls of eight is a hundred twenty-eight, every seven-bit string, with nothing left over. Codes that tile the space perfectly like this are rare, and they are called perfect codes. It is Shannon's shell packing, done exactly.
+
+The general rule: if codewords are all at least some minimum distance apart, the code can correct any number of errors up to just under half that distance. Distance three corrects one. Distance five corrects two.
+
+This is not a museum piece. Server memory labeled ECC uses a close cousin. Add one overall parity bit and the minimum distance becomes four, so it corrects any single flipped bit and detects any double. That is why a stray particle flipping a bit in a server usually causes nothing at all.
+
+But Hamming codes have a weakness. They are built to handle errors that are rare and scattered. Real damage often is not like that.
+
+Part three. Reed-Solomon, and why a scratch is not a disaster.
+
+Go back to the scratched CD. A scratch does not flip one bit here and one bit there. It wipes out a long contiguous run. Errors in real channels are often bursty like that: a scratch, a lightning strike on a phone line, a deep fade on a radio link. A code that corrects one error per seven bits is helpless against a burst of a thousand.
+
+In 1960, Irving Reed and Gustave Solomon, at MIT's Lincoln Laboratory, published a short paper with an idea that is, once you see it, almost embarrassingly simple.
+
+First, stop thinking in bits. Group the bits into symbols, say bytes. Now a burst of errors that ruins eighty consecutive bits only ruins about ten symbols. If your code counts errors in symbols rather than bits, a burst is suddenly cheap.
+
+Second, here is the core. Take your message, say some number of symbols. Treat those symbols as the coefficients of a polynomial. If your message is ten symbols long, that is a polynomial of degree nine. Now evaluate that polynomial at more points than that, say fourteen, and send those fourteen values.
+
+Why does that work? Because of a fact you have known since high school. Two points determine a line. Three points determine a parabola. In general, any ten points determine a unique polynomial of degree nine. So if the receiver gets any ten of the fourteen values intact, it can reconstruct the whole polynomial, and therefore the message. The extra values are pure redundancy, and every one of them is interchangeable.
+
+One technicality: the arithmetic is done not in ordinary numbers but in a finite field, for bytes a number system with exactly two hundred fifty-six elements where addition, multiplication and division all work and stay inside the set. The polynomial facts still hold, with no rounding.
+
+Now the beautiful distinction, and it is our callback theme again. There are two kinds of damage. An erasure is when you know a symbol is missing. The disc reader saw no reflection there; the packet never arrived. An error is when a symbol arrived but is wrong, and you do not know which one.
+
+In our example there are four redundant symbols, and a Reed-Solomon code can repair up to four erasures. Every missing symbol is one unknown, its value, and each redundant symbol gives you one equation.
+
+But errors cost twice as much. It can correct only two errors, half as many. Why half? Because an error has two unknowns: where it is, and what the right value was. You have to solve for the location as well as the value. Same budget of equations, twice the unknowns per error.
+
+That is the cleanest statement of the principle I know. Knowing where your problem is literally halves its cost.
+
+The CD system layers two Reed-Solomon codes with interleaving, scattering each codeword's symbols across a long stretch of the disc. A long scratch then becomes one or two bad symbols in each of many codewords, which is easy. And the inner code flags the symbols it could not fix, turning them into erasures for the outer code, which gets the cheaper repair. That is why the key scratch did nothing.
+
+QR codes use Reed-Solomon too, which is why one with a logo pasted over its center still scans. You are watching erasure correction. Deep-space missions used it as an outer code wrapped around a convolutional inner code, to clean up the bursts of errors the inner decoder produces when it fails.
+
+But for all their power, Reed-Solomon codes alone do not get you to Shannon's limit on a noisy radio channel. For that, you need something the decoders so far have been throwing away.
+
+Part four. The road back to capacity.
+
+Here is the waste. A radio receiver does not actually receive bits. It receives a voltage. A strongly positive voltage probably means a one. A strongly negative voltage probably means a zero. A voltage right near zero means: I genuinely do not know.
+
+The classic approach, hard decision decoding, rounds each voltage to a zero or one first. That throws away confidence: a bit that came in screaming one and a bit that barely tipped over look identical. Keeping that information, soft decision decoding, is worth roughly two decibels on a typical noisy channel, which is like getting about sixty percent more signal power for free.
+
+The natural currency for confidence is the log-likelihood ratio: the log of the probability the bit is a one over the probability it is a zero. Its sign says which way you lean; its size says how sure you are. Independent evidence simply adds. It is log odds.
+
+Through the seventies and eighties, the best practical systems still sat a few decibels short of the limit, and many people suspected that last stretch would never be practical.
+
+Then, in 1993, at a communications conference in Geneva, Claude Berrou, Alain Glavieux and Punya Thitimajshima presented what they called turbo codes, with simulations showing performance within roughly half a decibel of the Shannon limit at the error rates they tested. The reaction from a lot of experts was disbelief. It is often said that people assumed a factor of two had gone wrong somewhere. Then other groups reproduced it.
+
+The structure is two ordinary encoders working on the same data, the second seeing the bits in scrambled order. The magic is in decoding. Each decoder produces soft beliefs about every bit, then they trade. Decoder one hands decoder two only the new information it extracted, not evidence decoder two already has. Decoder two uses it as a prior, refines, and hands its new information back. The name comes from the turbocharger, feeding exhaust back into the intake. After a handful of rounds, the beliefs usually converge on the right answer.
+
+Here is the twist. Researchers including David MacKay and Radford Neal soon realized that codes invented decades earlier did the same thing, in some ways better. In his 1960 doctoral thesis at MIT, Robert Gallager had described low-density parity-check codes, LDPC codes: like Hamming's parity checks, but thousands of bits long, with each check touching only a few bits and each bit touching only a few checks.
+
+Gallager even described iterative probabilistic decoding. But computers of the early sixties could not run it at useful scale, and the idea sat largely unused for over thirty years.
+
+Picture the decoder as a graph: a node for every bit, a node for every check, and lines joining each check to its bits. Each bit tells its checks what it believes. Each check looks at its other bits and replies: given them, here is what you should be, to make my parity come out right. Bits add those replies to their own channel evidence, and the round repeats. This is belief propagation.
+
+Why sparse? Two reasons. Each round costs work proportional to the number of edges, which grows only linearly, so you can afford long blocks. And belief propagation is only exact on graphs without loops. A sparse graph has loops, but long ones, so for the first several rounds the messages reaching a node are nearly independent. A dense graph would echo its own beliefs back at itself almost immediately.
+
+And here is the connection to Shannon. A sparse random parity-check matrix is about as close to a random code as you can get while still being decodable. It is Shannon's random code, made tractable. Well-designed long LDPC codes have come within a few hundredths of a decibel of capacity in simulation.
+
+So where are they? Everywhere. LDPC codes are in modern Wi-Fi, in digital satellite television, in ten gigabit Ethernet over copper, and in the data channels of 5G. They are inside your SSD, where the flash cells drift as they wear and the controller uses soft information about how close each cell's charge is to a threshold.
+
+5G has one more chapter. For its short control messages, it chose polar codes, introduced by Erdal Arıkan in 2009, the first family proven, not just simulated, to achieve capacity on a broad class of channels with efficient decoding. By combining copies of a noisy channel recursively, you transform them into synthetic channels that are each either nearly perfect or nearly useless. Send data on the good ones, and freeze the bad ones to known values: unknowns eliminated in advance.
+
+Part five. What the pop version gets wrong, and where this goes next.
+
+Two oversimplifications worth correcting.
+
+First, "digital is perfect." It is not. Underneath, every channel is analog and noisy. Digital feels perfect because error correction quietly repairs damage, right up until the noise crosses a threshold. That is why an old analog TV got gradually snowier, while a digital stream is flawless, then blocky, then gone, within a narrow range. You are watching the decoder fall off Shannon's cliff.
+
+Second, the Shannon limit is not a speed you hit or miss. It is an asymptote that costs latency. The guarantees need long blocks, and a decoder must wait for the whole block before deciding. That is why 5G uses different codes for big transfers and short control messages, and why a deep-space link can run closer to the limit than a live voice call.
+
+Now the frontier. Quantum computers have Hamming's problem, far worse: qubits lose their state constantly. Error correction is the only known route to large, reliable quantum machines.
+
+But two obstacles look fatal. You cannot copy an unknown quantum state, the no-cloning theorem, so naive repetition is out. And you cannot look at a qubit to check it, because measuring collapses the superposition you are protecting.
+
+The way out is pure Hamming. You never measure the data. You measure parity checks: joint measurements on groups of qubits that reveal whether they agree, without revealing what any of them is. The outcomes form a syndrome that says where an error happened and what kind, and you correct it. The leading approach, the surface code, puts qubits on a grid where each check touches only a few neighbors, which should sound familiar. Its overhead is large, often hundreds of physical qubits per reliable logical qubit, and a hot question is whether quantum low-density codes can shrink that.
+
+And the cliff appears again. There is a threshold error rate per operation: below it, a bigger code makes the logical qubit more reliable; above it, more qubits only add more places to fail. In the last couple of years, hardware groups have reported logical error rates falling as their codes grew, evidence of operating below threshold.
+
+Recap.
+
+Shannon showed that every noisy channel has a capacity, and below that rate, errors can be driven as low as you like, at a fixed cost in redundancy rather than a rate that falls to zero. His proof used random codes, which are good but impossible to decode, so the field became a search for structured codes that act random.
+
+Hamming built the first error-correcting code by designing parity checks whose pattern of failures spells out the position of the error. The underlying idea is distance: keep codewords far enough apart that each one's neighborhood of likely corruptions is disjoint.
+
+Reed and Solomon used polynomials over a finite field: ten points pin down a degree nine polynomial, so any ten of the fourteen symbols sent recover a ten-symbol message. Symbols make bursts cheap, and erasures cost half what errors do, because an error has an unknown location as well as an unknown value.
+
+Getting to capacity required keeping soft information, the log-likelihood ratio, and iterative decoders that trade beliefs: turbo codes in 1993, then Gallager's low-density parity-check codes, rediscovered after thirty years and now in Wi-Fi, 5G and SSDs, with polar codes covering 5G control.
+
+And quantum error correction is the same game played with a blindfold: measure only the parity checks, never the data.
+
+Here are your five questions.
+
+Question one. Repetition codes can drive the error rate down, so what exactly did Shannon's theorem claim that repetition cannot do, and why does his random coding argument not hand engineers a usable code?
+
+Question two. In the seven-four Hamming code, why do three parity checks suffice to locate a single error among seven bits, and what property of the way the checks are assigned makes the syndrome equal to the error's position?
+
+Question three. A Reed-Solomon code with a given number of redundant symbols can fix twice as many erasures as errors. Explain why, in terms of unknowns and equations, and explain how interleaving plus erasure flagging lets a CD survive a long scratch.
+
+Question four. Why does soft decision decoding beat hard decision decoding, and in an LDPC decoder, why does the parity-check graph need to be sparse for belief propagation to work well?
+
+Question five. Quantum mechanics forbids copying an unknown state and disturbs a qubit when you measure it. How does quantum error correction get around both problems, and what is the significance of operating below the error threshold?
+
+Reply in the chat with your answers whenever you are ready.

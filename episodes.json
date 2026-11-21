@@ -148,5 +148,20 @@
       "What did West Coast longshoremen give up and get in the 1960 Mechanization and Modernization Agreement, and what is the main criticism of that kind of deal?",
       "Why did containerization concentrate shipping in a few giant hub ports rather than spreading it out, and how does that connect to the supply-chain fragility seen during the pandemic?"
     ]
+  },
+  {
+    "number": 11,
+    "slug": "011-error-correcting-codes",
+    "title": "Error-correcting codes: from Shannon's limit to your phone",
+    "series": "morning",
+    "date": "2026-11-21",
+    "summary": "Shannon's noisy channel theorem and why capacity is a cliff, Hamming's self-locating parity checks, Reed-Solomon polynomials and why erasures cost half what errors do, then turbo codes, Gallager's rediscovered LDPC codes and polar codes in 5G, ending with quantum error correction. Opens with a callback on GPS's eccentricity correction.",
+    "questions": [
+      "Repetition codes can drive the error rate down, so what exactly did Shannon's theorem claim that repetition cannot do, and why does his random coding argument not hand engineers a usable code?",
+      "In the seven-four Hamming code, why do three parity checks suffice to locate a single error among seven bits, and what property of the way the checks are assigned makes the syndrome equal to the error's position?",
+      "A Reed-Solomon code with a given number of redundant symbols can fix twice as many erasures as errors. Explain why, in terms of unknowns and equations, and explain how interleaving plus erasure flagging lets a CD survive a long scratch.",
+      "Why does soft decision decoding beat hard decision decoding, and in an LDPC decoder, why does the parity-check graph need to be sparse for belief propagation to work well?",
+      "Quantum mechanics forbids copying an unknown state and disturbs a qubit when you measure it. How does quantum error correction get around both problems, and what is the significance of operating below the error threshold?"
+    ]
   }
 ]

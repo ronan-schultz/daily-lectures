@@ -35,3 +35,4 @@ Add new topics here as they come up, in the same categories or new ones.
 | 8 | 2026-11-19 | PM | Milgram and the Stanford Prison Experiment: what held up (psychology lane) | pending | |
 | 9 | 2026-11-20 | AM | The end of Dennard scaling: why clock speeds stopped rising (physics/engineering) | pending | |
 | 10 | 2026-11-20 | PM | The shipping container: how a steel box rewired the world economy (institutions lane) | pending | |
+| 11 | 2026-11-21 | AM | Error-correcting codes: Shannon to LDPC, polar and quantum (math/CS; callback on GPS eccentricity term) | pending | |
