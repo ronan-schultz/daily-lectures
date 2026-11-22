@@ -32,14 +32,14 @@
   {
     "number": 3,
     "slug": "003-godel-incompleteness",
-    "title": "G\u00f6del's incompleteness theorems: what they actually say",
+    "title": "Gödel's incompleteness theorems: what they actually say",
     "series": "morning",
     "date": "2026-11-17",
-    "summary": "Opens with a callback on GPS clock bias. Hilbert's program, G\u00f6del numbering and the diagonal lemma, both incompleteness theorems, the halting-problem route via Turing, and what the theorems don't say (nonstandard models, Presburger arithmetic, Gentzen, Lucas-Penrose).",
+    "summary": "Opens with a callback on GPS clock bias. Hilbert's program, Gödel numbering and the diagonal lemma, both incompleteness theorems, the halting-problem route via Turing, and what the theorems don't say (nonstandard models, Presburger arithmetic, Gentzen, Lucas-Penrose).",
     "questions": [
-      "If the system is consistent, why must the G\u00f6del sentence be true in the ordinary natural numbers, and why isn't it a contradiction that we can see it is true while the system can't prove it?",
-      "G\u00f6del also proved first-order logic is complete. How can logic be complete while arithmetic is incomplete? What role do nonstandard models play?",
-      "If you add the G\u00f6del sentence or the consistency sentence as a new axiom, why doesn't that rescue completeness?",
+      "If the system is consistent, why must the Gödel sentence be true in the ordinary natural numbers, and why isn't it a contradiction that we can see it is true while the system can't prove it?",
+      "Gödel also proved first-order logic is complete. How can logic be complete while arithmetic is incomplete? What role do nonstandard models play?",
+      "If you add the Gödel sentence or the consistency sentence as a new axiom, why doesn't that rescue completeness?",
       "How does the unsolvability of the halting problem imply incompleteness, and where does the argument use the fact that the axioms are mechanically checkable?",
       "Gentzen proved Peano arithmetic consistent. Why doesn't that contradict the second incompleteness theorem, and why doesn't it fully deliver what Hilbert wanted?"
     ]
@@ -192,6 +192,21 @@
       "By the Sabatier principle, why would a metal that binds nitrogen atoms much more strongly than iron be a worse catalyst, even though it splits nitrogen more easily?",
       "In Bosch's reactor, what did hot hydrogen do to ordinary steel, and why did a low-carbon inner liner with a vented outer shell solve it?",
       "Nitrogenase works at room temperature, so why isn't it simply more efficient than the industrial process? What does it spend instead of heat, and where is the waste?"
+    ]
+  },
+  {
+    "number": 14,
+    "slug": "014-robert-moses-power",
+    "title": "Robert Moses: how one unelected man ran a city for forty years",
+    "series": "afternoon",
+    "date": "2026-11-22",
+    "summary": "How Robert Moses built durable power without votes: bill drafting, public authorities that compounded toll revenue into new bonds, covenants shielded by the contract clause, and the threat to resign. Then the costs, the tangled low-bridge story, his fall through Rockefeller and Chase Manhattan, and the three faces of power.",
+    "questions": [
+      "The original idea of a public authority was that it would pay off its bonds and wind down. Explain how Moses turned Triborough into something that grew instead, and why that growth made him harder to remove.",
+      "Why could a bond covenant protect a public official from an elected legislature? What role does the contract clause play, and why did it matter that new bonds kept being issued?",
+      "Why was the identity of the bondholders' trustee so important to Rockefeller's ability to merge Triborough into the MTA?",
+      "Robert Dahl studied the decisions that got fought over and concluded power was spread out. Using the second face of power, explain what a study like that would have missed about Moses.",
+      "The low-bridge story is often told as simple deliberate exclusion. What does the careful version say is well established, what remains uncertain, and why?"
     ]
   }
 ]

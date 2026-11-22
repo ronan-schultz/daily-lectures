@@ -1,0 +1,125 @@
+Robert Moses: how one unelected man ran a city for forty years.
+
+Here is a puzzle to carry with you on the drive home. For roughly four decades, from the nineteen twenties into the late nineteen sixties, the most powerful person in the physical shaping of New York was not a mayor. He was not a governor. He was never elected to anything. The one time he ran for office, for governor in nineteen thirty-four, he lost in a landslide.
+
+And yet this man built most of the bridges you would cross to get into or around the city. He built the parkways on Long Island, Jones Beach, hundreds of playgrounds, the expressways through the Bronx, Lincoln Center's site, the United Nations site, a World's Fair. Mayors came and went. Governors came and went. He stayed.
+
+His name was Robert Moses. And the question tonight is not really "was he a hero or a villain." People have been arguing that for fifty years, and we will get to the argument. The better question is mechanical. How does someone hold power that durable without votes? What were the actual levers? And what does his career tell us about what power even is?
+
+Here is the plan. First, the young idealist who lost, and the lesson he drew from losing. Second, how he learned to write laws, literally, and why the drafter of a bill holds a strange kind of power. Third, the machine: public authorities, toll money, and bond contracts, which is the part that will make the most sense to you as a finance person. Fourth, the costs, including one famous story that has been oversimplified. Fifth, the fall, which came through the same financial plumbing that built him up. And sixth, what political scientists were arguing about power at the exact same time, and how Moses fits their theories.
+
+Part one. The reformer who lost.
+
+Moses was born in New Haven, Connecticut, in eighteen eighty-eight, into a comfortable family. Yale, then Oxford, then a doctorate in political science from Columbia, with a dissertation on the British civil service. Hold on to that detail. His first passion was not bridges. It was good government.
+
+Around nineteen fifteen he was working at a progressive think tank called the Bureau of Municipal Research, and the reform mayor of New York, John Purroy Mitchel, gave him a job redesigning the city's civil service. The idea was pure progressive era. Replace patronage with merit. Rate every city employee on measurable performance. Promote on the numbers, not on who your district leader was.
+
+It was clever. It was rigorous. And it died completely.
+
+The city's employees hated being graded. The Tammany Hall machine, the Democratic organization that ran the city through patronage, hated losing its jobs to hand out. When Mitchel lost reelection in nineteen seventeen, the new administration scrapped the whole system. Moses was out, with nothing built to show for years of work.
+
+Here is the lesson he took, and it is the key to everything after. Being right was not enough. A good plan, with no power behind it, is just paper. Robert Caro, his biographer, frames the rest of his life as the story of a man who decided he would never again lose for lack of power. Whether you find that tragic or admirable depends a lot on what comes next.
+
+Part two. The man who wrote the laws.
+
+Moses got his second chance through Al Smith, the governor of New York in the nineteen twenties, a Tammany product himself but a genuine reformer. Smith brought Moses in to help reorganize the state government, and Moses became something like Smith's legislative engine. In nineteen twenty-four Smith made him president of the new Long Island State Park Commission and chairman of a State Council of Parks. Later he became Smith's Secretary of State.
+
+Now, here is the catch about how laws get written. Most legislators do not draft the bills they vote on. Somebody hands them text. That text runs to dozens of pages of dense language about appointments, terms of office, powers of condemnation, who reports to whom. Very few people read the fine print. Moses read it, and more importantly, he wrote it.
+
+He became, by Caro's account, the best bill drafter in Albany. And he learned to bury powers in the clauses. A sentence that looked like routine administrative boilerplate might give a commissioner a long fixed term, so he could not be fired at will. Another might let a park commission take land quickly, before the owner could get to court. Another might let one official hold several posts at once. Legislators would discover, sometimes years later, that they had voted to give him authority they never knew was in there.
+
+Why does that work? Think about it as an information problem. The legislature is a group with limited attention, each member juggling hundreds of bills. The drafter has total attention on one bill and knows exactly what each clause does. That asymmetry is power, and it is quiet power, which is the most durable kind, because nobody organizes against a clause they have not noticed.
+
+The early payoff was Jones Beach, which opened in nineteen twenty-nine. It was spectacular, a huge public beach on a barrier island with bathhouses, boardwalk, and a parkway to reach it. It made Moses a public hero. And that matters, because the second lever, alongside legal drafting, was reputation. For decades the press treated him as the incorruptible builder who got things done while politicians talked. And to be fair, he was not personally corrupt in the money sense. He lived modestly. What he wanted was not wealth. It was the ability to build.
+
+That reputation gave him his favorite weapon: the threat to resign. When a mayor or governor crossed him, Moses would offer his resignation, and they would back down, because firing the most popular public servant in New York was political suicide. By his own account and Caro's, he used this move again and again for decades. Keep that in mind, because eventually somebody called the bluff.
+
+Part three. The machine.
+
+This is the part I most want you to understand, because it is a story about cash flows and contracts.
+
+In the nineteen thirties, the federal government under the New Deal was pouring money into public works, and New York was in fiscal trouble. A new kind of institution had become fashionable: the public authority. A public authority is a government-created corporation that can build a piece of infrastructure, charge fees for using it, and sell bonds backed by those fees. It sits outside the normal budget. It does not need annual appropriations from a legislature. Its money comes from users and bondholders.
+
+The Triborough Bridge Authority was created in the early nineteen thirties to finish a stalled bridge linking Manhattan, Queens, and the Bronx. Moses took over as chairman in the mid nineteen thirties, and the bridge opened in nineteen thirty-six.
+
+Now picture the economics. A bridge like that, once built, throws off tolls every single day, a steady stream of cash. The original logic of an authority was simple: sell bonds, build the bridge, collect tolls, pay off the bonds, then the tolls stop or the bridge goes back to the city and the authority dissolves.
+
+Moses broke that logic. Instead of paying the bonds off, he used the toll revenue to back new bonds, and used that money to build more toll projects, which produced more tolls, which backed more bonds. A bridge became a machine for building the next bridge. The authority was not winding down. It was compounding.
+
+And here is the clever part, the legal hook. The authority's bonds came with covenants, written promises to bondholders about how the authority would be run. The United States Constitution has a contract clause that forbids states from impairing the obligation of contracts. So if the bond contract said, in effect, that the authority's management arrangements would continue while the bonds were outstanding, then the state legislature could not simply change the arrangements without potentially breaching a contract with private bondholders. Moses drafted language like this into the bond resolutions. And since he kept issuing new bonds with long maturities, the bonds were always outstanding.
+
+So think about what that does. An elected mayor wants to remove him. The mayor cannot easily do it, because his terms are protected and the bond contract stands behind him. The legislature wants to redirect the toll money to the subway. It cannot easily do that either, because the toll money is pledged to bondholders. Moses has converted a political office into something close to a financial contract with third parties. That is the core of his independence. It is not charisma. It is a capital structure.
+
+A quick test of how strong this was. In the mid nineteen thirties, Franklin Roosevelt, who loathed Moses from their Albany days, tried to push him out of Triborough by having the federal government threaten to withhold public works funds from any authority that employed someone in his position. Moses leaked the story to the press, it became a scandal about the president pursuing a personal vendetta against a popular builder, and Washington backed off. The president of the United States, at the height of his power, lost that round.
+
+The toll money did one more thing. It made Moses the source of a huge flow of contracts: construction firms, banks underwriting the bonds, law firms, insurance, engineers, and the building trades unions whose members got the jobs. Every one of those groups had an interest in the machine continuing. Caro describes how this gave Moses a coalition that no mayor could match, because the mayor had to fight for a budget each year while Moses had his own revenue. By the peak, Moses held as many as twelve official titles at once, city and state, parks and highways and planning and authorities. The titles let him coordinate projects across jurisdictions that were supposed to check one another.
+
+Here is the summary of the machine in one sentence. Independent revenue, protected by contract, spent through a coalition of people who benefit, and guarded by a reputation that made confronting him costly.
+
+Part four. The costs.
+
+Now the darker side, and this is where the argument over his legacy really lives.
+
+Building highways through a dense city means taking homes. Moses favored highways and cars, and through most of his career he showed little interest in funding mass transit, which the authority structure was not built to pay for anyway. Caro's estimates of how many people were displaced by his projects run into the hundreds of thousands over his career. Other historians count differently, and some point out that much of that displacement came from housing and urban renewal programs that were federal policy across every American city, not unique to Moses. But nobody disputes that the numbers were very large.
+
+The most famous single case is the Cross Bronx Expressway, built mostly in the nineteen fifties. In one stretch it cut through East Tremont, a dense, working-class neighborhood, and required clearing apartment buildings that held around fifteen hundred families. Local officials and residents proposed a slightly different alignment, a short distance south along the edge of a park, which they argued would have spared most of those buildings. Moses refused, threatened to resign as usual, and the city's Board of Estimate approved his route. Caro argues the neighborhood was destroyed for no engineering reason at all. Defenders of Moses respond that the expressway was part of the federal interstate system, that some route through the Bronx was going to be built, and that the Bronx's later decline had many causes, including economic shifts and policy decisions far beyond one road. Both points can be true at once.
+
+Now, the famous story that has been oversimplified. You may have heard that Moses deliberately built the bridges over his Long Island parkways too low for buses, so that poor people and Black New Yorkers, who relied on buses, could not reach Jones Beach. This story comes from Caro, who got it from Sidney Shapiro, a longtime Moses associate and engineer on the parks commission. Shapiro's version was that Moses wanted the low clearances so that a future legislature could not easily open the parkways to buses.
+
+Here is the more complicated picture. First, parkways at that time, in New York and elsewhere, were legally restricted to passenger cars anyway. Trucks and buses were banned from them by rule. Low, decorative stone overpasses were part of the whole parkway style, not something invented to exclude people. Second, the claim of motive rests heavily on one secondhand account. Some critics call it close to an urban legend. Third, on the other side, the historian Thomas Campanella went out and looked at the actual bridge clearances in twenty seventeen and found that some of Moses's Long Island bridges really were notably low, lower than comparable parkway bridges elsewhere, which fits Shapiro's story better than the skeptics would like. So the honest version is this: the low bridges are real, the exclusion of buses was real and partly built in, but how much of it was a deliberate scheme aimed at particular groups, rather than the conventions of parkway design plus Moses's general disdain for transit, is something we cannot settle from the evidence. Anyone who tells you it is simple in either direction is overselling.
+
+Part five. The fall.
+
+How do you take down someone whose power is a contract? The answer turned out to be: through the contract.
+
+Two pressures built up in the late nineteen fifties and sixties. The first was a change in public mood, led by people who were not politicians at all. The most famous is Jane Jacobs, a writer and activist from Greenwich Village. She and her neighbors fought Moses's plan to run a road through Washington Square Park, and won. Then in nineteen sixty-one she published The Death and Life of Great American Cities, which attacked the whole philosophy of top-down planning, arguing that city life depends on dense, mixed, small-scale street activity that highway builders destroy. Activists then fought his Lower Manhattan Expressway, which would have cut through what is now SoHo and Little Italy, and the plan was eventually killed. Moses's reputation as the unquestioned builder started to crack. Notice the mechanism. His power depended partly on the press and the public seeing him as above politics. Once ordinary residents framed his projects as something done to them, the threat to resign lost its force.
+
+The second pressure was Governor Nelson Rockefeller. In nineteen sixty-two, Moses tried his old move on Rockefeller over a dispute about his state posts and threatened to resign. Rockefeller simply accepted. Moses lost his state park positions. The bluff had finally been called.
+
+But Triborough was still the fortress. Moses was also now running the nineteen sixty-four World's Fair, which drew far fewer visitors than his very optimistic projections and ended in financial trouble and bad press. He was weaker than he had been in decades.
+
+Rockefeller wanted to merge Triborough and its toll surpluses into a new regional Metropolitan Transportation Authority, so that bridge money could help support the subways and commuter railroads. The obstacle was those bond covenants. A merger could be challenged as impairing the bondholders' contracts. And who were the bondholders? A major holder, and the trustee bank representing bondholders, was Chase Manhattan. The head of Chase Manhattan was David Rockefeller, the governor's brother.
+
+You can see how this plays out. If the bondholders do not sue, the contract shield is useless. The bondholders did not sue. Moses himself could have fought it in court, and he chose not to, reportedly expecting a significant role in the new agency. In nineteen sixty-eight Triborough was folded into the new MTA, and Moses was given a consulting position with no real power. The man who had beaten a president was eased out through a bank.
+
+He lived until nineteen eighty-one, long enough to see Caro's biography, The Power Broker, published in nineteen seventy-four. It won the Pulitzer Prize and fixed his public image for a generation as the man who, in Caro's subtitle, presided over the fall of New York.
+
+Part six. What is power, anyway?
+
+Here is the part that turns this from a biography into a sociology lecture.
+
+While Moses was at his peak, political scientists were fighting about how to even study power in a city. In nineteen sixty-one, the political scientist Robert Dahl published Who Governs?, a study of, of all places, New Haven, Moses's birthplace. Dahl looked at key decisions, like urban renewal and school policy, and asked who actually prevailed in each fight. He found that different groups won in different areas. No single elite controlled everything. His conclusion was pluralism: power in an American city is spread across many competing groups.
+
+The next year, two other scholars, Peter Bachrach and Morton Baratz, wrote a famous reply called "Two Faces of Power." Their point was this. If you only study the decisions that get fought over, you miss the issues that never make it onto the agenda at all. Power also lies in what they called nondecisions: keeping certain questions from ever being raised. Who decides what is up for a vote?
+
+Then in nineteen seventy-four, the same year as Caro's book, the British theorist Steven Lukes added a third dimension. The deepest form of power, he argued, is shaping what people want and believe in the first place, so that conflict never even appears.
+
+Now run Moses through those three lenses.
+
+The first face, winning open fights: he won most of them, through threats to resign and his coalition, but he also lost some, and the losses grew late in his career. A pluralist could point to Jane Jacobs as proof that the system eventually corrected.
+
+The second face, agenda control: this is where Moses was truly exceptional. The bill drafting, the clauses no one read, the toll money that never had to go before a legislature, the fact that redirecting bridge revenue to the subways simply was not a question anyone could raise while the bonds were outstanding. For decades, whether to fund transit instead of highways was a nondecision, built into a contract.
+
+The third face, shaping beliefs: his reputation as the selfless, apolitical builder, and the broad mid-century faith that cars and highways were simply what progress looked like. Many people did not oppose his projects because they did not see an alternative worth wanting.
+
+Here is what I think is the most useful takeaway, stated as a mechanism rather than a judgment. Moses's power was durable because most of it lived in the second and third faces, which are invisible to anyone who only watches the public fights. And it ended when both of those faces were attacked at once: a cultural shift that changed what people wanted from cities, and a financial maneuver that unlocked the contract.
+
+Now the historians' argument, fairly stated. Caro's view is that Moses's unaccountable power did enormous damage, especially to poor and working-class neighborhoods and to transit, and that his methods corrupted the democratic process even when he did not take a dime. The revisionist view, associated with a set of exhibitions in two thousand seven organized by the historian Hilary Ballon and others, with Kenneth Jackson among the prominent voices, is that Caro underplays what Moses delivered: parks, beaches, pools, bridges, and infrastructure the city still runs on, built in an era when the alternative was often nothing getting built. Some revisionists also point out that today it can take a decade to approve a single project, and ask whether the backlash against Moses overshot into paralysis. Critics answer that the procedural protections exist precisely because of what Moses did. That debate is very much alive in current arguments about infrastructure and housing, and people land on different sides for reasons that reflect how they weigh speed against consent.
+
+Recap.
+
+Moses began as a reformer who lost because he had no power, and decided never to lose that way again. He learned that drafting laws is a form of power, because the drafter knows what the clauses do and nobody else is reading. He turned public authorities into compounding machines, using toll revenue to back new bonds, and protected his position with bond covenants backed by the Constitution's contract clause, so that removing him looked like breaching a contract with investors. He fed a coalition of contractors, banks, and unions, and guarded it all with a reputation that made his threat to resign almost unbeatable. The costs were real and large, including mass displacement, though some famous stories, like the low bridges, are more tangled than the popular version. He fell when a cultural shift eroded his reputation and a governor, with his brother's bank as trustee, dissolved the contract shield. And political scientists' three faces of power explain why he lasted so long: most of his power was in agenda control and belief, not in visible fights.
+
+Now, five questions. Pause after each and answer out loud before moving on.
+
+Question one. The original idea of a public authority was that it would pay off its bonds and wind down. Explain the mechanism by which Moses turned Triborough into something that grew instead, and why that growth made him harder to remove.
+
+Question two. Why could a bond covenant protect a public official from an elected legislature? What role does the contract clause play, and why did it matter that new bonds kept being issued?
+
+Question three. In the end, why was the identity of the bondholders' trustee so important to Rockefeller's ability to merge Triborough into the MTA?
+
+Question four. Robert Dahl studied the decisions that got fought over and concluded that power was spread out. Using the second face of power, explain what a study like that would have missed about Moses.
+
+Question five. The low-bridge story is often told as a simple tale of deliberate exclusion. What does the more careful version say is well established, and what remains genuinely uncertain, and why?
+
+Reply with your answers whenever you like. Enjoy the rest of your drive.
