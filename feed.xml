@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>AM 013. Haber-Bosch: how a catalyst pulls bread out of the air</title>
+      <description>Why dinitrogen is so inert, the thermodynamics-versus-kinetics trap in ammonia synthesis, what the iron surface and its promoters actually do, the Sabatier principle and volcano plots, how Bosch industrialized Haber's lab result, and how nitrogenase does it at room temperature.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. A catalyst can't change the equilibrium yield of ammonia. So why does a better catalyst still increase how much ammonia you get from each pass through the reactor?
+2. Why does raising the pressure help the ammonia yield while raising the temperature hurts it, even though both make molecules collide more often?
+3. By the Sabatier principle, why would a metal that binds nitrogen atoms much more strongly than iron be a worse catalyst, even though it splits nitrogen more easily?
+4. In Bosch's reactor, what did hot hydrogen do to ordinary steel, and why did a low-carbon inner liner with a vented outer shell solve it?
+5. Nitrogenase works at room temperature, so why isn't it simply more efficient than the industrial process? What does it spend instead of heat, and where is the waste?</description>
+      <itunes:summary>Why dinitrogen is so inert, the thermodynamics-versus-kinetics trap in ammonia synthesis, what the iron surface and its promoters actually do, the Sabatier principle and volcano plots, how Bosch industrialized Haber's lab result, and how nitrogenase does it at room temperature.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. A catalyst can't change the equilibrium yield of ammonia. So why does a better catalyst still increase how much ammonia you get from each pass through the reactor?
+2. Why does raising the pressure help the ammonia yield while raising the temperature hurts it, even though both make molecules collide more often?
+3. By the Sabatier principle, why would a metal that binds nitrogen atoms much more strongly than iron be a worse catalyst, even though it splits nitrogen more easily?
+4. In Bosch's reactor, what did hot hydrogen do to ordinary steel, and why did a low-carbon inner liner with a vented outer shell solve it?
+5. Nitrogenase works at room temperature, so why isn't it simply more efficient than the industrial process? What does it spend instead of heat, and where is the waste?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/013-haber-bosch-catalysis.mp3" length="7566285" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-013-haber-bosch-catalysis</guid>
+      <pubDate>Sun, 22 Nov 2026 09:00:00 +0000</pubDate>
+      <itunes:duration>00:21:01</itunes:duration>
+      <itunes:episode>13</itunes:episode>
+    </item>
+    <item>
       <title>PM 012. The science of cooking: why recipes say what they say</title>
       <description>Heat as diffusion (time scales with thickness squared), the Maillard reaction and the searing myth, protein denaturation in eggs and meat, how salt and brining really work, emulsions and why mayonnaise is stiff, gluten, leavening and why bread stales in the fridge, and what Salt Lake's altitude does to all of it.
 

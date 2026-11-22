@@ -37,3 +37,4 @@ Add new topics here as they come up, in the same categories or new ones.
 | 10 | 2026-11-20 | PM | The shipping container: how a steel box rewired the world economy (institutions lane) | pending | |
 | 11 | 2026-11-21 | AM | Error-correcting codes: Shannon to LDPC, polar and quantum (math/CS; callback on GPS eccentricity term) | pending | |
 | 12 | 2026-11-21 | PM | The science of cooking: heat, Maillard, proteins, emulsions, starch, altitude (skills lane) | pending | |
+| 13 | 2026-11-22 | AM | Haber-Bosch: catalysis, the equilibrium trap, Sabatier volcano, nitrogenase (bio/chem) | pending | |

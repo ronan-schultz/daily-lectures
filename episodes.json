@@ -178,5 +178,20 @@
       "Why does mayonnaise end up thick and spoonable when it's made of oil and a watery liquid, and why must the first oil go in drop by drop?",
       "Bread goes stale after a day in the fridge but weighs almost the same. What happened inside it, why did the fridge speed that up, and why does warming it in the oven temporarily help?"
     ]
+  },
+  {
+    "number": 13,
+    "slug": "013-haber-bosch-catalysis",
+    "title": "Haber-Bosch: how a catalyst pulls bread out of the air",
+    "series": "morning",
+    "date": "2026-11-22",
+    "summary": "Why dinitrogen is so inert, the thermodynamics-versus-kinetics trap in ammonia synthesis, what the iron surface and its promoters actually do, the Sabatier principle and volcano plots, how Bosch industrialized Haber's lab result, and how nitrogenase does it at room temperature.",
+    "questions": [
+      "A catalyst can't change the equilibrium yield of ammonia. So why does a better catalyst still increase how much ammonia you get from each pass through the reactor?",
+      "Why does raising the pressure help the ammonia yield while raising the temperature hurts it, even though both make molecules collide more often?",
+      "By the Sabatier principle, why would a metal that binds nitrogen atoms much more strongly than iron be a worse catalyst, even though it splits nitrogen more easily?",
+      "In Bosch's reactor, what did hot hydrogen do to ordinary steel, and why did a low-carbon inner liner with a vented outer shell solve it?",
+      "Nitrogenase works at room temperature, so why isn't it simply more efficient than the industrial process? What does it spend instead of heat, and where is the waste?"
+    ]
   }
 ]
