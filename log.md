@@ -40,3 +40,4 @@ Add new topics here as they come up, in the same categories or new ones.
 | 13 | 2026-11-22 | AM | Haber-Bosch: catalysis, the equilibrium trap, Sabatier volcano, nitrogenase (bio/chem) | pending | |
 | 14 | 2026-11-22 | PM | Robert Moses and how power works in a city: authorities, bond covenants, three faces of power (psychology/sociology lane) | pending | |
 | 15 | 2026-11-23 | AM | Weather forecasting: Richardson, CFL, Lorenz chaos and the two-week limit, data assimilation, ensembles, ML models (systems; callback on GPS clock bias as least squares) | pending | |
+| 16 | 2026-11-23 | PM | Why the Roman Republic fell: vetoes and norms, Gracchi, final decree, Marian-reform myth, Sulla, Rubicon debate (institutions lane) | pending | |

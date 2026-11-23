@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>PM 016. Why the Roman Republic fell: a constitution that ran on restraint</title>
+      <description>The fall of the Roman Republic as institutional failure: a high-veto system held together by unwritten norms, the Gracchi and the first political killings, the emergency decree, why the 'Marian reforms' are mostly a modern myth, Sulla's march and failed fix, and the road to the Rubicon, including the debate over Caesar's motives and whether the collapse was structural or contingent.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. The Republic gave enormous blocking power to individual officials, especially the tribunes. Why did a system with that many veto points work for centuries, and what is the mechanism by which heavy use of vetoes leads not to permanent gridlock, but to the rules being bypassed?
+2. The senatus consultum ultimum was legally only advice. Why was it nonetheless so powerful, and why did it end up making the situation worse rather than better? Use Cicero's execution of the Catilinarian conspirators and his later exile in your answer.
+3. The popular account says Marius created armies loyal to their generals by recruiting the poor. What is wrong with that story, and what is the more accurate mechanism that tied soldiers' loyalty to individual commanders?
+4. Sulla tried to restore senatorial control and then voluntarily gave up power. Why did his reforms fail to last, while his march on Rome had lasting effects? What does that say about the relationship between written rules and precedent?
+5. Compare two views of the fall: a long structural decline beginning in 133, versus Gruen's argument that the institutions still functioned in the 50s and the collapse came from one specific crisis. What evidence from this lecture supports each side?</description>
+      <itunes:summary>The fall of the Roman Republic as institutional failure: a high-veto system held together by unwritten norms, the Gracchi and the first political killings, the emergency decree, why the 'Marian reforms' are mostly a modern myth, Sulla's march and failed fix, and the road to the Rubicon, including the debate over Caesar's motives and whether the collapse was structural or contingent.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. The Republic gave enormous blocking power to individual officials, especially the tribunes. Why did a system with that many veto points work for centuries, and what is the mechanism by which heavy use of vetoes leads not to permanent gridlock, but to the rules being bypassed?
+2. The senatus consultum ultimum was legally only advice. Why was it nonetheless so powerful, and why did it end up making the situation worse rather than better? Use Cicero's execution of the Catilinarian conspirators and his later exile in your answer.
+3. The popular account says Marius created armies loyal to their generals by recruiting the poor. What is wrong with that story, and what is the more accurate mechanism that tied soldiers' loyalty to individual commanders?
+4. Sulla tried to restore senatorial control and then voluntarily gave up power. Why did his reforms fail to last, while his march on Rome had lasting effects? What does that say about the relationship between written rules and precedent?
+5. Compare two views of the fall: a long structural decline beginning in 133, versus Gruen's argument that the institutions still functioned in the 50s and the collapse came from one specific crisis. What evidence from this lecture supports each side?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/016-roman-republic-fell.mp3" length="7906845" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-016-roman-republic-fell</guid>
+      <pubDate>Mon, 23 Nov 2026 14:00:00 +0000</pubDate>
+      <itunes:duration>00:21:57</itunes:duration>
+      <itunes:episode>16</itunes:episode>
+    </item>
+    <item>
       <title>AM 015. Weather forecasting: Richardson's failure, Lorenz's wall, and the machines</title>
       <description>Numerical weather prediction as an initial value problem: why Richardson's hand forecast blew up, the Courant Friedrichs Lewy cost of resolution, Lorenz chaos and the two-week limit, data assimilation as GPS-style least squares, ensembles, and what machine learning models did and did not change.
 
