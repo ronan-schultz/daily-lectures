@@ -1,0 +1,143 @@
+In the spring of nineteen twenty two, a Quaker mathematician named Lewis Fry Richardson published a book describing the first weather forecast ever made by solving the equations of physics. He had done it by hand, in his spare time, while driving an ambulance on the Western Front in the First World War. It took him something like six weeks of arithmetic to forecast six hours of weather over a patch of central Europe.
+
+The forecast was wrong. Not a little wrong. Spectacularly wrong. He predicted the surface pressure would rise by about one hundred and forty five hectopascals in six hours. A change that size would be the most violent pressure swing anyone had ever recorded. The real pressure barely moved.
+
+And yet Richardson was right about almost everything that mattered. His method is, in its bones, the method every national weather service uses this morning. Tonight is about how we got from his failure to a forecast you can trust five or six days out, and why there is a wall, somewhere around two weeks, that no computer will ever get through.
+
+Before we start, a short callback. Back in episode one, on GPS, the idea that tripped you up was this: when there is a nuisance you cannot measure directly, like the error in your receiver's cheap clock, you do not try to cancel it. You make it an unknown and solve for it alongside your position, using more satellites than you strictly need. Four satellites, four unknowns: three for where you are and one for how wrong your clock is. Keep that idea in your pocket. It comes back in part four, scaled up to the whole atmosphere.
+
+The roadmap. Part one: forecasting as an initial value problem. Part two: why Richardson's forecast blew up. Part three: chaos, and what the butterfly really means, because the popular version gets it half wrong. Part four: data assimilation, figuring out what the atmosphere is doing right now. Part five: ensembles. And part six: the machine learning models of the last few years, and what they did not change.
+
+Part one. Weather as an initial value problem.
+
+In nineteen oh four, the Norwegian physicist Vilhelm Bjerknes wrote down a program. If you know the state of the atmosphere at one moment, and you know the laws that govern how it changes, then in principle you can compute its state at any later moment. Forecasting is an initial value problem. Nothing mystical. Just physics, marched forward in time.
+
+What are the laws? There are only a handful. Newton's second law, applied to a parcel of air on a rotating planet: the rate of change of the wind equals the pressure gradient force, plus the Coriolis effect from the Earth's rotation, plus gravity, plus friction. Conservation of mass, which says air cannot appear or vanish, so if it converges in one place it has to go up or down. The first law of thermodynamics, which tracks heat: air that rises expands and cools, air that sinks is compressed and warms. The ideal gas law, tying pressure to density and temperature. And a conservation equation for water, because water vapor condensing into cloud releases enormous amounts of heat.
+
+These are called the primitive equations. They are nonlinear, with no closed form solution. You have to compute.
+
+So Richardson did the obvious thing. He chopped the atmosphere into a grid. Boxes roughly two hundred kilometers on a side, stacked in five vertical layers. At each grid point you store the wind, the pressure, the temperature, the humidity. Then you approximate every derivative in the equations by differences between neighboring points. The change in pressure from one box to the next, divided by the distance between them, stands in for the pressure gradient. Now the calculus becomes arithmetic. You compute how fast everything is changing right now, step forward a small amount of time, and do it again.
+
+That is it. That is numerical weather prediction. The supercomputers at the European Centre for Medium-Range Weather Forecasts in Bologna do a vastly more refined version of exactly this.
+
+Richardson even imagined how to make it fast: a forecast factory, a huge hall filled with about sixty four thousand human computers, each responsible for one patch of the map, passing numbers to their neighbors. In nineteen twenty two, he was describing a massively parallel computer. Which is precisely how weather codes are split up today.
+
+Part two. Why the forecast exploded.
+
+So why did Richardson predict a pressure jump that never happened?
+
+The tempting answer is that his arithmetic was sloppy, or his grid too coarse. Neither is the real story. The real problem was his starting point.
+
+The atmosphere supports many kinds of motion. The ones we care about, the slow, sprawling weather systems, the highs and lows that drift across a continent over days, are nearly balanced. In the middle latitudes, the pressure gradient force pushing air from high to low is almost exactly cancelled by the Coriolis effect deflecting it. That near balance is called geostrophic balance, and it is why wind blows along the lines of constant pressure on a weather map rather than straight across them.
+
+But the primitive equations also allow fast motions: gravity waves, ripples in the atmosphere's density that slosh around at high speed, a bit like the waves you get when you drop a stone in a pond. In the real atmosphere these waves exist, but they are small. They carry very little of the energy.
+
+Here is the catch. Observations are noisy and sparse. When Richardson took his measured winds and pressures and computed how fast the pressure was changing at the start, he was computing the small difference between two large, nearly cancelling quantities, the air flowing into a column and the air flowing out. A tiny error in the winds produces a huge error in that difference. His initial state was out of balance, and the equations responded by launching enormous spurious gravity waves. His six-hour pressure change was dominated by noise.
+
+How do we know? Decades later, the Irish meteorologist Peter Lynch reconstructed Richardson's forecast on a modern computer, using Richardson's own data and method. When Lynch first smoothed the initial state to remove the imbalance, a technique now called initialization, the forecast pressure change dropped to something realistic. Richardson's method was sound. His initial conditions were the problem.
+
+Hold that lesson. The starting point matters more than almost anything. It is going to come back twice.
+
+The first successful computer forecast came in nineteen fifty, on ENIAC, by a team led by the meteorologist Jule Charney with John von Neumann and Ragnar Fjørtoft. They dodged the gravity wave problem by changing the equations. Instead of the full primitive equations, they used a stripped down model that conserves a quantity called vorticity, the local spin of the air, and that by construction has no gravity waves at all. They filtered the noise out of the physics itself. Their twenty four hour forecasts took roughly twenty four hours of machine time, so they were only just keeping pace with the weather. But they worked.
+
+There is one more numerical lesson from this era, and it is worth carrying with you. When you step forward in time on a grid, your time step cannot be too large compared to your grid spacing. Roughly, information cannot be allowed to jump more than one grid box per step. If the fastest wave in your system would cross a whole box in less than one time step, the scheme goes unstable and the numbers explode. This is called the Courant Friedrichs Lewy condition, after three mathematicians who worked it out in nineteen twenty eight. It is why halving your grid spacing costs you much more than a factor of two. You have twice as many points in each of two horizontal directions, plus usually more vertical levels, and you also need to halve the time step. Resolution is brutally expensive.
+
+Part three. Chaos, and what the butterfly really means.
+
+By the late nineteen fifties, many in the field believed forecast errors came only from bad data and coarse grids, and that fixing those would extend forecasts indefinitely. Edward Lorenz broke that belief, partly by accident.
+
+Lorenz was a meteorologist at MIT running a small toy weather model on a desk-sized computer. The story, which Lorenz told himself, goes like this. In nineteen sixty one he wanted to look at one run again in more detail. So rather than start from the beginning, he typed in numbers from a printout partway through. The computer stored six decimal places. The printout showed three. He typed in point five oh six instead of point five oh six one two seven. A difference of about one part in ten thousand.
+
+He went to get coffee. When he came back, the new run had tracked the old one for a while, then drifted, then diverged completely. His first suspicion was a bad vacuum tube. It was the equations.
+
+In nineteen sixty three he published a paper called Deterministic Nonperiodic Flow, built around an even simpler system: three variables, describing a fluid heated from below, three coupled equations with a couple of nonlinear product terms. That is the system people now call the Lorenz attractor. Plot its trajectory in three dimensions and you get the famous pair of looping wings. The trajectory never repeats and never settles, yet it never leaves that bounded shape.
+
+Now, the precise idea. A system is chaotic when it has sensitive dependence on initial conditions. Two starting states that are almost identical separate, on average, exponentially fast. The rate is captured by a number called the largest Lyapunov exponent. If the separation between two runs is some initial error, then after a time it has grown to roughly that initial error times e raised to the Lyapunov exponent times the elapsed time.
+
+Why does that create a hard wall? Because of the logarithm. Suppose your predictions are useful until the error reaches some tolerable size. The time you get is the logarithm of the ratio of tolerable error to initial error, divided by the Lyapunov exponent. Make your initial measurements ten times more accurate, and you do not get ten times more forecast. You get one fixed increment of extra time. Make them a thousand times better, and you get three increments. Precision buys you time only logarithmically.
+
+Here is where the popular version oversimplifies. The butterfly line comes from a talk Lorenz gave in nineteen seventy two. The title, which a session organizer actually supplied, was a question: does the flap of a butterfly's wings in Brazil set off a tornado in Texas? People hear that as "small causes have big effects," and stop there.
+
+But Lorenz's deeper point, from a nineteen sixty nine paper, is stranger and more important. The real atmosphere is not like his three-variable toy. It has motion at every scale, from continent-wide weather systems down to gusts and eddies of a few meters. And in a flow like that, small scales have shorter predictability times. Errors in the tiniest eddies grow very fast, in minutes. Then they contaminate the next larger scale, which has a slightly longer error-growth time, and so on, cascading upward.
+
+The consequence is brutal. If errors at the smallest scales double in minutes and pass upward scale by scale, then improving your measurements of the small scales buys you almost nothing. Even if you could shrink the initial error to nearly zero, the cascade up through the scales takes a roughly fixed amount of time to reach the big weather systems. There is a finite limit to predictability that does not vanish as your initial error goes to zero. That is different from ordinary chaos, where perfect data would, in principle, give you infinite forecast time.
+
+So the honest version is not "a butterfly causes a tornado." A butterfly does not cause anything in particular. It is that the future state of the atmosphere beyond a certain horizon is not determined by any observation you could possibly make. For mid-latitude weather, that horizon is estimated at around two weeks. Recent studies with modern models put the practical ceiling for day-to-day weather at roughly that, and suggest we are still several days short of it.
+
+Part four. Data assimilation: what is the weather right now?
+
+So the starting point is everything. Richardson's forecast died on it. Lorenz showed that even tiny errors in it grow without limit. Which raises the real question. How do you know the state of the atmosphere at this moment?
+
+You might think you just measure it. But think about what you actually have. Weather balloons, launched twice a day from several hundred sites, mostly over land. Surface stations. Aircraft reporting temperature and wind along flight paths. Ships and buoys. And above all, satellites. But satellites mostly do not measure temperature at a point. They measure radiance, how much microwave or infrared energy reaches the instrument at particular frequencies, which is a smeared-out, weighted average over a deep column of air.
+
+So you have tens of millions of observations a day, of different kinds, with different errors, many of them indirect. Your model needs a value for every variable at hundreds of millions of grid points. More unknowns than measurements, and the measurements are not even of the unknowns.
+
+Here is where the GPS callback comes in.
+
+The trick is not to start from the observations alone. You start from the previous forecast. Six or twelve hours ago you ran the model; its prediction for right now is called the background. It is already a pretty good guess, and crucially, it is a dynamically balanced guess, the kind of state the atmosphere actually lives in. Then you nudge that background toward the observations, by just the right amount.
+
+How much is the right amount? The answer is a weighted least squares problem, and it is the same logic as the GPS receiver solving for its clock bias, scaled up enormously. You define a cost function with two terms. The first term penalizes distance from the background, weighted by how uncertain the background is. The second penalizes distance from the observations, weighted by how uncertain each observation is. To compare a model state with a satellite radiance, you pass the model state through what is called an observation operator, a little physics model that predicts what the satellite would have seen if the atmosphere looked like this. Then you find the atmospheric state that minimizes the total cost.
+
+Confident background and noisy observation: the analysis barely moves. Uncertain background and precise observation: it jumps. Every quantity you do not observe, you solve for. Exactly the GPS move: make what you cannot see an unknown, and let redundant measurements pin it down.
+
+The background error term is where most of the magic lives. It encodes not just how wrong the background might be, but how errors are correlated. A wind observation over the Atlantic tells you something about the pressure field around it, because in the mid-latitudes wind and pressure are tied together by that same geostrophic balance from part two. So one measurement spreads its information sideways into variables you never measured, in a physically consistent way. That is how you get a balanced initial state, and it is the deep fix for the problem that killed Richardson's forecast.
+
+The leading centers go one step further, with something called four-dimensional variational assimilation, or four D var. Instead of fitting the observations at one instant, you fit them across a window of time, say twelve hours. You ask: what initial state, run forward through the model, best matches every observation at the moment it was taken? That means the model itself becomes part of the constraint. Solving it requires running the model forward and then running what is called its adjoint backwards, to compute how a change in the initial state would change the fit at every later time. The European Centre made this operational in the late nineteen nineties, and it is a large part of why its forecasts pulled ahead.
+
+How much does assimilation matter? Over the decades, forecast skill has improved by roughly one day per decade: a five-day forecast today is about as good as a four-day forecast was ten years earlier. Better grids and better physics are part of that. But better use of observations, especially satellites, is a huge part.
+
+Part five. Ensembles: forecasting the uncertainty.
+
+Even with superb assimilation, the initial state is uncertain. And Lorenz tells us that uncertainty grows. So a single forecast, however good, is quietly hiding something. It gives you one trajectory when the honest answer is a spread of trajectories.
+
+The fix, made operational in the early nineteen nineties at both the European Centre and the American weather service, is the ensemble. Instead of one forecast, you run many. The European Centre today runs fifty perturbed members plus one unperturbed control, all at high resolution. Each starts from a slightly different initial state, consistent with the observations given their uncertainty. Each also uses slightly different random tweaks to the model physics, because the model itself is imperfect too.
+
+But the perturbations cannot be random. Here is why. Most random perturbations simply decay. The atmosphere is mostly stable to most kinds of nudges; only a few directions in state space grow fast. If you perturb randomly, your fifty members stay bunched together for days and then all get surprised together. So forecasters deliberately seek out the fastest growing directions. The European Centre originally used singular vectors, computed from the same adjoint machinery as four D var, which identify the perturbations that will grow most over the next couple of days. These days it also uses an ensemble of assimilations, running the assimilation itself many times with perturbed observations, to sample how uncertain the analysis really is.
+
+What you get out is not one forecast, but a probability distribution. On some days all fifty members agree out to ten days; the atmosphere is in a predictable mood. On other days they fan out after three. The spread is itself information, and it varies from day to day. That is the most underappreciated thing about weather forecasts. Predictability is not a fixed number. It is a property of the current state of the flow.
+
+And a good ensemble is calibrated: across all the days it says seventy percent chance of rain, it rains on about seventy percent of them.
+
+Why perturb the physics too? Because even at a grid spacing of around nine kilometers, a thunderstorm updraft or a single cloud is smaller than a grid box. Its effect has to be estimated statistically, by sub-models called parameterizations, and that is where much of the error in weather models lives.
+
+Part six. The machine learning turn.
+
+For about seventy years the story was the same: better physics, finer grids, bigger computers, better assimilation. Then, in twenty twenty two and twenty twenty three, something unexpected happened.
+
+Several groups, including Google DeepMind with a model called GraphCast, Huawei with Pangu Weather, and NVIDIA with FourCastNet, trained neural networks to forecast the weather directly from data. No equations of motion. They learned from about four decades of reanalysis, the European Centre's reconstruction of the historical atmosphere, which is itself produced by running modern data assimilation over all the old observations. The networks learn a single map: given the atmosphere now and six hours ago, predict it six hours from now. Then apply it again, and again, to march forward.
+
+The results startled the field. On many standard scores at medium range, GraphCast matched or beat the European Centre's flagship deterministic forecast, and it produced a ten-day forecast in about a minute on one chip, rather than an hour on a supercomputer. The European Centre responded by building its own machine learning model, called AIFS. A deterministic version went operational in early twenty twenty five, and an ensemble version followed that summer.
+
+So is physics obsolete? No, and the reasons are instructive.
+
+First, these models are trained on reanalysis, which comes from physics-based assimilation, and in operations they still start from an analysis made by the traditional system. Machine learning has replaced the forecast step, not the knowing-what-is-happening-now step, at least so far.
+
+Second, there is a subtle failure mode. A network trained to minimize average squared error learns to hedge. When the future is uncertain, the forecast that minimizes squared error is the average of the possibilities, and averages are smooth. So deterministic machine learning forecasts tend to get blurrier with lead time: storms smear out, extremes get muted. The scores look great, because blurry forecasts score well on squared error, but the forecast stops looking like any weather that could actually happen. The response has been probabilistic machine learning models, like DeepMind's GenCast, which generate an ensemble of sharp, physically plausible futures rather than one smooth average. That is the ensemble idea from part five, rediscovered.
+
+Third, and most important for this lecture: machine learning does not get you past Lorenz. The two-week wall is a property of the atmosphere, not of our models. A perfect emulator of the true atmosphere would still face exponential error growth from an imperfect initial state. What machine learning can do is make each forecast vastly cheaper, which means far larger ensembles, finer detail, and maybe some skill clawed back from the gap between where we are and where the intrinsic limit sits. It cannot make the unknowable knowable.
+
+Let's recap.
+
+Forecasting is an initial value problem: discretize the primitive equations on a grid and march forward. Richardson's attempt failed because his starting state was out of balance, and the equations answered with spurious gravity waves. And the Courant Friedrichs Lewy condition ties your time step to your grid spacing, which is why resolution is so expensive.
+
+Lorenz showed that the atmosphere is chaotic. Errors grow exponentially, so better measurements buy forecast time only logarithmically. And because errors cascade upward from small scales, there is a finite limit to predictability, around two weeks for mid-latitude weather, that perfect data would not remove.
+
+Data assimilation blends a model background with tens of millions of indirect observations in a weighted least squares problem, with error correlations spreading information into variables nobody measured. It is the GPS clock-bias move, scaled up.
+
+Ensembles run many forecasts from perturbed initial states, chosen along the fastest-growing directions, to forecast the uncertainty itself. And predictability varies with the state of the flow.
+
+Machine learning models now rival the physics models at the forecast step, at a tiny fraction of the cost, but they still lean on physics-based analysis, they blur unless made probabilistic, and they cannot break Lorenz's wall.
+
+Now, five questions. Pause after each one and answer out loud.
+
+Question one. Richardson's method was essentially correct, yet his six-hour forecast predicted a wildly unrealistic pressure change. What went wrong with his initial state, and why did a small error in the observed winds produce such a large error in the pressure tendency?
+
+Question two. Explain why halving the grid spacing of a weather model costs far more than twice the computing power. What role does the Courant Friedrichs Lewy condition play?
+
+Question three. In ordinary chaos, making your initial measurements a thousand times more accurate buys only a modest increase in forecast length. Why is the gain logarithmic rather than proportional? And then, why does Lorenz's multi-scale argument say that even perfect measurement would not push the horizon out indefinitely?
+
+Question four. In data assimilation, how can a single wind observation over the ocean improve the model's estimate of the pressure field, a quantity that was never measured there? Connect your answer to the way a GPS receiver handles its clock error.
+
+Question five. A deterministic neural network forecast trained to minimize average squared error tends to get smoother and blurrier at longer lead times, even while its scores stay good. Why does minimizing squared error under uncertainty produce that behavior, and how do ensemble or probabilistic approaches address it?
+
+That's tonight's lecture. Reply with your answers whenever you're ready.

@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>AM 015. Weather forecasting: Richardson's failure, Lorenz's wall, and the machines</title>
+      <description>Numerical weather prediction as an initial value problem: why Richardson's hand forecast blew up, the Courant Friedrichs Lewy cost of resolution, Lorenz chaos and the two-week limit, data assimilation as GPS-style least squares, ensembles, and what machine learning models did and did not change.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Richardson's method was essentially correct, yet his six-hour forecast predicted a wildly unrealistic pressure change. What went wrong with his initial state, and why did a small error in the observed winds produce such a large error in the pressure tendency?
+2. Why does halving the grid spacing of a weather model cost far more than twice the computing power? What role does the Courant Friedrichs Lewy condition play?
+3. Why is the forecast-length gain from better initial measurements logarithmic rather than proportional, and why does Lorenz's multi-scale argument say even perfect measurement would not push the horizon out indefinitely?
+4. In data assimilation, how can a single wind observation over the ocean improve the estimate of the pressure field there, which was never measured? Connect it to how a GPS receiver handles its clock error.
+5. Why does a deterministic neural forecast trained on average squared error get blurrier at long lead times even while its scores stay good, and how do ensemble or probabilistic approaches address it?</description>
+      <itunes:summary>Numerical weather prediction as an initial value problem: why Richardson's hand forecast blew up, the Courant Friedrichs Lewy cost of resolution, Lorenz chaos and the two-week limit, data assimilation as GPS-style least squares, ensembles, and what machine learning models did and did not change.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Richardson's method was essentially correct, yet his six-hour forecast predicted a wildly unrealistic pressure change. What went wrong with his initial state, and why did a small error in the observed winds produce such a large error in the pressure tendency?
+2. Why does halving the grid spacing of a weather model cost far more than twice the computing power? What role does the Courant Friedrichs Lewy condition play?
+3. Why is the forecast-length gain from better initial measurements logarithmic rather than proportional, and why does Lorenz's multi-scale argument say even perfect measurement would not push the horizon out indefinitely?
+4. In data assimilation, how can a single wind observation over the ocean improve the estimate of the pressure field there, which was never measured? Connect it to how a GPS receiver handles its clock error.
+5. Why does a deterministic neural forecast trained on average squared error get blurrier at long lead times even while its scores stay good, and how do ensemble or probabilistic approaches address it?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/015-weather-forecasting-chaos.mp3" length="8170941" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-015-weather-forecasting-chaos</guid>
+      <pubDate>Mon, 23 Nov 2026 09:00:00 +0000</pubDate>
+      <itunes:duration>00:22:41</itunes:duration>
+      <itunes:episode>15</itunes:episode>
+    </item>
+    <item>
       <title>PM 014. Robert Moses: how one unelected man ran a city for forty years</title>
       <description>How Robert Moses built durable power without votes: bill drafting, public authorities that compounded toll revenue into new bonds, covenants shielded by the contract clause, and the threat to resign. Then the costs, the tangled low-bridge story, his fall through Rockefeller and Chase Manhattan, and the three faces of power.
 

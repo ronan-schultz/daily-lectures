@@ -208,5 +208,20 @@
       "Robert Dahl studied the decisions that got fought over and concluded power was spread out. Using the second face of power, explain what a study like that would have missed about Moses.",
       "The low-bridge story is often told as simple deliberate exclusion. What does the careful version say is well established, what remains uncertain, and why?"
     ]
+  },
+  {
+    "number": 15,
+    "slug": "015-weather-forecasting-chaos",
+    "title": "Weather forecasting: Richardson's failure, Lorenz's wall, and the machines",
+    "series": "morning",
+    "date": "2026-11-23",
+    "summary": "Numerical weather prediction as an initial value problem: why Richardson's hand forecast blew up, the Courant Friedrichs Lewy cost of resolution, Lorenz chaos and the two-week limit, data assimilation as GPS-style least squares, ensembles, and what machine learning models did and did not change.",
+    "questions": [
+      "Richardson's method was essentially correct, yet his six-hour forecast predicted a wildly unrealistic pressure change. What went wrong with his initial state, and why did a small error in the observed winds produce such a large error in the pressure tendency?",
+      "Why does halving the grid spacing of a weather model cost far more than twice the computing power? What role does the Courant Friedrichs Lewy condition play?",
+      "Why is the forecast-length gain from better initial measurements logarithmic rather than proportional, and why does Lorenz's multi-scale argument say even perfect measurement would not push the horizon out indefinitely?",
+      "In data assimilation, how can a single wind observation over the ocean improve the estimate of the pressure field there, which was never measured? Connect it to how a GPS receiver handles its clock error.",
+      "Why does a deterministic neural forecast trained on average squared error get blurrier at long lead times even while its scores stay good, and how do ensemble or probabilistic approaches address it?"
+    ]
   }
 ]
