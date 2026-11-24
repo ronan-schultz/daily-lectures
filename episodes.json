@@ -238,5 +238,20 @@
       "Sulla tried to restore senatorial control and then voluntarily gave up power. Why did his reforms fail to last, while his march on Rome had lasting effects? What does that say about the relationship between written rules and precedent?",
       "Compare two views of the fall: a long structural decline beginning in 133, versus Gruen's argument that the institutions still functioned in the 50s and the collapse came from one specific crisis. What evidence from this lecture supports each side?"
     ]
+  },
+  {
+    "number": 17,
+    "slug": "017-jet-engine-cycle",
+    "title": "The jet engine: why it slowly turned back into a propeller",
+    "series": "morning",
+    "date": "2026-11-24",
+    "summary": "How a modern turbofan works, built from two competing efficiencies: thrust as momentum and where the force really acts, the Brayton cycle and pressure ratio, why compressors need many stages (adverse pressure gradients and stall), running turbine blades above their melting point, propulsive efficiency and bypass ratio, and the limits of the fan, from geared turbofans to open rotors.",
+    "questions": [
+      "A jet engine is tested in a vacuum chamber with nothing behind it. Does it produce more, less, or the same thrust as the same exhaust in air, and where on the engine does the forward force actually act?",
+      "Raising the compressor pressure ratio raises the ideal cycle efficiency. Why, at a fixed maximum turbine temperature, does pushing the pressure ratio ever higher eventually stop paying off, and what happens to the power per kilogram of air?",
+      "Why does a high pressure compressor need roughly ten stages while the turbine driving it needs only one or two? Answer in terms of the boundary layer and the direction of the pressure gradient.",
+      "Using the relationship between thrust and wasted kinetic energy, explain why moving more air more slowly is more efficient. Then explain why that logic does not lead a supersonic fighter to use a high bypass engine.",
+      "What problem does the gearbox in a geared turbofan solve? Explain what the fan wants, what the low pressure turbine wants, and why they cannot both have it on a single shaft."
+    ]
   }
 ]

@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>AM 017. The jet engine: why it slowly turned back into a propeller</title>
+      <description>How a modern turbofan works, built from two competing efficiencies: thrust as momentum and where the force really acts, the Brayton cycle and pressure ratio, why compressors need many stages (adverse pressure gradients and stall), running turbine blades above their melting point, propulsive efficiency and bypass ratio, and the limits of the fan, from geared turbofans to open rotors.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. A jet engine is tested in a vacuum chamber with nothing behind it. Does it produce more, less, or the same thrust as the same exhaust in air, and where on the engine does the forward force actually act?
+2. Raising the compressor pressure ratio raises the ideal cycle efficiency. Why, at a fixed maximum turbine temperature, does pushing the pressure ratio ever higher eventually stop paying off, and what happens to the power per kilogram of air?
+3. Why does a high pressure compressor need roughly ten stages while the turbine driving it needs only one or two? Answer in terms of the boundary layer and the direction of the pressure gradient.
+4. Using the relationship between thrust and wasted kinetic energy, explain why moving more air more slowly is more efficient. Then explain why that logic does not lead a supersonic fighter to use a high bypass engine.
+5. What problem does the gearbox in a geared turbofan solve? Explain what the fan wants, what the low pressure turbine wants, and why they cannot both have it on a single shaft.</description>
+      <itunes:summary>How a modern turbofan works, built from two competing efficiencies: thrust as momentum and where the force really acts, the Brayton cycle and pressure ratio, why compressors need many stages (adverse pressure gradients and stall), running turbine blades above their melting point, propulsive efficiency and bypass ratio, and the limits of the fan, from geared turbofans to open rotors.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. A jet engine is tested in a vacuum chamber with nothing behind it. Does it produce more, less, or the same thrust as the same exhaust in air, and where on the engine does the forward force actually act?
+2. Raising the compressor pressure ratio raises the ideal cycle efficiency. Why, at a fixed maximum turbine temperature, does pushing the pressure ratio ever higher eventually stop paying off, and what happens to the power per kilogram of air?
+3. Why does a high pressure compressor need roughly ten stages while the turbine driving it needs only one or two? Answer in terms of the boundary layer and the direction of the pressure gradient.
+4. Using the relationship between thrust and wasted kinetic energy, explain why moving more air more slowly is more efficient. Then explain why that logic does not lead a supersonic fighter to use a high bypass engine.
+5. What problem does the gearbox in a geared turbofan solve? Explain what the fan wants, what the low pressure turbine wants, and why they cannot both have it on a single shaft.</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/017-jet-engine-cycle.mp3" length="7656861" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-017-jet-engine-cycle</guid>
+      <pubDate>Tue, 24 Nov 2026 09:00:00 +0000</pubDate>
+      <itunes:duration>00:21:16</itunes:duration>
+      <itunes:episode>17</itunes:episode>
+    </item>
+    <item>
       <title>PM 016. Why the Roman Republic fell: a constitution that ran on restraint</title>
       <description>The fall of the Roman Republic as institutional failure: a high-veto system held together by unwritten norms, the Gracchi and the first political killings, the emergency decree, why the 'Marian reforms' are mostly a modern myth, Sulla's march and failed fix, and the road to the Rubicon, including the debate over Caesar's motives and whether the collapse was structural or contingent.
 

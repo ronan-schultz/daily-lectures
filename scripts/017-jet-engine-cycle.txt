@@ -1,0 +1,139 @@
+Here is a strange fact about the airliner you will probably sit in at some point this year. The gas hitting the first row of turbine blades inside its engines is hotter than the melting point of the metal those blades are made of. Not a little hotter. Hundreds of degrees hotter. And the blades do not melt. They spin at thousands of revolutions per minute, each one pulling on its root with a force measured in tons, for tens of thousands of hours.
+
+Here is a second strange fact. In a modern airliner engine, the hot, roaring jet that we picture when we hear the word "jet" makes only a small share of the thrust. Most of the push, something like four fifths of it or more, comes from a big fan at the front that is doing roughly what a propeller does. The jet engine, in other words, has spent seventy years slowly turning back into a propeller, and that turns out to be exactly the right thing for it to do.
+
+Tonight is about why. We are going to build the jet engine from two separate efficiencies that pull in different directions, and see how almost every visible feature of a modern engine, the giant fan, the dozen compressor stages, the cooling holes, the gearbox in the newest designs, falls out of that tension.
+
+Here is the roadmap. Part one: where thrust actually comes from, and a popular picture that is wrong. Part two: the thermodynamic cycle, and why squeezing the air harder makes the engine more efficient. Part three: why the compressor needs so many stages while the turbine needs so few. Part four: the hot section, and how you run metal above its melting point. Part five: propulsive efficiency, which is the real reason for the big fan. And part six: the limits of the fan, and what engineers are doing about them, from gearboxes to open rotors.
+
+Part one. Where does the push come from?
+
+The cleanest way to think about any air-breathing engine is momentum. Air comes into the front of the engine at the speed the airplane is flying. It leaves the back faster. The engine has changed the momentum of that air, and by Newton's third law, the air pushes back on the engine.
+
+Written out, the thrust is roughly the mass of air flowing through the engine each second, times the difference between the exhaust velocity and the flight velocity. There is also a small correction term when the exhaust pressure does not match the outside pressure, but for a well designed subsonic engine you can mostly ignore it.
+
+Keep that formula in your head, because the whole lecture hangs on it. Thrust equals mass flow times the velocity change. You can get a given thrust by grabbing a little air and throwing it very fast, or by grabbing a lot of air and throwing it gently. Same thrust. Very different engines. We will come back to that choice in part five.
+
+Now for the popular picture. People often imagine that a jet works by blasting exhaust backward against the air behind it, the way you might push off a wall. That is not it. The engine would work just as well, actually slightly better, if the air behind it were not there at all. That is why rockets work in a vacuum.
+
+So where does the force physically land on the airplane? On internal surfaces. Pressure acts on the compressor blades, the combustor walls, the turbine blades and the nozzle, and if you add up every one of those pressure and friction forces, some pointing forward and some pointing backward, the net is a forward push transmitted through the engine mounts into the wing. Interestingly, some parts of the engine are pulled backward. The turbine and the converging nozzle actually feel a rearward force. The compressor and the combustor feel a large forward force. The thrust is the difference. The momentum formula is just a shortcut that lets you skip that bookkeeping by drawing a box around the whole engine.
+
+Part two. The cycle.
+
+Every jet engine runs a version of something called the Brayton cycle. It has four steps, and the old mechanic's mnemonic captures them: suck, squeeze, bang, blow. Air is drawn in. It is compressed. Fuel is burned in it at roughly constant pressure, which adds heat. And then the hot, high pressure gas expands, first through a turbine that takes out just enough work to drive the compressor, and then through a nozzle or a fan that turns what is left into thrust.
+
+Why compress at all? Why not just burn fuel in the incoming air? Here is the intuition. Heat is only useful for doing work if you can let the gas expand afterward. If you burn fuel in air at atmospheric pressure, there is nowhere lower to expand to. The gas gets hot, but it has no pressure drop to push through. Compression is what creates the drop you later expand through.
+
+For an idealized Brayton cycle there is a beautiful result. The thermal efficiency depends only on the pressure ratio, meaning the pressure leaving the compressor divided by the pressure entering it. The formula is: efficiency equals one, minus one over the pressure ratio raised to a certain power. That power is the heat capacity ratio minus one, all divided by the heat capacity ratio. For air, the heat capacity ratio is about one point four, so the power works out to about two sevenths.
+
+Let me put numbers on that, rounded. At a pressure ratio of ten, about what the very first generation of practical jets reached, the ideal efficiency is a bit under fifty percent. At a pressure ratio of forty, it is around sixty five percent. At sixty, which is roughly where the most advanced engine flying today, General Electric's GE9X on the Boeing seven seventy seven X, sits, it is close to seventy percent.
+
+Notice the shape. Going from ten to forty buys you a lot. Going from forty to sixty buys you a few points. Diminishing returns, because the pressure ratio sits under a fractional power.
+
+Real engines fall well short of those ideal numbers, because compressors and turbines are not perfect, and because of a constraint the simple formula hides. Here is the catch. When you compress air, it heats up. At a pressure ratio of fifty or sixty, the air leaving the back of the compressor, before any fuel has been burned, is already several hundred degrees Celsius. That is hot enough that the last compressor stages cannot be made of titanium and have to move to nickel alloys. And it means that if the turbine has a fixed maximum temperature it can tolerate, the hotter the air arriving at the combustor, the less fuel you are allowed to add before you hit that ceiling.
+
+So the efficiency of the cycle is set by the pressure ratio, but how much power you can get out of each kilogram of air is set largely by how hot you can run the turbine. A small, light engine needs lots of power per kilogram of air. That makes turbine temperature one of the two great levers of engine design, and it is why the hot section, which we get to in part four, has absorbed so much of the industry's money.
+
+Part three. Why so many compressor stages?
+
+If you cut a modern engine in half, you see something lopsided. The high pressure compressor has around ten stages, each one a disk of rotating blades followed by a ring of fixed vanes. The high pressure turbine that drives it may have just one or two stages. The turbine is extracting all the work the compressor absorbs, the two are bolted to the same shaft, and yet one needs five or ten times as many rows of blades. Why?
+
+The answer is in the direction of the pressure gradient, and it is one of the deepest ideas in fluid mechanics.
+
+Think about the thin layer of air right against a blade surface, the boundary layer. Friction has already slowed it down. In a turbine, the gas is flowing from high pressure to low pressure. The pressure is helping it along, so even that slow, tired air near the wall keeps moving. Engineers call this a favorable pressure gradient. You can turn the flow sharply and drop a large amount of pressure in a single stage, and it stays attached.
+
+A compressor does the opposite. It pushes air from low pressure into high pressure, uphill. The slow air in the boundary layer has very little momentum, and the rising pressure ahead of it pushes back. Push too hard and that slow air stops, reverses, and the flow peels off the blade. That is called separation, and on a compressor blade it is called stall. It is the same physics as a wing stalling at too high an angle of attack.
+
+So each compressor stage can only raise the pressure by a modest fraction, roughly in the range of a few tens of percent, before the boundary layers give up. To get a pressure ratio of forty or fifty overall, you multiply many small steps together. The turbine, going downhill, can take big bites.
+
+And when a compressor stalls badly enough, the whole engine can surge. The high pressure air at the back, no longer held there by the blades, blows backward out the front, sometimes with a bang and a flame out of the inlet. Then the flow re-establishes and it can happen again. Avoiding surge across every flight condition, from idle on a hot runway to full power in thin air at altitude, is one of the hardest jobs in engine design.
+
+That problem explains several features you would never guess from the basic cycle. One is splitting the compressor across two or three separate shafts, called spools, spinning at different speeds, so that the front and back stages can each run closer to their happy speed when the engine is throttled back. Another is variable stator vanes, the fixed rows that can rotate on pivots to change the angle the air meets the next row. A third is bleed valves that dump air overboard at low power to keep the front stages from choking the back ones. All of that machinery exists because air resists being pushed uphill.
+
+Part four. The hot section.
+
+Now back to the opening paradox. After the compressor, the air goes into the combustor, where fuel is sprayed in and burned. The gas that leaves the combustor and hits the first turbine stage is, in a modern large engine, roughly fifteen hundred to well over sixteen hundred degrees Celsius at takeoff. The nickel-based superalloys the turbine blades are made of start to melt somewhere around thirteen hundred degrees, and they lose much of their strength well below that.
+
+So how does this work? There are four layered tricks, and none of them alone would be enough.
+
+The first trick is the metal itself. A turbine blade is spinning so fast that it is under enormous tension, pulling outward on its root. At high temperature, metals under steady load slowly stretch, a process called creep. In an ordinary cast metal, a lot of that creep happens along the boundaries between the tiny crystals, or grains, that make up the metal. Those boundaries are weak, disordered seams. The solution, developed from the nineteen sixties into the eighties, is to grow the entire blade as a single crystal, with no grain boundaries at all. It is cast in a mold that is slowly withdrawn from a furnace, with a little helical passage at the bottom, sometimes called a pigtail, that acts as a filter so that only one crystal grain makes it through into the blade. Nearly every turbine blade in the hottest stage of a modern airliner engine is, in effect, one enormous crystal.
+
+The second trick is internal cooling. The blades are hollow, threaded with a maze of passages. Air is bled from the compressor, bypassing the combustor, and pumped through them. That air is itself several hundred degrees, but it is far cooler than the combustion gas, and it carries heat away from the inside of the blade.
+
+The third trick is film cooling. The cooling air does not just flow through the blade. It exits through hundreds of tiny holes drilled in the surface, often by laser or electrical discharge machining, angled so that the air spreads out and clings to the outside of the blade as a thin cool blanket. The blade is, in a real sense, sitting inside a layer of its own cooler air, sheltered from the fire around it.
+
+The fourth trick is a thermal barrier coating, a thin layer of ceramic, typically zirconia stabilized with yttria, sprayed on the outside. Ceramics conduct heat poorly, so a coating a fraction of a millimeter thick can let the metal underneath run noticeably cooler than the surface.
+
+Put those together and the metal itself stays below the temperature where it would fail, even though the gas around it is far above the melting point.
+
+But here is the trade-off, and it ties back to part two. Every bit of cooling air is air you compressed, paid for with turbine work, and then did not burn fuel in. It leaks out of the cycle. So cooling has a real cost in efficiency, and engine designers are constantly trading higher turbine temperatures against the cooling air needed to survive them.
+
+That is why the newest engines are starting to use ceramic matrix composites, materials built from ceramic fibers in a ceramic matrix, in some hot section parts. They can tolerate higher temperatures than nickel alloys and weigh about a third as much, so they need less cooling air. The GE9X uses them in parts of its combustor and turbine. It is a slow transition, because ceramics are brittle and turbine parts get hit with everything from sand to ice, but it is the direction the field is moving.
+
+Part five. Propulsive efficiency, and the real reason for the fan.
+
+Everything so far has been about thermal efficiency: how well the engine turns the chemical energy in fuel into kinetic energy in a jet of gas. But that is only half the story. The other half is how well that jet of gas turns into useful work pushing the airplane forward. That is called propulsive efficiency, and the overall efficiency of the engine is the product of the two.
+
+Go back to the thrust formula. Thrust is mass flow times the velocity change, the exhaust velocity minus the flight velocity. Now think about energy. The engine leaves behind a stream of air that, relative to the ground, is moving backward. That moving air carries kinetic energy, and that energy is simply wasted. It is the wake, the swirling, warm, noisy trail behind the airplane.
+
+The kinetic energy wasted each second is one half, times the mass flow, times the velocity change squared.
+
+So here is the key asymmetry. Thrust grows linearly with the velocity change. The waste grows with the square of it. If you double the velocity change while halving the mass flow, you get the same thrust, but you throw away twice as much energy in the wake.
+
+Out of that comes a clean expression. Propulsive efficiency equals two, divided by one plus the ratio of the exhaust velocity to the flight velocity. If the exhaust leaves at exactly the flight speed, that ratio is one, and the efficiency is a perfect one hundred percent, but you also get zero thrust, because there is no velocity change. If the exhaust leaves at three times the flight speed, the efficiency is two over four, fifty percent. Half your jet's energy is going into the wake.
+
+The lesson is: to be efficient, move a lot of air, slowly. Make the exhaust velocity just a little higher than the flight velocity, and make up the thrust with huge mass flow.
+
+That is the whole case against the pure turbojet. The first jets, Frank Whittle's in Britain and Hans von Ohain's in Germany, sent every bit of air through the core and blasted it out the back at very high speed. Von Ohain's engine flew first, in nineteen thirty nine, and Whittle's in nineteen forty one. Superb for raw speed. Terrible for fuel economy at airliner speeds, because the exhaust was going far faster than the airplane.
+
+The fix is the turbofan. Put a big fan at the front, driven by an extra turbine at the back of the core. The fan pushes a large stream of air around the outside of the core, through a duct, and out the back at modest speed. The ratio of the mass of air going around the core to the mass going through it is called the bypass ratio.
+
+Early turbofans in the nineteen sixties had bypass ratios around one. Then, at the end of that decade, came the first high bypass engines, built for the big military transport, the C-five, and for the Boeing seven forty seven, with bypass ratios in the range of five to eight. That was a step change in fuel consumption, and arguably the thing that made the wide-body era affordable. Today's large engines sit around ten, and the newest narrow-body engines around eleven or twelve.
+
+Here is a nice way to see that the turbofan is still a heat engine with a propeller attached. The core is a small, hot, high pressure gas generator whose job is to produce shaft power, very efficiently. The fan is a ducted propeller that turns that shaft power into thrust, very efficiently. Thermal efficiency lives in the core. Propulsive efficiency lives in the fan. The modern engine has largely separated the two jobs.
+
+And here is a check on your intuition. Why do fighter jets still use low bypass engines? Because propulsive efficiency depends on the ratio of exhaust velocity to flight velocity. If you are flying at twice the speed of sound, a fast exhaust is no longer wasteful relative to your flight speed, and a big slow fan could not even produce thrust at that speed, because its exhaust would barely be faster than the incoming air. Plus a giant fan is frontal area, which is drag. For high speed, small and fast wins. For efficient cruise around eighty percent of the speed of sound, big and slow wins.
+
+Part six. The limits of the fan.
+
+If a bigger bypass ratio is better, why not a bypass ratio of thirty? Several walls arrive at once.
+
+The first wall is size, weight and drag. The fan on the GE9X is about three and a half meters across, and it sits inside a nacelle, the streamlined casing around the engine. The bigger the fan, the heavier the fan, the heavier the casing that has to contain a blade if one breaks off, and the more drag from the casing's outer surface. At some point the extra weight and drag eat the propulsive gains.
+
+The second wall is the ground. An engine hung under a wing needs clearance. The Boeing seven thirty seven is the famous example. It sits low, designed in the nineteen sixties for skinny, low bypass engines, and each new generation of fatter engines has had to be squeezed under it. The nineteen eighties version got engines with a flattened bottom on the nacelle. For the seven thirty seven MAX, the engines were mounted farther forward and higher on the wing, which changed how the airplane's nose behaved at high angles of attack, and that change is what the flight control software implicated in the two MAX crashes was meant to compensate for. That is a story for another night, but it shows how one thermodynamic argument can ripple all the way into aircraft handling.
+
+The third wall is a conflict of speeds on a single shaft, and it is the most elegant. A fan wants to spin slowly. Its blade tips are moving through the air fast already because the fan is so big, and if the tips go too far past the speed of sound you get shock waves, noise, and losses. But the low pressure turbine that drives the fan wants to spin fast. A turbine stage extracts work in proportion to its blade speed squared, roughly, so a slow turbine needs many stages to do the same job. In a conventional engine the fan and its turbine are on the same shaft and forced to the same speed. As fans got bigger and slower, the low pressure turbines grew more stages, heavier and longer.
+
+The answer that Pratt and Whitney spent about twenty years developing is the geared turbofan. Put a gearbox, a planetary reduction gear, between the turbine shaft and the fan, with a ratio of about three to one. Now the turbine spins fast and the fan spins slow, each near its own best speed. The low pressure turbine needs only a few stages, the fan can get bigger, and bypass ratios on the narrow-body versions reach about twelve.
+
+The catch is the gearbox itself. It has to carry tens of thousands of horsepower, in a few hundred kilograms of hardware, for years, while shedding the heat from even a fraction of a percent of losses. Making that reliable took decades. It is a good example of a component that is simple on a whiteboard and brutally hard in metal.
+
+And the most radical answer is to remove the casing entirely. An open rotor, sometimes called an open fan, uses huge unducted blades, like a very advanced propeller, plus a ring of fixed vanes behind them to straighten the swirl. Without a nacelle, there is no casing weight or drag, and the effective bypass ratio can go several times higher than today's engines. The problems are noise, the risk of a blade release with no containment, and fitting giant blades onto a wing. Open rotor demonstrators flew in the United States in the late nineteen eighties, when fuel prices were high. The idea faded when oil got cheap, and it is back now, with an industry program aiming to test one later this decade.
+
+Let me recap.
+
+Thrust is mass flow times the velocity change, and the force actually lands on the engine's internal surfaces, not on the air behind it.
+
+The Brayton cycle's efficiency rises with pressure ratio, with diminishing returns, and real engines are capped by how hot the turbine can run, because compressed air is already hot before you burn anything.
+
+Compressors need many stages because they push air uphill against an adverse pressure gradient, where boundary layers separate and blades stall. Turbines go downhill and take big bites.
+
+The hot section runs above the melting point of its metal using single crystal blades, internal cooling, film cooling and ceramic coatings, and every bit of cooling air is a tax on efficiency.
+
+Propulsive efficiency is two over one plus the ratio of exhaust velocity to flight velocity, which says move a lot of air slowly. That is the reason for the giant fan and the rising bypass ratio.
+
+And the fan hits walls: weight and drag, ground clearance, and the speed conflict with its turbine, which the geared turbofan resolves with a gearbox and the open rotor tries to escape entirely.
+
+Now, five questions. Pause after each one and answer out loud before you move on.
+
+Question one. A jet engine is tested in a vacuum chamber with nothing behind it. Does it produce more thrust, less thrust, or the same, compared to the same exhaust in air, and where on the engine does the forward force actually act?
+
+Question two. Raising the compressor pressure ratio raises the ideal cycle efficiency. Explain why, at a fixed maximum turbine temperature, pushing the pressure ratio ever higher eventually stops paying off, and what happens to the power you get from each kilogram of air.
+
+Question three. Why does a high pressure compressor need roughly ten stages while the turbine driving it needs only one or two? Answer in terms of the boundary layer and the direction of the pressure gradient.
+
+Question four. Using the relationship between thrust and wasted kinetic energy, explain why moving more air more slowly is more efficient. Then explain why that logic does not lead a supersonic fighter to use a high bypass engine.
+
+Question five. What problem does the gearbox in a geared turbofan solve? Explain what the fan wants, what the low pressure turbine wants, and why they cannot both have it on a single shaft.
+
+That is the lecture. Reply with your answers whenever you are ready.
