@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>PM 018. How languages are built, and why some are hard for English speakers</title>
+      <description>Languages as systems of a few design choices: phoneme categories and the perceptual magnet, isolating versus agglutinative versus fusional words, case versus word order and Greenberg's head-direction patterns, what the Foreign Service Institute difficulty ranking really measures, and what research says works for adult learners (input, output, explicit instruction, spaced retrieval).
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. A Japanese adult has trouble hearing the difference between English r and l. Why is it not just that the sounds are unfamiliar, but that perception is actively pulled toward a single category?
+2. Turkish has many more word endings than Spanish, yet its morphology is in some ways easier to learn. What difference between agglutinative and fusional systems explains that?
+3. English uses fairly rigid word order while Russian and Finnish allow freer order. What is the connection to case marking, and why did losing case endings make fixed order more necessary in English?
+4. Verb-final languages tend to use postpositions and put relative clauses before the noun. What is the processing explanation for why these features travel together?
+5. Why does comprehension fall off sharply at ninety percent word coverage rather than declining gently, and why does Swain's work with immersion students suggest input alone is not enough?</description>
+      <itunes:summary>Languages as systems of a few design choices: phoneme categories and the perceptual magnet, isolating versus agglutinative versus fusional words, case versus word order and Greenberg's head-direction patterns, what the Foreign Service Institute difficulty ranking really measures, and what research says works for adult learners (input, output, explicit instruction, spaced retrieval).
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. A Japanese adult has trouble hearing the difference between English r and l. Why is it not just that the sounds are unfamiliar, but that perception is actively pulled toward a single category?
+2. Turkish has many more word endings than Spanish, yet its morphology is in some ways easier to learn. What difference between agglutinative and fusional systems explains that?
+3. English uses fairly rigid word order while Russian and Finnish allow freer order. What is the connection to case marking, and why did losing case endings make fixed order more necessary in English?
+4. Verb-final languages tend to use postpositions and put relative clauses before the noun. What is the processing explanation for why these features travel together?
+5. Why does comprehension fall off sharply at ninety percent word coverage rather than declining gently, and why does Swain's work with immersion students suggest input alone is not enough?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/018-how-languages-are-built.mp3" length="8468877" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-018-how-languages-are-built</guid>
+      <pubDate>Tue, 24 Nov 2026 14:00:00 +0000</pubDate>
+      <itunes:duration>00:23:31</itunes:duration>
+      <itunes:episode>18</itunes:episode>
+    </item>
+    <item>
       <title>AM 017. The jet engine: why it slowly turned back into a propeller</title>
       <description>How a modern turbofan works, built from two competing efficiencies: thrust as momentum and where the force really acts, the Brayton cycle and pressure ratio, why compressors need many stages (adverse pressure gradients and stall), running turbine blades above their melting point, propulsive efficiency and bypass ratio, and the limits of the fan, from geared turbofans to open rotors.
 

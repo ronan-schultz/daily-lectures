@@ -253,5 +253,20 @@
       "Using the relationship between thrust and wasted kinetic energy, explain why moving more air more slowly is more efficient. Then explain why that logic does not lead a supersonic fighter to use a high bypass engine.",
       "What problem does the gearbox in a geared turbofan solve? Explain what the fan wants, what the low pressure turbine wants, and why they cannot both have it on a single shaft."
     ]
+  },
+  {
+    "number": 18,
+    "slug": "018-how-languages-are-built",
+    "title": "How languages are built, and why some are hard for English speakers",
+    "series": "afternoon",
+    "date": "2026-11-24",
+    "summary": "Languages as systems of a few design choices: phoneme categories and the perceptual magnet, isolating versus agglutinative versus fusional words, case versus word order and Greenberg's head-direction patterns, what the Foreign Service Institute difficulty ranking really measures, and what research says works for adult learners (input, output, explicit instruction, spaced retrieval).",
+    "questions": [
+      "A Japanese adult has trouble hearing the difference between English r and l. Why is it not just that the sounds are unfamiliar, but that perception is actively pulled toward a single category?",
+      "Turkish has many more word endings than Spanish, yet its morphology is in some ways easier to learn. What difference between agglutinative and fusional systems explains that?",
+      "English uses fairly rigid word order while Russian and Finnish allow freer order. What is the connection to case marking, and why did losing case endings make fixed order more necessary in English?",
+      "Verb-final languages tend to use postpositions and put relative clauses before the noun. What is the processing explanation for why these features travel together?",
+      "Why does comprehension fall off sharply at ninety percent word coverage rather than declining gently, and why does Swain's work with immersion students suggest input alone is not enough?"
+    ]
   }
 ]
