@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>PM 020. The Cuban Missile Crisis: game theory, groupthink, and the secret deal</title>
+      <description>The thirteen days as a laboratory for theories of decision-making: chicken and Schelling's threat that leaves something to chance, the Trollope-ploy myth and the secret Jupiter trade, Allison's three models, Janis's groupthink and what the tapes revised, and the near misses (tactical warheads, Black Saturday, submarine B-59) neither leader knew about.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. In the game of chicken, why can a player gain by visibly reducing their own options, like throwing away the steering wheel? And what makes such a commitment credible rather than a bluff?
+2. Explain Schelling's idea of the threat that leaves something to chance. Why might a leader deliberately create a risk he cannot fully control, and how does the quarantine fit that description?
+3. What was the Trollope ploy story, and why do historians now call it misleading? How does the secret Jupiter deal change the crisis from a pure game of chicken into a different kind of bargain?
+4. Using Allison's organizational process model, explain why the Soviet missile sites were relatively easy to spot from the air. Why does a rational actor model struggle to explain the same fact?
+5. Janis held up the Missile Crisis as the cure for groupthink. Give one reason from psychology research and one from the historical record why that showcase is weaker than it first appeared. And why is 'it ended peacefully, so the decisions were good' a flawed inference?</description>
+      <itunes:summary>The thirteen days as a laboratory for theories of decision-making: chicken and Schelling's threat that leaves something to chance, the Trollope-ploy myth and the secret Jupiter trade, Allison's three models, Janis's groupthink and what the tapes revised, and the near misses (tactical warheads, Black Saturday, submarine B-59) neither leader knew about.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. In the game of chicken, why can a player gain by visibly reducing their own options, like throwing away the steering wheel? And what makes such a commitment credible rather than a bluff?
+2. Explain Schelling's idea of the threat that leaves something to chance. Why might a leader deliberately create a risk he cannot fully control, and how does the quarantine fit that description?
+3. What was the Trollope ploy story, and why do historians now call it misleading? How does the secret Jupiter deal change the crisis from a pure game of chicken into a different kind of bargain?
+4. Using Allison's organizational process model, explain why the Soviet missile sites were relatively easy to spot from the air. Why does a rational actor model struggle to explain the same fact?
+5. Janis held up the Missile Crisis as the cure for groupthink. Give one reason from psychology research and one from the historical record why that showcase is weaker than it first appeared. And why is 'it ended peacefully, so the decisions were good' a flawed inference?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/020-cuban-missile-crisis-game-theory.mp3" length="9050493" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-020-cuban-missile-crisis-game-theory</guid>
+      <pubDate>Wed, 25 Nov 2026 14:00:00 +0000</pubDate>
+      <itunes:duration>00:25:08</itunes:duration>
+      <itunes:episode>20</itunes:episode>
+    </item>
+    <item>
       <title>AM 019. Public-key cryptography: from clock arithmetic to RSA and the quantum threat</title>
       <description>How strangers share secrets in public: Diffie-Hellman and the discrete logarithm, Euler's theorem and why RSA decryption works, how real RSA breaks (padding oracles, shared primes found by a greatest common divisor), Shor's algorithm as period finding by interference, and the lattice-based replacements already deployed. Opens with a callback on GPS dual-frequency ionosphere correction.
 

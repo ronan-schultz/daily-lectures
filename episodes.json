@@ -283,5 +283,20 @@
       "In Shor's algorithm, why does finding the period of a random number's powers, modulo the modulus, hand you a factor? And why is 'a quantum computer tries every answer at once' the wrong explanation of the speedup?",
       "Why is migrating key exchange to post-quantum cryptography more urgent than migrating signatures, and why do deployments run a classical and a post-quantum key exchange together rather than switching outright?"
     ]
+  },
+  {
+    "number": 20,
+    "slug": "020-cuban-missile-crisis-game-theory",
+    "title": "The Cuban Missile Crisis: game theory, groupthink, and the secret deal",
+    "series": "afternoon",
+    "date": "2026-11-25",
+    "summary": "The thirteen days as a laboratory for theories of decision-making: chicken and Schelling's threat that leaves something to chance, the Trollope-ploy myth and the secret Jupiter trade, Allison's three models, Janis's groupthink and what the tapes revised, and the near misses (tactical warheads, Black Saturday, submarine B-59) neither leader knew about.",
+    "questions": [
+      "In the game of chicken, why can a player gain by visibly reducing their own options, like throwing away the steering wheel? And what makes such a commitment credible rather than a bluff?",
+      "Explain Schelling's idea of the threat that leaves something to chance. Why might a leader deliberately create a risk he cannot fully control, and how does the quarantine fit that description?",
+      "What was the Trollope ploy story, and why do historians now call it misleading? How does the secret Jupiter deal change the crisis from a pure game of chicken into a different kind of bargain?",
+      "Using Allison's organizational process model, explain why the Soviet missile sites were relatively easy to spot from the air. Why does a rational actor model struggle to explain the same fact?",
+      "Janis held up the Missile Crisis as the cure for groupthink. Give one reason from psychology research and one from the historical record why that showcase is weaker than it first appeared. And why is 'it ended peacefully, so the decisions were good' a flawed inference?"
+    ]
   }
 ]

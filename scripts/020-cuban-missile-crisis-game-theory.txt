@@ -1,0 +1,149 @@
+Saturday, October the twenty-seventh, nineteen sixty-two. A Soviet diesel submarine called B-59 is somewhere in the Sargasso Sea, northeast of Cuba. It has been submerged for days. The batteries are nearly flat, the air conditioning has failed, and the temperature inside is somewhere north of a hundred degrees Fahrenheit. Men are passing out at their posts. Above them, American destroyers are dropping small signalling depth charges, the naval equivalent of knocking on the hull and saying "come up." The crew has had no contact with Moscow for a long time. For all they know, the war has already started.
+
+What the Americans on those destroyers did not know is that B-59 was carrying a torpedo with a nuclear warhead.
+
+According to the best accounts we have, the captain, Valentin Savitsky, lost his temper and ordered the nuclear torpedo readied. And according to those same accounts, the man who talked him down was the flotilla's chief of staff, Vasili Arkhipov, who happened to be on that boat. The submarine surfaced, surrounded by American ships, and turned for home.
+
+Hold on to that story, because we will come back to it and ask how solid it really is. But notice what kind of story it is. It is not a story about presidents and premiers making clever moves. It is a story about exhausted men in a hot steel tube, far below the level where strategy happens.
+
+Today's lecture is about the Cuban Missile Crisis as a laboratory. Political scientists, game theorists and psychologists have all used those thirteen days to test their theories of how decisions get made under pressure. Some of those theories held up. Some were built on a version of events that later turned out to be partly a cover story.
+
+Here is the roadmap. First, the crisis itself, quickly, and why Khrushchev did it. Second, the game theorist's view: the crisis as a game of chicken, and Thomas Schelling's idea of the threat that leaves something to chance. Third, how it actually ended, which is not how most of us were taught. Fourth, Graham Allison's three lenses, which ask whether "the United States decided" even means anything. Fifth, Irving Janis and groupthink, and what the secret White House tapes did to the heroic version. And finally, back to that submarine, and what the near misses tell us about control.
+
+Part one. What happened.
+
+In the spring of nineteen sixty-two, Nikita Khrushchev decided to put nuclear missiles in Cuba. Medium-range missiles that could reach Washington, and intermediate-range missiles that could reach most of the continental United States. He did it secretly, under a cover operation, with cargo ships carrying missiles below decks and soldiers told they were going somewhere cold.
+
+Why? Historians still argue about the weights, but three motives come up again and again. The first was to protect Cuba. The year before, the United States had backed the failed Bay of Pigs invasion, and covert operations against Castro were still running. Khrushchev had every reason to think another invasion was coming.
+
+The second motive was the strategic balance. In the nineteen sixty election, Kennedy had campaigned on a supposed missile gap in the Soviets' favour. Once in office, his own administration made it clear the gap ran the other way. The United States had far more intercontinental missiles and bombers than the Soviet Union. Putting medium-range missiles ninety miles from Florida was a cheap way to narrow that gap without building expensive long-range rockets.
+
+The third motive was symbolic, and personal. The United States had deployed Jupiter missiles in Italy and Turkey, right on the Soviet border. Khrushchev reportedly liked to say it was time the Americans found out what it felt like to have missiles pointed at them from next door.
+
+On October the fourteenth, an American U-2 spy plane photographed missile sites under construction near San Cristóbal in western Cuba. Kennedy was shown the pictures on the morning of the sixteenth, and that is when the thirteen days begin. He gathered a group of advisers that became known as the Executive Committee of the National Security Council, or ExComm. They argued for nearly a week in secret. The options ranged from doing nothing, to a surgical air strike on the missile sites, to a full invasion.
+
+On the twenty-second, Kennedy went on television and announced a naval "quarantine" of Cuba. Not a blockade. The word mattered, because under international law a blockade is an act of war. The quarantine took effect on the twenty-fourth. Soviet ships approaching the line stopped, or turned around. Then came two very different letters from Khrushchev, a terrifying Saturday, and on Sunday the twenty-eighth, a radio announcement from Moscow that the missiles would be dismantled and shipped home.
+
+That's the outline everyone knows. Now let's see what the theorists did with it.
+
+Part two. Chicken.
+
+Imagine two drivers speeding toward each other down the middle of a road. Each can swerve or keep going. If one swerves and the other doesn't, the one who swerved is humiliated, and the other wins. If both swerve, it's a draw, a little embarrassing but survivable. If neither swerves, they both die.
+
+That is the game of chicken, and it has a very particular structure. There is no single obviously correct move. If you're sure the other driver will keep going, you should swerve, because a humiliating life beats death. If you're sure the other driver will swerve, you should keep going and collect the win. So there are two stable outcomes, one where I back down and one where you do, and the whole contest is about which of those two we end up in.
+
+Here is the catch. In chicken, the winner is whoever can convince the other side that they will not swerve. And that leads to a deeply strange conclusion: you can gain by limiting your own options. The classic image is the driver who rips the steering wheel off and throws it out the window, in full view of the other car. Now he cannot swerve. Once the other driver believes that, swerving is the only sane move left.
+
+The person who thought hardest about this was the economist Thomas Schelling, whose book The Strategy of Conflict came out in nineteen sixty, two years before the crisis. Schelling later shared the Nobel Prize in economics for this work. And his central insight was about commitment. A threat you would obviously never carry out is worthless. So the art of coercion is making threats credible, often by visibly tying your own hands.
+
+But Schelling went further, and this is the part that matters for Cuba. Suppose the threat is so horrible, all-out nuclear war, that nobody would believe you would choose it on purpose. How do you make it credible? Schelling's answer was what he called "the threat that leaves something to chance." You don't threaten to deliberately start a war. You deliberately create a situation that might slide into war whether or not anyone chooses it. You raise the risk, and you share the risk, and then you dare the other side to keep standing there with you.
+
+Think of two climbers roped together near the edge of a cliff. Neither will jump. But one of them can step closer to the edge, where the footing is loose, and the danger to both of them rises. The pressure comes not from a choice to jump, but from the shared, uncontrollable probability of a slip.
+
+Now look at the quarantine through those eyes. It was a beautifully designed move. It was a real, visible commitment: American warships on a line in the ocean. It put the next decision squarely on Khrushchev, who had to choose whether to send his ships through. It left the bigger options, the air strike and the invasion, in reserve as a further step up. And it raised the risk of an accident at sea, of some captain somewhere doing something nobody had ordered. That risk was not a bug in the strategy. In Schelling's terms, it was part of how the strategy worked.
+
+Khrushchev, without the vocabulary, understood this perfectly. In his long letter of October the twenty-sixth, he wrote that the two of them should not pull on the ends of a rope in which Kennedy had tied the knot of war, because the harder they pulled, the tighter the knot would get, until even the one who tied it could not undo it. That is the threat that leaves something to chance, described by someone on the receiving end.
+
+There's a famous line from that week, attributed to Secretary of State Dean Rusk when the Soviet ships stopped at the quarantine line: "We're eyeball to eyeball, and I think the other fellow just blinked." It's the perfect chicken quote. Which is exactly why we should be suspicious of reading the whole crisis as a game of chicken. Because the way it actually ended was not one side blinking.
+
+Part three. How it really ended.
+
+On Friday the twenty-sixth, Khrushchev sent that long, emotional letter. The gist was: if the United States promises not to invade Cuba, the reason for the missiles disappears. Then on Saturday morning, before the Americans had replied, a second, more formal message arrived, broadcast publicly on Moscow radio. This one added a new demand. The Soviets would remove their missiles from Cuba if the Americans removed their Jupiter missiles from Turkey.
+
+For decades, the standard story went like this. The ExComm was baffled by the two letters. Then someone, often credited to Robert Kennedy, had a clever idea: ignore the second, harder letter and simply accept the first one, as if the second had never arrived. This became known as the "Trollope ploy," after a plot device in Anthony Trollope's novels where a character deliberately interprets an ambiguous gesture as a marriage proposal. Kennedy replied to the first letter, Khrushchev accepted, and the hard-liners in Moscow were outmanoeuvred. Firmness, plus a little cleverness, had won.
+
+That version came largely from Robert Kennedy's own memoir, Thirteen Days, published after his death in nineteen sixty-nine. And it is, at best, half the story.
+
+What actually happened on Saturday evening was this. Robert Kennedy met the Soviet ambassador, Anatoly Dobrynin, at the Justice Department. He delivered a public answer that matched the first letter: remove the missiles, and the United States would pledge not to invade Cuba. And then he added a private message. The Jupiter missiles in Turkey would be gone within a few months. But this part could never be made public, and if the Soviets ever disclosed it, the deal was off.
+
+The Jupiters, fifteen of them in Turkey, were quietly removed by April nineteen sixty-three. The secret held for years. The participants who knew about it kept quiet, and in some cases actively told the cleaner version. The trade was only acknowledged by several of the surviving American officials in the early nineteen eighties, and the full picture came out as Soviet records and the White House tape recordings became available. The historian Sheldon Stern, who worked through those tapes at the Kennedy Library, has spent years arguing that the Trollope ploy is essentially a myth: Kennedy did not ignore the second letter. He accepted its substance, privately.
+
+So what does this do to the game theory? It doesn't destroy it, but it changes the game. Pure chicken has a winner and a loser. What happened instead was a bargain with a hidden side payment. Each leader got something real. Khrushchev got the no-invasion pledge and the Jupiters gone. Kennedy got the missiles out of Cuba and a public image of victory. And crucially, the secrecy let both of them manage their own audiences. Khrushchev could tell his generals he had won a guarantee for Cuba. Kennedy did not have to look like he had traded away a NATO ally's security under threat.
+
+Here is the deeper lesson. In real crises, the payoffs are not just "win" or "lose" on the map. They include what each leader's own hawks, allies and public will think. A huge part of skilled crisis bargaining is finding a deal that lets the other side save face at home. A model with two unitary players can't see that, because it assumes each country is one mind with one set of preferences.
+
+Which brings us to the man who made that assumption the target of his career.
+
+Part four. Allison's three lenses.
+
+In nineteen seventy-one, a young Harvard political scientist named Graham Allison published a book called Essence of Decision. It became one of the most assigned books in the field. His argument was that when we say "the Soviet Union decided to put missiles in Cuba," we are smuggling in a model without noticing. He laid out three different models, three lenses, and showed that each one makes you see different facts.
+
+Model one is the rational actor. The state is a single, unified decision-maker. It has goals, it weighs options, it picks the one that best serves its goals. This is the chicken model, and the default model of most diplomatic history. Ask "why did Khrushchev put the missiles in Cuba?" and you get answers about strategic balance and protecting an ally.
+
+Model two is organizational process. Governments are not minds. They are collections of large organizations, each running on standard operating procedures, routines and repertoires built up over years. When the leadership says "put missiles in Cuba," the actual doing is handed to organizations that do it the way they always do it.
+
+And this explains some genuinely puzzling facts. Why did the Soviets, who had kept the operation so secret on the way in, build the missile sites in Cuba in patterns that looked, from the air, just like missile sites in the Soviet Union, making them easier for American photo interpreters to recognise? Why was camouflage so inconsistent until after the sites had been discovered? Under model one, that looks like an inexplicable blunder. Under model two, it looks like construction crews following their manuals, because nobody had written a manual for building missile bases secretly in a tropical country.
+
+The same lens applies to the American side. The U-2 that strayed into Soviet airspace on the twenty-seventh was on a routine air-sampling mission over the Arctic that nobody had thought to cancel. The machine kept running its routines while the leaders believed they were steering.
+
+Model three is governmental politics, sometimes called bureaucratic politics. Here the decision is not a choice at all, but the outcome of bargaining among senior players, each with their own position, their own agency's interests, their own read of the situation. The slogan that gets attached to this model is "where you stand depends on where you sit." The Air Force chief of staff, Curtis LeMay, pushed hard for a large air strike, and in one meeting told the president that the quarantine was almost as bad as the appeasement at Munich. Defense Secretary Robert McNamara argued early that a missile is a missile, and it made little military difference whether it was fired from Cuba or the Soviet Union, though he came to accept that it made a big political difference. Their positions tracked, at least partly, their jobs.
+
+Now, a fair critique. Allison's models have been criticised for being hard to falsify. If the outcome looks rational, model one explains it; if it looks clumsy, model two; if it looks like a compromise, model three. Some of the vivid anecdotes in the first edition, like a tense confrontation over where exactly the Navy should draw the quarantine line, have been questioned by later historians. And "where you stand depends on where you sit" turns out to be a tendency, not a law. Robert Kennedy's position was not set by being attorney general. Still, the lasting value is the warning: when a powerful country does something odd, don't assume a grand plan before you've ruled out a manual and a turf war.
+
+Part five. Groupthink, and the tapes.
+
+A year after Allison, in nineteen seventy-two, the psychologist Irving Janis published a book that gave English a new word: groupthink. Janis was a social psychologist at Yale, and he was interested in how smart people in tight-knit groups make terrible decisions together.
+
+His central case was the Bay of Pigs. Kennedy and many of the same advisers had approved an invasion plan in nineteen sixty-one that, looking back, was obviously doomed. Why did nobody stop it? Janis argued that highly cohesive groups under pressure develop a set of symptoms. They feel invulnerable. They rationalise away warnings. They stereotype the enemy as stupid or weak. Members censor their own doubts. And some members appoint themselves "mind guards" who shield the leader from upsetting information. The result is the illusion of unanimity, and a decision nobody privately believed in.
+
+And then, Janis argued, the same group learned. The Missile Crisis was his model of how to do it right. Kennedy deliberately skipped some meetings so his presence would not anchor the discussion. The group split into subgroups to develop competing options. Outsiders were brought in. People were encouraged to change their minds. It's a lovely story of redemption, and it became a staple of management courses.
+
+So, what held up?
+
+Let's be honest about the science first. Groupthink as a full theory, the idea that cohesion plus certain conditions reliably produces this particular syndrome, has had a rough time when tested. Laboratory studies and later reviews of historical cases have found mixed support. Group cohesion in particular often doesn't predict worse decisions, and sometimes predicts better ones. What does seem robust are some of the narrower pieces: directive leaders who state their preference early do narrow discussion, and groups do tend to under-share the information that only one member holds. So the vocabulary survived better than the theory.
+
+Now the history. Kennedy secretly recorded many of the ExComm meetings. The tapes became public in stages, mostly in the nineteen nineties, and transcribing them turned out to be its own fight, with historians disputing the accuracy of the published versions. But the tapes changed the picture in some important ways.
+
+Here's one. In Thirteen Days, Robert Kennedy comes across as the leading voice of restraint, the man who said an American surprise attack on a small country would be a Pearl Harbor in reverse. He did make that argument. But the tapes show him, especially in the first days, also floating some quite aggressive ideas, including staging some kind of incident as a pretext. People can and did change their minds over the week, which is actually a point in Janis's favour. But the clean division into wise doves and reckless hawks is partly a retrospective edit, made by participants who were also writing their own place in history.
+
+And here's the bigger one. The groupthink success story, as Janis told it, was about a firm-but-flexible group finding the right move. It did not include the secret Jupiter trade, because in the early nineteen seventies, almost nobody outside a handful of officials knew about it. On the final Saturday, the tapes show that Kennedy himself was more willing to trade the Jupiters than much of his committee. In a sense, the crisis was resolved partly by the president going around the group, through a small inner circle and a private channel to Dobrynin. That is not a refutation of Janis, but it's an awkward fact for a story about good group process.
+
+This is a pattern you will see again and again in the history of social science. A famous case gets used to illustrate a theory, the theory spreads, and then the archives open and the case turns out to be messier than the theory needed it to be.
+
+Part six. Back to the submarine.
+
+Let's return to where we started, because this is where the deepest lesson lives.
+
+In the original accounts, the crisis was about two leaders and their advisers managing risk. But since the end of the Cold War, as Soviet participants spoke and documents opened, we have learned how much was happening that neither leader knew about.
+
+In nineteen ninety-two, at a conference in Havana that brought together American, Soviet and Cuban veterans of the crisis, a retired Soviet general revealed that the Soviet forces in Cuba had also had tactical nuclear weapons. These were short-range battlefield weapons, meant to be used against an invading force on the beaches. The total count of Soviet nuclear warheads on the island was around a hundred and fifty, counting both strategic and tactical. American intelligence had also badly underestimated the Soviet troop presence: there were roughly forty thousand Soviet military personnel in Cuba, several times the American estimate at the time. Robert McNamara, who attended that conference, said afterwards that if the United States had invaded, as many on the ExComm were urging by the final weekend, the chance of nuclear use would have been very high.
+
+Some caution is needed on how much authority local commanders had to use those tactical weapons on their own. Accounts differ, and the instructions from Moscow appear to have tightened during the crisis. But the basic point stands. The air strike and invasion options that the hawks favoured were evaluated against a picture of the battlefield that was simply wrong.
+
+Then there is Saturday the twenty-seventh, which participants later called Black Saturday. On that one day, a U-2 was shot down over Cuba and its pilot, Major Rudolf Anderson, was killed. The decision to fire was made by Soviet air defence commanders on the island, not by Khrushchev. That same day, the stray American U-2 over the Arctic wandered into Soviet airspace above Chukotka, and Soviet fighters scrambled to intercept it while American fighters went up to escort it home. And out in the Atlantic, the B-59 incident.
+
+So, how solid is the Arkhipov story? It's worth being careful. Much of the detail comes from the recollections of one officer on board, the communications intelligence officer Vadim Orlov, given decades later, and from other crew members' memories. Historians at the National Security Archive, who did the most work on this, take the core of it seriously: a submarine with a nuclear torpedo, being forced to surface by American ships, with a furious captain and an argument in the control room. What's harder to pin down are the specifics, such as whether launching formally required the agreement of three officers, or how close Savitsky really came to giving the order rather than shouting it in frustration. The popular version, "one man saved the world," compresses real uncertainty into a single heroic moment. The honest version is still alarming: the decision to use a nuclear weapon was, for a while, sitting in the hands of a few exhausted people with no communication with their government.
+
+Here's why this connects back to Schelling. The threat that leaves something to chance works because the chance is real. Kennedy and Khrushchev were both, in a sense, using that shared risk as leverage. But neither knew how big the chance actually was. Neither knew about the other side's half of the danger. Kennedy did not know about the tactical warheads, or what was going on inside B-59. Khrushchev did not authorise the shooting down of Anderson's plane. The rope Khrushchev described was being pulled by people neither leader could see.
+
+And according to his speechwriter Ted Sorensen, Kennedy himself later estimated the odds of the crisis ending in war as somewhere between one in three and even. We should treat that number as a feeling, not a calculation. But it tells you that the man at the centre did not think he was in control.
+
+There's one more thing worth saying here, and it's about hindsight. Because the crisis ended peacefully, it's tempting to conclude that the strategy worked, and that the process was sound. But a good outcome is not proof of a good decision. If you play a game with a meaningful chance of catastrophe and you survive, you have learned that you survived. You have not necessarily learned that the risk was worth taking. The aftermath, by the way, included some sobering practical steps: the Moscow to Washington hotline was set up in nineteen sixty-three, partly because the two leaders had been communicating through letters that took hours to deliver and broadcasts on public radio.
+
+Let's recap.
+
+Khrushchev put missiles in Cuba for a mix of reasons: to protect Castro from invasion, to cheaply narrow an American lead in long-range missiles, and to answer the Jupiters in Turkey. Kennedy chose a quarantine, a visible commitment that put the next move on Khrushchev and held bigger escalations in reserve.
+
+The game-theory lens sees a game of chicken, where the winner is whoever can credibly commit not to swerve. Schelling's sharper idea was the threat that leaves something to chance: you raise a shared risk you don't fully control, and use that risk as leverage.
+
+But the crisis didn't end with one side blinking. It ended with a bargain, including a secret promise to remove the Jupiters from Turkey, hidden for years behind the story of the Trollope ploy. Secrecy let both leaders manage their own audiences.
+
+Allison's three lenses showed that "the state decided" hides organizations running their routines, and senior officials bargaining from their seats, though his models are hard to falsify and some of his anecdotes have been questioned.
+
+Janis used the crisis as his showcase for avoiding groupthink. The vocabulary lasted better than the theory, and the tapes and the secret deal complicate the redemption story.
+
+And the near misses, the tactical warheads, Black Saturday, B-59, show that the chance in Schelling's threat was very real, and much larger than either leader knew.
+
+Now, your five questions. Take your time with each.
+
+Question one. In the game of chicken, why can a player gain by visibly reducing their own options, like throwing away the steering wheel? And what makes such a commitment credible rather than a bluff?
+
+Question two. Explain Schelling's idea of "the threat that leaves something to chance." Why might a leader deliberately create a risk he cannot fully control, and how does the quarantine fit that description?
+
+Question three. What was the Trollope ploy story, and why do historians now call it misleading? How does the secret Jupiter deal change the crisis from a pure game of chicken into a different kind of bargain?
+
+Question four. Using Allison's organizational process model, explain why the Soviet missile sites were relatively easy to spot from the air. Why does a rational actor model struggle to explain the same fact?
+
+Question five. Janis held up the Missile Crisis as the cure for groupthink. Give two reasons, one from psychology research and one from the historical record, why that showcase is weaker than it first appeared. And why is "it ended peacefully, so the decisions were good" a flawed inference?
+
+That's the lecture. Enjoy the rest of the drive home.
