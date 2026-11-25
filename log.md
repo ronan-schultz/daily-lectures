@@ -43,3 +43,4 @@ Add new topics here as they come up, in the same categories or new ones.
 | 16 | 2026-11-23 | PM | Why the Roman Republic fell: vetoes and norms, Gracchi, final decree, Marian-reform myth, Sulla, Rubicon debate (institutions lane) | pending | |
 | 17 | 2026-11-24 | AM | The jet engine: Brayton cycle, compressor stall, hot-section cooling, propulsive efficiency and bypass ratio, geared turbofan and open rotor (physics/engineering) | pending | |
 | 18 | 2026-11-24 | PM | How languages are built: phonemes and perceptual magnet, morphology types, case vs word order and Greenberg, FSI difficulty, adult learning research (skills lane) | pending | |
+| 19 | 2026-11-25 | AM | Public-key cryptography: Diffie-Hellman, Euler's theorem and RSA, padding oracles and shared primes, Shor as period finding, lattice PQC and hybrid TLS (math/CS; callback on GPS dual-frequency ionosphere) | pending | |

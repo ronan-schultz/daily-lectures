@@ -268,5 +268,20 @@
       "Verb-final languages tend to use postpositions and put relative clauses before the noun. What is the processing explanation for why these features travel together?",
       "Why does comprehension fall off sharply at ninety percent word coverage rather than declining gently, and why does Swain's work with immersion students suggest input alone is not enough?"
     ]
+  },
+  {
+    "number": 19,
+    "slug": "019-public-key-rsa-quantum",
+    "title": "Public-key cryptography: from clock arithmetic to RSA and the quantum threat",
+    "series": "morning",
+    "date": "2026-11-25",
+    "summary": "How strangers share secrets in public: Diffie-Hellman and the discrete logarithm, Euler's theorem and why RSA decryption works, how real RSA breaks (padding oracles, shared primes found by a greatest common divisor), Shor's algorithm as period finding by interference, and the lattice-based replacements already deployed. Opens with a callback on GPS dual-frequency ionosphere correction.",
+    "questions": [
+      "In RSA, why does raising the message to the public exponent and then to the private exponent give the message back? What role does the totient play, and why does knowing the two primes let you compute the private exponent when the public cannot?",
+      "Suppose factoring were perfectly hard. Why would textbook RSA, without padding, still be insecure? Give at least one concrete attack, and say what randomized padding fixes.",
+      "Two routers generated RSA keys with poor randomness and share one prime factor. How does an attacker recover both private keys without factoring either modulus, and why is that fast?",
+      "In Shor's algorithm, why does finding the period of a random number's powers, modulo the modulus, hand you a factor? And why is 'a quantum computer tries every answer at once' the wrong explanation of the speedup?",
+      "Why is migrating key exchange to post-quantum cryptography more urgent than migrating signatures, and why do deployments run a classical and a post-quantum key exchange together rather than switching outright?"
+    ]
   }
 ]

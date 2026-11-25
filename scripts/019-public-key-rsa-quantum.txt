@@ -1,0 +1,149 @@
+Before tonight's topic, a two minute callback to the very first episode, on GPS. One question there asked how a receiver deals with the delay the ionosphere adds to the satellite signal, and the mechanism was the part that went missing. So here it is again, cleanly.
+
+The ionosphere is a layer of charged particles high in the atmosphere, and it slows the signal by an amount that depends on frequency. Specifically, the extra delay scales with one over the frequency squared. Low frequencies get delayed more, high frequencies less. That sounds like a nuisance, and it is, but it is a nuisance with a known shape.
+
+So the satellite broadcasts on two frequencies. The receiver now has two measurements of the same distance. Each one equals the true range plus the ionospheric delay scaled by one over its own frequency squared. Two equations, two unknowns: the true range and the size of the delay. Solve them together and the delay drops out. That is the theme from that whole episode. When a nuisance has a known structure, you do not fight it. You make it an unknown and solve for it.
+
+Hold onto that idea of two equations giving you more than one, because it shows up again tonight, in a very different place.
+
+Here is the hook. Every time your phone opens a secure connection, to your bank, to your email, to this podcast feed, it does something that sounds impossible. It agrees on a secret key with a server it has never met, over a network that anyone can listen to. Every byte of that negotiation is visible to whoever sits on the wire. And at the end, the two sides share a secret the eavesdropper does not have.
+
+For most of human history, that was considered impossible. If you wanted to share a secret with someone, you first had to share a secret with them. A courier, a codebook, a key in a diplomatic pouch. The problem of getting keys to people was the problem of cryptography.
+
+Tonight is about how that problem got solved with arithmetic, why the solution works, how it fails in practice, and why a quantum computer would break it while leaving other kinds of encryption mostly alone.
+
+Here is the roadmap. Part one: the key distribution problem and the trick that cracked it, Diffie-Hellman. Part two: the number theory toolkit, clock arithmetic and the theorem that makes exponents repeat. Part three: RSA itself, built piece by piece, and why it works. Part four: how real systems break it without ever factoring anything, and what we actually know about how hard factoring is. Part five: Shor's algorithm, and a popular picture of quantum computing that is wrong. And part six: what replaces it, which is already running on your phone.
+
+Part one. The key distribution problem.
+
+In 1976, Whitfield Diffie and Martin Hellman published a paper called "New Directions in Cryptography." Ralph Merkle had been working on closely related ideas independently. The paper proposed something that sounded almost like a category error: two people could agree on a shared secret entirely in public.
+
+There is a nice twist to the history. British intelligence got there first. At GCHQ, James Ellis had the idea of what he called non-secret encryption around 1970. In 1973, a young mathematician named Clifford Cocks, newly arrived, reportedly came up with what is essentially RSA in an evening. Shortly after, his colleague Malcolm Williamson found what is essentially Diffie-Hellman. None of it was published. It stayed classified until 1997. So the public story and the true story differ, and the public inventors had no idea.
+
+How does the trick work? The usual analogy is mixing paint. We agree publicly on a yellow. I secretly add red, you secretly add blue. We swap our mixtures in public. I add my red to your mixture, you add your blue to mine, and we both end up with the same brown. The eavesdropper saw yellow, orange, and green, but cannot unmix paint to get the brown.
+
+Let's do it properly. Pick a large prime number, call it the modulus, and a base number. Both are public. I pick a secret exponent and send you the base raised to my secret exponent, reduced modulo the prime. You pick your own secret exponent and send me the base raised to yours, also reduced. Now I take what you sent and raise it to my secret. You take what I sent and raise it to yours. We both get the base raised to the product of our two secrets. Same number, computed two different ways.
+
+The eavesdropper sees the base, the modulus, and the two numbers we exchanged. To get our shared secret, they would need to recover one of our exponents from the base raised to it. That is the discrete logarithm problem. In ordinary real numbers, logarithms are easy. But once you wrap everything around a modulus, the numbers jump around with no visible pattern, and nobody knows a fast general method to undo it.
+
+Here is the catch, and it matters for later. Diffie-Hellman gives you a shared secret, but it does not tell you who you are sharing it with. A man in the middle can run the exchange separately with each of us. Solving that needs a second tool: a way to sign things. That is where RSA comes in.
+
+Part two. The number theory toolkit.
+
+Everything tonight lives in modular arithmetic, which is clock arithmetic. On a twelve hour clock, nine plus five is two. You add normally, then keep only the remainder after dividing by twelve. The same works for multiplication. And crucially, it works for exponents too.
+
+Here is the first key fact. Take a prime, say seven, and take any number not divisible by it, say three. Now look at the powers of three, modulo seven. Three, then two, then six, then four, then five, then one. And then it cycles. Three to the sixth is one, modulo seven. That is not a coincidence. Fermat's little theorem says that for any prime, any number not divisible by that prime, raised to the power of one less than the prime, gives one.
+
+Why would that be true? Here is the intuition. Multiplying by three, modulo seven, just shuffles the nonzero remainders, one through six. It is a permutation. So the product of all six remainders is the same as the product of all six remainders each multiplied by three. That second product has an extra factor of three to the sixth in it. Cancel the common part, and three to the sixth must be one. No heavy machinery. Just a shuffle.
+
+Euler generalized this to any modulus, not just primes. For a modulus, count how many numbers below it share no factors with it. That count is called Euler's totient. Then any number coprime to the modulus, raised to the totient, gives one. For a prime, the totient is just the prime minus one, which gets you back to Fermat.
+
+Now the case that matters. Suppose the modulus is the product of two primes. Then the totient is the first prime minus one, times the second prime minus one. And notice something. If you know the two primes, the totient is trivial to compute. If you only know their product, computing the totient turns out to be as hard as finding the primes. Keep that asymmetry in mind. It is the whole game.
+
+Two more tools, briefly. Raising a number to a two thousand bit power is cheap: you square repeatedly and multiply together the right squares, a few thousand multiplications in all. And dividing, which in modular arithmetic means multiplying by an inverse, is cheap too, using Euclid's algorithm for the greatest common divisor, run backwards. Now we build something.
+
+Part three. RSA.
+
+In 1977, Ron Rivest, Adi Shamir, and Leonard Adleman at MIT published the system that carries their initials. Here is how it is put together.
+
+Step one. Choose two large random primes. For a modern key, each is about a thousand and twenty four bits, around three hundred decimal digits. Multiply them to get the modulus, about two thousand bits. The modulus is public. The primes are secret.
+
+Step two. Compute the totient: first prime minus one, times second prime minus one. Easy for you, because you know the primes.
+
+Step three. Choose a public exponent. In practice almost everyone uses sixty five thousand five hundred and thirty seven, which is two to the sixteenth plus one. Why that number? It is prime, and it has only two one bits in binary, so encrypting with it takes about seventeen multiplications.
+
+Step four. Compute the private exponent as the inverse of the public exponent, modulo the totient. That is one run of Euclid's algorithm. So the public exponent times the private exponent equals one plus some multiple of the totient.
+
+Now encrypt. Take a message, encoded as a number smaller than the modulus. Raise it to the public exponent, modulo the modulus. That is the ciphertext. To decrypt, raise the ciphertext to the private exponent.
+
+Why does that give you the message back? Raising to the public exponent and then to the private exponent is the same as raising the message to their product. That product is one plus a multiple of the totient. And by Euler's theorem, the message raised to the totient is one. So the message raised to a multiple of the totient is also one, and what remains is the message raised to the first power. The message. The exponents cycle, and the private exponent is chosen to land you exactly back where you started.
+
+And here is the trapdoor laid bare. Anyone can encrypt, because the modulus and public exponent are published. Only someone who knows the totient can compute the private exponent. And computing the totient requires the two primes. So the security rests on one assumption: given the modulus, you cannot find its two prime factors.
+
+Run it in reverse and you get signatures. Raise a hash of a document to your private exponent. Anyone can raise the result to your public exponent and check that the hash comes back. Only you could have produced it. That is the tool that fixes the man in the middle problem from part one. The server signs its half of the key exchange, and a certificate authority has signed the server's public key.
+
+Two practical questions. First, where do you get thousand bit primes? You guess. The prime number theorem says that near a number, about one in every natural log of that number is prime. For thousand bit numbers, that natural log is roughly seven hundred, so about one random number in seven hundred is prime, or one in three hundred and fifty if you only try odd ones. You pick random odd numbers and test them with a fast probabilistic test called Miller-Rabin. Each round that a composite number survives is unlikely, and after a few dozen rounds the chance of a false prime is smaller than the chance of a hardware error.
+
+Second, the private operation is slow, because the private exponent is a full two thousand bit number. And here is where the callback pays off. If you know the two primes, you can do the computation separately modulo each prime, with numbers half the size, and then stitch the two answers back together using the Chinese remainder theorem. Two smaller equations instead of one big one. Since multiplication cost grows roughly with the square of the size, each half is about a quarter of the work, and the exponents shrink too. In practice, that makes private key operations several times faster, commonly quoted as around four. Same structural trick as the GPS receiver: split one hard problem into two easier ones that you solve jointly.
+
+Part four. How it actually breaks.
+
+If you implement exactly what I just described, which people call textbook RSA, you are in trouble, even if factoring is perfectly hard. Why?
+
+First, it is deterministic. The same message always encrypts to the same ciphertext. If the message is "yes" or "no," an attacker just encrypts both with your public key and compares.
+
+Second, it is malleable. Multiply a ciphertext by some number raised to the public exponent, and when it is decrypted, the message comes out multiplied by that number. An attacker can change what you meant without knowing what you said.
+
+The fix is padding: before encrypting, you wrap the message in a structured, randomized layer. The modern scheme is called OAEP. But padding introduced its own famous failure. In 1998, Daniel Bleichenbacher showed that if a server reveals, even indirectly through an error message or a timing difference, whether a decrypted message had valid padding, an attacker can send many carefully modified ciphertexts and, one yes or no at a time, narrow down the original message. Variants kept resurfacing in real servers for twenty years.
+
+Here is a second kind of failure, and I like this one. In 2012, two research teams scanned public keys across the internet. They found that a noticeable fraction of keys, mostly from embedded devices like routers and firewalls, shared a prime factor with some other key. The devices generated keys right after booting, before they had gathered enough randomness, so different devices sometimes picked the same first prime.
+
+Why does that matter? Because finding a shared factor between two numbers does not require factoring. You just compute their greatest common divisor, with Euclid's algorithm, which is fast. If two moduli share one prime, the greatest common divisor is that prime, and dividing it out gives you the other prime in each key. Both private keys, gone, without solving the hard problem at all. The researchers were able to compute private keys for tens of thousands of devices this way.
+
+The lesson of part four: the mathematics is rarely what breaks. The randomness, the padding, the error messages, the implementation breaks.
+
+Now, how hard is the hard problem? Here is where the popular version needs correcting. People say RSA is secure because factoring is proven hard. That is not true. Nobody has proven factoring is hard. It is not even believed to be among the hardest problems in the class computer scientists call NP. It sits in an odd middle zone. And RSA has not been proven to be as hard as factoring either. There could, in principle, be a way to decrypt without factoring. What we actually have is fifty years of very smart people failing to find a fast method.
+
+The best known classical method is the general number field sieve. Its running time is sub-exponential, meaning it grows faster than any polynomial in the number of digits but much slower than trying every possible factor. The public record, set in early 2020, is a number called RSA two-fifty, eight hundred and twenty nine bits long. It took roughly two thousand seven hundred years of computing time on a single core, spread across many machines. A two thousand bit key is estimated to be billions of times harder still. Classically, RSA two thousand forty eight is safe.
+
+One more correction on how RSA is used today. People imagine it encrypting their data. Mostly it doesn't. The current version of the web's security protocol, TLS one point three, removed the option to use RSA to send the session key. Key exchange is now done with Diffie-Hellman over elliptic curves, and the bulk data is encrypted with a fast symmetric cipher like AES. RSA's main job now is signatures, especially in certificates. The reason for the switch is something called forward secrecy. If a server's long term RSA key is stolen years from now, recordings of past sessions encrypted directly under that key can be decrypted. With a fresh Diffie-Hellman exchange per session, thrown away afterward, they cannot.
+
+Part five. Shor's algorithm.
+
+In 1994, Peter Shor, then at Bell Labs, showed that a quantum computer could factor in polynomial time. It would break RSA, and with a related version, Diffie-Hellman and elliptic curves too, because those rely on discrete logarithms, which fall to the same idea.
+
+First, the popular picture, which is wrong. The story goes: a quantum computer tries every possible answer at once, in parallel, and picks out the right one. If that were how it worked, a quantum computer would crack everything, including symmetric ciphers, and it doesn't. The problem is that a quantum state holding every answer at once is useless on its own. When you measure it, you get one random answer. All that parallelism collapses to a coin flip.
+
+The real trick is interference. You arrange the computation so that the amplitudes for wrong answers cancel each other, and the amplitudes for useful answers reinforce. That only works for problems with a hidden global structure that interference can detect. Factoring happens to have one: periodicity.
+
+Here is the reduction, and it is entirely classical. Take the modulus you want to factor. Pick a random number smaller than it. Look at that number raised to the first power, second power, third power, and so on, modulo the modulus. From part two, you know this sequence must repeat. It has a period. Suppose you could find that period.
+
+If the period is even, then the random number raised to half the period, squared, equals one modulo the modulus. Move the one over: that square minus one is a multiple of the modulus. And a square minus one factors as a difference of squares: the half-power minus one, times the half-power plus one. So the modulus divides that product. Unless you got unlucky and the modulus divides one of the two pieces outright, each prime factor of the modulus must hide in a different piece. Take the greatest common divisor of either piece with the modulus, with Euclid's algorithm again, and out pops a prime factor. For a random starting number, the lucky case happens at least half the time, so a few tries suffice.
+
+So factoring reduces to period finding. Classically, period finding for these sequences is as hard as factoring. The quantum part is only this one step. You put the exponent register into a superposition of all values, compute the modular power into a second register, and then apply the quantum Fourier transform to the exponent register. The Fourier transform is exactly the tool that turns periodicity into peaks. Exponent values that are consistent with the period interfere constructively, and everything else cancels. When you measure, you get a value that sits near a multiple of one over the period, and a classical continued fraction calculation pulls the period out.
+
+That is the whole algorithm: classical number theory on both ends, with a quantum Fourier transform in the middle doing the one thing classical machines can't.
+
+And notice why symmetric ciphers survive. AES has no hidden periodic structure to exploit. The best general quantum attack, Grover's algorithm, only gives a square root speedup on brute force search. That turns a two hundred and fifty six bit key into something with roughly one hundred and twenty eight bits of security, which is still enormous. So the quantum threat is specifically a threat to public key cryptography.
+
+How close is it? This is where you have to be careful with headlines. The question is how many qubits and how much time. In 2019, Craig Gidney and Martin Ekerå estimated that factoring a two thousand bit RSA key would take about twenty million noisy physical qubits running for about eight hours. In 2025, Gidney revised that to under one million noisy qubits, running for under a week. That is a twenty fold drop in hardware, traded against more time.
+
+Why millions? Because of the error correction from episode eleven. Physical qubits are noisy, so you bundle many of them into one logical qubit using a code, and you need thousands of logical operations to run without a single uncorrected error. Today's largest machines have on the order of a thousand or so physical qubits, and genuinely error-corrected logical qubits are only beginning to be demonstrated. There is a real gap of orders of magnitude. But the estimates keep falling from the algorithm side, while the hardware climbs from the other side.
+
+And here is why the timing matters now, not later. It's called harvest now, decrypt later. An adversary can record encrypted traffic today and store it. If a large quantum computer arrives in fifteen years, they break the key exchange and read everything. For data that needs to stay secret for fifteen years, like medical records, diplomatic cables, or long lived trade secrets, the danger has already started.
+
+Part six. What replaces it.
+
+The replacement has to be a different hard problem, one without hidden periodic structure for a quantum Fourier transform to find. The leading family is lattice cryptography, built on a problem called learning with errors.
+
+Here is the idea, and it connects back to the callback at the top of tonight. Imagine a big system of linear equations with a secret vector of unknowns. If the equations were exact, ordinary Gaussian elimination would solve it in a heartbeat. Now add a small random error to each equation. Suddenly elimination fails, because each step amplifies the noise until the answer is buried. Recovering the secret from noisy linear equations turns out to be, as far as anyone knows, hard for both classical and quantum computers. It connects to finding short vectors in high dimensional lattices, a problem studied for decades without a quantum shortcut emerging.
+
+So notice the inversion. In GPS, the receiver had structured noise, and it won by modelling the noise as an unknown and solving it away. In lattice cryptography, the designer adds unstructured noise on purpose, so that nobody without the secret can solve it away.
+
+In August 2024, the American standards agency, NIST, published its first three post-quantum standards. One is a key exchange mechanism called ML-KEM, derived from a scheme called Kyber, based on a structured version of learning with errors. One is a lattice signature scheme, ML-DSA, derived from Dilithium. And the third is a backup signature scheme, SLH-DSA, built only from hash functions, which is slower and larger but relies on almost nothing beyond the hash being good. NIST's transition plan sets the middle of the next decade, around 2035, as the point when RSA and elliptic curves should be gone from these roles, with the weaker key sizes going earlier.
+
+The cost is size: an ML-KEM public key is around a kilobyte, against thirty two bytes for an elliptic curve key.
+
+The key exchange side is not waiting. Major browsers and content networks have already deployed a hybrid: the connection runs a classical elliptic curve exchange and ML-KEM together, and combines both secrets. If the lattice scheme turns out to have a flaw, the classical part still protects you today. If a quantum computer arrives, the lattice part protects you. A large and growing share of web traffic already negotiates its keys this way. Your phone is very likely using it to fetch this episode.
+
+And here is the asymmetry that explains the ordering. Key exchange is urgent because of harvest now, decrypt later: recorded sessions can be broken retroactively. Signatures are less urgent, because a signature only needs to be unforgeable at the moment someone checks it. A quantum computer in 2040 cannot go back and fool a browser in 2026.
+
+Let's recap.
+
+Diffie-Hellman lets strangers agree on a secret in public, because modular exponentiation is easy forward and the discrete logarithm is hard backward. RSA uses the fact that exponents cycle with a period set by the totient, which is easy to compute only if you know the two primes. In practice RSA breaks through implementation: no padding, padding oracles, and shared primes from bad randomness. Factoring itself is not proven hard; it has just resisted fifty years of effort.
+
+Shor's algorithm turns factoring into period finding and uses interference, not trying every answer at once. The hardware needed is still far off, but harvest now, decrypt later makes key exchange urgent, and lattice cryptography built on noisy linear equations is already standardized and running in hybrid mode.
+
+Now, five questions. Take a moment with each.
+
+Question one. In RSA, why does raising the message to the public exponent and then to the private exponent give the message back? What role does the totient play, and why does knowing the two primes let you compute the private exponent when the public cannot?
+
+Question two. Suppose factoring were perfectly hard. Why would textbook RSA, without padding, still be insecure? Give at least one concrete attack, and say what randomized padding fixes.
+
+Question three. Two routers generated their RSA keys with poor randomness and ended up sharing one prime factor. How does an attacker recover both private keys without factoring either modulus, and why is that computation fast?
+
+Question four. In Shor's algorithm, why does finding the period of a random number's powers, modulo the modulus, hand you a factor? And why is "a quantum computer tries every answer at once" the wrong explanation of where the speedup comes from?
+
+Question five. Why is migrating key exchange to post-quantum cryptography more urgent than migrating signatures, and why do deployments run a classical and a post-quantum key exchange together rather than switching outright?
+
+Reply with your answers when you're ready. That's it for this morning.
