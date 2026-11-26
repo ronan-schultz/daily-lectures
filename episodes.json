@@ -313,5 +313,20 @@
       "Given a fixed training compute budget, what did the Chinchilla paper conclude about how to split it between model size and training data? And why might a lab deliberately train a smaller model well past that point anyway?",
       "In reinforcement learning from human feedback, why is there a penalty for drifting too far from the original model? What would go wrong without it?"
     ]
+  },
+  {
+    "number": 22,
+    "slug": "022-how-a-bill-actually-becomes-law",
+    "title": "How a bill actually becomes law: what the civics version leaves out",
+    "series": "afternoon",
+    "date": "2026-11-26",
+    "summary": "Past the cartoon: the funnel of bills, who drafts them and what committees do, the House Rules Committee and the discharge petition's revival, the Senate's unanimous consent, holds and sixty-vote cloture, shell bills and the veto, and where law really gets made: must-pass vehicles, reconciliation and the Byrd rule, and the Congressional Review Act.",
+    "questions": [
+      "In the Senate, why did the move to a two-track system in the early nineteen-seventies make the filibuster more common rather than less, even though it made the Senate more productive in the short run?",
+      "The Speaker of the House rarely loses floor votes on major bills. Explain how the Rules Committee and the special rule give the majority leadership that control, and why the vote on the rule matters as much as the vote on the bill.",
+      "Why has the discharge petition become a working tool in the current Congress when for most of its history it rarely produced a law? What does that tell you about where the Speaker's power actually comes from?",
+      "Budget reconciliation lets a bill pass the Senate with a simple majority. What stops a majority from putting any policy it wants into a reconciliation bill, and how does that constraint end up shaping the design of the laws that pass this way?",
+      "Why does the President's veto power do most of its work before a bill ever reaches the President's desk? And why can Congress not override a pocket veto?"
+    ]
   }
 ]

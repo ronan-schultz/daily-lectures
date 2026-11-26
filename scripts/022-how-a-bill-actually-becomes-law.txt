@@ -1,0 +1,135 @@
+In the fall of two thousand nine, the House of Representatives passed a small, friendly bill called the Service Members Home Ownership Tax Act. It tweaked a home-buyer tax credit for people in the military. It passed with no votes against it. Nobody wrote newspaper columns about it.
+
+A few weeks later, the Senate took that bill, deleted every word after the title line, and poured in more than two thousand pages of health care reform. That bill, H.R. thirty-five ninety, is the Affordable Care Act. The law that reorganized a sixth of the American economy legally began its life as a veterans' housing bill.
+
+Why would anyone do that? Because the Constitution says bills for raising revenue must start in the House. The health bill raised taxes. So the Senate needed a House bill to wear, like a costume. Any House-passed bill would do. This one happened to be lying around.
+
+If that story surprises you, it is because most of us learned how laws are made from a cartoon. A sad little scroll named Bill sits on the steps of the Capitol in the mid-nineteen-seventies and sings about going to committee, getting voted on, and hoping the President signs him. That cartoon is not wrong. It is just a map of the official roads, and almost nothing important travels on the official roads anymore.
+
+So here is today's plan. First, the numbers: how many bills go in, how few come out, and what that tells you about where the real filter is. Second, who actually writes legislation and what committees really do. Third, the House, where the key machine is not the floor vote but a small committee that writes the rules for each bill. Fourth, the Senate, where the key machine is unanimous consent, and its shadow, the filibuster. Fifth, the endgame: reconciling two versions, the President's pen, and the tricks like the one I just told you about. And last, where law actually gets made now, in giant must-pass bills, in budget procedures, and even after the law is signed.
+
+One ground rule. Much of this is politically charged. The filibuster, the power of the Speaker, budget shortcuts. My job here is to show you how the machine works and what each side argues. Not to tell you who is right.
+
+Part one. The funnel.
+
+In a typical two-year Congress, members introduce well over ten thousand bills. The number of public laws that come out the other end is a few hundred. The Congress that ended in January of twenty twenty-five enacted about two hundred seventy-five, the fewest in decades. The one before it enacted around three hundred sixty. So the survival rate for a bill is somewhere around two or three percent.
+
+And it is worse than it sounds. A real chunk of those laws are ceremonial. Renaming a post office. Naming a federal building. In the current Congress, roughly one in ten enacted laws is of that kind.
+
+Here is the first thing the cartoon gets wrong. It implies that a bill is a serious proposal working its way toward a vote. Most bills are not. Most bills are messages. A member introduces a bill to show voters back home that they care about an issue, to stake out a position for a future negotiation, to please a group that asked for it, or to get a press release. Nobody, including the sponsor, expects it to move.
+
+So the right mental model is not a pipeline. It is a market with enormous oversupply. The scarce resource is floor time and the attention of the few people who control it. The interesting question is never "how does a bill get through the steps?" It is "who decides which handful of bills get the steps at all?"
+
+Part two. Who writes bills, and what committees really do.
+
+Only a member of Congress can introduce a bill. In the House, a member literally drops it into a wooden box called the hopper. In the Senate, a senator introduces it on the floor. But the member is rarely the person who wrote it.
+
+The text usually passes through the Office of the Legislative Counsel. There is one in each chamber, and they are nonpartisan drafting lawyers. You bring them an idea, they turn it into statutory language that amends the right sections of the United States Code. Before that, the idea often came from somewhere else entirely: committee staff, an executive agency that wants new authority, a think tank, an industry group, a union, an advocacy organization. Lobbyists sometimes hand over draft text outright. That is not a secret conspiracy. It is a known feature of a system where staff are few and the subject matter is enormous.
+
+Then there is the Congressional Budget Office, created in nineteen seventy-four, which estimates what a bill will cost over a ten-year window. That estimate, the "score," shapes a bill more than most people realize. Policy gets redesigned to make the score come out right. Phase-ins get delayed. Provisions get set to expire in year nine. When you see a strange sunset date in a law, the budget window is often the reason.
+
+Now committees. After introduction, the parliamentarian, acting for the Speaker or the presiding officer, refers the bill to the committee with jurisdiction. And this is where most bills die. Not by being voted down. By being ignored. The committee chair simply never schedules a hearing or a markup. That is it. No vote, no record, no drama.
+
+Here is the catch, though. Committees are not mainly killing fields. They are where the expertise lives. A committee that works on, say, agriculture or armed services has members who have been on it for years and staff who know every program line. When a serious bill moves, it is usually because the committee chair and the ranking member, the senior member of the minority, have negotiated it in the markup. That is the session where the committee goes through the text and amends it. Markup is where the actual sentences of most laws get fought over.
+
+But over the last few decades, committees have lost ground. Party leaders increasingly write major bills in their own offices and bring them straight to the floor, skipping committee or using it as a formality. The political scientist Barbara Sinclair called this "unorthodox lawmaking," and her point was that the unorthodox had become the normal. Keep that phrase in mind. It is the theme of the whole lecture.
+
+Part three. The House: the Speaker and the Rules Committee.
+
+The House has four hundred thirty-five members. A body that size cannot let everyone talk and amend freely, or nothing would ever finish. So the House is a majoritarian machine. Whoever controls a majority, and keeps it united, controls almost everything.
+
+The central gear is the Rules Committee. Before a major bill reaches the floor, the Rules Committee writes a "special rule" for it. A rule is a short resolution that sets the terms of debate. How many hours. Which amendments, if any, can be offered. Whether points of order are waived.
+
+A closed rule allows no amendments at all. A structured rule allows only the specific amendments the committee chooses. An open rule, which lets any member offer any germane amendment, used to be common and is now nearly extinct.
+
+Then the whole House votes on the rule itself, before it votes on the bill. And this is the real control point. The Rules Committee has nine members from the majority and four from the minority, and the majority members are effectively picked by the Speaker. So the Speaker decides not just whether a bill comes up, but in what form, and what alternatives can be voted on. If you control the menu, you rarely lose the vote.
+
+There is also an informal norm, often called the Hastert rule after a Speaker from around the turn of the century. Under it, the Speaker does not bring a bill to the floor unless a majority of the majority party supports it. Notice what that means. A bill could have two hundred and fifty supporters, comfortably a majority of the House, and still never get a vote, because most of those supporters are in the minority party. Defenders say a Speaker is the leader of a party and should not pass bills over the objections of most of that party. Critics say it lets roughly a quarter of the House block what most of the House wants. Both descriptions are accurate. They disagree about which is the problem.
+
+So what can a majority of the House do if the Speaker refuses? There is an escape hatch: the discharge petition. If two hundred eighteen members, an absolute majority, sign a petition, the bill can be pulled out of committee and forced to a floor vote, over leadership's objection.
+
+For most of its history the discharge petition was more threat than tool. A study by the Congressional Research Service found that between nineteen thirty-one and two thousand three, more than five hundred petitions were filed, fewer than fifty got enough signatures, and only a couple of the measures became law that way. The threat mattered more than the outcome. When a petition got close, leadership often brought up its own version to head it off. The campaign finance law of two thousand two, McCain-Feingold, is the textbook case of a discharge petition forcing the House's hand.
+
+Here is what is new. In the current Congress, the one that started in twenty twenty-five, an unusually large number of petitions, eight or nine depending on how you count, have reached two hundred eighteen signatures. That is reported as the most for any Congress since the modern rule began. The mechanism is simple arithmetic. With a very narrow majority, it takes only a few majority-party members signing alongside the minority to reach two hundred eighteen. The topics ranged widely, from releasing the Epstein investigation files, which became law, to health insurance subsidies, to aid for Ukraine. Most of the others passed the House and then stopped in the Senate.
+
+What you should take from that is not a verdict on any of those bills. It is a structural lesson. The Speaker's power is not written in the Constitution. It is lent by the majority, and it is only as strong as the majority is large and united. Leadership still has counter-moves. It can bring up its own version, or negotiate a petition away, as happened with one on proxy voting for new parents. But a thin majority makes the escape hatch much easier to open.
+
+Part four. The Senate: unanimous consent and the filibuster.
+
+Now cross the Capitol, and the logic flips. The House is designed to let a majority act. The Senate is designed, or at least has evolved, to protect individuals and minorities.
+
+The first thing to understand about the Senate is that it runs on unanimous consent. Almost everything it does, from scheduling a vote to limiting debate to taking up a bill, is done by the majority leader asking whether anyone objects. If nobody does, it happens instantly. A modest bill that everyone likes can pass the Senate in seconds this way, with no recorded vote. Many of those ceremonial laws travel exactly that route.
+
+But one senator can object. And that leads to the "hold." A hold is not in the rules. It is simply a senator telling their party leader, "If you try to move this by unanimous consent, I will object." Because the leader cannot spend days of floor time on every minor bill and nominee, a single hold is often enough to freeze something indefinitely. There have been attempts to force senators to disclose their holds. Compliance has been uneven.
+
+If unanimous consent fails, the majority has to go the long way. And the long way runs into the filibuster.
+
+Here is the popular version: the filibuster is when a senator talks for hours to block a bill, like in the old movie. That version is mostly outdated. Let us get the real one.
+
+The Senate has no general rule that ends debate by simple majority. So debate continues until the Senate votes to stop it. The procedure for stopping it is called cloture, and it was created in nineteen seventeen, after a small group of senators talked to death President Wilson's bill to arm merchant ships before the First World War. Wilson called them "a little group of willful men." The original cloture rule required two-thirds of those voting. In nineteen seventy-five, the Senate lowered it to three-fifths of the full Senate. That is sixty votes, whether or not everyone shows up.
+
+Then came a quieter change that mattered even more. Starting in the early nineteen-seventies, Senate leaders adopted what is called a two-track system. Instead of grinding the whole Senate to a halt while a filibuster ran, they could set the contested bill aside and do other business on a second track. That made the Senate more productive. But it also made filibustering nearly free. You no longer had to hold the floor and talk. You simply had to signal that you would not agree to end debate. The majority would then file for cloture, and if it could not find sixty votes, the bill stalled.
+
+So today, the filibuster is less a speech and more a standing veto by any forty-one senators. The numbers show the shift. In the mid-nineteen-sixties, senators filed motions for cloture a handful of times per two-year Congress. Recently, it has been around three hundred per Congress. Cloture went from emergency brake to routine gearshift. In practice, most significant legislation in the modern Senate needs sixty votes.
+
+Now, the majority can change this, and has, partly. In twenty thirteen, the Democratic majority, by a simple-majority vote that set a new precedent, lowered the threshold for ending debate on most presidential nominations to a simple majority. People call that the "nuclear option." In twenty seventeen, the Republican majority extended it to Supreme Court nominations. Legislation still requires sixty.
+
+So should the legislative filibuster go too? Here is what each side argues. Defenders say it forces bipartisan buy-in, so that major laws have broad support and do not swing back and forth each time the majority changes. They point out that both parties have used it when in the minority, and both have been glad to have it. Opponents say it is not in the Constitution, that the framers specifically rejected supermajority requirements for ordinary legislation, and that it lets a minority, sometimes representing well under half the country, block policies a majority voted for, which in turn pushes power toward the President and the courts. Both arguments get made by different people depending on who holds the majority that year. That, too, is part of how the institution works.
+
+Part five. The endgame: two versions, one President, and a lot of costumes.
+
+Say both chambers have passed a bill. Almost never are the two versions identical. The Constitution requires that the House and the Senate pass the exact same text. Every comma.
+
+The civics version says a conference committee, made of members from both chambers, works out the differences, and then both chambers vote on the compromise. That used to be common. It has become rare. Today, the chambers mostly play ping-pong: one passes the other's bill with an amendment, sends it back, and the other agrees or amends again. Or, more often, the real deal is cut by a handful of leaders and committee chairs in private, and one chamber passes the agreed text, and the other takes it up and passes it unchanged.
+
+That is where the costume trick comes in. Remember the origination clause. Revenue bills must start in the House. The Senate gets around this by taking any House-passed bill that touches revenue, striking everything, and substituting its own text. The House can object, and occasionally does, by sending a bill back to the Senate, a move called "blue-slipping." But for the Affordable Care Act and many other major bills, the shell-bill approach was used because it worked. Notice the pattern: a formal constitutional rule, satisfied on paper, with the substance carried in something else.
+
+Then the President. The bill goes to the White House, and the President has ten days, not counting Sundays, to act. Sign it, and it becomes law. Veto it, and it goes back to Congress, where two-thirds of each chamber can override. Do nothing, and it becomes law anyway without a signature. Unless Congress has adjourned and the President's inaction prevents its return. That is the "pocket veto," and Congress cannot override it, because there is nothing to send back. Presidents and Congress have argued for a long time about what counts as an adjournment for this purpose, which is why Congress now often holds brief "pro forma" sessions, a few minutes long, partly to avoid being considered adjourned.
+
+Overrides are hard. Out of roughly twenty-five hundred vetoes in American history, about a hundred have been overridden. So the real power of the veto is mostly upstream. Bills get shaped in advance to avoid one. A veto threat, delivered in a formal letter called a Statement of Administration Policy, often changes a bill more than an actual veto ever does.
+
+Part six. Where law actually gets made.
+
+So if regular order is the exception, what is the rule? Three big channels.
+
+The first is must-pass legislation. Some bills simply have to happen. Government funding is the biggest. Congress is supposed to pass twelve separate appropriations bills each year, one for each slice of the government, before the fiscal year starts on October first. The last time all twelve were done on time was in the mid-nineteen-nineties. Instead, Congress passes continuing resolutions, which extend last year's funding for weeks or months, and then often bundles everything into a single giant "omnibus" bill. If it fails, the government partially shuts down.
+
+The other classic must-pass bill is the National Defense Authorization Act, which Congress has enacted every year for more than sixty years running. Because these bills are going to pass, they become vehicles. Members attach riders, other bills that could never move alone. Entire laws on unrelated topics have become law as a few pages inside a defense bill. If you want to know where small and medium-sized policy really passes, look inside these vehicles.
+
+The second channel is budget reconciliation. The Congressional Budget Act of nineteen seventy-four created a special fast-track process for bills that change spending, revenue or the debt limit to match a budget resolution. In the Senate, reconciliation bills get only twenty hours of debate. Which means they cannot be filibustered. They pass with a simple majority.
+
+You can see why that is powerful. It is the one route around the sixty-vote Senate for big legislation. And over the last few decades, both parties have used it for their biggest partisan bills. The two thousand seventeen tax cuts. The twenty twenty-one pandemic relief package. The twenty twenty-two climate and health bill. The large tax and spending bill of twenty twenty-five.
+
+Here is the catch. To stop reconciliation from swallowing everything, the Senate added the Byrd rule, named for Senator Robert Byrd. Any provision that is "extraneous" can be struck. Roughly, that means a provision whose budget effect is merely incidental to its policy purpose. Or one that increases deficits beyond the budget window. Waiving that takes sixty votes. Who decides what is extraneous? In practice, the Senate parliamentarian advises the presiding officer, and senators spend days in what is nicknamed the "Byrd bath," arguing over each provision. This is why reconciliation laws often have strange shapes. A policy gets written as a tax or a spending change, because that is the only kind of policy allowed through the door. And it is why many of their provisions expire after ten years: making them permanent could add to deficits beyond the window.
+
+Defenders of the heavy use of reconciliation say it is a legitimate, legal tool that lets an elected majority govern when the filibuster would otherwise block everything. Critics say it bends budget procedure into a policy machine, produces laws designed around scoring rules rather than good design, and encourages swings back and forth between majorities. Again, both parties have made both arguments, depending on the year.
+
+The third channel happens after the President signs. A statute is often a framework. It tells an agency, like the Environmental Protection Agency or the Securities and Exchange Commission, to write the detailed rules. Those regulations, written through a notice-and-comment process, are where much of the actual operating law lives. Then the courts interpret both.
+
+And Congress has a tool to reach back into that layer: the Congressional Review Act, from nineteen ninety-six. It lets Congress overturn a new regulation with a joint resolution that cannot be filibustered in the Senate, if it acts within a limited window. And once a rule is overturned this way, the agency cannot issue a substantially similar one without new authority from Congress. For its first two decades, it was used successfully only once. Then it was used heavily after the changes of administration in twenty seventeen and again in twenty twenty-five. In the current Congress, about one in five enacted laws so far have been resolutions overturning regulations issued under the previous administration. That is a striking fact about modern lawmaking. A real share of what Congress enacts is undoing executive action rather than writing new policy.
+
+Let me pull it together.
+
+The cartoon describes the official path: introduction, committee, floor vote, the other chamber, the President. All of that is real, and every law still formally touches those steps. But the binding constraint is not the steps. It is gatekeeping and scarce floor time.
+
+In the House, the gate is the Speaker and the Rules Committee, which decide what comes up and under what terms. The escape hatch, the discharge petition, used to be a threat and has become, in a narrowly divided House, a working tool.
+
+In the Senate, the gate is unanimous consent. Any one senator can slow things with a hold, and any forty-one can block most legislation, because the cloture threshold is sixty and the two-track system made obstruction cheap.
+
+Because those gates are so tight, the action moved into channels that get around them. Must-pass bills that carry riders. Reconciliation, which avoids the filibuster but only for budget-shaped policy, policed by the Byrd rule. Shell bills that satisfy the origination clause in form. And after enactment, agencies, courts, and the Congressional Review Act.
+
+And the meta-lesson, which applies to every institution in this series: formal rules matter less than who controls the agenda, and many of the most important rules are not in the Constitution at all. They are norms, precedents and procedures that a majority adopted and that a majority could change.
+
+Now, your five questions.
+
+Question one. In the Senate, why did the move to a two-track system in the early nineteen-seventies make the filibuster more common rather than less, even though it made the Senate more productive in the short run?
+
+Question two. The Speaker of the House rarely loses floor votes on major bills. Explain how the Rules Committee and the special rule give the majority leadership that control, and why the vote on the rule matters as much as the vote on the bill.
+
+Question three. Why has the discharge petition become a working tool in the current Congress when for most of its history it rarely produced a law? What does that tell you about where the Speaker's power actually comes from?
+
+Question four. Budget reconciliation lets a bill pass the Senate with a simple majority. What stops a majority from putting any policy it wants into a reconciliation bill, and how does that constraint end up shaping the design of the laws that pass this way?
+
+Question five. Why does the President's veto power do most of its work before a bill ever reaches the President's desk? And why can Congress not override a pocket veto?
+
+Think them over on the drive. Reply with your answers whenever you like.
