@@ -298,5 +298,20 @@
       "Using Allison's organizational process model, explain why the Soviet missile sites were relatively easy to spot from the air. Why does a rational actor model struggle to explain the same fact?",
       "Janis held up the Missile Crisis as the cure for groupthink. Give one reason from psychology research and one from the historical record why that showcase is weaker than it first appeared. And why is 'it ended peacefully, so the decisions were good' a flawed inference?"
     ]
+  },
+  {
+    "number": 21,
+    "slug": "021-how-a-language-model-is-trained",
+    "title": "How a language model is trained: from tokens to gradient descent",
+    "series": "morning",
+    "date": "2026-11-26",
+    "summary": "The full pipeline behind large language models: byte pair tokenization, next-token prediction as compression, attention and the transformer, backpropagation and Adam across thousands of chips, scaling laws and the Chinchilla correction, and post-training with human feedback and checkable rewards.",
+    "questions": [
+      "Why do language models use subword tokens rather than whole words or single characters? And how does that choice explain why a model can struggle to count the letters in a word?",
+      "The training loss is the negative logarithm of the probability assigned to the correct next token. Why does that loss punish a confident wrong answer so much more than a hesitant one? And why can minimizing it force a model to learn structure that nobody explicitly taught it?",
+      "Walk through what attention does with queries, keys and values. Why does its cost grow with the square of the context length?",
+      "Given a fixed training compute budget, what did the Chinchilla paper conclude about how to split it between model size and training data? And why might a lab deliberately train a smaller model well past that point anyway?",
+      "In reinforcement learning from human feedback, why is there a penalty for drifting too far from the original model? What would go wrong without it?"
+    ]
   }
 ]

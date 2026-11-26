@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>AM 021. How a language model is trained: from tokens to gradient descent</title>
+      <description>The full pipeline behind large language models: byte pair tokenization, next-token prediction as compression, attention and the transformer, backpropagation and Adam across thousands of chips, scaling laws and the Chinchilla correction, and post-training with human feedback and checkable rewards.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Why do language models use subword tokens rather than whole words or single characters? And how does that choice explain why a model can struggle to count the letters in a word?
+2. The training loss is the negative logarithm of the probability assigned to the correct next token. Why does that loss punish a confident wrong answer so much more than a hesitant one? And why can minimizing it force a model to learn structure that nobody explicitly taught it?
+3. Walk through what attention does with queries, keys and values. Why does its cost grow with the square of the context length?
+4. Given a fixed training compute budget, what did the Chinchilla paper conclude about how to split it between model size and training data? And why might a lab deliberately train a smaller model well past that point anyway?
+5. In reinforcement learning from human feedback, why is there a penalty for drifting too far from the original model? What would go wrong without it?</description>
+      <itunes:summary>The full pipeline behind large language models: byte pair tokenization, next-token prediction as compression, attention and the transformer, backpropagation and Adam across thousands of chips, scaling laws and the Chinchilla correction, and post-training with human feedback and checkable rewards.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Why do language models use subword tokens rather than whole words or single characters? And how does that choice explain why a model can struggle to count the letters in a word?
+2. The training loss is the negative logarithm of the probability assigned to the correct next token. Why does that loss punish a confident wrong answer so much more than a hesitant one? And why can minimizing it force a model to learn structure that nobody explicitly taught it?
+3. Walk through what attention does with queries, keys and values. Why does its cost grow with the square of the context length?
+4. Given a fixed training compute budget, what did the Chinchilla paper conclude about how to split it between model size and training data? And why might a lab deliberately train a smaller model well past that point anyway?
+5. In reinforcement learning from human feedback, why is there a penalty for drifting too far from the original model? What would go wrong without it?</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/021-how-a-language-model-is-trained.mp3" length="8478813" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-021-how-a-language-model-is-trained</guid>
+      <pubDate>Thu, 26 Nov 2026 09:00:00 +0000</pubDate>
+      <itunes:duration>00:23:33</itunes:duration>
+      <itunes:episode>21</itunes:episode>
+    </item>
+    <item>
       <title>PM 020. The Cuban Missile Crisis: game theory, groupthink, and the secret deal</title>
       <description>The thirteen days as a laboratory for theories of decision-making: chicken and Schelling's threat that leaves something to chance, the Trollope-ploy myth and the secret Jupiter trade, Allison's three models, Janis's groupthink and what the tapes revised, and the near misses (tactical warheads, Black Saturday, submarine B-59) neither leader knew about.
 

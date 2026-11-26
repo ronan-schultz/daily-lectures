@@ -1,0 +1,143 @@
+Here is a strange fact to start with. The large language models that write code, summarize papers, and argue about philosophy were trained on one task, and only one. Predict the next piece of text. That's it. Show the model a stretch of words, ask it what comes next, tell it how wrong it was, nudge it slightly, and repeat. Trillions of times.
+
+Nobody wrote a rule for grammar. Nobody wrote a rule for arithmetic, or for translating French, or for writing a sonnet. Those abilities fell out of one objective, applied at enormous scale. Which raises the obvious question. How does guessing the next word produce anything that looks like reasoning?
+
+Tonight is about the machinery. Not the hype, and not the philosophy, but the actual pipeline. What the model sees, what it computes, how it learns, why scale matters so much, and what happens after the raw training to turn a text predictor into an assistant.
+
+Here's the roadmap. Part one: tokens, the units the model actually reads, and why they are not words. Part two: the objective, next token prediction, and the loss function that scores it. Part three: the architecture, the transformer, and what attention really does. Part four: gradient descent at scale, the optimizer, and the engineering of training across thousands of chips. Part five: scaling laws, the surprisingly regular relationship between compute and quality. And part six: post-training, how a raw model becomes something that follows instructions, and what that process can and cannot do.
+
+Part one. Tokens.
+
+A language model does not read letters, and it does not read words. It reads tokens, which are chunks somewhere in between. A common word like "the" is a single token. A rarer word like "thermodynamics" might be split into three or four pieces. A space is often glued onto the front of the next word, so "space cat" and "spacecat" become different sequences.
+
+Why not just use words? Because the vocabulary of words is effectively infinite. Names, typos, code, chemical formulas, other languages. A word-level model would constantly meet words it had never seen. Why not use single characters? Because then sequences get very long, and, as we'll see, the cost of attention grows with sequence length. Tokens are the compromise.
+
+The standard method for building the vocabulary is called byte pair encoding. It started life as a data compression trick in the nineteen nineties and was adapted for language models in the mid twenty tens. The idea is simple. Start with individual bytes. Count which pair of adjacent symbols appears most often in a big pile of text. Merge that pair into a new symbol. Count again. Merge again. Keep going until you have a vocabulary of, say, fifty thousand to a couple hundred thousand symbols.
+
+What comes out is a vocabulary shaped by frequency. Common words become single tokens. Common word fragments, like "ing" or "tion", become tokens. Rare things get spelled out in smaller pieces. And because the base level is raw bytes, nothing is ever truly out of vocabulary. Any string can be encoded.
+
+Here is the catch. Tokenization explains some famous weaknesses. Ask an older model how many letter r's are in "strawberry", and it might stumble. Not because it can't count, exactly, but because it never sees the letters. It sees two or three opaque chunks. Asking it about the letters inside is like asking you how many brush strokes are in a word you read in print. The information was compressed away before the model ever touched it. The same thing hurts arithmetic: a long number might be split into irregular chunks, so the digits don't line up in columns the way they do on paper.
+
+Each token is then turned into a vector, a list of a few thousand numbers, by looking it up in a table called the embedding matrix. That table starts random. Over training, tokens that behave similarly drift toward each other in that space. The model never gets told that "king" and "queen" are related. It discovers it, because they appear in similar contexts.
+
+Part two. The objective.
+
+Here is the entire training signal. Take a sequence of tokens from the training data. At every position, the model outputs a probability distribution over the whole vocabulary: how likely is each possible next token? Then we look at what the next token actually was, and we score the model by the probability it assigned to the truth.
+
+The score is called cross-entropy loss. In words: the loss at a position is the negative logarithm of the probability the model gave to the correct token. If the model said the right answer had probability one, the log is zero, so the loss is zero. Perfect. If the model said the right answer had probability one in a thousand, the negative log is about seven. Bad. If it said the correct token was essentially impossible, the loss blows up toward infinity. So the loss punishes confident wrongness far more harshly than hedged wrongness.
+
+Why the logarithm? Two reasons, and they're both deep. First, the log turns a product of probabilities across a whole sequence into a sum, which is what you want for a quantity you'll average over trillions of positions. Second, and more important, this is exactly the quantity that information theory says measures how many bits it would cost to encode the true text using the model's predictions. Minimizing cross-entropy is literally the same as making the model the best possible compressor of the training data. A language model is a compression engine.
+
+Now, here's where the magic, or at least the surprise, comes in. Think about what it takes to predict the next token really well across all of the internet. If the text is a physics derivation, you have to track the algebra. If it's a mystery novel, predicting the name revealed on the last page requires tracking clues. If it's a chess game written in notation, a good prediction requires knowing which moves are legal and which are strong. If it's a dialogue, you need to model what each speaker believes.
+
+So the objective is simple, but the function that minimizes it is not. Driving the loss down past the easy patterns, the grammar and the common phrases, forces the model to build internal representations of whatever structure generated the text. That is the core argument for why next-token prediction can produce capabilities nobody explicitly trained.
+
+Be careful with that argument, though. It says the pressure exists. It does not say the model always succeeds, or that what it builds is a faithful world model rather than a pile of useful shortcuts. That's still an active research question, and the honest answer is that it's some of both.
+
+One more detail matters for efficiency. In a single forward pass over a sequence of, say, eight thousand tokens, the model makes eight thousand predictions at once, one per position, each one only allowed to look backward. That's done with a mask that hides future tokens. So every training sequence gives you thousands of training examples for the price of one pass. That trick, called teacher forcing with a causal mask, is a big part of why this approach scales so well on parallel hardware.
+
+Part three. The transformer.
+
+The architecture nearly every large language model uses came from a two thousand seventeen paper by a team at Google, titled "Attention Is All You Need". Before it, language models were mostly recurrent networks, which read text one token at a time and passed a running summary forward. That's sequential, which means slow on hardware built for parallelism, and the running summary tended to forget things from far back.
+
+The transformer threw out recurrence. Instead, at every layer, every token can look directly at every earlier token. That operation is called attention, and it's worth understanding mechanically, because the name makes it sound mystical.
+
+Here's how it works. At each layer, each token's vector gets transformed three ways, by three learned matrices, into three new vectors. Call them the query, the key, and the value. The query is, roughly, "what am I looking for?" The key is "what do I contain?" And the value is "what will I hand over if someone attends to me?"
+
+To decide how much token number fifty should pay attention to token number twelve, you take the dot product of token fifty's query with token twelve's key. A big dot product means a good match. You do that for every earlier token, scale the results down by the square root of the vector dimension so they don't get too large, and pass them through a softmax, which turns a list of scores into weights that are positive and sum to one. Then token fifty's output is the weighted average of everyone's value vectors.
+
+That's all attention is. A soft, learned, content-based lookup. Each token asks a question, every other token advertises what it holds, and information flows according to the match.
+
+Why does this work so well? Think about a pronoun. "The trophy didn't fit in the suitcase because it was too big." What does "it" refer to? A query vector for "it" can learn to match keys that represent candidate nouns, and the surrounding context can shift which one wins. And because there are many attention heads per layer, often dozens, each with its own query, key and value matrices, the model can track many relationships at once. One head might follow syntax, another might copy repeated phrases, another might track which quote belongs to which speaker.
+
+That copying behavior is actually one of the best understood mechanisms in the field. Researchers found what they called induction heads: pairs of attention heads that implement the rule "if you saw A followed by B earlier, and you now see A again, predict B". It's a crude form of in-context learning, and it seems to emerge fairly abruptly during training, at around the point where the model suddenly gets much better at using long context.
+
+Between attention layers sit feed-forward layers: big, ordinary neural network blocks applied to each token separately. If attention moves information between positions, the feed-forward layers transform information within a position. A lot of factual recall seems to live there. Stack this pair, attention then feed-forward, dozens of times, with a trick called a residual connection that adds each layer's output back onto its input, and you have a modern language model.
+
+Those residual connections deserve a sentence. They mean every layer only has to learn a correction to what's already there, rather than rebuild the whole representation. That makes very deep networks trainable, because the gradient signal has a clean path back to the early layers.
+
+And here is the catch with attention. Every token compares itself to every earlier token. So the cost grows with the square of the sequence length. Double the context, and the attention cost roughly quadruples. Much of the engineering of long-context models is about softening that square law, with clever memory layouts, approximations, or architectures that mix attention with cheaper mechanisms.
+
+Part four. Gradient descent, at scale.
+
+So the model is a giant function, with billions or trillions of adjustable numbers called parameters. The loss tells us how wrong it is. How do we make it less wrong?
+
+The answer is gradient descent. The gradient is the vector of partial derivatives of the loss with respect to every parameter. In words: for each knob, if I turn it slightly, how much does the loss go up or down? The gradient points uphill. So you step the other way, downhill, by a small amount called the learning rate. Then you grab a new batch of data and do it again.
+
+Computing that gradient for billions of parameters sounds hopeless, but it isn't, thanks to backpropagation. The network is a long composition of simple operations, and the chain rule of calculus lets you sweep backward from the loss through every operation, accumulating derivatives as you go. The key fact is that the backward pass costs only about twice what the forward pass costs. So getting all billion derivatives is about as expensive as running the model a few times. That single fact is what makes deep learning feasible at all.
+
+In practice, nobody uses plain gradient descent. The standard optimizer is called Adam, introduced in two thousand fourteen, usually with a weight decay variant. Adam keeps two running averages for every parameter. One is a running average of the gradient itself, which acts like momentum, smoothing out the noise from batch to batch. The other is a running average of the gradient squared, which estimates how volatile that parameter's gradient is. Each step is then the momentum divided by the square root of that volatility estimate.
+
+If that sounds familiar, it should. It's a bit like scaling a position by its volatility. Parameters with wild, noisy gradients get small steps. Parameters with steady, consistent gradients get relatively larger ones. Every parameter effectively gets its own adaptive learning rate. The cost is memory: Adam stores two extra numbers per parameter, so the optimizer state alone can be several times larger than the model.
+
+The learning rate itself follows a schedule. A short warmup at the start, where it ramps up from near zero, because early gradients are chaotic and a big step can wreck the model. Then a long, gradual decay, often following a cosine curve, so that late in training the steps get small and the model can settle into a good region rather than bouncing around it.
+
+Now for the engineering, which is where a lot of the real difficulty lives. A frontier model doesn't fit on one chip. Not the parameters, not the optimizer state, not the intermediate activations. So training is split across thousands, even tens of thousands, of accelerators, in three main ways at once.
+
+Data parallelism: every group of chips holds a copy of the model and processes a different slice of the batch, then they average their gradients. Tensor parallelism: a single large matrix multiplication is split across several chips, each computing a slice. Pipeline parallelism: different layers live on different chips, and batches flow through them like an assembly line. Real systems combine all three, plus sharding schemes that split the optimizer state so no chip holds a full copy.
+
+Numbers are stored in reduced precision to save memory and time. Typically a sixteen bit format called bfloat sixteen, which keeps the same range of exponents as standard thirty-two bit floats but throws away precision in the fraction. Range matters more than precision for gradients, because gradients can be tiny, and if they underflow to zero, learning simply stops.
+
+And then there's failure. Over a run that lasts months on thousands of chips, hardware fails constantly. A chip dies, a network link flakes, a single silent bit-flip corrupts a calculation. So training jobs checkpoint regularly and restart. Worse are loss spikes: the loss suddenly jumps, sometimes recovering, sometimes not. Teams watch the curves around the clock, and a common fix is brutally simple: roll back to an earlier checkpoint, skip the batch of data that seemed to trigger it, and lower the learning rate. A lot of large model training is less like elegant optimization and more like babysitting a very expensive, very temperamental furnace.
+
+Part five. Scaling laws.
+
+Here is the empirical finding that reorganized the field. In two thousand twenty, researchers at OpenAI showed that a language model's loss falls as a smooth power law in three quantities: the number of parameters, the amount of training data, and the compute spent. Plot loss against compute on log-log axes, and you get something very close to a straight line, across many orders of magnitude.
+
+A power law means each tenfold increase in compute buys a roughly constant fractional improvement in loss. Not a dramatic leap. A steady, predictable one. And that predictability is the commercial point. You can train a series of small models, fit the line, and forecast how a model a hundred times bigger will perform before you spend the money. Labs do exactly this.
+
+There's a handy rule of thumb for the compute itself. Training costs about six floating point operations per parameter per token. Two for the forward pass, four for the backward. So the total compute is roughly six, times the parameter count, times the number of training tokens. A model with a hundred billion parameters trained on ten trillion tokens needs about six times ten to the twenty-four operations. That's the kind of number we're talking about.
+
+Which raises a resource allocation question, one you'll appreciate. Given a fixed compute budget, should you spend it on a bigger model trained on less data, or a smaller model trained on more? The first scaling law paper suggested leaning heavily toward size. GPT-three, released in two thousand twenty, had a hundred seventy-five billion parameters but was trained on only about three hundred billion tokens.
+
+Then, in two thousand twenty-two, a DeepMind paper usually called the Chinchilla paper redid the analysis more carefully, varying learning rate schedules properly for each run length. They found the optimal split was roughly balanced: parameters and tokens should grow together, at about twenty tokens per parameter. Their seventy billion parameter model, trained on about one point four trillion tokens, beat models several times its size. The earlier giants had been badly undertrained.
+
+Here's the twist that came next. Chinchilla optimal means optimal for training compute. But a deployed model is run billions of times, and every one of those runs costs inference compute that scales with model size. So if you care about total cost, it can pay to train a smaller model far past the Chinchilla point. Meta's Llama three models, for example, were trained on around fifteen trillion tokens, hundreds of tokens per parameter for the smaller versions. They keep improving, just with diminishing returns. The right answer depends on your objective function, which is a very familiar lesson.
+
+Now, a caution about the pop version of scaling. Loss falls smoothly. But specific abilities, like multi-step arithmetic, sometimes seem to appear suddenly at a certain scale, which got called emergence. Later work pushed back: some of that suddenness comes from the metric. If you score a five-digit sum as all-or-nothing, a model that's steadily getting each digit more likely right will look like it jumps from zero to competent. Score it with a smoother metric, and much of the jump becomes a gradual curve. Not every case dissolves that way, but "abilities appear out of nowhere" is an oversimplification.
+
+And the obvious looming constraint is data. If optimal training wants tens of trillions of tokens, and the supply of high quality human text is finite, at some point you run short. That's why labs invest heavily in filtering and deduplicating data, in mixing in code and math, in training multiple passes over the best data, and increasingly in synthetic data generated by models, with careful checking. Data quality has turned out to matter about as much as quantity.
+
+Part six. Post-training.
+
+After all of that, what you have is called a base model. And a base model is, frankly, a little weird. Ask it a question, and it may answer. Or it may continue with three more questions, because on the internet, a question is often followed by more questions, like a quiz or a forum thread. It's a superb mimic of documents. It's not an assistant.
+
+Turning it into one happens in stages. The first is supervised fine-tuning. You collect tens of thousands of examples of good assistant behavior, prompts paired with high quality responses, and you keep training on the same next-token objective, but only on that data. The model learns the format and the persona. It's a small amount of data compared to pre-training, and it mostly reshapes behavior rather than adding knowledge.
+
+The second stage is reinforcement learning. The best-known recipe, popularized in two thousand twenty-two with OpenAI's InstructGPT work, is reinforcement learning from human feedback. Here's how it goes. Show people two responses to the same prompt and ask which is better. Collect a large set of these comparisons. Train a separate model, a reward model, to predict which response a person would prefer. Then optimize the language model to produce responses the reward model scores highly.
+
+Why comparisons rather than scores? Because people are inconsistent at saying "this is a seven out of ten" but fairly reliable at saying "this one is better than that one". Pairwise preference data is just cleaner.
+
+Here is the catch, and it's a big one. The reward model is an imperfect proxy. Optimize against it hard enough, and the policy finds its blind spots: answers that score well without being good. Longer answers. More confident answers. Flattering answers. This is Goodhart's law in action. When a measure becomes a target, it ceases to be a good measure. So the optimization includes a penalty for drifting too far from the original model, measured with a quantity called the Kullback-Leibler divergence, which in words measures how different two probability distributions are. That penalty is a leash. It says: improve the reward, but don't wander so far that you're exploiting the reward model instead of satisfying the people behind it.
+
+More recently, there's been a big push toward reinforcement learning on tasks where the answer can be checked automatically. Math problems with known answers. Code that either passes its tests or doesn't. There, the reward isn't a learned guess about human preference. It's ground truth. Models trained this way learn to produce long chains of reasoning before answering, trying approaches, checking them, backtracking, because that behavior gets rewarded when it leads to correct answers. This is the basis of the so-called reasoning models. It's a different flavor of training from pre-training: instead of imitating text, the model is discovering which of its own behaviors pay off.
+
+One honest note on what post-training can and can't do. It's very good at shaping behavior: tone, format, refusing some requests, following instructions, showing work. It's much weaker at adding new knowledge. Most of what a model knows, it learned in pre-training. Post-training mostly decides how and when that knowledge gets used. That's also why a well-known failure, confident fabrication, is hard to fully remove. The pre-training objective rewards producing plausible text, and plausible and true are not the same thing.
+
+Let's recap.
+
+A language model reads tokens, which are frequency-based chunks built by byte pair encoding. That choice saves sequence length but hides the letters inside words, which explains some odd failures with spelling and arithmetic.
+
+It's trained on one objective: predict the next token, scored by cross-entropy, the negative log probability of the truth. That's mathematically the same as compressing the training data, and doing it well requires modeling whatever structure generated the text.
+
+The transformer does the predicting. Attention lets each token query every earlier token and pull in a weighted average of their values. Feed-forward layers transform each position. Residual connections make deep stacks trainable. And the cost of attention grows with the square of the context length.
+
+Learning is gradient descent, with gradients from backpropagation at roughly the cost of a few forward passes, and an optimizer, Adam, that gives every parameter its own volatility-scaled step. At scale, it's split three ways across thousands of chips, in reduced precision, with constant checkpoints and the occasional rollback after a loss spike.
+
+Loss falls as a smooth power law in compute. Chinchilla showed that parameters and tokens should grow together, around twenty tokens per parameter, though deployment costs push labs to train smaller models far longer. And "emergent abilities" are partly a property of how we measure them.
+
+Finally, post-training turns a document mimic into an assistant: supervised fine-tuning for the format, then reinforcement learning, against a learned reward model with a divergence penalty to keep it honest, or against checkable answers in math and code.
+
+Now, your five questions. Take a moment with each.
+
+Question one. Why do language models use subword tokens rather than whole words or single characters? And how does that choice explain why a model can struggle to count the letters in a word?
+
+Question two. The training loss is the negative logarithm of the probability assigned to the correct next token. Why does that loss punish a confident wrong answer so much more than a hesitant one? And why can minimizing it force a model to learn structure that nobody explicitly taught it?
+
+Question three. Walk through what attention does with queries, keys and values. Why does its cost grow with the square of the context length?
+
+Question four. Given a fixed training compute budget, what did the Chinchilla paper conclude about how to split it between model size and training data? And why might a lab deliberately train a smaller model well past that point anyway?
+
+Question five. In reinforcement learning from human feedback, why is there a penalty for drifting too far from the original model? What would go wrong without it?
+
+That's tonight's lecture. Reply with your answers whenever you're ready.
