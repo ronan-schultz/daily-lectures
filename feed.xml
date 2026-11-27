@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>AM 023. How MRI works: from a whisper of spinning protons to a picture</title>
+      <description>Larmor precession and why protons don't just 'flip', resonance in the rotating frame, the two relaxation clocks and Hahn's spin echo, gradients and k-space (why the scanner measures the Fourier transform of you), then parallel imaging, compressed sensing and what functional MRI really sees.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. The radio pulse has to be at the Larmor frequency to tip the magnetization. Explain why, using the rotating frame, and say what happens to a pulse that is off-frequency.
+2. A spin echo recovers signal lost to an imperfect magnet but not signal lost to true transverse decay. What is the difference between those two kinds of dephasing that lets the hundred and eighty degree pulse undo one and not the other?
+3. Why does the scanner end up measuring the Fourier transform of the image rather than the image itself? Connect it to what a gradient does to the phase of spins at different positions.
+4. If a patient breathes during a scan, MRI tends to produce ghost copies of the anatomy instead of a simple blur. Why?
+5. In functional MRI, active brain tissue uses more oxygen, yet the signal goes up rather than down. Explain the mechanism, and say what that implies about what functional MRI actually measures.</description>
+      <itunes:summary>Larmor precession and why protons don't just 'flip', resonance in the rotating frame, the two relaxation clocks and Hahn's spin echo, gradients and k-space (why the scanner measures the Fourier transform of you), then parallel imaging, compressed sensing and what functional MRI really sees.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. The radio pulse has to be at the Larmor frequency to tip the magnetization. Explain why, using the rotating frame, and say what happens to a pulse that is off-frequency.
+2. A spin echo recovers signal lost to an imperfect magnet but not signal lost to true transverse decay. What is the difference between those two kinds of dephasing that lets the hundred and eighty degree pulse undo one and not the other?
+3. Why does the scanner end up measuring the Fourier transform of the image rather than the image itself? Connect it to what a gradient does to the phase of spins at different positions.
+4. If a patient breathes during a scan, MRI tends to produce ghost copies of the anatomy instead of a simple blur. Why?
+5. In functional MRI, active brain tissue uses more oxygen, yet the signal goes up rather than down. Explain the mechanism, and say what that implies about what functional MRI actually measures.</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/023-how-mri-works.mp3" length="8056749" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-023-how-mri-works</guid>
+      <pubDate>Fri, 27 Nov 2026 09:00:00 +0000</pubDate>
+      <itunes:duration>00:22:22</itunes:duration>
+      <itunes:episode>23</itunes:episode>
+    </item>
+    <item>
       <title>PM 022. How a bill actually becomes law: what the civics version leaves out</title>
       <description>Past the cartoon: the funnel of bills, who drafts them and what committees do, the House Rules Committee and the discharge petition's revival, the Senate's unanimous consent, holds and sixty-vote cloture, shell bills and the veto, and where law really gets made: must-pass vehicles, reconciliation and the Byrd rule, and the Congressional Review Act.
 

@@ -16,7 +16,7 @@ Psychology and sociology through history and biography: Kahneman and Tversky, an
 Add new topics here as they come up.
 
 ## Topic backlog: morning STEM series (approved categories; pick, don't repeat)
-Physics and engineering: transistor scaling and the end of Dennard scaling; jet engine thermodynamic cycle and bypass ratio.
+Physics and engineering: transistor scaling and the end of Dennard scaling; jet engine thermodynamic cycle and bypass ratio; how MRI works (spin, resonance, k-space).
 Math and computer science: public-key cryptography from modular arithmetic to RSA and the quantum threat; Gödel's incompleteness theorems, actual vs pop version; error-correcting codes.
 Biology and chemistry: how CRISPR finds one sequence among three billion; mRNA vaccines and the lipid nanoparticle problem; catalysis via Haber-Bosch.
 Systems: how the grid holds 60 Hz, and Texas 2021; how a language model is trained, tokens to gradient descent; weather forecasting, numerical models and chaos.
@@ -47,3 +47,4 @@ Add new topics here as they come up, in the same categories or new ones.
 | 20 | 2026-11-25 | PM | The Cuban Missile Crisis: chicken and Schelling commitment, Trollope-ploy myth and secret Jupiter trade, Allison three models, Janis groupthink vs the tapes, Black Saturday and B-59 (psychology/sociology lane) | pending | |
 | 21 | 2026-11-26 | AM | How a language model is trained: BPE tokens, cross-entropy as compression, attention and induction heads, backprop and Adam, 3D parallelism, scaling laws and Chinchilla, emergence caveat, SFT/RLHF with KL leash, verifiable-reward RL (systems) | pending | |
 | 22 | 2026-11-26 | PM | How a bill actually becomes law: funnel and message bills, Legislative Counsel and CBO scoring, Rules Committee and Hastert rule, discharge petition revival, unanimous consent, holds, cloture history and two-track, nuclear option, shell bills and origination clause, veto and pocket veto, must-pass vehicles, reconciliation and Byrd rule, Congressional Review Act (institutions lane) | pending | |
+| 23 | 2026-11-27 | AM | How MRI works: Larmor precession and the 'flipping' myth, rotating-frame resonance, T1/T2 contrast and spin echo, gradients and k-space (ghosts, aliasing), parallel imaging, compressed sensing, fMRI BOLD and its limits (physics/engineering) | pending | |

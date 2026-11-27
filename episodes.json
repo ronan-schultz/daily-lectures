@@ -328,5 +328,20 @@
       "Budget reconciliation lets a bill pass the Senate with a simple majority. What stops a majority from putting any policy it wants into a reconciliation bill, and how does that constraint end up shaping the design of the laws that pass this way?",
       "Why does the President's veto power do most of its work before a bill ever reaches the President's desk? And why can Congress not override a pocket veto?"
     ]
+  },
+  {
+    "number": 23,
+    "slug": "023-how-mri-works",
+    "title": "How MRI works: from a whisper of spinning protons to a picture",
+    "series": "morning",
+    "date": "2026-11-27",
+    "summary": "Larmor precession and why protons don't just 'flip', resonance in the rotating frame, the two relaxation clocks and Hahn's spin echo, gradients and k-space (why the scanner measures the Fourier transform of you), then parallel imaging, compressed sensing and what functional MRI really sees.",
+    "questions": [
+      "The radio pulse has to be at the Larmor frequency to tip the magnetization. Explain why, using the rotating frame, and say what happens to a pulse that is off-frequency.",
+      "A spin echo recovers signal lost to an imperfect magnet but not signal lost to true transverse decay. What is the difference between those two kinds of dephasing that lets the hundred and eighty degree pulse undo one and not the other?",
+      "Why does the scanner end up measuring the Fourier transform of the image rather than the image itself? Connect it to what a gradient does to the phase of spins at different positions.",
+      "If a patient breathes during a scan, MRI tends to produce ghost copies of the anatomy instead of a simple blur. Why?",
+      "In functional MRI, active brain tissue uses more oxygen, yet the signal goes up rather than down. Explain the mechanism, and say what that implies about what functional MRI actually measures."
+    ]
   }
 ]
