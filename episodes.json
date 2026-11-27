@@ -343,5 +343,20 @@
       "If a patient breathes during a scan, MRI tends to produce ghost copies of the anatomy instead of a simple blur. Why?",
       "In functional MRI, active brain tissue uses more oxygen, yet the signal goes up rather than down. Explain the mechanism, and say what that implies about what functional MRI actually measures."
     ]
+  },
+  {
+    "number": 24,
+    "slug": "024-how-science-actually-works",
+    "title": "How science actually works: Popper, Kuhn, and one funeral at a time",
+    "series": "afternoon",
+    "date": "2026-11-27",
+    "summary": "Hume's problem of induction, Popper's falsification and the real story of the 1919 eclipse, the Duhem-Quine problem through Neptune and Vulcan, Kuhn's paradigms and revolutions, Lakatos's research programmes, and the sociology: Merton's norms, the 'one funeral at a time' study, and the replication crisis as a failure of refutation.",
+    "questions": [
+      "Popper said a single counterexample can refute a universal law, but in practice scientists rarely abandon a theory over one failed prediction. Using the Duhem-Quine problem, explain why the logic doesn't force them to, and why that isn't simply stubbornness.",
+      "The Neptune prediction and the Vulcan prediction were the same kind of move. Using Lakatos's framework, explain what distinguishes a progressive adjustment from a degenerating one, and why that distinction is easier to apply in hindsight.",
+      "Kuhn argued that the dogmatism of normal science is actually productive. What is the mechanism? Why might a community that refuses to question its foundations be better at discovering that those foundations are wrong?",
+      "In the 'one funeral at a time' study, why did the researchers focus on stars who died suddenly rather than all stars who died, and what does the result tell us, and not tell us, about whether the star's ideas were correct?",
+      "Explain how flexibility in data analysis connects to Popper's criticism of Adler, and why preregistration addresses the problem at its root rather than just catching bad actors."
+    ]
   }
 ]

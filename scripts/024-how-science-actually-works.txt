@@ -1,0 +1,143 @@
+Vienna, 1919. A teenager named Karl Popper is doing volunteer work in the child guidance clinics run by the psychologist Alfred Adler. One day he brings Adler a case that, to Popper, doesn't seem to fit Adler's theory at all. Adler doesn't hesitate. He explains the case smoothly in terms of his theory of inferiority feelings, without having seen the child. Popper, a little stunned, asks him how he can be so sure. Adler answers, "Because of my thousandfold experience." And Popper, by his own later account, replied: "And with this new case, I suppose, your experience has become thousand-and-one-fold."
+
+That same year, a British expedition photographs stars near the Sun during a total solar eclipse, to test whether gravity bends starlight by the amount Einstein's new theory says. Einstein's theory sticks its neck out. It names a number. If the stars don't move by roughly that much, the theory is in trouble.
+
+Put those two scenes next to each other and you have the seed of the most famous idea in the philosophy of science. A theory that can explain everything, Popper decided, explains nothing. A real scientific theory is one that could turn out to be wrong.
+
+That is where today's lecture starts. Where it ends is somewhere messier and more interesting: with a physicist turned historian named Thomas Kuhn, who argued that real scientists almost never behave the way Popper said they should, and that this is not a bug. Then with the people who tried to reconcile them. And finally with a question you can actually test with data: does science really advance, as Max Planck put it, one funeral at a time?
+
+Here's the roadmap. Part one is the problem Popper was trying to solve, which is older than him: the problem of induction. Part two is falsification, and the cracks in it. Part three is Kuhn: paradigms, normal science, and revolutions. Part four is the famous clash between them, and the middle path built by Imre Lakatos. Part five brings it down to earth: the sociology of how scientists actually behave, the funeral question, and what the replication crisis says about all of this. Then a recap and five questions.
+
+Part one. The problem of induction.
+
+In the seventeen thirties and forties, the Scottish philosopher David Hume asked a question that sounds almost childish. Why do we expect the future to resemble the past?
+
+You've seen the Sun rise every morning of your life. You expect it to rise tomorrow. But what justifies that? You might say: the past has always been a good guide to the future. But that's just induction again. You're using induction to justify induction. Circular.
+
+Hume's conclusion was that there is no logical justification. We expect regularity out of habit. It works, and we can't help doing it, but no argument proves it.
+
+Here is why this matters for science. The naive picture of science is that you gather observations, notice a pattern, and generalize: every swan I've seen is white, therefore all swans are white. More observations, more confidence, and eventually you have a law. But no finite number of white swans can prove that all swans are white. And then Europeans got to Australia and met black swans.
+
+By the nineteen twenties, a group of philosophers and scientists in Vienna, known as the Vienna Circle, were building a philosophy called logical positivism. Roughly: a statement is meaningful only if it can be verified by observation, and science is the business of verifying. Popper lived in Vienna, knew many of them, and disagreed. He thought they had the logic backwards.
+
+Part two. Falsification.
+
+Popper's key move is an asymmetry. No number of confirming observations can prove a universal statement true. But a single genuine counterexample can prove it false. A million white swans don't establish "all swans are white." One black swan refutes it.
+
+So, Popper said, stop trying to verify theories. You can't. Instead, science proceeds by conjectures and refutations. You propose a bold hypothesis. You derive risky predictions from it, predictions that would fail if the theory were false. And you try as hard as you can to knock it down. A theory that survives isn't proven. It's just "corroborated," for now. All scientific knowledge is permanently provisional.
+
+This gave Popper something he wanted badly: a demarcation criterion. A line between science and non-science. A theory is scientific if it is falsifiable, meaning there is some possible observation that would contradict it. He laid this out in his book "The Logic of Scientific Discovery," published in German in the mid nineteen thirties.
+
+And now go back to Vienna in 1919. Popper looked at three theories that were fashionable around him: Freud's psychoanalysis, Adler's individual psychology, and Marx's theory of history. What bothered him was that their followers saw confirmations everywhere. A man pushes a child into water to drown it; another man jumps in to save a child. Adler's theory could explain both, one as inferiority, the other as overcoming inferiority. Every case fit. And Popper concluded that this wasn't a strength. It was the sign that these theories forbade nothing.
+
+Marxism he treated a bit differently. He argued it had originally made real predictions, about where revolutions would happen, for example, and that when those predictions failed, its followers reinterpreted the theory and the evidence so that it survived. In his view that's what turned a scientific theory into a non-scientific one: not that it was wrong, but that it was immunized against being wrong.
+
+Contrast Einstein. General relativity predicted that starlight grazing the Sun should bend by about one point seven five arcseconds, roughly twice what a Newtonian argument gives. That's a number you can fail to hit.
+
+Now, a detour, because the eclipse story itself is a good example of a popular claim that's oversimplified. For decades, there was a cynical version going around: Eddington, a keen Einstein supporter, threw out the data he didn't like. Here's what actually happened. There were two expeditions, one to the island of Príncipe off West Africa and one to Sobral in Brazil. At Sobral there were two telescopes. The main one, an astrographic telescope, gave a deflection closer to the Newtonian value. But its images were blurred, apparently because the Sun's heat distorted the instrument and shifted its focus. The smaller backup telescope gave sharp images and a value at, or even a bit above, Einstein's. The team discounted the blurred plates. That sounds damning, until you learn two things. When the Sobral plates were remeasured in 1979 with modern equipment, the result supported Einstein. And the historian Daniel Kennefick has argued that the call to discount the astrographic plates was driven by the Astronomer Royal, Frank Dyson, on technical grounds, not by Eddington's enthusiasm. The honest summary: the 1919 data were thin and the error bars were wide, but the decision wasn't fraud. Later and better measurements, especially with radio telescopes, nailed it.
+
+So Popper's picture is clean. Here is the catch.
+
+The first crack is something called the Duhem-Quine problem, after the physicist Pierre Duhem and the philosopher Willard Van Orman Quine. You never test a theory alone. You test a theory plus a bundle of auxiliary assumptions: that your instruments work, that you've accounted for interference, that the initial conditions are what you think. When a prediction fails, logic tells you that something in the bundle is false. It doesn't tell you what.
+
+And here is the history that makes this bite. In the eighteen forties, the orbit of Uranus didn't match Newtonian predictions. Did astronomers declare Newton falsified? No. Urbain Le Verrier, in France, and independently John Couch Adams in England, assumed an unseen planet was tugging on it, calculated where it should be, and in 1846 Johann Galle pointed a telescope at Le Verrier's spot and found Neptune. A triumph for refusing to accept a falsification.
+
+Then Le Verrier tried the same trick on the orbit of Mercury, whose closest point to the Sun creeps around slightly faster than Newton allows: about forty three arcseconds per century extra. He proposed another hidden planet, inside Mercury's orbit, and it even got a name, Vulcan. People reported sightings. It doesn't exist. The anomaly was real, and general relativity explained it exactly, in 1915.
+
+Same move, two outcomes. Saving the theory with an auxiliary hypothesis was brilliant once and wrong the second time. Popper's rule, taken strictly, can't tell you in advance which is which. Popper knew this. He allowed auxiliary hypotheses as long as they were independently testable, not just patches. But the clean asymmetry, one black swan and you're done, turns out to be much fuzzier in practice.
+
+The second crack: a lot of real science is probabilistic. "This drug reduces risk by twenty percent" is not refuted by one patient who gets sick. Nothing is strictly forbidden; things just become very improbable. You have to choose a rule for when improbable counts as refuted, and that's a convention, not logic.
+
+And the third crack is the one that Kuhn drove a truck through. Historically, scientists don't drop theories when they hit counterexamples. Every major theory has lived its whole life surrounded by anomalies. If scientists followed Popper strictly, they'd have abandoned everything.
+
+Part three. Kuhn.
+
+Thomas Kuhn trained as a physicist, with a PhD from Harvard. As a graduate student he was asked to teach a course on science for non-scientists, and in preparing it he sat down to read Aristotle's physics. To a modern physicist, it reads as nonsense, full of elementary blunders. And Kuhn was puzzled, because Aristotle was obviously brilliant everywhere else. Then, as he later told it, one summer day it suddenly clicked: Aristotle wasn't doing bad Newtonian mechanics. He was doing something else entirely, with different concepts. "Motion," for Aristotle, meant change of any kind, a leaf turning brown as much as a stone falling. Read on its own terms, it was coherent.
+
+That experience became his 1962 book, "The Structure of Scientific Revolutions," one of the most cited books of the twentieth century. And here is a lovely irony. It was first published as a monograph in the International Encyclopedia of Unified Science, a series founded by members of the Vienna Circle. The book that did more than any other to dismantle their picture of science was published in their own encyclopedia.
+
+Kuhn's model has a cycle. Let's walk through it.
+
+It starts with a paradigm. The word gets used loosely now, so let's be precise about what Kuhn meant, or at least what he came to mean. In his central sense, a paradigm is a shared achievement that a field takes as a model: Newton's "Principia," Lavoisier's chemistry, Darwin's "Origin." It supplies the accepted laws, the instruments, the standard problems, and above all the exemplars, the worked solutions that students learn by doing, the way you learn physics by grinding through problem sets, not by memorizing definitions.
+
+Under a paradigm, most scientists do what Kuhn called normal science. And he described it, a bit provocatively, as puzzle-solving. The paradigm guarantees that a solution exists, and the scientist's job is to find it. Measuring a constant more precisely, extending the theory to a new case, getting theory and experiment to line up. Crucially, in normal science, the paradigm isn't being tested. The scientist is. If your experiment doesn't match the theory, the default assumption is that you messed up, not Newton.
+
+Why would that be good? Here's Kuhn's answer, and it's the part people forget. Because it's efficient. If everyone is constantly relitigating the foundations, nobody gets anything detailed done. Normal science lets a community drive deep into a narrow set of problems, build precise instruments, and notice tiny discrepancies, precisely because they have strong expectations. Commitment is what makes anomalies visible in the first place.
+
+Then anomalies pile up. Most are shelved or eventually resolved. But sometimes one won't go away, or many accumulate, and the field enters a crisis. Rules get loose. People start proposing wild alternatives and arguing about philosophy, which, Kuhn noted, is something working scientists mostly do only when things are going badly.
+
+And then a revolution. A new paradigm emerges that resolves the key anomalies, and the community shifts over. Copernicus. Lavoisier's oxygen replacing phlogiston. Relativity and quantum mechanics replacing classical physics.
+
+Here's where Kuhn gets radical. He argued that the switch isn't a straightforward rational comparison. Competing paradigms are partly incommensurable. That word literally means "no common measure." Key terms change meaning across the divide. Mass in Newton is a fixed property; mass in Einstein is tied up with energy. The two sides disagree about which problems matter and what counts as a solution. He compared the shift to a gestalt switch, like the duck-rabbit drawing: same lines, suddenly a different picture. He even said that after a revolution, scientists in a sense work in a different world.
+
+A good concrete case, though not one of Kuhn's own: continental drift. Alfred Wegener proposed in 1912 that continents move. He had striking evidence: matching coastlines, matching fossils and rock formations across oceans. But he had no plausible mechanism, and most geologists, especially in America, rejected it. It took the nineteen fifties and sixties, with seafloor mapping, the magnetic striping on either side of mid-ocean ridges, and the idea of seafloor spreading, for plate tectonics to sweep the field in about a decade. Before, it was fringe. After, it organized everything.
+
+So if Popper's scientist is a perpetual skeptic, Kuhn's is a committed member of a community, conservative most of the time and revolutionary only under pressure.
+
+Part four. The clash, and a way through it.
+
+In July 1965, at a colloquium at Bedford College in London, Kuhn and Popper's camp met head on. The papers, plus the responses, became the 1970 book "Criticism and the Growth of Knowledge."
+
+Popper granted that normal science exists. He just thought it was a danger. A normal scientist, he wrote, has been badly taught, and normal science is a threat to civilization: uncritical, dogmatic, the opposite of what made science special. Kuhn replied, in effect, that Popper had mistaken the exceptional moments of science for the whole, and that a philosophy that labels most of actual science as a failure is describing something other than science.
+
+The sharpest charge against Kuhn was relativism. If paradigms can't be compared on a common measure, and choice between them is like a conversion, then is scientific change just mob psychology? Imre Lakatos, a Hungarian philosopher at the London School of Economics, said exactly that: on Kuhn's account, theory change was a matter of mob psychology.
+
+Two things are worth saying in Kuhn's defense, because he said them himself. First, he never claimed science doesn't progress. He listed values that guide theory choice: accuracy, consistency, scope, simplicity, and fruitfulness. Those are shared across paradigms. What he denied is that they amount to an algorithm. Two competent scientists can weigh them differently and reasonably disagree for a while. Second, he admitted his central term was a mess. In the same 1970 volume, the philosopher Margaret Masterman counted around twenty one different senses of "paradigm" in his book. In a postscript he split it into a broad "disciplinary matrix" and the narrower "exemplars," and said the exemplars were the deeper and more original idea.
+
+Now Lakatos, who built the most useful middle path. His unit of analysis isn't a single theory. It's a research programme, a sequence of theories that share a hard core, assumptions that the community decides not to touch, surrounded by a protective belt of auxiliary hypotheses that absorb the hits.
+
+Think back to Uranus and Mercury. Newton's laws were the hard core. "There's an unseen planet" was a change to the protective belt. So how do you tell good belt-adjusting from bad? Lakatos's answer: look at whether the programme is progressive or degenerating. A progressive programme's adjustments predict novel facts that then get confirmed. The Neptune hypothesis predicted a planet in a specific spot, and there it was. A degenerating programme only ever patches after the fact. It's always catching up to the data, never getting ahead of it. Vulcan was a step toward degeneration: the prediction kept failing, and the patches kept coming.
+
+This explains things Popper and Kuhn both struggled with. It explains why scientists are rational to stick with a theory in the face of anomalies: as long as the programme is progressing, it deserves patience. And it explains when to stop: when the programme only explains things it was told about after the fact. The catch, which Lakatos admitted, is that it gives no deadline. A degenerating programme can make a comeback. So his framework is better at judging in hindsight than at telling you what to do on a Tuesday.
+
+And then there's his friend and sparring partner Paul Feyerabend, whose 1975 book "Against Method" argued that every methodological rule has been broken by some great scientist at some point, so the only rule that survives is "anything goes." Feyerabend was partly trolling, and he said so, but his historical point lands: Galileo didn't win by following a method that his opponents also accepted.
+
+Most working philosophers of science today don't sign up wholesale with any of these. A common modern approach is Bayesian: evidence doesn't prove or refute, it shifts degrees of belief. That framework handles the probabilistic problem nicely, and it explains why a surprising confirmed prediction is so powerful: an outcome that would be very unlikely if the theory were false moves your belief a lot. In a way, it rehabilitates part of Popper's insight, risky predictions matter most, while dropping the all-or-nothing logic.
+
+Part five. Science as a social machine.
+
+Both Popper and Kuhn were really talking about communities, even when they talked about logic. So let's look at the sociology.
+
+In 1942 the sociologist Robert Merton described the norms of science, often remembered by the acronym CUDOS. Communism, in the sense that findings belong to everyone. Universalism: claims are judged by impersonal criteria, not by who makes them. Disinterestedness: scientists act for the collective enterprise rather than personal gain. And organized skepticism: everything gets scrutinized. Merton presented these as ideals that the institution enforces through rewards, chiefly recognition and priority. Later sociologists pointed out how often scientists violate them, priority fights, secrecy, status effects. Merton himself documented one of those: the Matthew effect, the observation that famous scientists get disproportionate credit for work that lesser-known colleagues did too, named after the line in the Gospel of Matthew about those who have receiving more.
+
+Here's where it gets testable. Max Planck, in his scientific autobiography, wrote that a new scientific truth does not triumph by convincing its opponents and making them see the light, but rather because its opponents eventually die and a new generation grows up familiar with it. That's very Kuhnian. It suggests paradigms are held in place by people.
+
+In 2019, the economists Pierre Azoulay, Christian Fons-Rosen and Joshua Graff Zivin tested it, in a paper literally titled "Does Science Advance One Funeral at a Time?" They looked at elite life scientists who died suddenly and unexpectedly, while still active. A sudden death is a useful natural experiment, because it isn't caused by the state of the field. Then they asked: what happens to the star's subfield afterward?
+
+The finding: the star's own collaborators publish less in the area. But outsiders, people who had never worked with the star, publish noticeably more, roughly eight percent more, and their papers tend to be well cited. And the newcomers tended to draw on different ideas from the star's work. And there was a sign of gatekeeping: outsiders were less likely to move in where the star's surviving collaborators still held positions of power, on editorial boards and grant panels. So, yes, at least in this sense, a dominant figure can hold back a field, and Planck had a point. But note what the result does not say: it doesn't say the star was wrong. It says the field got more diverse once a gate was gone.
+
+Now, the replication crisis, which you heard about back in the Kahneman episode and the Milgram episode. Here's how it fits today's frame.
+
+Starting around 2011, a series of events, including an attempt by a large team led by Brian Nosek to replicate one hundred psychology studies, showed that a large fraction of published findings didn't hold up. In that 2015 project, only around a third to two fifths of the replications produced significant results, depending on the measure. Why? Not mostly fraud. Mostly incentives. Journals rewarded surprising positive results. Researchers had lots of flexibility in how they analyzed data, which outcomes to report, when to stop collecting. Each choice can be innocent, but together they let you find a significant result in noise.
+
+Look at that through Popper's eyes. The core problem is that many hypotheses were never really exposed to refutation. If you can choose the test after seeing the data, you can't fail it. That's exactly Adler and his thousand-and-one-fold experience, dressed up in statistics. And the main reforms are Popperian in spirit. Preregistration: write down your hypothesis and analysis plan before you see the data, so the prediction can fail. Registered reports: the journal agrees to publish based on the question and method, before the result is known, which removes the reward for a particular outcome.
+
+But look at it through Merton's and Kuhn's eyes too. The fix isn't a smarter individual scientist. It's changing what the community rewards. Organized skepticism only works if skepticism is actually organized: if replications get published and credited, and if gatekeepers don't punish people for checking.
+
+So how does science actually work? Here's the synthesis I'd defend. No single method makes science reliable. Individual scientists are committed, biased, and often stubborn, and that's partly fine, because commitment lets them dig deep. What makes the system work is that it's set up so claims are exposed to tests that could fail, by people who have reasons to want them to fail, with rewards for being right that outlast any one person's career. When that structure is weakened, by bad incentives, by gatekeepers, by tests chosen after the fact, science gets worse, sometimes for decades.
+
+Let's recap.
+
+Hume showed that no number of observations proves a general law. Popper turned that around: you can't verify, but you can falsify, so good science makes risky predictions and tries to break them. His demarcation line: a theory that forbids nothing isn't science. The 1919 eclipse is his model case, and the cynical version of that story, that Eddington cooked the data, doesn't hold up.
+
+But the Duhem-Quine problem means a failed prediction never tells you which assumption failed. Neptune and Vulcan were the same move with opposite outcomes.
+
+Kuhn showed that real science runs mostly in normal mode, puzzle-solving inside a paradigm, where the scientist, not the theory, is on trial. Anomalies accumulate, crisis, revolution, and the competing paradigms are partly incommensurable. He was charged with relativism, and answered with shared values that guide choice without forming an algorithm.
+
+Lakatos offered research programmes: a protected hard core, a flexible belt, and the test of whether the programme predicts new facts or just patches old ones.
+
+And the sociology: Merton's norms, the Matthew effect, the evidence that fields open up after a dominant figure dies, and the replication crisis as a failure of the social machinery of refutation, being fixed with Popperian tools.
+
+Here are your five questions.
+
+Question one. Popper said a single counterexample can refute a universal law, but in practice scientists rarely abandon a theory over one failed prediction. Using the Duhem-Quine problem, explain why the logic doesn't force them to, and why that isn't simply stubbornness.
+
+Question two. The Neptune prediction and the Vulcan prediction were the same kind of move. Using Lakatos's framework, explain what distinguishes a progressive adjustment from a degenerating one, and why that distinction is easier to apply in hindsight.
+
+Question three. Kuhn argued that the dogmatism of normal science is actually productive. What is the mechanism? Why might a community that refuses to question its foundations be better at discovering that those foundations are wrong?
+
+Question four. In the "one funeral at a time" study, why did the researchers focus on stars who died suddenly rather than all stars who died, and what does the result tell us, and not tell us, about whether the star's ideas were correct?
+
+Question five. Explain how flexibility in data analysis connects to Popper's criticism of Adler, and why preregistration addresses the problem at its root rather than just catching bad actors.
+
+Reply with your answers whenever you're ready.

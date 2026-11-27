@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>PM 024. How science actually works: Popper, Kuhn, and one funeral at a time</title>
+      <description>Hume's problem of induction, Popper's falsification and the real story of the 1919 eclipse, the Duhem-Quine problem through Neptune and Vulcan, Kuhn's paradigms and revolutions, Lakatos's research programmes, and the sociology: Merton's norms, the 'one funeral at a time' study, and the replication crisis as a failure of refutation.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Popper said a single counterexample can refute a universal law, but in practice scientists rarely abandon a theory over one failed prediction. Using the Duhem-Quine problem, explain why the logic doesn't force them to, and why that isn't simply stubbornness.
+2. The Neptune prediction and the Vulcan prediction were the same kind of move. Using Lakatos's framework, explain what distinguishes a progressive adjustment from a degenerating one, and why that distinction is easier to apply in hindsight.
+3. Kuhn argued that the dogmatism of normal science is actually productive. What is the mechanism? Why might a community that refuses to question its foundations be better at discovering that those foundations are wrong?
+4. In the 'one funeral at a time' study, why did the researchers focus on stars who died suddenly rather than all stars who died, and what does the result tell us, and not tell us, about whether the star's ideas were correct?
+5. Explain how flexibility in data analysis connects to Popper's criticism of Adler, and why preregistration addresses the problem at its root rather than just catching bad actors.</description>
+      <itunes:summary>Hume's problem of induction, Popper's falsification and the real story of the 1919 eclipse, the Duhem-Quine problem through Neptune and Vulcan, Kuhn's paradigms and revolutions, Lakatos's research programmes, and the sociology: Merton's norms, the 'one funeral at a time' study, and the replication crisis as a failure of refutation.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Popper said a single counterexample can refute a universal law, but in practice scientists rarely abandon a theory over one failed prediction. Using the Duhem-Quine problem, explain why the logic doesn't force them to, and why that isn't simply stubbornness.
+2. The Neptune prediction and the Vulcan prediction were the same kind of move. Using Lakatos's framework, explain what distinguishes a progressive adjustment from a degenerating one, and why that distinction is easier to apply in hindsight.
+3. Kuhn argued that the dogmatism of normal science is actually productive. What is the mechanism? Why might a community that refuses to question its foundations be better at discovering that those foundations are wrong?
+4. In the 'one funeral at a time' study, why did the researchers focus on stars who died suddenly rather than all stars who died, and what does the result tell us, and not tell us, about whether the star's ideas were correct?
+5. Explain how flexibility in data analysis connects to Popper's criticism of Adler, and why preregistration addresses the problem at its root rather than just catching bad actors.</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/024-how-science-actually-works.mp3" length="8853933" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-024-how-science-actually-works</guid>
+      <pubDate>Fri, 27 Nov 2026 14:00:00 +0000</pubDate>
+      <itunes:duration>00:24:35</itunes:duration>
+      <itunes:episode>24</itunes:episode>
+    </item>
+    <item>
       <title>AM 023. How MRI works: from a whisper of spinning protons to a picture</title>
       <description>Larmor precession and why protons don't just 'flip', resonance in the rotating frame, the two relaxation clocks and Hahn's spin echo, gradients and k-space (why the scanner measures the Fourier transform of you), then parallel imaging, compressed sensing and what functional MRI really sees.
 
