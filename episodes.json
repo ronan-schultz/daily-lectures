@@ -373,5 +373,20 @@
       "A vaccine works fine with an endosomal escape efficiency of a couple percent, but an enzyme replacement therapy using the same delivery system might not. Explain what property of the vaccine application compensates for the terrible delivery efficiency, and why that compensation is unavailable to a protein replacement therapy.",
       "Lipid nanoparticles injected into the bloodstream go overwhelmingly to the liver, and this was not a design choice. Explain the mechanism that routes them there, and explain why that mechanism means the particle's engineered surface is not the surface the body actually sees."
     ]
+  },
+  {
+    "number": 26,
+    "slug": "026-how-skills-are-actually-learned",
+    "title": "How skills are actually learned: practice, spacing and sleep, after the fact-checks",
+    "series": "afternoon",
+    "date": "2026-11-28",
+    "summary": "The ten thousand hour rule versus what Ericsson actually found, the meta-analysis and violin replication that cut it down, chunking and the OK plateau, desirable difficulties (spacing, retrieval, interleaving), and why the famous twenty percent overnight sleep gain mostly shrank. Ends with a concrete guitar practice plan.",
+    "questions": [
+      "Deliberate practice explained only about twelve percent of the variance in performance across studies, yet it is still the most important thing you control. Explain how both can be true, and name at least two other sources of the remaining variance.",
+      "Chess masters reconstructed real game positions far better than novices, but their advantage mostly vanished on random positions. What does that tell us about the mechanism of expertise, and how does it connect to a skilled guitarist playing while talking?",
+      "Why does automaticity, the goal of practice, also cause people to stop improving? Describe what deliberate practice does mechanically to get around that.",
+      "In the painting study, people learned better from interleaved examples but believed blocked study worked better. Explain why interleaving helps, and why fluency during practice is a poor guide to learning.",
+      "The famous result that sleep improved finger-tapping speed by about twenty percent shrank on re-examination. Explain the main confound, why it inflates the overnight gain, and what it implies about judging your progress at the end of a long session."
+    ]
   }
 ]

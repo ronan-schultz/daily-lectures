@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>PM 026. How skills are actually learned: practice, spacing and sleep, after the fact-checks</title>
+      <description>The ten thousand hour rule versus what Ericsson actually found, the meta-analysis and violin replication that cut it down, chunking and the OK plateau, desirable difficulties (spacing, retrieval, interleaving), and why the famous twenty percent overnight sleep gain mostly shrank. Ends with a concrete guitar practice plan.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Deliberate practice explained only about twelve percent of the variance in performance across studies, yet it is still the most important thing you control. Explain how both can be true, and name at least two other sources of the remaining variance.
+2. Chess masters reconstructed real game positions far better than novices, but their advantage mostly vanished on random positions. What does that tell us about the mechanism of expertise, and how does it connect to a skilled guitarist playing while talking?
+3. Why does automaticity, the goal of practice, also cause people to stop improving? Describe what deliberate practice does mechanically to get around that.
+4. In the painting study, people learned better from interleaved examples but believed blocked study worked better. Explain why interleaving helps, and why fluency during practice is a poor guide to learning.
+5. The famous result that sleep improved finger-tapping speed by about twenty percent shrank on re-examination. Explain the main confound, why it inflates the overnight gain, and what it implies about judging your progress at the end of a long session.</description>
+      <itunes:summary>The ten thousand hour rule versus what Ericsson actually found, the meta-analysis and violin replication that cut it down, chunking and the OK plateau, desirable difficulties (spacing, retrieval, interleaving), and why the famous twenty percent overnight sleep gain mostly shrank. Ends with a concrete guitar practice plan.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. Deliberate practice explained only about twelve percent of the variance in performance across studies, yet it is still the most important thing you control. Explain how both can be true, and name at least two other sources of the remaining variance.
+2. Chess masters reconstructed real game positions far better than novices, but their advantage mostly vanished on random positions. What does that tell us about the mechanism of expertise, and how does it connect to a skilled guitarist playing while talking?
+3. Why does automaticity, the goal of practice, also cause people to stop improving? Describe what deliberate practice does mechanically to get around that.
+4. In the painting study, people learned better from interleaved examples but believed blocked study worked better. Explain why interleaving helps, and why fluency during practice is a poor guide to learning.
+5. The famous result that sleep improved finger-tapping speed by about twenty percent shrank on re-examination. Explain the main confound, why it inflates the overnight gain, and what it implies about judging your progress at the end of a long session.</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/026-how-skills-are-actually-learned.mp3" length="7463757" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-026-how-skills-are-actually-learned</guid>
+      <pubDate>Sat, 28 Nov 2026 14:00:00 +0000</pubDate>
+      <itunes:duration>00:20:43</itunes:duration>
+      <itunes:episode>26</itunes:episode>
+    </item>
+    <item>
       <title>AM 025. mRNA vaccines: the easy part is the RNA, the hard part is the fat</title>
       <description>Why messenger RNA should never have worked as a drug: fragility, charge, and the interferon loop that destroys the very message you injected. Karikó and Weissman's pseudouridine fix, the end-to-end engineering of the construct and the pre-fusion spike splint, then the real technology: the four-lipid nanoparticle, the ionizable lipid's pKa just above six, endosomal escape at a few percent, and the apolipoprotein E corona that sends everything to the liver.
 
