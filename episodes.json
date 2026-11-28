@@ -358,5 +358,20 @@
       "In the 'one funeral at a time' study, why did the researchers focus on stars who died suddenly rather than all stars who died, and what does the result tell us, and not tell us, about whether the star's ideas were correct?",
       "Explain how flexibility in data analysis connects to Popper's criticism of Adler, and why preregistration addresses the problem at its root rather than just catching bad actors."
     ]
+  },
+  {
+    "number": 25,
+    "slug": "025-mrna-vaccines-and-the-lipid-nanoparticle-problem",
+    "title": "mRNA vaccines: the easy part is the RNA, the hard part is the fat",
+    "series": "morning",
+    "date": "2026-11-28",
+    "summary": "Why messenger RNA should never have worked as a drug: fragility, charge, and the interferon loop that destroys the very message you injected. Karikó and Weissman's pseudouridine fix, the end-to-end engineering of the construct and the pre-fusion spike splint, then the real technology: the four-lipid nanoparticle, the ionizable lipid's pKa just above six, endosomal escape at a few percent, and the apolipoprotein E corona that sends everything to the liver.",
+    "questions": [
+      "The ionizable lipid has a pKa a little above six rather than being permanently positively charged. Explain what goes right at three separate pH values because of that choice, and explain specifically why a permanently cationic lipid fails.",
+      "Replacing uridine with a modified base does more than reduce inflammation. Explain the mechanistic loop that makes the inflammation itself lethal to the drug's function, not just unpleasant for the patient.",
+      "Getting endocytosed and getting delivered are different things. Explain, in terms of topology and membrane geometry, why the ionizable lipid re-protonating inside the endosome actually produces a hole, and why the shape of the lipid matters as much as its charge.",
+      "A vaccine works fine with an endosomal escape efficiency of a couple percent, but an enzyme replacement therapy using the same delivery system might not. Explain what property of the vaccine application compensates for the terrible delivery efficiency, and why that compensation is unavailable to a protein replacement therapy.",
+      "Lipid nanoparticles injected into the bloodstream go overwhelmingly to the liver, and this was not a design choice. Explain the mechanism that routes them there, and explain why that mechanism means the particle's engineered surface is not the surface the body actually sees."
+    ]
   }
 ]

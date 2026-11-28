@@ -11,6 +11,30 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:block>Yes</itunes:block>
     <item>
+      <title>AM 025. mRNA vaccines: the easy part is the RNA, the hard part is the fat</title>
+      <description>Why messenger RNA should never have worked as a drug: fragility, charge, and the interferon loop that destroys the very message you injected. Karikó and Weissman's pseudouridine fix, the end-to-end engineering of the construct and the pre-fusion spike splint, then the real technology: the four-lipid nanoparticle, the ionizable lipid's pKa just above six, endosomal escape at a few percent, and the apolipoprotein E corona that sends everything to the liver.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. The ionizable lipid has a pKa a little above six rather than being permanently positively charged. Explain what goes right at three separate pH values because of that choice, and explain specifically why a permanently cationic lipid fails.
+2. Replacing uridine with a modified base does more than reduce inflammation. Explain the mechanistic loop that makes the inflammation itself lethal to the drug's function, not just unpleasant for the patient.
+3. Getting endocytosed and getting delivered are different things. Explain, in terms of topology and membrane geometry, why the ionizable lipid re-protonating inside the endosome actually produces a hole, and why the shape of the lipid matters as much as its charge.
+4. A vaccine works fine with an endosomal escape efficiency of a couple percent, but an enzyme replacement therapy using the same delivery system might not. Explain what property of the vaccine application compensates for the terrible delivery efficiency, and why that compensation is unavailable to a protein replacement therapy.
+5. Lipid nanoparticles injected into the bloodstream go overwhelmingly to the liver, and this was not a design choice. Explain the mechanism that routes them there, and explain why that mechanism means the particle's engineered surface is not the surface the body actually sees.</description>
+      <itunes:summary>Why messenger RNA should never have worked as a drug: fragility, charge, and the interferon loop that destroys the very message you injected. Karikó and Weissman's pseudouridine fix, the end-to-end engineering of the construct and the pre-fusion spike splint, then the real technology: the four-lipid nanoparticle, the ionizable lipid's pKa just above six, endosomal escape at a few percent, and the apolipoprotein E corona that sends everything to the liver.
+
+Quiz (reply in that episode's Daily Lecture chat):
+1. The ionizable lipid has a pKa a little above six rather than being permanently positively charged. Explain what goes right at three separate pH values because of that choice, and explain specifically why a permanently cationic lipid fails.
+2. Replacing uridine with a modified base does more than reduce inflammation. Explain the mechanistic loop that makes the inflammation itself lethal to the drug's function, not just unpleasant for the patient.
+3. Getting endocytosed and getting delivered are different things. Explain, in terms of topology and membrane geometry, why the ionizable lipid re-protonating inside the endosome actually produces a hole, and why the shape of the lipid matters as much as its charge.
+4. A vaccine works fine with an endosomal escape efficiency of a couple percent, but an enzyme replacement therapy using the same delivery system might not. Explain what property of the vaccine application compensates for the terrible delivery efficiency, and why that compensation is unavailable to a protein replacement therapy.
+5. Lipid nanoparticles injected into the bloodstream go overwhelmingly to the liver, and this was not a design choice. Explain the mechanism that routes them there, and explain why that mechanism means the particle's engineered surface is not the surface the body actually sees.</itunes:summary>
+      <enclosure url="https://ronan-schultz.github.io/daily-lectures/episodes/025-mrna-vaccines-and-the-lipid-nanoparticle-problem.mp3" length="8373405" type="audio/mpeg"/>
+      <guid isPermaLink="false">daily-lectures-025-mrna-vaccines-and-the-lipid-nanoparticle-problem</guid>
+      <pubDate>Sat, 28 Nov 2026 09:00:00 +0000</pubDate>
+      <itunes:duration>00:23:15</itunes:duration>
+      <itunes:episode>25</itunes:episode>
+    </item>
+    <item>
       <title>PM 024. How science actually works: Popper, Kuhn, and one funeral at a time</title>
       <description>Hume's problem of induction, Popper's falsification and the real story of the 1919 eclipse, the Duhem-Quine problem through Neptune and Vulcan, Kuhn's paradigms and revolutions, Lakatos's research programmes, and the sociology: Merton's norms, the 'one funeral at a time' study, and the replication crisis as a failure of refutation.
 
